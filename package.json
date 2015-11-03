@@ -1,0 +1,13 @@
+{
+  "name": "iowa-law-review",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-criticalcss": "*",
+    "grunt-contrib-cssmin": "*"
+  }
+}
