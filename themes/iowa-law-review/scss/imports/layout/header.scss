@@ -1,13 +1,33 @@
 header{
-	@media (min-width: $screen-lg-min) {
-		h1{
-			padding: 30px 0;
+	h1{
+		
+		font-variant: small-caps;
+		@media (min-width: $screen-md-min) {
+			font-size: 64px;
+		}
+		@media (min-width: $screen-lg-min) {
+			padding-top: 30px;
+			padding-bottom: 15px;
+			margin: 0;
+			font-size: 82px;
 		}
 	}
+}
 
+.navbar{
+	border-top: 2px solid #111;
+	border-bottom: 3px solid #111;
 
-	.container{
-		border-bottom: 2px solid #111;
+	&.affix{
+		top: 0;
+		z-index: 99;
+		background: $body-bg;
+		position: static;
+		@media (min-width: $screen-lg-min) {
+			position: fixed;
+		}
 	}
-	
+	.nav li a{
+		text-transform: uppercase;
+	}
 }
