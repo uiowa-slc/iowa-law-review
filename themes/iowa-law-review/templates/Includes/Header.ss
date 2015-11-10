@@ -9,7 +9,7 @@
 			<div class="col-md-2"></div>
 		</div>
 		<div class="header-subnav-container text-center">
-			<p>Latest issue: <a href="latest/">Volume 105: 1 - 5</a></p>
+			<p>Latest Print Edition: <a href="latest/">Volume 105, Issue 5</a></p>
 		</div>
 	
 		

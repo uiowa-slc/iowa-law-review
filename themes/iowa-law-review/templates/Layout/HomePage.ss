@@ -7,17 +7,18 @@
         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="item active" style="background: darkgreen">
+        <div class="item active" style="background-image: url('{$ThemeDir}/images/slider-example-1.jpg');">
           <a href="#">
           <article class="container">
             <div class="carousel-caption">
+              <p class="smallcaps">From our latest issue</p>
               <h1>Inventing the Classical Constitution</h1>
               <p><em>Herbert Hovenkamp</em></p>
             </div>
           </article>
           </a>
         </div>
-        <div class="item" style="background: darkred">
+        <div class="item" style="background-image: url('{$ThemeDir}/images/slider-example-1.jpg');">
           <a href="#">
             <article class="container">
               <div class="carousel-caption">
@@ -27,7 +28,7 @@
             </article>
           </a>
         </div>
-        <div class="item" style="background:darkblue">
+        <div class="item" style="background-image: url('{$ThemeDir}/images/slider-example-1.jpg');">
           <a href="#">
             <article class="container">
               <div class="carousel-caption">

@@ -29,6 +29,37 @@
   font-weight: bold;
   font-style: italic; }
 
+@font-face {
+  font-family: 'social';
+  src: url("../fonts/social.eot?-7jlb3z");
+  src: url("../fonts/social.eot?#iefix-7jlb3z") format("embedded-opentype"), url("../fonts/social.woff?-7jlb3z") format("woff"), url("../fonts/social.ttf?-7jlb3z") format("truetype"), url("../fonts/social.svg?-7jlb3z#social") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+.icon-facebook, .icon-twitter:before, .icon-youtube:before, .icon-flickr:before {
+  font-family: 'social';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-facebook:before {
+  content: "\e600"; }
+
+.icon-twitter:before {
+  content: "\e601"; }
+
+.icon-youtube:before {
+  content: "\e602"; }
+
+.icon-flickr:before {
+  content: "\e603"; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -4522,7 +4553,7 @@ button.close {
   font-size: 20px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  text-shadow: 0 1px 2px rgba(30, 30, 30, 0.8); }
   .carousel-control.left {
     background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
     background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
@@ -4608,7 +4639,7 @@ button.close {
   padding-bottom: 20px;
   color: #fff;
   text-align: center;
-  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6); }
+  text-shadow: 0 1px 2px rgba(30, 30, 30, 0.8); }
   .carousel-caption .btn {
     text-shadow: none; }
 
@@ -5231,6 +5262,9 @@ button.close {
 button, .button, .btn {
   font-variant: small-caps; }
 
+.smallcaps {
+  font-variant: small-caps; }
+
 header h1 {
   font-variant: small-caps; }
   header h1 a {
@@ -5317,3 +5351,35 @@ header .header-subnav-container {
       @media (min-width: 1200px) {
         #myCarousel .item .carousel-caption h1 {
           font-size: 49px; } }
+
+.Article .cover {
+  height: 400px;
+  background-size: cover;
+  background-position: 50% 50%; }
+
+.Article .article-social-container {
+  margin: 25px 0; }
+  .Article .article-social-container.affix {
+    top: 80px; }
+
+.Article .article-social {
+  list-style: none;
+  margin: 0;
+  font-size: 13px;
+  padding: 0; }
+  .Article .article-social li {
+    display: inline-block;
+    margin-right: 1em; }
+  .Article .article-social a {
+    color: #444;
+    display: block; }
+  @media (min-width: 1200px) {
+    .Article .article-social {
+      float: right; }
+      .Article .article-social li {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-right: 0;
+        width: 80px; }
+      .Article .article-social a {
+        padding: 7px 0 5px; } }

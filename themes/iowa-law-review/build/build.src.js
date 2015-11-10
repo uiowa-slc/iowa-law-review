@@ -1,3 +1,33 @@
+$(document).ready(function() {
+
+    // Hide the directory navigation
+    // $('.division-directory').hide();
+
+
+    // Show/Hide the directory navigation on-click
+    $('.directory-toggle').click(function() {
+        $(this).toggleClass("active");
+        $('.division-directory').toggleClass("active");
+        return false;
+    });
+
+
+    // For small screens - show/hide the search on-click
+    $('.search-toggle').click(function() {
+        $(this).toggleClass('active');
+        $('.division-search').slideToggle();
+        return false;
+    });
+
+
+    // For small screens - show the directory
+    $('.division-menu').on('click', '.has-subnav a', function() {
+        $(this).next().slideToggle('slow');
+        $(this).toggleClass('active');
+
+    });
+
+});
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -2363,6 +2393,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 $( document ).ready(function() {
+
 	$('.navbar-container').affix({
 	  offset: { top: $('.navbar').offset().top }
 	}).wrap(function() {
@@ -2370,4 +2401,15 @@ $( document ).ready(function() {
 	    height: $(this).outerHeight()
 	  });
 	});​
+
+
+	// $('.article-social-container').affix({
+	//   offset: { top: $('.article-container').offset().top }
+	// }).wrap(function() {
+	//   return $('<div></div>', {
+	//     height: $(this).outerHeight()
+	//   });
+	// });​
+
+
 });

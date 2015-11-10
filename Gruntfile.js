@@ -30,6 +30,7 @@ module.exports = function(grunt) {
     concat: {
       js:{
         src: [
+          'division-bar/js/division-bar.js',
           '<%=globalConfig.themeDir %>/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
           '<%=globalConfig.themeDir %>/js/app.js'
         ],
