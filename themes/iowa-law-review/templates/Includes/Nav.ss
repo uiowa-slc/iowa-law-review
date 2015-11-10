@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-default">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -15,6 +16,7 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <% loop Menu(1) %>
+          <% if $URLSegment != "home" %>
           <li class="<% if $LinkOrSection == "section" %>active<% end_if %>
           <% if $Children %> dropdown<% end_if %>">
             <a href="$Link" class="<% if $Children %>dropdown-toggle<% end_if %>" <% if $Children %>data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"<% end_if %>>
@@ -33,13 +35,14 @@
               </ul>
             <% end_if %>
           </li>
+          <% end_if %>
         <% end_loop %>
       </ul>
-      <form class="navbar-form navbar-right" role="search">
+      <form class="navbar-form navbar-right search" role="search">
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Search">
+          <input type="search" class="form-control" placeholder="Enter a search term">
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default">Search</button>
       </form>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

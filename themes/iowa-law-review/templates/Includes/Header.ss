@@ -1,13 +1,15 @@
 <header>
-	<div class="<% if $ClassName != "HomePage" %>container<% end_if %>">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
-				<p>Volume 105: 1 - 5</p>
 			</div>
 			<div class="col-md-8">
-				<h1 class="text-center">Iowa Law Review</h1>
+				<h1 class="text-center"><a href="$BaseUrl">Iowa Law Review</a></h1>
 			</div>
 			<div class="col-md-2"></div>
+		</div>
+		<div class="header-subnav-container text-center">
+			<p>Latest issue: <a href="latest/">Volume 105: 1 - 5</a></p>
 		</div>
 	
 		<% include Nav %>

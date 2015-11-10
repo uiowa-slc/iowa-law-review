@@ -7,35 +7,35 @@
         <li data-target="#myCarousel" data-slide-to="2" class=""></li>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="item">
-          <img class="first-slide" src="{$ThemeDir}/images/slider-example-1.png" alt="First slide">
+        <div class="item active" style="background: darkgreen">
+          <a href="#">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Example headline.</h1>
-              <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+              <h1>Inventing the Classical Constitution</h1>
+              <p><em>Herbert Hovenkamp</em></p>
             </div>
           </div>
+          </a>
         </div>
-        <div class="item active">
-          <img class="second-slide" src="{$ThemeDir}/images/slider-example-1.png" alt="Second slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+        <div class="item" style="background: darkred">
+          <a href="#">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Rediscovering the Classical Liberal Constitution: A Reply to Professor Hovenkamp</h1>
+                <p><em>Richard A. Epstein</em></p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-        <div class="item">
-          <img class="third-slide" src="{$ThemeDir}/images/slider-example-1.png" alt="Third slide">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>One more for good measure.</h1>
-              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+        <div class="item" style="background:darkblue">
+          <a href="#">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Ridesharing in the Sharing Economy: Should Regulators Impose Über Regulations on Uber?</h1>
+                <p><em>Hannah A. Posen</em></p>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -46,4 +46,36 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
+
+    <div class="container">
+<h1>HTML Ipsum Presents</h1>
+         
+<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+<h2>Header Level 2</h2>
+         
+<ol>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+</ol>
+
+<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
+
+<h3>Header Level 3</h3>
+
+<ul>
+   <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+   <li>Aliquam tincidunt mauris eu risus.</li>
+</ul>
+
+<pre><code>
+#header h1 a { 
+  display: block; 
+  width: 300px; 
+  height: 80px; 
+}
+</code></pre>
+
+
     </div>

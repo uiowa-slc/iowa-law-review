@@ -1,8 +1,49 @@
 #myCarousel{
-	
-		.item{
+		
+		.item{	
+			a{
+				color: white;
+				&:hover{
+					p { text-decoration: none;}
+				}
+			}
+
+			.container{
+				min-height: 350px;
+				@media (min-width: $screen-lg-min) {
+					min-height: 500px;
+				}
+			}
+			
+			background-size: cover;
+			background-position: 50% 50%;
 			img{
 				height: 500px;
+			}
+
+			.carousel-caption{
+				position: static;
+
+				@media (min-width: $screen-phone) {
+					position: absolute;
+				}
+				h1{
+					font-size: 36px;
+					line-height: 1.2;
+
+
+					@media (min-width: $screen-md-min) {
+						font-size: 42px;
+						line-height: 1.2;
+					}
+
+					@media (min-width: $screen-lg-min) {
+						font-size: 49px;
+					}
+
+
+				}
+
 			}
 
 		}

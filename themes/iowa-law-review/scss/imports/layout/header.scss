@@ -1,33 +1,65 @@
 header{
+	margin-bottom: 20px;
 	h1{
-		
+		a{
+			color: #111;
+			&:hover{
+				color: #111;
+			}
+		}
 		font-variant: small-caps;
 		@media (min-width: $screen-md-min) {
 			font-size: 64px;
 		}
 		@media (min-width: $screen-lg-min) {
 			padding-top: 30px;
-			padding-bottom: 15px;
+			padding-bottom: 5px;
 			margin: 0;
 			font-size: 82px;
 		}
 	}
+
+	.header-subnav-container{
+		font-variant: small-caps;
+	}
+}
+
+.navbar-container{
+		padding: 2px 0;
+		border-top: 2px solid #111;
+		border-bottom: 3px solid #111;
 }
 
 .navbar{
-	border-top: 2px solid #111;
-	border-bottom: 3px solid #111;
+	-webkit-backdrop-filter: blur(10px);
+	.container{
+		border-top: 2px solid #111;
+		border-bottom: 3px solid #111;
+	}
+	border: 0;
+	form.search{
+		input{
+			border-radius: 20px;
+		}
+		button{
+			border: none;
+			font-variant: small-caps;
+		}
+	}
+	.navbar-brand{
+		font-weight: bold;
+	}
 
+	z-index: 99;
 	&.affix{
 		top: 0;
 		z-index: 99;
-		background: $body-bg;
 		position: static;
 		@media (min-width: $screen-lg-min) {
 			position: fixed;
 		}
 	}
 	.nav li a{
-		text-transform: uppercase;
+		font-variant: small-caps;
 	}
 }
