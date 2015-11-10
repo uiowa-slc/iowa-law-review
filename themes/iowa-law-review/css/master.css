@@ -5231,41 +5231,41 @@ button.close {
 button, .button, .btn {
   font-variant: small-caps; }
 
-header {
-  margin-bottom: 10px; }
-  @media (min-width: 992px) {
-    header {
-      margin-bottom: 20px; } }
-  header h1 {
-    font-variant: small-caps; }
-    header h1 a {
+header h1 {
+  font-variant: small-caps; }
+  header h1 a {
+    color: #111; }
+    header h1 a:hover {
       color: #111; }
-      header h1 a:hover {
-        color: #111; }
-    @media (min-width: 992px) {
-      header h1 {
-        font-size: 64px; } }
-    @media (min-width: 1200px) {
-      header h1 {
-        padding-top: 30px;
-        padding-bottom: 5px;
-        margin: 0;
-        font-size: 82px; } }
-  header .header-subnav-container {
-    font-variant: small-caps; }
+  @media (min-width: 992px) {
+    header h1 {
+      font-size: 64px; } }
+  @media (min-width: 1200px) {
+    header h1 {
+      padding-top: 30px;
+      padding-bottom: 5px;
+      margin: 0;
+      font-size: 82px; } }
+
+header .header-subnav-container {
+  font-variant: small-caps; }
 
 .navbar-container {
-  padding: 2px 0;
   border-top: 2px solid #111;
   border-bottom: 3px solid #111; }
+  .navbar-container.affix {
+    top: 0;
+    z-index: 99;
+    position: static; }
+    @media (min-width: 1200px) {
+      .navbar-container.affix {
+        position: fixed;
+        width: 100%; } }
 
 .navbar {
   -webkit-backdrop-filter: blur(10px);
   border: 0;
   z-index: 99; }
-  .navbar .container {
-    border-top: 2px solid #111;
-    border-bottom: 3px solid #111; }
   .navbar form.search input {
     border-radius: 20px; }
   .navbar form.search button {
@@ -5273,13 +5273,6 @@ header {
     font-variant: small-caps; }
   .navbar .navbar-brand {
     font-weight: bold; }
-  .navbar.affix {
-    top: 0;
-    z-index: 99;
-    position: static; }
-    @media (min-width: 1200px) {
-      .navbar.affix {
-        position: fixed; } }
   .navbar .nav li a {
     font-variant: small-caps; }
 

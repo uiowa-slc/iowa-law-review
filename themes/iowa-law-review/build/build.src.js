@@ -2363,7 +2363,7 @@ if (typeof jQuery === 'undefined') {
 }(jQuery);
 
 $( document ).ready(function() {
-	$('.navbar').affix({
+	$('.navbar-container').affix({
 	  offset: { top: $('.navbar').offset().top }
 	}).wrap(function() {
 	  return $('<div></div>', {

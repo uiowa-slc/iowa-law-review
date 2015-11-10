@@ -1,8 +1,4 @@
 header{
-		margin-bottom: 10px;
-	@media (min-width: $screen-md-min) {
-		margin-bottom: 20px;
-	}
 	h1{
 		a{
 			color: #111;
@@ -28,17 +24,22 @@ header{
 }
 
 .navbar-container{
-		padding: 2px 0;
 		border-top: 2px solid #111;
 		border-bottom: 3px solid #111;
+	&.affix{
+		top: 0;
+		z-index: 99;
+		position: static;
+
+		@media (min-width: $screen-lg-min) {
+			position: fixed;
+			width: 100%;
+		}
+	}
 }
 
 .navbar{
 	-webkit-backdrop-filter: blur(10px);
-	.container{
-		border-top: 2px solid #111;
-		border-bottom: 3px solid #111;
-	}
 	border: 0;
 	form.search{
 		input{
@@ -54,14 +55,6 @@ header{
 	}
 
 	z-index: 99;
-	&.affix{
-		top: 0;
-		z-index: 99;
-		position: static;
-		@media (min-width: $screen-lg-min) {
-			position: fixed;
-		}
-	}
 	.nav li a{
 		font-variant: small-caps;
 	}

@@ -12,7 +12,8 @@
 			<p>Latest issue: <a href="latest/">Volume 105: 1 - 5</a></p>
 		</div>
 	
-		<% include Nav %>
+		
 
 	</div>
+	<div class="navbar-container"><% include Nav %></div>
 </header>
