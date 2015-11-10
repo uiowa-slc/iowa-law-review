@@ -5243,12 +5243,16 @@ header h1 {
   @media (min-width: 1200px) {
     header h1 {
       padding-top: 30px;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
       margin: 0;
       font-size: 82px; } }
 
 header .header-subnav-container {
-  font-variant: small-caps; }
+  font-variant: small-caps;
+  font-size: 15px; }
+  @media (min-width: 992px) {
+    header .header-subnav-container {
+      font-size: 19px; } }
 
 .navbar-container {
   border-top: 2px solid #111;
@@ -5275,6 +5279,14 @@ header .header-subnav-container {
     font-weight: bold; }
   .navbar .nav li a {
     font-variant: small-caps; }
+  .navbar .navbar-form .form-control {
+    width: 150px; }
+    @media (min-width: 992px) {
+      .navbar .navbar-form .form-control {
+        width: 175px; } }
+    @media (min-width: 1200px) {
+      .navbar .navbar-form .form-control {
+        width: auto; } }
 
 #myCarousel .item {
   background-size: cover;

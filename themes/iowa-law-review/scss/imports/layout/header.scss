@@ -7,12 +7,13 @@ header{
 			}
 		}
 		font-variant: small-caps;
+
 		@media (min-width: $screen-md-min) {
 			font-size: 64px;
 		}
 		@media (min-width: $screen-lg-min) {
 			padding-top: 30px;
-			padding-bottom: 5px;
+			padding-bottom: 10px;
 			margin: 0;
 			font-size: 82px;
 		}
@@ -20,6 +21,10 @@ header{
 
 	.header-subnav-container{
 		font-variant: small-caps;
+		font-size: 15px;
+		@media (min-width: $screen-md-min) {
+			font-size: 19px;
+		}
 	}
 }
 
@@ -57,5 +62,15 @@ header{
 	z-index: 99;
 	.nav li a{
 		font-variant: small-caps;
+	}
+	.navbar-form .form-control{
+		width: 150px;
+		@media (min-width: $screen-md-min) {
+			width: 175px;
+		}
+		@media (min-width: $screen-lg-min) {
+			width: auto;
+		}
+
 	}
 }
