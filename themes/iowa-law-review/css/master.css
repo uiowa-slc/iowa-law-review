@@ -5232,7 +5232,10 @@ button, .button, .btn {
   font-variant: small-caps; }
 
 header {
-  margin-bottom: 20px; }
+  margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    header {
+      margin-bottom: 20px; } }
   header h1 {
     font-variant: small-caps; }
     header h1 a {

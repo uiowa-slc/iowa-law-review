@@ -9,32 +9,32 @@
       <div class="carousel-inner" role="listbox">
         <div class="item active" style="background: darkgreen">
           <a href="#">
-          <div class="container">
+          <article class="container">
             <div class="carousel-caption">
               <h1>Inventing the Classical Constitution</h1>
               <p><em>Herbert Hovenkamp</em></p>
             </div>
-          </div>
+          </article>
           </a>
         </div>
         <div class="item" style="background: darkred">
           <a href="#">
-            <div class="container">
+            <article class="container">
               <div class="carousel-caption">
                 <h1>Rediscovering the Classical Liberal Constitution: A Reply to Professor Hovenkamp</h1>
                 <p><em>Richard A. Epstein</em></p>
               </div>
-            </div>
+            </article>
           </a>
         </div>
         <div class="item" style="background:darkblue">
           <a href="#">
-            <div class="container">
+            <article class="container">
               <div class="carousel-caption">
                 <h1>Ridesharing in the Sharing Economy: Should Regulators Impose Über Regulations on Uber?</h1>
                 <p><em>Hannah A. Posen</em></p>
               </div>
-            </div>
+            </article>
           </a>
         </div>
       </div>
