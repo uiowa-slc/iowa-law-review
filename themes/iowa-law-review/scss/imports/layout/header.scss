@@ -27,10 +27,14 @@ header{
 		}
 	}
 }
-
+.border-container{
+	padding: 2px 0;
+	border-top: 2px solid #111;
+	border-bottom: 2px solid #111;
+}
 .navbar-container{
 		border-top: 2px solid #111;
-		border-bottom: 3px solid #111;
+		border-bottom: 2px solid #111;
 	&.affix{
 		top: 0;
 		z-index: 99;
@@ -70,6 +74,10 @@ header{
 		}
 		@media (min-width: $screen-lg-min) {
 			width: auto;
+		}
+
+		.btn{
+			background: none;
 		}
 
 	}

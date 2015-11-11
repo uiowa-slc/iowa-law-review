@@ -9,11 +9,15 @@
 			<div class="col-md-2"></div>
 		</div>
 		<div class="header-subnav-container text-center">
-			<p>Latest Print Edition: <a href="latest/">Volume 105, Issue 5</a></p>
+			<p>Latest Print Edition: <a href="latest/">November, 2015</a></p>
 		</div>
 	
 		
 
 	</div>
-	<div class="navbar-container"><% include Nav %></div>
+	<div class="border-container">
+		<div class="navbar-container">
+			<% include Nav %>
+		</div>
+	</div>
 </header>

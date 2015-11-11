@@ -1,6 +1,7 @@
 #myCarousel{
 		
-		.item{	
+		.item{
+			background-image: url('../images/slider-bg.jpg');
 			a{
 				color: white;
 				&:hover{
@@ -15,8 +16,10 @@
 				}
 			}
 			
-			background-size: cover;
-			background-position: 50% 50%;
+			&.has-image{
+				background-size: cover;
+				background-position: 50% 50%;
+			}
 			img{
 				height: 500px;
 			}
