@@ -60,6 +60,9 @@
 .icon-flickr:before {
   content: "\e603"; }
 
+.social-icon:before {
+  color: #2cadb9; }
+
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 html {
   font-family: sans-serif;
@@ -5268,6 +5271,14 @@ button, .button, .btn {
 h2.subheader {
   font-size: 18px; }
 
+a.tag {
+  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background: #f6f6f6;
+  padding: 5px;
+  display: inline-block;
+  text-transform: uppercase; }
+
 header h1 {
   font-variant: small-caps; }
   header h1 a {
@@ -5377,15 +5388,30 @@ header .header-subnav-container {
         #article-carousel .item .carousel-caption h1 {
           font-size: 49px; } }
 
+.Article .byline {
+  margin: 20px 0; }
+  .Article .byline h1 {
+    margin-bottom: 0; }
+
 .Article .cover {
   height: 400px;
   background-size: cover;
   background-position: 50% 50%; }
 
-.Article .article-social-container {
+.Article .article-social-container-main {
   margin: 25px 0; }
-  .Article .article-social-container.affix {
+  .Article .article-social-container-main.affix {
     top: 80px; }
+  @media (min-width: 1200px) {
+    .Article .article-social-container-main .article-social {
+      float: right; }
+      .Article .article-social-container-main .article-social li {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        margin-right: 0;
+        width: 80px; }
+      .Article .article-social-container-main .article-social a {
+        padding: 7px 0 5px; } }
 
 .Article .article-social {
   list-style: none;
@@ -5398,16 +5424,8 @@ header .header-subnav-container {
   .Article .article-social a {
     color: #444;
     display: block; }
-  @media (min-width: 1200px) {
-    .Article .article-social {
-      float: right; }
-      .Article .article-social li {
-        border-bottom: 1px solid #ddd;
-        display: block;
-        margin-right: 0;
-        width: 80px; }
-      .Article .article-social a {
-        padding: 7px 0 5px; } }
+    .Article .article-social a.download {
+      color: #2cadb9; }
 
 .article-card-container article .category {
   font-size: 13px;

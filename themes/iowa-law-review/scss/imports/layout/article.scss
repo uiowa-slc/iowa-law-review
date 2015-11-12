@@ -1,17 +1,42 @@
 .Article{
 
+	.byline{
+		margin: 20px 0;
+		h1{
+			margin-bottom: 0;
+
+		}
+	}
+
 	.cover{
 		height: 400px;
 		background-size: cover;
 		background-position: 50% 50%;
 	}
-	.article-social-container{
+	.article-social-container-main{
 		margin: 25px 0;
 
 		&.affix{
 			top: 80px;
 		}
+
+		.article-social{
+			@media (min-width: $screen-lg-min) {
+				float: right;
+				& li {
+					border-bottom: 1px solid #ddd;
+					display: block;
+					margin-right: 0;
+					width: 80px;
+				}
+				& a {
+					padding: 7px 0 5px;
+				}
+
+			}			
+		}
 	}
+
 	.article-social {
 		list-style: none;
 		margin: 0;
@@ -24,20 +49,11 @@
 		& a {
 			color: #444;
 			display: block;
+			&.download{
+				color: $link-color;
+			}
 		}
-		@media (min-width: $screen-lg-min) {
-			float: right;
-			& li {
-				border-bottom: 1px solid #ddd;
-				display: block;
-				margin-right: 0;
-				width: 80px;
-			}
-			& a {
-				padding: 7px 0 5px;
-			}
 
-		}
 	}
 }
 

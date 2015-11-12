@@ -11,13 +11,23 @@
 	<div class="container article-container">
 		<div class="row">
 			<div class="col-lg-2">
-					<% include ArticleShareIcons %>
+					<div class="article-social-container-main"><% include ArticleShareIcons %></div>
 			</div>
 			<div class="col-lg-8">
-				<h1>$Title</h1>
-				<em>John Smith</em>
+				<% include ArticleByline %>
 				$Content
 				$Form
+
+				<% if $Tags %>
+					<h2 class="subheader">Tags:</h2>
+					<p>
+						<% loop $Tags %>
+							<a class="tag" href="$Link">$Title</a>
+						<% end_loop %>
+					</p>
+				<% end_if %>
+				<div class="article-social-bottom"><% include ArticleShareIcons %></div>
+				<hr />
 			</div>
 			<div class="col-lg-2"></div>
 		</div>
