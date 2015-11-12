@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "ec73c40dcc0d54a749e7640868d03c571079d80d"
+                "reference": "9d5676dcce0b89876a4c6393b46ecd683a2c0dd2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/ec73c40dcc0d54a749e7640868d03c571079d80d",
-                "reference": "ec73c40dcc0d54a749e7640868d03c571079d80d",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/9d5676dcce0b89876a4c6393b46ecd683a2c0dd2",
+                "reference": "9d5676dcce0b89876a4c6393b46ecd683a2c0dd2",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2015-11-11 00:10:07"
+            "time": "2015-11-12 22:35:03"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -1105,12 +1105,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-widgets.git",
-                "reference": "ae90bb15910c59424a533ae0973de750edcce7da"
+                "reference": "2fe849365f2aa6b1213d219ebb51e47e66d144e2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/ae90bb15910c59424a533ae0973de750edcce7da",
-                "reference": "ae90bb15910c59424a533ae0973de750edcce7da",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/2fe849365f2aa6b1213d219ebb51e47e66d144e2",
+                "reference": "2fe849365f2aa6b1213d219ebb51e47e66d144e2",
                 "shasum": ""
             },
             "require": {
@@ -1139,7 +1139,7 @@
                 "silverstripe",
                 "widgets"
             ],
-            "time": "2015-11-09 03:36:54"
+            "time": "2015-11-11 00:57:23"
         },
         {
             "name": "simplepie/simplepie",
