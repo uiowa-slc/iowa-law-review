@@ -14,6 +14,7 @@
 					<div class="article-social-container-main"><% include ArticleShareIcons %></div>
 			</div>
 			<div class="col-lg-8">
+				<h1>$ArticleTitle</h1>
 				<% include ArticleByline %>
 				$Content
 				$Form

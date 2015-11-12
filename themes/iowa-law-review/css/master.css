@@ -5388,11 +5388,6 @@ header .header-subnav-container {
         #article-carousel .item .carousel-caption h1 {
           font-size: 49px; } }
 
-.Article .byline {
-  margin: 20px 0; }
-  .Article .byline h1 {
-    margin-bottom: 0; }
-
 .Article .cover {
   height: 400px;
   background-size: cover;
@@ -5427,13 +5422,17 @@ header .header-subnav-container {
     .Article .article-social a.download {
       color: #2cadb9; }
 
-.article-card-container article .category {
-  font-size: 13px;
-  display: block;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
-  text-transform: uppercase; }
+.byline {
+  margin: 20px 0; }
+  .byline h1 {
+    margin-bottom: 0; }
+  .byline .category {
+    font-size: 13px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-family: "franklin-gothic-urw", Helvetica, Arial, sans-serif;
+    text-transform: uppercase; }
 
 .article-card-container article h1 {
   font-size: 28px;

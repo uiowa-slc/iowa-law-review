@@ -53,14 +53,15 @@
       <div class="row">
         <div class="col-lg-8">
 
-          <h1><a href="#">November 2015</a></h1>
-            <h2 class="smallcaps subheader">Volume 105, Issue 5</h2>
-            <div class="article-card-container">
-              <% include ArticleCard %>
-              <% include ArticleCard %>
-              <% include ArticleCard %>
-              <% include ArticleCard %>
-            </div>
+          <% with $LatestIssue %>
+            <h1><a href="$Link">$Date</a></h1>
+              <h2 class="smallcaps subheader">Volume {$Volume}, Issue {$Number}</h2>
+              <div class="article-card-container">
+                <% loop $Children %>
+                  <% include ArticleCard %>
+                <% end_loop %>
+              </div>
+          <% end_with %>
         </div>
 
         <div class="col-lg-4">
