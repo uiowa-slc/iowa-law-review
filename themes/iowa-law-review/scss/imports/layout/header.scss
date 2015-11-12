@@ -76,9 +76,26 @@ header{
 			width: auto;
 		}
 
-		.btn{
-			background: none;
-		}
 
+	}
+
+	button.btn.btn-default{
+		background: none;
+	}
+	input::-webkit-input-placeholder {
+		padding: 5px 0;
+		font-size: 16px;
+	}
+	input::-moz-placeholder {
+		padding: 5px 0;
+		font-size: 16px;
+	}
+	input:-moz-placeholder {   /* Older versions of Firefox */
+		padding: 5px 0;
+		font-size: 16px;
+	}
+	input:-ms-input-placeholder {
+		padding: 5px 0; 
+		font-size: 16px;
 	}
 }

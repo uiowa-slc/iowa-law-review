@@ -1,10 +1,10 @@
 <% include Header %>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+<div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class=""></li>
-        <li data-target="#myCarousel" data-slide-to="1" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+        <li data-target="#article-carousel" data-slide-to="0" class=""></li>
+        <li data-target="#article-carousel" data-slide-to="1" class="active"></li>
+        <li data-target="#article-carousel" data-slide-to="2" class=""></li>
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active has-image" style="background-image: url('{$ThemeDir}/images/slider-example-1.jpg');">
@@ -39,20 +39,22 @@
           </a>
         </div>
       </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <a class="left carousel-control" href="#article-carousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
       </a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <a class="right carousel-control" href="#article-carousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div>
+</div>
 
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
-          <h2 class="smallcaps">From the latest print edition:</h2>
+
+          <h1><a href="#">November 2015</a></h1>
+            <h2 class="smallcaps subheader">Volume 105, Issue 5</h2>
             <div class="article-card-container">
               <% include ArticleCard %>
               <% include ArticleCard %>
@@ -62,14 +64,14 @@
         </div>
 
         <div class="col-lg-4">
+          <h2 class="smallcaps subheader">Online exclusives:</h2>
             <div class="article-card-container">
               <% include ArticleCard %>
               <% include ArticleCard %>
-              <% include ArticleCard %>
-              <% include ArticleCard %>
+              <p><a href="#" class="smallcaps">Online Volume 105 &rarr;</a></p>
             </div>
-
-
+          <h2 class="smallcaps subheader">Iowa Law Review on Twitter:</h2>
+          <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
         </div>
 
       </div>
