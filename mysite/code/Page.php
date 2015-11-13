@@ -27,15 +27,6 @@ class Page extends SiteTree {
 
 	}
 
-	protected function onBeforeWrite(){
-		parent::onBeforeWrite();
-		$someText = $this->getField('Content');
-		
-
-		$this->setField('Title', $someText);
-
-
-	}
 
 }
 class Page_Controller extends ContentController {

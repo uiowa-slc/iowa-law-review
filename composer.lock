@@ -5,7 +5,6 @@
         "This file is @generated automatically"
     ],
     "hash": "56bc753bd90e08cf499dcfb62ef4a1e5",
-    "content-hash": "079670583c4a4295b76a67b8a5d689e9",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -264,12 +263,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "bcaab87b4ea76dacc41e4ae171b7454a3aad640a"
+                "reference": "c9db210ef94a89561e76cf7b90878ae237e2f7e5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/bcaab87b4ea76dacc41e4ae171b7454a3aad640a",
-                "reference": "bcaab87b4ea76dacc41e4ae171b7454a3aad640a",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/c9db210ef94a89561e76cf7b90878ae237e2f7e5",
+                "reference": "c9db210ef94a89561e76cf7b90878ae237e2f7e5",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +306,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2015-11-13 18:11:17"
+            "time": "2015-11-13 21:19:46"
         },
         {
             "name": "md/silverstripe-flickr",
