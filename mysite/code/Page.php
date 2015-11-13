@@ -1,11 +1,41 @@
 <?php
 class Page extends SiteTree {
 
+
+
 	private static $db = array(
 	);
 
 	private static $has_one = array(
 	);
+
+
+	public static function citationHandler($arguments, $content, $parser = null) {
+
+		
+
+		//use ShortCodeParser::extractTags($this->Content);
+		// $shortcodes = $this->countAllShortcodesInContent(); 
+
+
+
+		// $foundShortcode = $shortcodes[][$content];
+
+		// return '<p>its working <sup> $sometext </sup>&nbsp; </p>';
+
+		return '<p>someText </p>'; 
+
+	}
+
+	protected function onBeforeWrite(){
+		parent::onBeforeWrite();
+		$someText = $this->getField('Content');
+		
+
+		$this->setField('Title', $someText);
+
+
+	}
 
 }
 class Page_Controller extends ContentController {
