@@ -13,7 +13,7 @@
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
-              <p class="smallcaps">From our latest issue</p>
+              <p class="smallcaps">In this issue:</p>
               <h1>$Title</h1>
               <p><em>Herbert Hovenkamp</em></p>
             </div>
@@ -36,12 +36,11 @@
 		<div class="col-lg-8">
 			<h1>$Title</h1>
 			$Content
-			<% loop $Children %>
-				<article>
-					<h1><a href="$Link">$Title</a></h1>
-					$Content.Summary(50)
-				</article>
-			<% end_loop %>
+      <div class="article-card-container">
+  			<% loop $Children %>
+          <% include ArticleCard %>
+  			<% end_loop %>
+      </div>
 			$Form
 		</div>
 	</div>

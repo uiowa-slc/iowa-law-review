@@ -10,4 +10,5 @@
 			<% end_if %>
 		</em>
 	<% end_if %>
+	<br /><span class="smallcaps citation">101 <em>Iowa L.</em> Rev. 55 (2015) </span>
 </div>

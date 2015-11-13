@@ -7,13 +7,13 @@
 		background-size: cover;
 		background-position: 50% 50%;
 	}
+	//Sidebar social icons
 	.article-social-container-main{
 		margin: 25px 0;
 
 		&.affix{
 			top: 80px;
 		}
-
 		.article-social{
 			@media (min-width: $screen-lg-min) {
 				float: right;
@@ -22,15 +22,28 @@
 					display: block;
 					margin-right: 0;
 					width: 80px;
+					a.download{
+					text-align: center;
+					
+					}
 				}
-				& a {
+				& a, span.social-label {
 					padding: 7px 0 5px;
+				}
+				a.download{
+					padding: 3px;
+				}
+				span.social-label {
+					display: block;
+
+
 				}
 
 			}			
 		}
 	}
 
+	//Default horizontal social icons
 	.article-social {
 		list-style: none;
 		margin: 0;
@@ -44,7 +57,10 @@
 			color: #444;
 			display: block;
 			&.download{
-				color: $link-color;
+				color: white;
+				font-family: $font-family-sans-serif;
+				background: $brand-primary;
+				padding: 3px;
 			}
 		}
 
@@ -67,6 +83,11 @@
 	}
 }
 
+.citation{
+	color: #808080;
+	font-size: 14px;
+}
+
 .article-card-container{
 	article{
 
@@ -79,5 +100,9 @@
 			}
 		}
 
+	}
+
+	.byline{
+		margin: 0;
 	}
 }

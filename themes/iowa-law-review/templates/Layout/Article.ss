@@ -10,7 +10,13 @@
 <article>
 	<div class="container article-container">
 		<div class="row">
-			<div class="col-lg-2">
+			<div class="col-lg-10 col-lg-offset-2">
+			$Breadcrumbs
+
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1 col-lg-offset-1">
 					<div class="article-social-container-main"><% include ArticleShareIcons %></div>
 			</div>
 			<div class="col-lg-8">
@@ -20,8 +26,7 @@
 				$Form
 
 				<% if $Tags %>
-					<h2 class="subheader">Tags:</h2>
-					<p>
+					<p><span class="smallcaps">Tagged as:</span>
 						<% loop $Tags %>
 							<a class="tag" href="$Link">$Title</a>
 						<% end_loop %>
