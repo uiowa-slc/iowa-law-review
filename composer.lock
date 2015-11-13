@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "9d5676dcce0b89876a4c6393b46ecd683a2c0dd2"
+                "reference": "bcaab87b4ea76dacc41e4ae171b7454a3aad640a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/9d5676dcce0b89876a4c6393b46ecd683a2c0dd2",
-                "reference": "9d5676dcce0b89876a4c6393b46ecd683a2c0dd2",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/bcaab87b4ea76dacc41e4ae171b7454a3aad640a",
+                "reference": "bcaab87b4ea76dacc41e4ae171b7454a3aad640a",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2015-11-12 22:35:03"
+            "time": "2015-11-13 18:11:17"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -476,12 +476,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "ee9cca0788614f7320478441d38a41e1eb5ad38d"
+                "reference": "bc151e1591d20f3ac66bcc0273fa0b9499f3b2da"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/ee9cca0788614f7320478441d38a41e1eb5ad38d",
-                "reference": "ee9cca0788614f7320478441d38a41e1eb5ad38d",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/bc151e1591d20f3ac66bcc0273fa0b9499f3b2da",
+                "reference": "bc151e1591d20f3ac66bcc0273fa0b9499f3b2da",
                 "shasum": ""
             },
             "require": {
@@ -521,7 +521,7 @@
                 "news",
                 "silverstripe"
             ],
-            "time": "2015-11-09 22:25:41"
+            "time": "2015-11-13 02:36:45"
         },
         {
             "name": "silverstripe/cms",
