@@ -5,6 +5,7 @@
         "This file is @generated automatically"
     ],
     "hash": "56bc753bd90e08cf499dcfb62ef4a1e5",
+    "content-hash": "079670583c4a4295b76a67b8a5d689e9",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -263,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "c9db210ef94a89561e76cf7b90878ae237e2f7e5"
+                "reference": "3f40a6ec3d0f12caef29b81462a67db589d5a6ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/c9db210ef94a89561e76cf7b90878ae237e2f7e5",
-                "reference": "c9db210ef94a89561e76cf7b90878ae237e2f7e5",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/3f40a6ec3d0f12caef29b81462a67db589d5a6ef",
+                "reference": "3f40a6ec3d0f12caef29b81462a67db589d5a6ef",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +307,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2015-11-13 21:19:46"
+            "time": "2015-11-16 22:12:48"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -663,12 +664,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-lumberjack.git",
-                "reference": "b6bc9947f3c2ddee6db2a7fab563e24ca8a9b16c"
+                "reference": "2f499c1df5aff89bf4e0b9e4e76ca1218730fecd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/b6bc9947f3c2ddee6db2a7fab563e24ca8a9b16c",
-                "reference": "b6bc9947f3c2ddee6db2a7fab563e24ca8a9b16c",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-lumberjack/zipball/2f499c1df5aff89bf4e0b9e4e76ca1218730fecd",
+                "reference": "2f499c1df5aff89bf4e0b9e4e76ca1218730fecd",
                 "shasum": ""
             },
             "require": {
@@ -689,7 +690,7 @@
                 }
             ],
             "description": "A module to make managing pages in a GridField easy without losing any of the functionality that you're used to in the CMS.",
-            "time": "2015-11-04 07:20:35"
+            "time": "2015-11-16 02:37:14"
         },
         {
             "name": "silverstripe/mathspamprotection",
@@ -697,12 +698,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-mathspamprotection.git",
-                "reference": "ebd509fdcb1a62fd8c4bf96c2cd60bc1434e1055"
+                "reference": "a1a3227cb8ac60f5acdf4bcb86b1c31245ff4860"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/ebd509fdcb1a62fd8c4bf96c2cd60bc1434e1055",
-                "reference": "ebd509fdcb1a62fd8c4bf96c2cd60bc1434e1055",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/a1a3227cb8ac60f5acdf4bcb86b1c31245ff4860",
+                "reference": "a1a3227cb8ac60f5acdf4bcb86b1c31245ff4860",
                 "shasum": ""
             },
             "require": {
@@ -722,7 +723,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2015-09-19 02:06:09"
+            "time": "2015-11-14 18:56:11"
         },
         {
             "name": "silverstripe/recaptcha",
@@ -1373,12 +1374,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "4105ebdcd01fd04b3e59216fdb412128f9b79c84"
+                "reference": "b21e008b944ad11a12c6c9279b576cb65bf4ce42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/4105ebdcd01fd04b3e59216fdb412128f9b79c84",
-                "reference": "4105ebdcd01fd04b3e59216fdb412128f9b79c84",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/b21e008b944ad11a12c6c9279b576cb65bf4ce42",
+                "reference": "b21e008b944ad11a12c6c9279b576cb65bf4ce42",
                 "shasum": ""
             },
             "require": {
@@ -1405,7 +1406,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-10-13 15:20:27"
+            "time": "2015-11-16 14:54:24"
         }
     ],
     "packages-dev": [],
