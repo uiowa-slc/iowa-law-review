@@ -1,4 +1,4 @@
-<% include Header %>
+
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -48,7 +48,7 @@
         <span class="sr-only">Next</span>
       </a>
 </div>
-
+<% include Header %>
     <div class="container">
       <div class="row">
         <div class="col-lg-8">

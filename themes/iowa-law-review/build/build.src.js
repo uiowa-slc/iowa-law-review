@@ -2403,13 +2403,13 @@ $( document ).ready(function() {
 	});​
 
 
-	// $('.article-social-container').affix({
-	//   offset: { top: $('.article-container').offset().top }
-	// }).wrap(function() {
-	//   return $('<div></div>', {
-	//     height: $(this).outerHeight()
-	//   });
-	// });​
+	$('.article-social-container-main').affix({
+	  offset: { top: $('.article-container').offset().top }
+	}).wrap(function() {
+	  return $('<div></div>', {
+	    height: $(this).outerHeight()
+	  });
+	});​
 
 
 });
