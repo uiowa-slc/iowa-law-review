@@ -1,54 +1,54 @@
-#article-carousel{
-		
-		.item{
-			background-image: url('../images/slider-bg.jpg');
-			a{
-				color: white;
-				&:hover{
-					p { text-decoration: none;}
+#article-carousel {
+	.item {
+		background-image: url("../images/slider-example-1.jpg");
+
+		a {
+			color: white;
+
+			&:hover {
+				p {
+					text-decoration: none;
 				}
 			}
-
-			.container{
-				min-height: 350px;
-				@media (min-width: $screen-lg-min) {
-					min-height: 500px;
-				}
-			}
-			
-			&.has-image{
-				background-size: cover;
-				background-position: 50% 50%;
-			}
-			img{
-				height: 500px;
-			}
-
-			.carousel-caption{
-				position: static;
-
-				@media (min-width: $screen-phone) {
-					position: absolute;
-				}
-				h1{
-					font-size: 36px;
-					line-height: 1.2;
-
-
-					@media (min-width: $screen-md-min) {
-						font-size: 42px;
-						line-height: 1.2;
-					}
-
-					@media (min-width: $screen-lg-min) {
-						font-size: 49px;
-					}
-
-
-				}
-
-			}
-
 		}
 
+		.container {
+			min-height: 350px;
+
+			@media (min-width: $screen-lg-min) {
+				min-height: 500px;
+			}
+		}
+
+		&.has-image {
+			background-size: cover;
+			background-position: 50% 50%;
+		}
+
+		img {
+			height: 500px;
+		}
+
+		.carousel-caption {
+			position: static;
+
+			@media (min-width: $screen-phone) {
+				position: absolute;
+			}
+
+			h1 {
+				font-size: 36px;
+				line-height: 1.2;
+
+				@media (min-width: $screen-md-min) {
+					font-size: 42px;
+					line-height: 1.2;
+				}
+
+				@media (min-width: $screen-lg-min) {
+					font-size: 49px;
+				}
+			}
+		}
+	}
 }

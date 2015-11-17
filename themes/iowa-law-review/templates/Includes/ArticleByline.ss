@@ -1,14 +1,4 @@
 <div class="byline">
-	<% if $Authors %>
-		<em>
-			<% if $Authors.Count == 2 %>
-				<a href="$Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$Authors.Last.Name} <% if $Authors.Last.ArticleNote %>*<% end_if %></a>
-			<% else %>
-				<% loop $Authors %>
-					<a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
-				<% end_loop %>			
-			<% end_if %>
-		</em>
-	<% end_if %>
-	<br /><span class="smallcaps citation">101 <em>Iowa L.</em> Rev. 55 (2015) </span>
+	<% include AuthorList %>
+	<% if $Citation %><div class="smallcaps citation">$Citation</div><% end_if %>
 </div>

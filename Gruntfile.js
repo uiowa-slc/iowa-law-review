@@ -19,7 +19,7 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/css/editor.css' : '<%=globalConfig.themeDir %>/scss/editor.scss'
         },                  // Target
         options: {              // Target options
-          style: 'compressed',
+          outputStyle: 'compressed',
           includePaths: ['<%=globalConfig.themeDir %>/bower_components/bootstrap-sass/assets/stylesheets/', 'division-bar/scss']
         }
       }

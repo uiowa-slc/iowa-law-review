@@ -1,45 +1,60 @@
-.Article{
-
-
-
-	.cover{
+.Article {
+	.cover {
 		height: 400px;
 		background-size: cover;
 		background-position: 50% 50%;
 	}
+
+	.article-nav {
+		h2 {
+			font-variant: small-caps;
+			font-size: 22px;
+			font-weight: normal;
+		}
+	}
+
 	//Sidebar social icons
-	.article-social-container-main{
+	.article-social-container-main {
 		margin: 25px 0;
 
-		&.affix{
-			top: 35px;
+		&.affix {
+			position: static;
 		}
-		.article-social{
+
+		@media (min-width: $screen-lg-min) {
+			&.affix {
+				position: fixed;
+				top: 35px;
+			}
+		}
+
+		.article-social {
 			@media (min-width: $screen-lg-min) {
 				float: right;
+
 				& li {
 					border-bottom: 1px solid #ddd;
 					display: block;
 					margin-right: 0;
 					width: 80px;
-					a.download{
-					text-align: center;
-					
+
+					a.download {
+						text-align: center;
 					}
 				}
+
 				& a, span.social-label {
 					padding: 7px 0 5px;
 				}
-				a.download{
+
+				a.download {
 					padding: 3px;
 				}
+
 				span.social-label {
 					display: block;
-
-
 				}
-
-			}			
+			}
 		}
 	}
 
@@ -49,31 +64,34 @@
 		margin: 0;
 		font-size: 13px;
 		padding: 0;
+
 		& li {
 			display: inline-block;
 			margin-right: 1em;
 		}
+
 		& a {
 			color: #444;
 			display: block;
-			&.download{
+
+			&.download {
 				color: white;
 				font-family: $font-family-sans-serif;
 				background: $brand-primary;
 				padding: 3px;
 			}
 		}
-
 	}
 }
 
-.byline{
+.byline {
 	margin: 20px 0;
-	h1{
-		margin-bottom: 0;
 
+	h1 {
+		margin-bottom: 0;
 	}
-	.category{
+
+	.category {
 		font-size: 13px;
 		display: block;
 		margin-top: 10px;
@@ -83,26 +101,25 @@
 	}
 }
 
-.citation{
+.citation {
 	color: #808080;
 	font-size: 14px;
 }
 
-.article-card-container{
-	article{
-
-		h1{
+.article-card-container {
+	article {
+		h1 {
 			font-size: 28px;
 			margin-top: 10px;
 			margin-bottom: 5px;
-			a{
+
+			a {
 				color: #222;
 			}
 		}
-
 	}
 
-	.byline{
+	.byline {
 		margin: 0;
 	}
 }

@@ -1,34 +1,42 @@
 
+<% include Header %>
+
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#article-carousel" data-slide-to="0" class=""></li>
-        <li data-target="#article-carousel" data-slide-to="1" class="active"></li>
-        <li data-target="#article-carousel" data-slide-to="2" class=""></li>
+      <% loop $LatestIssue.Children.Limit(4) %>
+        <li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if $First %>active<% end_if %>"></li>
+      <% end_loop %>
       </ol>
       <div class="carousel-inner" role="listbox">
-        <div class="item active has-image" style="background-image: url('{$ThemeDir}/images/slider-example-1.jpg');">
-          <a href="#">
+
+      <% with $LatestIssue %>
+        <% loop $Children.Limit(4) %>
+        <div class="item <% if $First %>active<% end_if %>">
+          <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
               <p class="smallcaps">From our latest issue</p>
-              <h1>Inventing the Classical Constitution</h1>
-              <p><em>Herbert Hovenkamp</em></p>
+              <h1>$Title</h1>
+              <% if $Authors %>
+                <em>
+                  <% if $Authors.Count == 2 %>
+                    <a href="$Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$Authors.Last.Name}</a>
+                  <% else %>
+                    <% loop $Authors %>
+                      <a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
+                    <% end_loop %>      
+                  <% end_if %>
+                </em><br />
+              <% end_if %>
             </div>
           </article>
           </a>
         </div>
-        <div class="item">
-          <a href="#">
-            <article class="container">
-              <div class="carousel-caption">
-                <h1>Rediscovering the Classical Liberal Constitution: A Reply to Professor Hovenkamp</h1>
-                <p><em>Richard A. Epstein</em></p>
-              </div>
-            </article>
-          </a>
-        </div>
-        <div class="item has-image" style="background-image: url('{$ThemeDir}/images/slider-example-1.jpg');">
+        <% end_loop %>
+      <% end_with %>
+
+<%--         <div class="item has-image" style="background-image: url('{$ThemeDir}/images/slider-example-1.jpg');">
           <a href="#">
             <article class="container">
               <div class="carousel-caption">
@@ -37,7 +45,7 @@
               </div>
             </article>
           </a>
-        </div>
+        </div> --%>
       </div>
       <a class="left carousel-control" href="#article-carousel" role="button" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
@@ -48,14 +56,15 @@
         <span class="sr-only">Next</span>
       </a>
 </div>
-<% include Header %>
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
 
           <% with $LatestIssue %>
-            <h1><a href="$Link">$Date</a></h1>
+            <div class="issue-header">
+              <h1><a href="$Link">$Date</a></h1>
               <h2 class="smallcaps subheader">Volume {$Volume}, Issue {$Number}</h2>
+            </div>
               <div class="article-card-container">
                 <% loop $Children %>
                   <% include ArticleCard %>

@@ -19,7 +19,8 @@
           <% if $URLSegment != "home" %>
           <li class="<% if $LinkOrSection == "section" %>active<% end_if %>
           <% if $Children %> dropdown<% end_if %>">
-            <a href="$Link" class="<% if $Children %>dropdown-toggle<% end_if %>" <% if $Children %>data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"<% end_if %>>
+            <a href="$Link" class="<% if $Children %>dropdown-toggle<% end_if %>" 
+            <% if $Children %>data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"<% end_if %>>
               $MenuTitle <% if $Children %><span class="caret"></span><% end_if %>
               <% if $LinkOrCurrent == "current" %><span class="sr-only">(current)</span><% end_if %>
             </a>
@@ -29,7 +30,7 @@
                   <li><a href="$Link">$Title</a></li>
                 <% end_loop %>
                 <li role="separator" class="divider"></li>
-                <li><a href="issues/">Issue archive</a></li>
+                <li><a href="$Link">$Title</a></li>
               </ul>
             <% end_if %>
           </li>
