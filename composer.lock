@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "1537e0b474129099edf14dfbbbedbc6facaa64de"
+                "reference": "ab4fdeb38da9a7612c6236a2d9889a3670d70a4f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/1537e0b474129099edf14dfbbbedbc6facaa64de",
-                "reference": "1537e0b474129099edf14dfbbbedbc6facaa64de",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/ab4fdeb38da9a7612c6236a2d9889a3670d70a4f",
+                "reference": "ab4fdeb38da9a7612c6236a2d9889a3670d70a4f",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2015-11-17 15:30:41"
+            "time": "2015-11-17 22:55:58"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -856,12 +856,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "e7fd668474ef78e1ddb8f7d909817a7069473621"
+                "reference": "2ee8123494e365be9b77210a61d43129de95337d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/e7fd668474ef78e1ddb8f7d909817a7069473621",
-                "reference": "e7fd668474ef78e1ddb8f7d909817a7069473621",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/2ee8123494e365be9b77210a61d43129de95337d",
+                "reference": "2ee8123494e365be9b77210a61d43129de95337d",
                 "shasum": ""
             },
             "require": {
@@ -892,7 +892,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2015-11-17 03:07:38"
+            "time": "2015-11-17 18:23:12"
         },
         {
             "name": "silverstripe/staticpublisher",
