@@ -8,8 +8,8 @@
 			</div>
 			<div class="col-md-2"></div>
 		</div>
-		<% if $LatestIssue %>
-			<% with $LatestIssue %>
+		<% if $LatestPrintIssue %>
+			<% with $LatestPrintIssue %>
 			<div class="header-subnav-container text-center">
 				<p>Latest Print Edition: <a href="$Link">$Date</a></p>
 			</div>

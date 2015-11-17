@@ -1,33 +1,41 @@
 <?php
 class Page extends SiteTree {
 
-
-
 	private static $db = array(
 	);
 
 	private static $has_one = array(
 	);
 
-
 	public static function citationHandler($arguments, $content, $parser = null) {
 
-		
-
 		//use ShortCodeParser::extractTags($this->Content);
-		// $shortcodes = $this->countAllShortcodesInContent(); 
-
-
+		// $shortcodes = $this->countAllShortcodesInContent();
 
 		// $foundShortcode = $shortcodes[][$content];
 
 		// return '<p>its working <sup> $sometext </sup>&nbsp; </p>';
 
-		return '<p>someText </p>'; 
+		return '<p>someText </p>';
 
 	}
 
+	public function LatestPrintIssue() {
+		$printIssueHolder = IssueHolder::get()->filter(array('URLSegment' => 'print'))->First();
 
+		if ($printIssueHolder) {
+			$latestIssue = Issue::get()->filter(array('ParentID' => $printIssueHolder->ID))->sort('OriginalPublicationDate')->First();
+			return $latestIssue;
+		}
+	}
+	public function LatestOnlineIssue() {
+		$printIssueHolder = IssueHolder::get()->filter(array('URLSegment' => 'online'))->First();
+
+		if ($printIssueHolder) {
+			$latestIssue = Issue::get()->filter(array('ParentID' => $printIssueHolder->ID))->sort('OriginalPublicationDate')->First();
+			return $latestIssue;
+		}
+	}
 }
 class Page_Controller extends ContentController {
 

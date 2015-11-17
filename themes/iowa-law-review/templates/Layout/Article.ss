@@ -10,7 +10,7 @@
 <article>
 	<div class="container article-container">
 		<div class="row">
-			<div class="col-lg-10 col-lg-offset-3">
+			<div class="col-lg-7 col-lg-offset-3">
 			$Breadcrumbs
 
 			</div>
@@ -20,8 +20,10 @@
 					<div class="article-social-container-main"><% include ArticleShareIcons %></div>
 			</div>
 			<div class="col-lg-7">
-				<h1>$ArticleTitle</h1>
-				<% include ArticleByline %>
+				<div class="article-header">
+					<h1>$ArticleTitle</h1>
+					<% include ArticleByline %>
+				</div>
 				$Content
 				$Form
 
@@ -36,7 +38,7 @@
 				<hr />
 
 				<div class="row article-card-container article-nav">
-					<div class="col-lg-6 text-left">
+					<div class="col-md-6 text-left">
 						<% if $PreviousPage %>
 							<h2>Previous:</h2>
 							<% with $PreviousPage %>
@@ -44,7 +46,7 @@
 							<% end_with %>							
 						<% end_if %>
 					</div>			
-					<div class="col-lg-6 text-right">
+					<div class="col-md-6 text-right">
 						<% if $NextPage %>
 							<h2>Next:</h2>
 							<% with $NextPage %>

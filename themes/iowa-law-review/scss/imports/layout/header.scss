@@ -1,16 +1,19 @@
-header{
-	h1{
-		a{
+header {
+	h1 {
+		a {
 			color: #111;
-			&:hover{
+
+			&:hover {
 				color: #111;
 			}
 		}
+
 		font-variant: small-caps;
 
 		@media (min-width: $screen-md-min) {
 			font-size: 64px;
 		}
+
 		@media (min-width: $screen-lg-min) {
 			padding-top: 30px;
 			padding-bottom: 10px;
@@ -19,23 +22,27 @@ header{
 		}
 	}
 
-	.header-subnav-container{
+	.header-subnav-container {
 		font-variant: small-caps;
 		font-size: 15px;
+
 		@media (min-width: $screen-md-min) {
 			font-size: 19px;
 		}
 	}
 }
-.border-container{
+
+.border-container {
 	padding: 2px 0;
 	border-top: 2px solid #111;
 	border-bottom: 2px solid #111;
 }
-.navbar-container{
-		border-top: 2px solid #111;
-		border-bottom: 2px solid #111;
-	&.affix{
+
+.navbar-container {
+	border-top: 2px solid #111;
+	border-bottom: 2px solid #111;
+
+	&.affix {
 		top: 0;
 		z-index: 99;
 		position: static;
@@ -47,55 +54,74 @@ header{
 	}
 }
 
-.navbar{
+.navbar {
 	-webkit-backdrop-filter: blur(10px);
 	border: 0;
-	form.search{
-		input{
+	z-index: 99;
+
+	@media (min-width: $screen-md-min) {
+		.navbar-nav > li > a {
+			padding-bottom: 13px;
+		}
+	}
+
+	form.search {
+		input {
 			border-radius: 20px;
 		}
-		button{
+
+		button {
 			border: none;
 			font-variant: small-caps;
 		}
 	}
-	.navbar-brand{
+
+	.navbar-brand {
 		font-weight: bold;
 	}
 
-	z-index: 99;
-	.nav li a{
+	.nav li a {
 		font-variant: small-caps;
+
+		.social-icon:before {
+			color: $text-color;
+		}
 	}
-	.navbar-form .form-control{
+
+	.navbar-form .form-control {
 		width: 150px;
+
 		@media (min-width: $screen-md-min) {
 			width: 175px;
 		}
+
 		@media (min-width: $screen-lg-min) {
 			width: auto;
 		}
-
-
 	}
 
-	button.btn.btn-default{
+	button.btn.btn-default {
 		background: none;
 	}
+
 	input::-webkit-input-placeholder {
 		padding: 5px 0;
 		font-size: 16px;
 	}
+
 	input::-moz-placeholder {
 		padding: 5px 0;
 		font-size: 16px;
 	}
-	input:-moz-placeholder {   /* Older versions of Firefox */
+
+	input:-moz-placeholder {
+		/* Older versions of Firefox */
 		padding: 5px 0;
 		font-size: 16px;
 	}
+
 	input:-ms-input-placeholder {
-		padding: 5px 0; 
+		padding: 5px 0;
 		font-size: 16px;
 	}
 }

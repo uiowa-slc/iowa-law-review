@@ -36,6 +36,7 @@
           </li>
           <% end_if %>
         <% end_loop %>
+
       </ul>
       <form class="navbar-form navbar-right search" role="search">
         <div class="form-group">
@@ -43,6 +44,10 @@
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>
+    <ul class="nav navbar-nav navbar-right">
+           <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><span class="social-icon icon-facebook"></span></a></li>
+          <li><a href="https://twitter.com/IowaLawReview" target="_blank"><span class="social-icon icon-twitter"></span></a></li>
+      </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>

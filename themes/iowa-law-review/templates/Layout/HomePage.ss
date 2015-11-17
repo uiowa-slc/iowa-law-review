@@ -58,9 +58,10 @@
 </div>
     <div class="container">
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-7 col-lg-offset-1">
 
-          <% with $LatestIssue %>
+          <% with $LatestPrintIssue %>
+            <h2 class="smallcaps subheader">From the Latest Print Edition:</h2>
             <div class="issue-header">
               <h1><a href="$Link">$Date</a></h1>
               <h2 class="smallcaps subheader">Volume {$Volume}, Issue {$Number}</h2>
@@ -73,12 +74,15 @@
           <% end_with %>
         </div>
 
-        <div class="col-lg-4">
-          <h2 class="smallcaps subheader">From the Online Edition:</h2>
+       <div class="col-lg-3 col-lg-offset-1">
+          <h2 class="smallcaps subheader">From <em>Bulletin</em>, Our Online Edition:</h2>
             <div class="article-card-container">
-              <% include ArticleCard %>
-              <% include ArticleCard %>
-              <p><a href="#" class="smallcaps">Latest Online Edition: Volume 105 &rarr;</a></p>
+              <% with $LatestOnlineIssue %>
+                <% loop $Children.Limit(2) %>
+                  <% include ArticleCard %>
+                <% end_loop %>
+              <% end_with %>
+              <p><a href="#" class="smallcaps">Latest Online Edition: $LatestOnlineIssue.Title &rarr;</a></p>
             </div>
           <h2 class="smallcaps subheader">Iowa Law Review on Twitter:</h2>
           <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>

@@ -33,15 +33,27 @@
 </div>
 <div class="container">
 	<div class="row">
-		<div class="col-lg-8">
-			<h1>$Title</h1>
-			$Content
+		<div class="col-lg-7 col-lg-offset-3" >
+       <div class="issue-header">
+        <h1><a href="$Link">$Date</a></h1>
+        <h2 class="smallcaps subheader">Volume {$Volume}, Issue {$Number}</h2>
+      </div>
       <div class="article-card-container">
   			<% loop $Children %>
           <% include ArticleCard %>
   			<% end_loop %>
       </div>
-			$Form
+
 		</div>
 	</div>
+</div>
+<div class="container">
+  <div class="col-lg-12">
+    <h1 class="text-center">Masthead</h1>
+       <% if $MastheadImage %>
+        <div class="masthead-image-container">
+          <img class="img-responsive" src="$MastheadImage.URL" />
+        </div>
+      <% end_if %>
+  </div>
 </div>
