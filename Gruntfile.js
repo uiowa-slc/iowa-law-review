@@ -32,7 +32,9 @@ module.exports = function(grunt) {
         src: [
           'division-bar/js/division-bar.js',
           '<%=globalConfig.themeDir %>/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
+          '<%=globalConfig.themeDir %>/bower_components/bigfoot/dist/bigfoot.js',
           '<%=globalConfig.themeDir %>/js/app.js'
+
         ],
         dest: '<%=globalConfig.themeDir %>/build/build.src.js'
       }

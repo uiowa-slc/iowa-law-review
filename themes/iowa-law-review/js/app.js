@@ -8,6 +8,7 @@ $( document ).ready(function() {
 	  });
 	});​
 
+	$.bigfoot();
 
 	// $('.article-social-container').affix({
 	//   offset: { top: $('.article-container').offset().top }

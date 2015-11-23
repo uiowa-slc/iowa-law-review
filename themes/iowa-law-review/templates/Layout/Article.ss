@@ -19,6 +19,20 @@
 				$Content
 				$Form
 
+				<% loop $Footnotes %>
+					
+				
+
+				<div class="footnotes"><ol>
+				    <li class="footnote" id="fn:$Number">
+				        <p>$Content<p>
+				    </li>
+				</ol></div>
+
+				<% end_loop %>
+
+
+
 				<% if $Tags %>
 					<h2 class="subheader">Tags:</h2>
 					<p>
