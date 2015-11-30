@@ -26,7 +26,12 @@
 				</div>
 				$Content
 				$Form
-
+				<hr>
+				<h3>Responses to this article:</h3>
+				<% loop $Responses %>
+					<% include ArticleCard %>
+				<% end_loop %>
+				<hr>
 				<% if $Tags %>
 					<p><span class="smallcaps">Tagged as:</span>
 						<% loop $Tags %>
