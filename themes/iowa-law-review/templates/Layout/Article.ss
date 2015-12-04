@@ -24,7 +24,23 @@
 					<h1>$ArticleTitle</h1>
 					<% include ArticleByline %>
 				</div>
-				$Content
+				
+					<!--Summary-->
+					<div>
+						<h4>Summary:</h4></br>
+						$Content
+					</div>
+					<!--Expander-->
+					<% if $ExpandedText.exists() %>
+					<div class="content-container" style="border:1px solid #d3d3d3;">
+						<div class="header" style="background-color:#d3d3d3;padding: 2px;cursor: pointer;font-weight: bold;text-align:center;">
+							<span style="display:inline-block;">&#x25B2 collapse text &#x25B2</span>
+						</div>
+						<div class="content" style="padding:5px;">
+							$ExpandedText
+						</div>
+					</div>
+					<% end_if %>
 				$Form
 				<hr>
 				<h3>Responses to this article:</h3>
