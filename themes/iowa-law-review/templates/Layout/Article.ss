@@ -26,12 +26,23 @@
 				</div>
 				$Content
 				$Form
+
 				<hr>
 				<h3>Responses to this article:</h3>
 				<% loop $Responses %>
 					<% include ArticleCard %>
 				<% end_loop %>
 				<hr>
+				<% loop $Footnotes %>
+					
+
+				<div class="footnotes"><ol>
+				    <li class="footnote" id="fn:$Number">
+				        <p>$Content<p>
+				    </li>
+				</ol></div>
+
+				<% end_loop %>
 				<% if $Tags %>
 					<p><span class="smallcaps">Tagged as:</span>
 						<% loop $Tags %>

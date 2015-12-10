@@ -49,6 +49,6 @@ HtmlEditorConfig::get('cms')->setOption('paste_remove_styles_if_webkit', 'true')
 HtmlEditorConfig::get('cms')->setOption('paste_strip_class_attributes', 'true');
 GD::set_default_quality(80);
 
-ShortcodeParser::get()->register('cite',array('Page','citationHandler'));
+ShortcodeParser::get()->register('footnote',array('Article','footnoteHandler'));
 
 HtmlEditorConfig::get('cms')->addButtonsToLine(2, 'sub', 'sup', 'separator');
