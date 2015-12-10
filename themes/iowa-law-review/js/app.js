@@ -21,18 +21,18 @@ $( document ).ready(function() {
 
 });
 
-$(".header").click(function () {
+$(".expand-header").click(function () {
 
     $header = $(this);
     //getting the next element
     $content = $header.next();
     //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
-    $content.slideToggle(500, function () {
+    $content.toggle(0, function () {
         //execute this after slideToggle is done
         //change text of header based on visibility of content div
         $header.text(function () {
             //change text based on condition
-            return $content.is(":visible") ? "\u25B2 collapse text \u25B2" : "\u25BC read full text \u25BC";
+            return $content.is(":visible") ? "Show less -" : "Show more +";
         });
     });
 
