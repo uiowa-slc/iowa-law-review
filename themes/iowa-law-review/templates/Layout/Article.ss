@@ -49,13 +49,12 @@
 					<% end_if %>
 				$Form
 
-
 				<% if $Responses %>
 				<h3>Responses to this article:</h3>
 				<% loop $Responses %>
 					<% include ArticleCard %>
 				<% end_loop %>
-	
+				<% end_if %>
 				<% loop $Footnotes %>
 				<div class="footnotes"><ol>
 				    <li class="footnote" id="fn:$Number">
@@ -64,8 +63,6 @@
 				</ol></div>
 
 				<% end_loop %>
-
-
 				<div class="article-social-bottom hidden-lg"><% include ArticleShareIcons %></div>
 				<hr />
 
