@@ -52,10 +52,12 @@
 
 				<% if $Responses %>
 				<h3>Responses to this article:</h3>
+				<div class="article-card-container">
 				<% loop $Responses %>
 					<% include ArticleCard %>
 				<% end_loop %>
 				<% end_if %>
+				</div>
 				<% loop $Footnotes %>
 				<div class="footnotes"><ol>
 				    <li class="footnote" id="fn:$Number">
