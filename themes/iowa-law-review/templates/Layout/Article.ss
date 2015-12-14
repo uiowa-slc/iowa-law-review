@@ -20,7 +20,8 @@
 					<div class="article-social-container-main"><% include ArticleShareIcons %></div>
 			</div>
 			<div class="col-lg-7">
-				<div class="article-header">
+				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
+					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>
 					<% include ArticleByline %>
 				</div>

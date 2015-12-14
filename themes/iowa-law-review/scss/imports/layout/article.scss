@@ -1,3 +1,16 @@
+.article-header.has-featured-tag {
+	h1 {
+		margin-top: 0;
+	}
+}
+
+.article-header .featured-tag {
+	text-transform: uppercase;
+	font-family: $font-family-sans-serif;
+	font-size: 11px;
+	color: #888;
+}
+
 .Article {
 	.cover {
 		height: 400px;
@@ -116,6 +129,8 @@
 
 .article-card-container {
 	article {
+		.article-header {}
+
 		h1 {
 			font-size: 28px;
 			margin-top: 10px;
