@@ -30,13 +30,7 @@
 					<div>
 						$Content
 					</div>
-				<% if $Tags %>
-					<p>
-						<% loop $Tags %>
-							<a class="tag" href="$Link">$Title</a>
-						<% end_loop %>
-					</p>
-				<% end_if %>
+
 					<!--Expander-->
 					<% if $ExpandedText %>
 					<div class="expanded-content-container">
@@ -48,6 +42,13 @@
 						</div>
 					</div>
 					<% end_if %>
+				<% if $Tags %>
+					<p>
+						<% loop $Tags %>
+							<a class="tag" href="$Link">$Title</a>
+						<% end_loop %>
+					</p>
+				<% end_if %>
 				$Form
 
 				<% if $Responses %>
