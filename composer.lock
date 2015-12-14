@@ -153,12 +153,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/jonom/silverstripe-focuspoint.git",
-                "reference": "ebcae0e527dc939b92e1d1c10ec30c00336b3ed7"
+                "reference": "542bf376f84a077a709a37fe92717a481986f8dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jonom/silverstripe-focuspoint/zipball/ebcae0e527dc939b92e1d1c10ec30c00336b3ed7",
-                "reference": "ebcae0e527dc939b92e1d1c10ec30c00336b3ed7",
+                "url": "https://api.github.com/repos/jonom/silverstripe-focuspoint/zipball/542bf376f84a077a709a37fe92717a481986f8dc",
+                "reference": "542bf376f84a077a709a37fe92717a481986f8dc",
                 "shasum": ""
             },
             "require": {
@@ -184,7 +184,7 @@
                 "image",
                 "silverstripe"
             ],
-            "time": "2015-11-06 17:11:45"
+            "time": "2015-12-01 16:56:44"
         },
         {
             "name": "jonom/silverstripe-betternavigator",
@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "f83b21cc69a58cb71c0d249de9623fe8db5df2c4"
+                "reference": "b90092250906aaaf7aacae42163680f9dce942c7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/f83b21cc69a58cb71c0d249de9623fe8db5df2c4",
-                "reference": "f83b21cc69a58cb71c0d249de9623fe8db5df2c4",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/b90092250906aaaf7aacae42163680f9dce942c7",
+                "reference": "b90092250906aaaf7aacae42163680f9dce942c7",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2015-11-18 17:51:32"
+            "time": "2015-12-14 01:31:59"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -386,12 +386,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-australia/silverstripe-gridfieldextensions.git",
-                "reference": "ef57799a6898f4eeb1fe3ee2ab1eb2e0f58e5f9f"
+                "reference": "59a90ab385f0d2131daca2944a2f10906d09c918"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/ef57799a6898f4eeb1fe3ee2ab1eb2e0f58e5f9f",
-                "reference": "ef57799a6898f4eeb1fe3ee2ab1eb2e0f58e5f9f",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/59a90ab385f0d2131daca2944a2f10906d09c918",
+                "reference": "59a90ab385f0d2131daca2944a2f10906d09c918",
                 "shasum": ""
             },
             "require": {
@@ -431,7 +431,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-11-17 15:02:18"
+            "time": "2015-12-11 01:09:08"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -1337,12 +1337,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "afffa5b09ea264186b123685fc25bc02194a5cd3"
+                "reference": "e1b94a3bf3379d56ec10db5980451143a5dd0843"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/afffa5b09ea264186b123685fc25bc02194a5cd3",
-                "reference": "afffa5b09ea264186b123685fc25bc02194a5cd3",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/e1b94a3bf3379d56ec10db5980451143a5dd0843",
+                "reference": "e1b94a3bf3379d56ec10db5980451143a5dd0843",
                 "shasum": ""
             },
             "require": {
@@ -1369,7 +1369,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-11-30 19:56:53"
+            "time": "2015-12-10 23:33:08"
         }
     ],
     "packages-dev": [],
