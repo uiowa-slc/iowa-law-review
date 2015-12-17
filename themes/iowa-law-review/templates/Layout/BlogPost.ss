@@ -17,8 +17,6 @@
 
 	$Form
 	$CommentsForm
-				$Content
-				$Form
 			</div>
 			<div class="col-lg-3 col-lg-offset-1">
 	          <% include SideNav %>
