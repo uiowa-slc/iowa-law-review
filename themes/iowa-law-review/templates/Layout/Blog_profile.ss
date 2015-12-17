@@ -2,7 +2,7 @@
 <article>
 	<div class="container">
 		<div class="row">
-			<div class="blog-entry content-container <% if $SideBarView %>unit size3of4<% end_if %>">
+			<div class="blog-entry content-container">
 
 				<% include MemberDetails %>
 
