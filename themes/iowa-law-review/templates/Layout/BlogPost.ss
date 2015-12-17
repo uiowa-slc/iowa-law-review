@@ -2,21 +2,23 @@
 <article>
 	<div class="container">
 		<div class="row">
-			<div class="blog-entry content-container">
-				<article>
-					<h1>$Title</h1>
+			<div class="col-lg-7 col-lg-offset-1">
+			<article>
+		<h1>$Title</h1>
 
-						<% if $FeaturedImage %>
-							<p class="post-image">$FeaturedImage.setWidth(795)</p>
-						<% end_if %>
+		<% if $FeaturedImage %>
+			<p class="post-image">$FeaturedImage.setWidth(795)</p>
+		<% end_if %>
 
-						<div class="content">$Content</div>
+		<div class="content">$Content</div>
 
-						<% include EntryMeta %>
-				</article>
+		<% include EntryMeta %>
+	</article>
 
+	$Form
+	$CommentsForm
+				$Content
 				$Form
-				$CommentsForm
 			</div>
 			<div class="col-lg-3 col-lg-offset-1">
 	          <% include SideNav %>
