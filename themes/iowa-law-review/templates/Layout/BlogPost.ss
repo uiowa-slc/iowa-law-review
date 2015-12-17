@@ -18,10 +18,17 @@
 				$Form
 				$CommentsForm
 			</div>
+			
 			<div class="col-lg-3 col-lg-offset-1">
+				<% if $SideBarView %>
+				<div class="blog-sidebar typography unit size1of4 lastUnit">
+					$SideBarView
+				</div>
+			<% end_if %>
 	          <% include SideNav %>
+	      
 			</div>
+
+
 	</div>
 </article>
-
-
