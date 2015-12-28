@@ -5,7 +5,7 @@
 		<div class="container">
 			<div class="small-8 medium-4 large-3 columns" style="float: left; width: 50%;">
 					
-					<p><a href="$AbsoluteBaseURL"><h2 itemprop="name">$SiteConfig.Title</h2></a></p>
+					<p><a href="$AbsoluteBaseURL"><h3 itemprop="name">$SiteConfig.Title</h3></a></p>
 
 				
 
