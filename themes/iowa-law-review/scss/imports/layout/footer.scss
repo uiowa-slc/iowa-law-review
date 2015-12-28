@@ -1,12 +1,11 @@
 .footer {
 	margin-top: $footer-padding;
-	background: $topbar-base-color;
+	background: #333;
 	color: white;
 	padding: 3em 0 1em .1em;
 	position: relative;
 	padding-top: 60px;
 	font-family: $header-font-family;
-	border: 2px solid $topbar-base-color;
 }
 
 .footer a {
@@ -128,52 +127,6 @@ LINK LISTS
 }
 
 /* ---------------------------------------------------------------
-Newsletter Signup Form
---------------------------------------------------------------- */
-#newsletter {
-	font-size: 14px;
-	margin-bottom: 2em;
-
-	@media (min-width: $break-small) {
-		float: left;
-		width: 50%;
-	}
-
-	@media (min-width: $break-medium) {
-		margin-right: 1em;
-		margin-bottom: 0;
-		width: 260px;
-	}
-}
-
-#newsletter label {
-	display: block;
-	text-transform: uppercase;
-	text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.1);
-}
-
-#newsletter .text {
-	border: 1px solid #716e6a;
-	padding: 2px 5px;
-	width: 80%;
-
-	@media (min-width: $break-small) {
-		width: 70%;
-	}
-
-	@media (min-width: $break-medium) {
-		width: 192px;
-	}
-}
-
-#newsletter .submit {
-	background: #4f4b48;
-	border: 1px solid #716e6a;
-	color: #fff;
-	padding: 2px 5px;
-}
-
-/* ---------------------------------------------------------------
 Social Icons
 --------------------------------------------------------------- */
 .social-icons {
@@ -213,34 +166,4 @@ Social Icons
 	vertical-align: middle;
 }
 
-/* ---------------------------------------------------------------
-LOGOS
---------------------------------------------------------------- */
-.footer-logos {
-	clear: both;
-
-	@media (min-width: $break-medium) {
-		clear: none;
-		float: right;
-	}
-}
-
-.footer-logos a, .footer-logos img {
-	display: block;
-	margin: 0 auto;
-	vertical-align: middle;
-	line-height: 46px;
-
-	@media (min-width: $break-medium) {
-		display: inline-block;
-	}
-}
-
-.footer-logos a {
-	float: left;
-	width: 50%;
-
-	@media (min-width: $break-medium) {
-		padding: 0 5px;
-	}
 }
