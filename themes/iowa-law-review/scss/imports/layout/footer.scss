@@ -1,15 +1,10 @@
 .footer {
-	margin-top: $footer-padding;
-	background: #333;
-	color: white;
-	padding: 3em 0 1em .1em;
-	position: relative;
-	padding-top: 60px;
-	font-family: $header-font-family;
+	background-color: #232323;
+	color: #9a9a9a;
 }
 
 .footer a {
-	color: #fff;
+	color: #2cadb9;
 }
 
 .footer-top {
@@ -17,7 +12,7 @@
 }
 
 .footer-top h3 {
-	color: #fff;
+	color: #9a9a9a;
 	font-size: 16px;
 	font-weight: normal;
 	text-transform: uppercase;
@@ -25,30 +20,8 @@
 }
 
 .footer-bottom {
-	background-color: #84817c;
+	background-color: #232323;
 	padding: 15px 0;
-}
-
-/* ---------------------------------------------------------------
-CONTACT INFO
---------------------------------------------------------------- */
-.footer-contact {
-	@media (min-width: $break-medium) {
-		float: left;
-		width: 50%;
-	}
-}
-
-.footer-contact h3 {
-	font-weight: bold;
-}
-
-.footer-contact p {
-	@media (min-width: $break-medium) {
-		font-size: 14px;
-		line-height: 1.2;
-		margin: 3px 0;
-	}
 }
 
 /* ---------------------------------------------------------------
@@ -91,7 +64,7 @@ LINK LISTS
 
 .footer-links li a {
 	border-left: 1px solid rgba(255, 255, 255, 0.75);
-	color: #fff;
+	color: #9a9a9a;
 	display: block;
 	padding: 6px 0 6px 10px;
 	text-transform: uppercase;
@@ -166,4 +139,27 @@ Social Icons
 	vertical-align: middle;
 }
 
+.footer-logos {
+	clear: both;
+	@media (min-width: $break-medium) {
+		clear: none;
+		float: right;
+	}
+}
+.footer-logos a, .footer-logos img {
+	display: block;
+	margin: 0 auto;
+	vertical-align: middle;
+	line-height: 46px;
+	@media (min-width: $break-medium) {
+		display: inline-block;
+	}
+}
+.footer-logos a {
+	float: left;
+	width: 50%;
+	@media (min-width: $break-medium) {
+		padding: 0 5px;
+	}
+}
 }
