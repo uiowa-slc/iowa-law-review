@@ -6,7 +6,7 @@
 			<div class="small-8 medium-4 large-3 columns" style="float: left; width: 50%;">
 					
 					<p><a href="$AbsoluteBaseURL"><h3 itemprop="name">$SiteConfig.Title</h3></a></p>
-					<p>190 Boyd Law Buldg<br />Iowa City, IA 52242-1113</p>
+					<p>Iowa Law Review <br />190 Boyd Law Buldg<br />Iowa City, IA 52242-1113</p>
 					
 
 			</div>
