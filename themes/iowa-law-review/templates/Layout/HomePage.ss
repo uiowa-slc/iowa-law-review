@@ -4,11 +4,40 @@
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
+
+      <% loop $Announcments %>
+        <li data-target="#article-carousel" data-slide-to="{$Pos}"></li>
+      <% end_loop %>
+
       <% loop $LatestIssue.Children.Limit(4) %>
         <li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if $First %>active<% end_if %>"></li>
       <% end_loop %>
       </ol>
+
       <div class="carousel-inner" role="listbox">
+
+        <% loop $Announcements %>
+          <a href="$Link">
+          <article class="container">
+            <div class="carousel-caption">
+              <p class="smallcaps">From our latest issue</p>
+              <h1>$Title</h1>
+              <% if $Authors %>
+                <em>
+                  <% if $Authors.Count == 2 %>
+                    <a href="$Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$Authors.Last.Name}</a>
+                  <% else %>
+                    <% loop $Authors %>
+                      <a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
+                    <% end_loop %>      
+                  <% end_if %>
+                </em><br />
+              <% end_if %>
+            </div>
+          </article>
+          </a>
+        <% end_loop %>
+
 
       <% with $LatestIssue %>
         <% loop $Children.Limit(4) %>
