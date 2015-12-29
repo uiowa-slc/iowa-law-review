@@ -13,6 +13,10 @@
 }
 
 .Article, .ArticleFromWord {
+	.bigtext-wrapper {
+		overflow-x: visible;
+	}
+
 	.bigtext {
 		overflow-y: hidden;
 
