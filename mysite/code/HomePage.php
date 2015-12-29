@@ -30,7 +30,7 @@ class HomePage extends Page {
 		$bgImagesGridFieldConfig = GridFieldConfig_RelationEditor::create();
 		$bgImagesGridFieldConfig->removeComponentsByType('GridFieldAddExistingAutocompleter');
 
-		$homePageAnnouncementGridField = new GridField("HomePageAnnouncement", "Announcements that overlap the background", HomePageAnnouncement::get(), $gridFieldConfig);
+		$homePageAnnouncementGridField = new GridField("HomePageAnnouncement", "Announcements that come before the latest articles", HomePageAnnouncement::get(), $gridFieldConfig);
 		$f->addFieldToTab("Root.Main", $homePageAnnouncementGridField);
 
 		return $f;
@@ -62,6 +62,7 @@ class HomePage_Controller extends Page_Controller {
 		parent::init();
 
 	}
+
 
 	public function HomePageAnnouncements() {
 		$features = HomePageAnnouncement::get();

@@ -10,39 +10,43 @@
       <% end_loop %>
 
       <% loop $LatestIssue.Children.Limit(4) %>
-        <li data-target="#article-carousel" data-slide-to="{$Pos}"></li>
+        <li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if not $Top.HomePageAnnouncements && $First %>active<% end_if %>"></li>
       <% end_loop %>
       </ol>
 
       <div class="carousel-inner" role="listbox">
 
+      
         <% loop HomePageAnnouncements %>
+          <% with $AssociatedPage %>
           <div class="item <% if $First %>active<% end_if %>">
-          <a href="$Link">
-          <article class="container">
-            <div class="carousel-caption">
-              <h1>$Title</h1>
-              <% if $Authors %>
-                <em>
-                  <% if $Authors.Count == 2 %>
-                    <a href="$Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$Authors.Last.Name}</a>
-                  <% else %>
-                    <% loop $Authors %>
-                      <a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
-                    <% end_loop %>      
-                  <% end_if %>
-                </em><br />
-              <% end_if %>
-            </div>
-          </article>
-          </a>
-        </div>
+            <a href="$Link">
+              <article class="container">
+                <div class="carousel-caption">
+                  <h1>$Title</h1>
+                      <% if $Authors %>
+                        <em>
+                          <% if $Authors.Count == 2 %>
+                            <a href="$Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$Authors.Last.Name}</a>
+                          <% else %>
+                            <% loop $Authors %>
+                              <a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
+                            <% end_loop %>      
+                          <% end_if %>
+                        </em><br />
+                      <% end_if %>
+                </div>
+              </article>
+            </a>
+          </div>
+          <% end_with %>
         <% end_loop %>
+    
 
 
       <% with $LatestIssue %>
         <% loop $Children.Limit(4) %>
-        <div class="item">
+        <div class="item <% if not $Top.HomePageAnnouncements && $First %>active<% end_if %>">
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
