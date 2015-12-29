@@ -27,9 +27,6 @@ class HomePage extends Page {
 		$homePageAnnouncementGridFieldConfig->addComponent(new GridFieldAddNewMultiClass());
 		$homePageAnnouncementGridFieldConfig->removeComponentsByType('GridFieldAddNewButton');
 
-		$bgImagesGridFieldConfig = GridFieldConfig_RelationEditor::create();
-		$bgImagesGridFieldConfig->removeComponentsByType('GridFieldAddExistingAutocompleter');
-
 		$homePageAnnouncementGridField = new GridField("HomePageAnnouncement", "Announcements that come before the latest articles", HomePageAnnouncement::get(), $gridFieldConfig);
 		$f->addFieldToTab("Root.Main", $homePageAnnouncementGridField);
 

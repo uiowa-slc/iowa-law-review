@@ -25,7 +25,7 @@
             <div class="carousel-caption">
               <% with $AssociatedPage %>
                <a href="$Link">
-                <h1>$Title</h1>
+                <h1>$Up.Title</h1>
                   <% if $Authors %>
                     <em>
                       <% if $Authors.Count == 2 %>
