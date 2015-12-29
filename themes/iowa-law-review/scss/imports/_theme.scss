@@ -1,5 +1,11 @@
 body {}
 
+@media print {
+	a[href]:after {
+		content: none;
+	}
+}
+
 .sticky {
 	position: -webkit-sticky;
 	position: -moz-sticky;

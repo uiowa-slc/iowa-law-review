@@ -16,7 +16,7 @@
 			<% end_with %>
 		<% end_if %>
 	</div>
-	<div class="border-container">
+	<div class="border-container hidden-print">
 		<div class="navbar-container">
 			<% include Nav %>
 		</div>
