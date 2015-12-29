@@ -36,6 +36,7 @@ class HomePage extends Page {
 		return $f;
 	}
 
+	
 }
 class HomePage_Controller extends Page_Controller {
 
@@ -61,4 +62,12 @@ class HomePage_Controller extends Page_Controller {
 		parent::init();
 
 	}
+
+	public function HomePageAnnouncements() {
+		$features = HomePageAnnouncement::get();
+
+		return $features;
+
+	}
+
 }

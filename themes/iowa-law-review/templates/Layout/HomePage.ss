@@ -5,22 +5,22 @@
       <!-- Indicators -->
       <ol class="carousel-indicators">
 
-      <% loop $Announcments %>
-        <li data-target="#article-carousel" data-slide-to="{$Pos}"></li>
+      <% loop HomePageAnnouncements %>
+        <li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if $First %>active<% end_if %>"></li>
       <% end_loop %>
 
       <% loop $LatestIssue.Children.Limit(4) %>
-        <li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if $First %>active<% end_if %>"></li>
+        <li data-target="#article-carousel" data-slide-to="{$Pos}"></li>
       <% end_loop %>
       </ol>
 
       <div class="carousel-inner" role="listbox">
 
-        <% loop $Announcements %>
+        <% loop HomePageAnnouncements %>
+          <div class="item <% if $First %>active<% end_if %>">
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
-              <p class="smallcaps">From our latest issue</p>
               <h1>$Title</h1>
               <% if $Authors %>
                 <em>
@@ -36,12 +36,13 @@
             </div>
           </article>
           </a>
+        </div>
         <% end_loop %>
 
 
       <% with $LatestIssue %>
         <% loop $Children.Limit(4) %>
-        <div class="item <% if $First %>active<% end_if %>">
+        <div class="item">
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
