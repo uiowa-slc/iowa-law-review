@@ -27,11 +27,11 @@
 				</div>
 				
 					<!--Summary-->
-					<div class="bigtext-wrapper">
+				
 					<div class="bigtext">
 						$Content
 					</div>
-					</div>
+			
 						<div class="expand-header expand">
 							<span style="display:inline-block;">Show more +</span>
 						</div>

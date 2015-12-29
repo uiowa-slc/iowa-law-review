@@ -13,12 +13,12 @@
 }
 
 .Article, .ArticleFromWord {
-	.bigtext-wrapper {
-		overflow-x: visible;
-	}
+	.bigtext-wrapper {}
 
 	.bigtext {
 		overflow-y: hidden;
+		overflow-x: auto;
+		position: relative;
 
 		/* These are technically the same, but use both */
 		overflow-wrap: break-word;
