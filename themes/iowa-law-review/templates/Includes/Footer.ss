@@ -9,7 +9,19 @@
 							<p >Iowa Law Review <br />190 Boyd Law Buldg<br />Iowa City, IA 52242-1113</p>
 						</div>
 
-						<div class="social-icons">
+						
+				</div>
+				
+				<div class="clearfix footer-links">
+						<ul class="">
+							<% loop Menu(1) %>
+								<li><a href="$Link">$MenuTitle</a></li>
+							<% end_loop %>
+						</ul>
+
+				</div>
+
+				<div class="social-icons">
 				        	<ul>
 									<a href="https://www.facebook.com/IowaLawReview/" title="Facebook" target="_blank">
 										<img src="{$ThemeDir}/images/facebook_circle_gray-32.png" alt="Facebook">
@@ -20,16 +32,6 @@
 									</a>
 								
 							</ul>
-						</div>
-				</div>
-				
-				<div class="clearfix footer-links">
-						<ul class="">
-							<% loop Menu(1) %>
-								<li><a href="$Link">$MenuTitle</a></li>
-							<% end_loop %>
-						</ul>
-
 				</div>
 			</div>
 		</div><!-- end .container -->
