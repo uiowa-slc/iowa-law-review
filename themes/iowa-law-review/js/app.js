@@ -8,7 +8,10 @@ $( document ).ready(function() {
 	  });
 	});​
 
-	$.bigfoot();
+	$.bigfoot({
+		appendPopoversTo: "body"
+	}
+	);
 
 	$('.article-social-container-main').affix({
 	  offset: { top: $('.article-container').offset().top }

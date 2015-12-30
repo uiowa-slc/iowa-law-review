@@ -74,8 +74,10 @@ class ArticleFromWord extends Article {
 				$footnotes = $xpath->query('//a[@href="#_ftnref'.$wordSuperFormattedVal.'"]');
 				//print_r($anchorNodeFormattedVal);
 				$footnoteItem = $footnotes->item(0);
-
+				// if there are any footnotes, proceed:
 				if ($footnoteItem) {
+
+					//footnoteParent probably p tag
 					$footnoteParent = $footnoteItem->parentNode;
 
 					$footnoteValue = $footnoteParent->nodeValue;
@@ -94,8 +96,57 @@ class ArticleFromWord extends Article {
 						$footnoteObject->ArticleID = $this->ID;
 						$footnoteObject->Number    = $anchorNodeFormattedVal;
 						$footnoteObject->Content   = $formattedfnValEncoded;
-						$footnoteObject->write();
+
 						//echo "wrote ".$footnoteObject->Number." <br />";
+
+						//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element and remove it
+						$nextelement = $xpath->query("following-sibling::*[1]", $footnoteParent);
+
+						if ($nextelement->item(0)) {
+							//loop through each sibling element
+							foreach ($nextelement as $nextelementItem) {
+								$class = $nextelementItem->getAttribute('class');
+								$href  = $nextelementItem->getAttribute('href');
+								//does the sibling have the following class:
+								if ($class == '1StQuoteFN') {
+
+									$content = $footnoteObject->Content;
+									$content .= '<br /><blockquote>'.$nextelementItem->nodeValue.'</blockquote>';
+
+									//check the sibling's following siblings
+									$nextnext = $xpath->query("following-sibling::*[1]", $nextelementItem);
+									foreach ($nextnext as $nextnextItem) {
+										$value = $nextnextItem->nodeValue;
+										//print_r($value);
+
+										//does the following sibling have Id. in it?
+										if (0 === strpos($value, 'Id.')) {
+											//print_r($value.'<br />');
+											$content .= '<br />'.$nextnextItem->nodeValue;
+											$nextnextItem->parentNode->removeChild($nextnextItem);
+										}
+
+									}
+									$nextelementItem->parentNode->removeChild($nextelementItem);
+									$footnoteObject->Content = $content;
+								} else {
+									$firstChild = $nextelementItem->childNodes->item(0);
+
+									//print_r($nextelementItem->childNodes->item(0));
+									$firstChildHref  = $firstChild->getAttribute('href');
+									$firstChildValue = $firstChild->nodeValue;
+
+									if (strpos($firstChildHref, '#_ftnref') == false) {
+										$content .= '<br />'.$nextelementItem->nodeValue;
+									}
+
+								}
+
+							}
+						}
+
+						//then write:
+						$footnoteObject->write();
 					}
 
 					$footnoteParent->parentNode->removeChild($footnoteParent);
@@ -106,16 +157,15 @@ class ArticleFromWord extends Article {
 
 		//Check dom for existing manually-entered superscripts E.g., <sup>1</sup>
 		$dom = $this->parseManualSuperscripts($dom);
+
 		return $dom;
 	}
 
 	protected function onBeforeWrite() {
 
 		$summary = $this->Content;
-		//$full    = $this->ExpandedText;
 
 		$this->Content = $this->parseWordSuperscriptsFootnotes($summary);
-		//$this->ExpandedText = $this->parseWordSuperscriptsFootnotes($full);
 
 		parent::onBeforeWrite();
 
