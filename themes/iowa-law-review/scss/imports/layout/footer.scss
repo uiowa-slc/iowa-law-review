@@ -1,6 +1,6 @@
 .footer {
 	background-color: #232323;
-	color: #FFFFFF;
+	color: #FAFAFA;
 	font-family: franklin-gothic-urw ,Helvetica , Arial, sans-serif;
 }
 
@@ -10,43 +10,49 @@
 
 .footer-top-text {
 	float: left;
-	width: 50%;
+	width: 25%;
+}
+
+.footer-top {
+	padding-top: 15px;
+	padding-bottom: -20px;
 }
 
 .iowa-law-review {
 	font-family: IowaLawReview, Georgia, 'Times New Roman', serif;
 	font-variant: small-caps;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.social-icons {
+	float: left;
+	width: 20%;
+	padding-top: 25px;
 }
 
 .footer-links {
 	float: left;
-	width: 50%;
+	width: 20%;
 	padding: 1em 1em 1em;
 }
 
 .footer-links ul {
-	border-left: 1px solid rgba(255, 255, 255, 0.75);
+	border-left: 1px solid #9a9a9a;
 	list-style: none;
+}
+
+.bar {
+	border-top-color: #9a9a9a;
 }
 
 .footer-bottom {
 	background-color: #232323;
-	padding: 15px 0;
+	padding-bottom: 15px;
+	padding-top: 0px;
 }
 
 .rights {
 	float: left;
 	width: 33%;
-}
-
-.social-icons {
-	float: left;
-	width: 33%;
-}
-
-.footer-logos {
-	float: left;
-	width: 33%;
-	padding-top: 10px;
-	margin-top: -20px;
 }
