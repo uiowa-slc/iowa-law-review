@@ -100,48 +100,57 @@ class ArticleFromWord extends Article {
 						//echo "wrote ".$footnoteObject->Number." <br />";
 
 						//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element and remove it
-						$nextelement = $xpath->query("following-sibling::*[1]", $footnoteParent);
-
+						//$nextelement = $xpath->query("following-sibling::*[1]", $footnoteParent);
+						$nextelement = $xpath->query('following-sibling::*', $footnoteParent);
 						if ($nextelement->item(0)) {
 							//loop through each sibling element
+							//$nextChild = $nextelement->item(0)->childNodes->item(0);
 							foreach ($nextelement as $nextelementItem) {
-								$class = $nextelementItem->getAttribute('class');
-								$href  = $nextelementItem->getAttribute('href');
-								//does the sibling have the following class:
-								if ($class == '1StQuoteFN') {
-
-									$content = $footnoteObject->Content;
-									$content .= '<br /><blockquote>'.$nextelementItem->nodeValue.'</blockquote>';
-
-									//check the sibling's following siblings
-									$nextnext = $xpath->query("following-sibling::*[1]", $nextelementItem);
-									foreach ($nextnext as $nextnextItem) {
-										$value = $nextnextItem->nodeValue;
-										//print_r($value);
-
-										//does the following sibling have Id. in it?
-										if (0 === strpos($value, 'Id.')) {
-											//print_r($value.'<br />');
-											$content .= '<br />'.$nextnextItem->nodeValue;
-											$nextnextItem->parentNode->removeChild($nextnextItem);
-										}
-
-									}
-									$nextelementItem->parentNode->removeChild($nextelementItem);
-									$footnoteObject->Content = $content;
-								} else {
-									$firstChild = $nextelementItem->childNodes->item(0);
-
-									//print_r($nextelementItem->childNodes->item(0));
-									$firstChildHref  = $firstChild->getAttribute('href');
-									$firstChildValue = $firstChild->nodeValue;
-
-									if (strpos($firstChildHref, '#_ftnref') == false) {
-										$content .= '<br />'.$nextelementItem->nodeValue;
-									}
-
+								$nextClass = $nextelementItem->getAttribute('class');
+								$nextHref  = $nextelementItem->getAttribute('href');
+								$nextChild = $nextelementItem->childNodes->item(0);
+								if ($nextChild->nodeType == 1) {
+									break;
 								}
 
+								$content = $footnoteObject->Content;
+								//does the sibling have the following class:
+
+								if (($nextClass == '1StQuoteFN') && ($nextChild->nodeType == 1)) {
+									$content .= '<br />'.$nextelementItem->nodeValue;
+									//$nextelementItem->parentNode->removeChild($nextelementItem);
+
+									// $footnoteObject->Content = $content;
+									//$nextChild = $nextelementItem->next_sibling->childNodes->item(1);
+									//break;
+								}
+
+								if ($nextChild->nodeType == 3) {
+
+									//$children = $xpath->query("descendant::*[@href]", $nextelementItem);
+									//print_r($children->item(0));
+									//$firstChild = $nextelementItem->childNodes->item(0);
+									//print_r($nextelementItem->nodeType);
+									//$firstChildHref  = $firstChild->getAttribute('href');
+									//$firstChildValue = $firstChild->nodeValue;
+									//print_r($firstChild);
+									//print_r($nextelementItem->nodeValue.': '.$firstChildHref.'<br />');
+
+									// if ($firstChild) {
+									// 	echo 'hey';
+									$content .= '<br />'.$nextChild->nodeValue;
+									//$nextelementItem->parentNode->removeChild($nextelementItem);
+									// 	$footnoteObject->Content = $content;
+									// } else {
+									// 	echo 'no';
+									// }
+
+									$nextChild = $nextelement->item(1)->childNodes->item(0);
+
+								} else {
+
+								}
+								$footnoteObject->Content = $content;
 							}
 						}
 
