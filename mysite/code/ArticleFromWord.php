@@ -52,7 +52,10 @@ class ArticleFromWord extends Article {
 
 			//$anchorNodeFormattedVal = str_replace(array('[', ']'), array('', ''), $anchorNode->nodeValue);
 			//print_r($anchorNode->nodeValue);
-			$wordSuperFormattedVal = str_replace('#_ftn', '', $wordSuperscript->nodeValue);
+
+			//Superscript value, more accurate/easier to parse than anchor/footnote value (no braces eg [3])
+			$wordSuperHash         = explode('#', $wordSuperscript->nodeValue);
+			$wordSuperFormattedVal = str_replace('_ftn', '', $wordSuperHash[1]);
 
 			//Parent node formatted value is the anchor's value, with the [] braces removed. E.g. *,1,2,3,4,etc
 			$anchorNodeFormattedVal = str_replace(array('[', ']'), array('', ''), $anchorNode->nodeValue);
@@ -71,7 +74,7 @@ class ArticleFromWord extends Article {
 				$anchorNode->nodeValue = $anchorNodeFormattedVal;
 
 				//We need to minimize number of xpath queries by maybe caching these and not doing it nested in the wordsuperscripts foreach loop
-				$footnotes = $xpath->query('//a[@href="#_ftnref'.$wordSuperFormattedVal.'"]');
+				$footnotes = $xpath->query('//a[contains(@href,"#_ftnref'.$wordSuperFormattedVal.'")]');
 				//print_r($anchorNodeFormattedVal);
 				$footnoteItem = $footnotes->item(0);
 				// if there are any footnotes, proceed:
@@ -123,6 +126,7 @@ class ArticleFromWord extends Article {
 									// $footnoteObject->Content = $content;
 									//$nextChild = $nextelementItem->next_sibling->childNodes->item(1);
 									//break;
+									$nextelementItem->parentNode->removeChild($nextelementItem);
 								}
 
 								if ($nextChild->nodeType == 3) {
@@ -146,6 +150,7 @@ class ArticleFromWord extends Article {
 									// }
 
 									$nextChild = $nextelement->item(1)->childNodes->item(0);
+									$nextelementItem->parentNode->removeChild($nextelementItem);
 
 								} else {
 
