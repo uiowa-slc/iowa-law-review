@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "d8068f7e110a168ff41e0b1afc48205d7cd773ba"
+                "reference": "d06762c9189767531bfce691746e48e3cd9cbea3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/d8068f7e110a168ff41e0b1afc48205d7cd773ba",
-                "reference": "d8068f7e110a168ff41e0b1afc48205d7cd773ba",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/d06762c9189767531bfce691746e48e3cd9cbea3",
+                "reference": "d06762c9189767531bfce691746e48e3cd9cbea3",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2015-12-29 19:29:54"
+            "time": "2016-01-02 22:22:38"
         },
         {
             "name": "md/silverstripe-flickr",
