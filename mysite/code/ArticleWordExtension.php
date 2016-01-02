@@ -1,15 +1,10 @@
 <?php
-class ArticleFromWord extends Article {
+class ArticleWordExtension extends DataExtension {
 
-	private static $singular_name = 'Article From Word Document';
-	private static $plural_name   = 'Articles From Word Documents';
-
-	public function getCMSFields() {
-		$fields = parent::getCMSFields();
+	public function updateCMSFields(FieldList $fields) {
 
 		$fields->renameField('Content', 'Paste full Word document below, remove the Author information and place it in the "Article Info" tab:');
-		$fields->removeByName('ExpandedText');
-		return $fields;
+
 	}
 
 	protected function parseManualSuperscripts($dom) {
@@ -92,11 +87,11 @@ class ArticleFromWord extends Article {
 					//print_r($footnoteValue->parentNode);
 					//print_r($footnotes);
 
-					$footnoteTest = Footnote::get()->filter(array('Number' => $wordSuperFormattedVal, 'ArticleID' => $this->ID))->First();
+					$footnoteTest = Footnote::get()->filter(array('Number' => $wordSuperFormattedVal, 'ArticleID' => $this->owner->ID))->First();
 
 					if (!isset($footnoteTest)) {
 						$footnoteObject            = new Footnote();
-						$footnoteObject->ArticleID = $this->ID;
+						$footnoteObject->ArticleID = $this->owner->ID;
 						$footnoteObject->Number    = $anchorNodeFormattedVal;
 						$footnoteObject->Content   = $formattedfnValEncoded;
 
@@ -175,25 +170,14 @@ class ArticleFromWord extends Article {
 		return $dom;
 	}
 
-	protected function onBeforeWrite() {
+	public function onBeforeWrite() {
+		$owner   = $this->owner;
+		$summary = $owner->Content;
 
-		$summary = $this->Content;
-
-		$this->Content = $this->parseWordSuperscriptsFootnotes($summary);
+		$owner->Content = $this->parseWordSuperscriptsFootnotes($summary);
 
 		parent::onBeforeWrite();
 
-	}
-
-}
-
-class ArticleFromWord_Controller extends Article_Controller {
-
-	public function init() {
-
-		//$this->parseWordSuperscriptsFootnotes($this->Content);
-
-		parent::init();
 	}
 
 }

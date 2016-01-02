@@ -10,4 +10,6 @@ Page:
 Page_Controller:
   extensions:
     - PublicationPage_Controller
-
+Article:
+  extensions:
+    - ArticleWordExtension
