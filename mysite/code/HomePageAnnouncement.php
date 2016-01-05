@@ -3,23 +3,23 @@
 class HomePageAnnouncement extends DataObject {
 
 	private static $db = array(
-		"Title" => "Varchar(155)",
-		"Content" => "HTMLText",
-		"SortOrder" => "Int",
-		"ExternalLink" => "Text",
+		"Title"           => "Varchar(155)",
+		"Content"         => "HTMLText",
+		"SortOrder"       => "Int",
+		"ExternalLink"    => "Text",
 		"UseExternalLink" => "Boolean",
 
 	);
 
 	private static $has_one = array(
 		"AssociatedPage" => "SiteTree",
-		"Image" => "Image",
+		"Image"          => "Image",
 	);
 
 	private static $default_sort = "SortOrder";
 
-	private static $singular_name = "Announement";
-	private static $plural_name = "Announcements";
+	private static $singular_name = "Announcement";
+	private static $plural_name   = "Announcements";
 
 	function getCMSFields() {
 		$fields = new FieldList();

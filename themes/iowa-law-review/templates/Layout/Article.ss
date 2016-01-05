@@ -17,7 +17,7 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-1 col-lg-offset-2">
-					<div class="article-social-container-main"><% include ArticleShareIcons %></div>
+					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
 			</div>
 			<div class="col-lg-7">
 				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
@@ -27,21 +27,17 @@
 				</div>
 				
 					<!--Summary-->
-					<div>
+				
+					<div class="bigtext">
 						$Content
 					</div>
-
-					<!--Expander-->
-					<% if $ExpandedText %>
-					<div class="expanded-content-container">
-						<div class="expand-header">
+			
+						<div class="expand-header expand">
 							<span style="display:inline-block;">Show more +</span>
 						</div>
-						<div class="content">
-							$ExpandedText
+						<div class="expand-header contract hide">
+							<span style="display:inline-block;">Show less -</span>
 						</div>
-					</div>
-					<% end_if %>
 				<% if $Tags %>
 					<p>
 						<% loop $Tags %>
@@ -52,21 +48,24 @@
 				$Form
 
 				<% if $Responses %>
-				<h3>Responses to this article:</h3>
-				<div class="article-card-container">
-				<% loop $Responses %>
-					<% include ArticleCard %>
-				<% end_loop %>
+					<h3>Responses to this article:</h3>
+					<div class="article-card-container">
+						<% loop $Responses %>
+							<% include ArticleCard %>
+						<% end_loop %>
+					</div>
 				<% end_if %>
-				</div>
-				<% loop $Footnotes %>
-				<div class="footnotes"><ol>
-				    <li class="footnote" id="fn:$Number">
-				        <p>$Content<p>
-				    </li>
-				</ol></div>
 
-				<% end_loop %>
+				
+				<div class="footnotes">
+					<ol>
+						<% loop $Footnotes %>
+				    	<li class="footnote" id="fn:$Number">
+				        	<p>$Content<p>
+				    	</li>
+				    	<% end_loop %>
+					</ol>
+				</div>
 				<div class="article-social-bottom hidden-lg"><% include ArticleShareIcons %></div>
 				<hr />
 
