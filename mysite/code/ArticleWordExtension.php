@@ -170,11 +170,40 @@ class ArticleWordExtension extends DataExtension {
 		return $dom;
 	}
 
+	protected function parseTables($content) {
+		$dom              = new DOMDocument;
+		$contentConverted = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
+		@$dom->loadHTML($contentConverted);
+
+		$xpath = new DOMXPath($dom);
+
+		//Parse the tables
+		$tables = $xpath->query('//table');
+		//print_r($wordSuperscripts);
+
+		foreach ($tables as $table) {
+			$table->removeAttribute('style');
+			$table->removeAttribute('width');
+
+			$tds = $xpath->query('//td', $table);
+
+			foreach ($tds as $td) {
+				$td->removeAttribute('style');
+				$td->removeAttribute('width');
+			}
+		}
+
+		return $dom->saveXML();
+	}
+
 	public function onBeforeWrite() {
 		$owner   = $this->owner;
 		$summary = $owner->Content;
 
-		$owner->Content = $this->parseWordSuperscriptsFootnotes($summary);
+		$summary = $this->parseWordSuperscriptsFootnotes($summary);
+		$summary = $this->parseTables($summary);
+
+		$owner->Content = $summary;
 
 		parent::onBeforeWrite();
 
