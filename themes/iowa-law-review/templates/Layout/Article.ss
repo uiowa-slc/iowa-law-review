@@ -69,27 +69,32 @@
 				<div class="article-social-bottom hidden-lg"><% include ArticleShareIcons %></div>
 				<hr />
 
-				<div class="row article-card-container article-nav">
-					<div class="col-md-6 text-left">
-						<% if $PreviousPage %>
-							<h2>Previous:</h2>
-							<% with $PreviousPage %>
-								<% include ArticleCard %>
-							<% end_with %>							
-						<% end_if %>
-					</div>			
-					<div class="col-md-6 text-right">
-						<% if $NextPage %>
-							<h2>Next:</h2>
-							<% with $NextPage %>
-								<% include ArticleCard %>
-							<% end_with %>
-						<% end_if %>
-					</div>
-				</div>
+
 
 			</div>
 			<div class="col-lg-2"></div>
 		</div>
 	</div>
+		<div class="article-nav-container">
+			<div class="container-fluid">
+					<div class="row article-card-container article-nav">
+						<div class="col-md-6 text-left">
+							<% if $PreviousPage %>
+								<h2><a href="$PreviousPage.Link">Previous:</a></h2>
+								<% with $PreviousPage %>
+									<% include ArticleCard %>
+								<% end_with %>							
+							<% end_if %>
+						</div>			
+						<div class="col-md-6 text-right">
+							<% if $NextPage %>
+								<h2><a href="$Next.Link">Next:</a></h2>
+								<% with $NextPage %>
+									<% include ArticleCard %>
+								<% end_with %>
+							<% end_if %>
+						</div>
+					</div>
+			</div>
+		</div>
 </article>

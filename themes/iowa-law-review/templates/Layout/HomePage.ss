@@ -100,10 +100,10 @@
         <div class="col-lg-7 col-lg-offset-1">
 
           <% with $LatestPrintIssue %>
-            <h2 class="smallcaps subheader">From the Latest Print Edition:</h2>
+            <h2 class="smallcaps subheader"><a href="$Link">From the Latest Print Edition:</a></h2>
             <div class="issue-header">
-              <h1><a href="$Link">$Date</a></h1>
-              <h2 class="smallcaps subheader">Volume {$Volume}, Issue {$Number}</h2>
+              <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
+              <p class="smallcaps subheader">$Date</a></p>
             </div>
               <div class="article-card-container">
                 <% loop $Children %>
