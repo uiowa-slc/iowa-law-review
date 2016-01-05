@@ -3,7 +3,6 @@
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import "blog";
 
 // Core variables and mixins
 @import "imports/variables";
@@ -67,6 +66,7 @@
 @import "uiowa-bar-bootstrap";
 
 @import "imports/theme";
+@import "imports/layout/blog";
 @import "imports/layout/footer";
 @import "imports/layout/header";
 @import "imports/layout/issue";

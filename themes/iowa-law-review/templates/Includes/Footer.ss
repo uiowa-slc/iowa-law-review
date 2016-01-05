@@ -5,8 +5,8 @@
 			<div class="footer-top">
 				<div class="small-8 medium-4 large-3 columns">
 						<div class="footer-top-text">
-							<div class="iowa-law-review"><a href="$AbsoluteBaseURL"><h3>$SiteConfig.Title</h3></a></div>
-							<p >Iowa Law Review <br />190 Boyd Law Buldg<br />Iowa City, IA 52242-1113</p>
+							<div class="iowa-law-review"><h3><a href="$AbsoluteBaseURL">$SiteConfig.Title</a></a></h3></div>
+							<p >Iowa Law Review <br />190 Boyd Law Building<br />Iowa City, IA 52242-1113</p>
 						</div>
 
 						

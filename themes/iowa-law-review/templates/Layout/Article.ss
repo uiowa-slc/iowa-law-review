@@ -75,8 +75,8 @@
 			<div class="col-lg-2"></div>
 		</div>
 	</div>
-		<div class="article-nav-container">
-			<div class="container-fluid">
+
+			<div class="article-nav-container container-fluid">
 					<div class="row article-card-container article-nav">
 						<div class="col-md-6 text-left">
 							<% if $PreviousPage %>
@@ -95,6 +95,6 @@
 							<% end_if %>
 						</div>
 					</div>
-			</div>
+		
 		</div>
 </article>
