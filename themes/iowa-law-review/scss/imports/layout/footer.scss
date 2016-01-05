@@ -1,11 +1,12 @@
 .footer {
 	background-color: #232323;
 	color: #F0F0F0;
-	font-family: franklin-gothic-urw ,Helvetica , Arial, sans-serif;
+	margin-top: 60px;
 }
 
 .footer a {
 	color: #9a9a9a;
+	font-variant: small-caps;
 }
 
 .footer-top-text {
@@ -38,12 +39,12 @@
 }
 
 .footer-links ul {
-	border-left: 1px solid #9a9a9a;
+	border-left: 1px solid #494949;
 	list-style: none;
 }
 
 .bar {
-	border-top-color: #9a9a9a;
+	border-top-color: #494949;
 	margin-top: 5px;
 }
 
