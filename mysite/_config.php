@@ -49,3 +49,4 @@ HtmlEditorConfig::get('cms')->setOption('paste_remove_styles_if_webkit', 'true')
 HtmlEditorConfig::get('cms')->setOption('paste_strip_class_attributes', 'true');
 GD::set_default_quality(80);
 HtmlEditorConfig::get('cms')->addButtonsToLine(2, 'sub', 'sup', 'separator');
+HtmlEditorConfig::get('cms')->removeButtons('pasteword');
