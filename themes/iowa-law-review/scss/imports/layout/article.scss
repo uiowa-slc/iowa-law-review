@@ -19,8 +19,28 @@
 .Article, .ArticleFromWord {
 	.bigtext-wrapper {}
 
-	.bigtext {
+	.table-responsive {
+		@media (min-width: $screen-lg-min) {
+			margin-left: -50%;
+			max-width: 150%;
+		}
+
+		z-index: 99;
+
+		table {
+			td {
+				background: #fafafa;
+			}
+		}
+	}
+
+	div.bigtext {
 		overflow-y: hidden;
+
+		&.expanded {
+			overflow-y: visible;
+			height: auto;
+		}
 
 			/*	overflow-y: hidden;
 				overflow-x: auto;

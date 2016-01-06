@@ -3057,8 +3057,8 @@ $( document ).ready(function() {
 	  });
 	});​
 
-
   $( "table" ).wrap( "<div class='table-responsive'></div>" );
+  //$( ".table-responsive" ).wrap( "<div class='breakout'></div>" );
   $( "table" ).addClass('table')
 
 
@@ -3082,15 +3082,18 @@ if ($('.bigtext p').length > 5){
     $text = $(this).prev();
  
     $text.css({
-      'height': $text.attr('data-fullheight')
+      //'height': $text.attr('data-fullheight')
+      'height' : 'auto'
     });
+
+    $text.addClass('expanded');
     $(this).next('.contract').removeClass('hide');
     $(this).addClass('hide');
   });
  
   $('.contract').on('click', function(e){
     $text = $(this).prev().prev();
- 
+  $text.removeClass('expanded');
     $text.css({
       'height': $text.attr('data-miniheight')
     });

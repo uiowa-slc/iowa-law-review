@@ -35,10 +35,10 @@
 	@import "bootstrap/utilities";
 	@import "bootstrap/responsive-utilities";
 
-	p {
-		font-family: $font-family-base;
-		font-size: $font-size-base;
-	}
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+
+	p {}
 }
 
 body.mceContentBody a.ss-broken {

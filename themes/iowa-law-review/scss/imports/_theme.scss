@@ -1,5 +1,6 @@
 body {}
-
+html,body { //overflow-x:hidden;
+ }
 @media print {
 	a[href]:after {
 		content: none;
@@ -36,3 +37,48 @@ a.tag {
 	text-transform: uppercase;
 	color: #888;
 }
+
+  /**
+     * 1 Position the wrapper relative to the parent element 
+     * 2 Make the wrapper fit the content height 
+     * 3 Set the width to match the width of the viewport (100vm) 
+     * 4 Push the wapper to the center of the parent element
+     * 
+     * Note! Remember to add html,body { overflow-x:hidden; } to 
+     *       prevent horizontal scrolling 
+     *
+     * Note! If the left and right padding of your wrapper are
+     *       not the same – adjust the .breakout margin-left
+     * breakout-margin-left: (wrapper-padding-right - wrapper-padding-left)/2
+     */ 
+    .breakout {
+      position:relative;
+      display:table;
+      width:100vw; 
+      left:50%;
+    }
+        /**
+     * Generic content style 
+     * 1 Position the content relative to the wrapper 
+     * 2 Center the content  
+     * 3 Pull the content -50% to the left and hereby 
+     *   back to the center of the page 
+     */ 
+    .breakout > * {
+      position:relative;
+      margin-left:auto; 
+      margin-right:auto; 
+      left:-50%;
+    }
+    
+      
+    /**
+     * Custom content style
+     * Note! min-width will cause cropping 
+     */
+    .breakout > img {
+      display:block;
+      width:100%;
+      max-width:960px;
+      min-width:320px;
+    }  

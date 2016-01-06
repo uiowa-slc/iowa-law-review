@@ -28,10 +28,10 @@ $popover-max-width: 100% !default;
 $popover-max-height: 15em !default;
 
 // Maximum size of the content area
-$popover-color-background: rgb(250, 250, 250) !default;
+$popover-color-background: rgb(255, 255, 255) !default;
 
 // Color of the popover background
-$popover-border-radius: 0.5em !default;
+$popover-border-radius: 0;
 
 // Radius of the corners of the popover
 $popover-border: 1px solid rgb(195, 195, 195) !default;
@@ -139,7 +139,7 @@ $popover-transition-default-timing-function: ease !default;
 // KEY VARIABLES
 // =============================================================================
 
-$button-height: 2em !default;
+$button-height: 1.5em !default;
 
 // The total height of the button
 $button-width: auto !default;
@@ -148,7 +148,7 @@ $button-width: auto !default;
 $button-inner-circle-size: 0.25em !default;
 
 // Total height/width of the ellipsis circles
-$button-border-radius: 0.3em !default;
+$button-border-radius: 0 !default;
 
 // Border radius on the button itself
 $button-left-margin: 0.2em !default;
@@ -164,7 +164,7 @@ $button-inner-circle-left-margin: 1 * $button-inner-circle-size !default;
 
 // Space between the ellipsis circles
 
-$button-color: rgb(110, 110, 110) !default;
+$button-color: rgb(200, 200, 200) !default;
 
 // Background color of the button
 $button-hovered-color: $button-color !default;
