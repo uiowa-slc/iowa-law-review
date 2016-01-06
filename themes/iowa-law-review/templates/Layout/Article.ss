@@ -27,17 +27,21 @@
 				</div>
 				
 					<!--Summary-->
-				
 					<div class="bigtext">
 						$Content
 					</div>
-			
+					
 						<div class="expand-header expand">
 							<span style="display:inline-block;">Show more +</span>
 						</div>
 						<div class="expand-header contract hide">
 							<span style="display:inline-block;">Show less -</span>
 						</div>
+
+				<% if $ArticleExcerpt %>
+					<a class="smallcaps" href="$PrintableArticle.Link" target="_blank">Download PDF</a>
+				<% end_if %>
+
 				<% if $Tags %>
 					<p>
 						<% loop $Tags %>
