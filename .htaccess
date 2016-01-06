@@ -249,3 +249,4 @@ FileETag None
     ExpiresByType image/svg+xml                         "access plus 1 month"
 
 </IfModule>
+php_value max_execution_time 1000

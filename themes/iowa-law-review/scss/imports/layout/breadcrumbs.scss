@@ -5,11 +5,23 @@
 	font-size: 12px;
 	margin: 0;
 	padding: 13px 1em 10px 0;
-	border-bottom: 1px solid #ddd;
-	a{
+
+	//border-bottom: 1px solid #ddd;
+	a {
 		color: #808080;
 	}
 }
-.breadcrumbs li{ display: inline;}
-.breadcrumbs li:after{ content: "\25B8"; display: inline-block; padding: 0 6px 0 10px;}
-.breadcrumbs li:last-child:after{content: "";}
+
+.breadcrumbs li {
+	display: inline;
+}
+
+.breadcrumbs li:after {
+	content: "\25B8";
+	display: inline-block;
+	padding: 0 6px 0 10px;
+}
+
+.breadcrumbs li:last-child:after {
+	content: "";
+}

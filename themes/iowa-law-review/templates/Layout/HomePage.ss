@@ -4,15 +4,54 @@
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-      <% loop $LatestIssue.Children.Limit(4) %>
+
+      <% loop HomePageAnnouncements %>
         <li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if $First %>active<% end_if %>"></li>
       <% end_loop %>
+
+      <% loop $LatestIssue.Children.Limit(4) %>
+        <li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if not $Top.HomePageAnnouncements && $First %>active<% end_if %>"></li>
+      <% end_loop %>
       </ol>
+
       <div class="carousel-inner" role="listbox">
+
+      
+        
+      
+      <% loop HomePageAnnouncements %>
+        <div class="item <% if $First %>active<% end_if %>">
+          <article class="container">
+            <div class="carousel-caption">
+              <% with $AssociatedPage %>
+               <a href="$Link">
+                <h1>$Up.Title</h1>
+                  <% if $Authors %>
+                    <em>
+                      <% if $Authors.Count == 2 %>
+                       <a href="$Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$Authors.Last.Name}</a>
+                      <% else %>
+                        <% loop $Authors %>
+                          <a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
+                        <% end_loop %>      
+                     <% end_if %>
+                    </em><br />
+                  <% end_if %>
+               </a>
+              <% end_with %>
+            </div>
+          </article>
+        </div>
+      <% end_loop %>
+      
+    
+
+    
+
 
       <% with $LatestIssue %>
         <% loop $Children.Limit(4) %>
-        <div class="item <% if $First %>active<% end_if %>">
+        <div class="item <% if not $Top.HomePageAnnouncements && $First %>active<% end_if %>">
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
@@ -61,10 +100,10 @@
         <div class="col-lg-7 col-lg-offset-1">
 
           <% with $LatestPrintIssue %>
-            <h2 class="smallcaps subheader">From the Latest Print Edition:</h2>
+            <h2 class="smallcaps subheader"><a href="$Link">From the Latest Print Edition:</a></h2>
             <div class="issue-header">
-              <h1><a href="$Link">$Date</a></h1>
-              <h2 class="smallcaps subheader">Volume {$Volume}, Issue {$Number}</h2>
+              <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
+              <p class="smallcaps subheader">$Date</a></p>
             </div>
               <div class="article-card-container">
                 <% loop $Children %>
@@ -75,17 +114,7 @@
         </div>
 
        <div class="col-lg-3 col-lg-offset-1">
-          <h2 class="smallcaps subheader">From <em>Bulletin</em>, Our Online Edition:</h2>
-            <div class="article-card-container">
-              <% with $LatestOnlineIssue %>
-                <% loop $Children.Limit(2) %>
-                  <% include ArticleCard %>
-                <% end_loop %>
-              <% end_with %>
-              <p><a href="#" class="smallcaps">Latest Online Edition: $LatestOnlineIssue.Title &rarr;</a></p>
-            </div>
-          <h2 class="smallcaps subheader">Iowa Law Review on Twitter:</h2>
-          <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
+          <% include SideNav %>
         </div>
 
       </div>

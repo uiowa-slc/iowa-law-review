@@ -2,7 +2,7 @@
 
 	<ul class="article-social">
 		<% if $PrintableArticle %>
-			<li><a class="download" href="$PrintableArticle.URL">Download full article</a></li>
+			<li><a class="smallcaps" href="$PrintableArticle.URL" target="_blank"><img src="$PrintableArticle.Icon" /> Download</a></li>
 		<% end_if %>
 		<li class="smallcaps text-center"><span class="social-label">Share:</span></li>
 		<li>

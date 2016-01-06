@@ -7,6 +7,33 @@ class HomePage extends Page {
 	private static $has_one = array(
 	);
 
+
+
+	public function getCMSFields() {
+		$f = parent::getCMSFields();
+
+		$f->removeByName("Content");
+		$f->removeByName("BackgroundImage");
+		$f->removeByName("InheritSidebarItems");
+		$f->removeByName("SidebarLabel");
+		$f->removeByName("SidebarItem");
+
+		$gridFieldConfig = GridFieldConfig_RecordEditor::create();
+		$gridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
+
+		$homePageAnnouncementGridFieldConfig = GridFieldConfig_RecordEditor::create();
+		$homePageAnnouncementGridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
+
+		$homePageAnnouncementGridFieldConfig->addComponent(new GridFieldAddNewMultiClass());
+		$homePageAnnouncementGridFieldConfig->removeComponentsByType('GridFieldAddNewButton');
+
+		$homePageAnnouncementGridField = new GridField("HomePageAnnouncement", "Announcements that come before the latest articles", HomePageAnnouncement::get(), $gridFieldConfig);
+		$f->addFieldToTab("Root.Main", $homePageAnnouncementGridField);
+
+		return $f;
+	}
+
+	
 }
 class HomePage_Controller extends Page_Controller {
 
@@ -32,4 +59,13 @@ class HomePage_Controller extends Page_Controller {
 		parent::init();
 
 	}
+
+
+	public function HomePageAnnouncements() {
+		$features = HomePageAnnouncement::get();
+
+		return $features;
+
+	}
+
 }

@@ -1,5 +1,5 @@
 <% if Pages.Count > 1 && not $BackgroundImage %>
-	<ul class="breadcrumbs smallcaps">
+	<ul class="breadcrumbs smallcaps hidden-print">
 		<li><a href="$Baseref">Home</a></li>
 		<% loop Pages %>
 			<% if Last %>
