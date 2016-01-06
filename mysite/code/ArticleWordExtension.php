@@ -10,19 +10,31 @@ class ArticleWordExtension extends DataExtension {
 	protected function parseManualSuperscripts($dom) {
 		foreach ($dom->getElementsByTagName('sup') as $node) {
 
-			$nodeInitValue = $node->nodeValue;
-			$node->setAttribute('id', 'fnref:'.$nodeInitValue);
+			if ($node->hasChildNodes()) {
+				if ($node->firstChild->nodeType == 3) {
+					$nodeInitValue = $node->nodeValue;
+					$node->setAttribute('id', 'fnref:'.$nodeInitValue);
 
-			$node->nodeValue = null;
+					$node->nodeValue = null;
 
-			$newANode = $dom->createElement('a', $nodeInitValue);
-			$newANode->setAttribute('href', '#fn:'.$nodeInitValue);
-			$newANode->setAttribute('rel', 'footnote');
+					$newANode = $dom->createElement('a', $nodeInitValue);
+					$newANode->setAttribute('href', '#fn:'.$nodeInitValue);
+					$newANode->setAttribute('rel', 'footnote');
 
-			$node->appendChild($newANode);
+					$node->appendChild($newANode);
+					$footnoteTest = Footnote::get()->filter(array('Number' => $nodeInitValue, 'ArticleID' => $this->owner->ID))->First();
 
-			$dom->saveXML($node);
-
+					if (!isset($footnoteTest)) {
+						$footnote                  = new Footnote();
+						$footnoteObject            = new Footnote();
+						$footnoteObject->ArticleID = $this->owner->ID;
+						$footnoteObject->Number    = $nodeInitValue;
+						$footnoteObject->Content   = '['.$nodeInitValue.'].';
+						$footnoteObject->write();
+					}
+					$dom->saveXML($node);
+				}
+			}
 		}
 		return $dom->saveXML();
 	}
