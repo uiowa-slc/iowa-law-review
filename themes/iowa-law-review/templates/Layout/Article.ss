@@ -39,7 +39,7 @@
 						</div>
 
 				<% if $ArticleExcerpt %>
-					<a href="$PrintableArticle.Link" target="_blank">Download PDF</a>
+					<a href="$PrintableArticle.Link" target="_blank"><img src="framework/images/app_icons/pdf_32.gif">Download PDF</a>
 				<% end_if %>
 
 				<% if $Tags %>
