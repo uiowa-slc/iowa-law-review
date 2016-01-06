@@ -39,7 +39,7 @@
 						</div>
 
 				<% if $ArticleExcerpt %>
-					<a class="smallcaps" href="$PrintableArticle.Link" target="_blank">Download PDF</a>
+					<a href="$PrintableArticle.Link" target="_blank">Download PDF</a>
 				<% end_if %>
 
 				<% if $Tags %>
