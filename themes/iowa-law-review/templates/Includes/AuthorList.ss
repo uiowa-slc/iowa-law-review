@@ -13,7 +13,7 @@
 			<a href="$Authors.First.Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %><% end_if %></a>$Authors.First.Asterisks and <a href="$Authors.Last.Link">{$Authors.Last.Name}<% if $Authors.Last.ArticleNote %><% end_if %></a>$Authors.Last.Asterisks
 		<% else %>
 			<% loop $Authors %>
-				<a href="$Link">$Name</a> $Asterisks<% if not $Last %>, <% end_if %>
+				<a href="$Link">$Name</a>$Asterisks<% if not $Last %>, <% end_if %>
 			<% end_loop %>			
 		<% end_if %>
 	</em><br />
