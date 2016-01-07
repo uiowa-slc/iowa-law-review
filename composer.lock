@@ -55,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "b1a938a75dbbd5bed80e62bb67c6f63969d67996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b1a938a75dbbd5bed80e62bb67c6f63969d67996",
+                "reference": "b1a938a75dbbd5bed80e62bb67c6f63969d67996",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
+            "time": "2016-01-07 09:11:10"
         },
         {
             "name": "jonom/focuspoint",
@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "83f8997abe5ee56ff9e8f0c36cac3e490ed98eca"
+                "reference": "4d68f461605bb5939f02d977c48227a089e5ba62"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/83f8997abe5ee56ff9e8f0c36cac3e490ed98eca",
-                "reference": "83f8997abe5ee56ff9e8f0c36cac3e490ed98eca",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/4d68f461605bb5939f02d977c48227a089e5ba62",
+                "reference": "4d68f461605bb5939f02d977c48227a089e5ba62",
                 "shasum": ""
             },
             "require": {
@@ -306,7 +306,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2016-01-07 06:19:55"
+            "time": "2016-01-07 16:01:19"
         },
         {
             "name": "md/silverstripe-flickr",
