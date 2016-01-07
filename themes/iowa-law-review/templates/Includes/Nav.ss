@@ -24,9 +24,9 @@
               $MenuTitle <% if $Children %><span class="caret"></span><% end_if %>
               <% if $LinkOrCurrent == "current" %><span class="sr-only">(current)</span><% end_if %>
             </a>
-            <% if $Children %>
+            <% if $SortedChildren %>
               <ul class="dropdown-menu">
-                <% loop $Children.Limit(5) %>
+                <% loop $SortedChildren.Limit(5) %>
                   <li><a href="$Link">$Title</a></li>
                 <% end_loop %>
                 <li role="separator" class="divider"></li>
