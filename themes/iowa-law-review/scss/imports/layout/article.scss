@@ -19,6 +19,10 @@
 .Article, .ArticleFromWord {
 	.bigtext-wrapper {}
 
+	.author-notes {
+		font-size: 13px;
+	}
+
 	.table-responsive {
 		@media (min-width: $screen-lg-min) {
 			margin-left: -50%;

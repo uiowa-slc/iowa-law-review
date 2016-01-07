@@ -1,12 +1,6 @@
 <?php
 class ArticleWordExtension extends DataExtension {
 
-	public function updateCMSFields(FieldList $fields) {
-
-		$fields->renameField('Content', 'Paste full Word document below, remove the Author information and place it in the "Article Info" tab:');
-
-	}
-
 	protected function parseManualSuperscripts($dom) {
 		foreach ($dom->getElementsByTagName('sup') as $node) {
 
@@ -68,13 +62,12 @@ class ArticleWordExtension extends DataExtension {
 			$anchorNodeFormattedVal = str_replace(array('[', ']'), array('', ''), $anchorNode->nodeValue);
 
 			//only change the superscript values if our anchor's value isn't a (non-canonical) footnote (aka ones with an asterisk, probably an author note).
-			if (strpos($anchorNodeFormattedVal, '*') == false) {
+			if (is_numeric($wordSuperFormattedVal)) {
 				//Create a new superscript node one node above the anchor (probably the p tag with class "FootNote")
 				$newSupNode = $dom->createElement('sup', '');
 				$anchorNode->parentNode->replaceChild($newSupNode, $anchorNode);
 
 				$newSupNode->appendChild($anchorNode);
-				//print_r($anchorNodeInitValue);
 
 				$wordSuperscript->nodeValue = '#fn:'.$anchorNodeFormattedVal;
 				$anchorNode->setAttribute('rel', 'footnote');
@@ -82,7 +75,7 @@ class ArticleWordExtension extends DataExtension {
 
 				//We need to minimize number of xpath queries by maybe caching these and not doing it nested in the wordsuperscripts foreach loop
 				$footnotes = $xpath->query('//a[contains(@href,"#_ftnref'.$wordSuperFormattedVal.'")]');
-				//print_r($anchorNodeFormattedVal);
+
 				$footnoteItem = $footnotes->item(0);
 				// if there are any footnotes, proceed:
 				if ($footnoteItem) {
@@ -91,13 +84,8 @@ class ArticleWordExtension extends DataExtension {
 					$footnoteParent = $footnoteItem->parentNode;
 
 					$footnoteValue = $footnoteParent->nodeValue;
-					//$formattedfnVal = str_replace($anchorNodeInitValue.'.', '', $footnoteValue);
 					$formattedfnValEncoded = htmlentities($footnoteValue, null, 'utf-8');
 					$formattedfnValEncoded = str_replace('&nbsp;', '', $formattedfnValEncoded);
-					//$formattedfnValEncoded = str_replace('&nbsp;', '', $formattedfnValEncoded);
-
-					//print_r($footnoteValue->parentNode);
-					//print_r($footnotes);
 
 					$footnoteTest = Footnote::get()->filter(array('Number' => $wordSuperFormattedVal, 'ArticleID' => $this->owner->ID))->First();
 
@@ -107,14 +95,11 @@ class ArticleWordExtension extends DataExtension {
 						$footnoteObject->Number    = $anchorNodeFormattedVal;
 						$footnoteObject->Content   = $formattedfnValEncoded;
 
-						//echo "wrote ".$footnoteObject->Number." <br />";
 
 						//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element and remove it
-						//$nextelement = $xpath->query("following-sibling::*[1]", $footnoteParent);
 						$nextelement = $xpath->query('following-sibling::*', $footnoteParent);
 						if ($nextelement->item(0)) {
 							//loop through each sibling element
-							//$nextChild = $nextelement->item(0)->childNodes->item(0);
 							foreach ($nextelement as $nextelementItem) {
 								$nextClass = $nextelementItem->getAttribute('class');
 								$nextHref  = $nextelementItem->getAttribute('href');
@@ -128,34 +113,11 @@ class ArticleWordExtension extends DataExtension {
 
 								if (($nextClass == '1StQuoteFN') && ($nextChild->nodeType == 1)) {
 									$content .= '<br />'.$nextelementItem->nodeValue;
-									//$nextelementItem->parentNode->removeChild($nextelementItem);
-
-									// $footnoteObject->Content = $content;
-									//$nextChild = $nextelementItem->next_sibling->childNodes->item(1);
-									//break;
 									$nextelementItem->parentNode->removeChild($nextelementItem);
 								}
 
 								if ($nextChild->nodeType == 3) {
-
-									//$children = $xpath->query("descendant::*[@href]", $nextelementItem);
-									//print_r($children->item(0));
-									//$firstChild = $nextelementItem->childNodes->item(0);
-									//print_r($nextelementItem->nodeType);
-									//$firstChildHref  = $firstChild->getAttribute('href');
-									//$firstChildValue = $firstChild->nodeValue;
-									//print_r($firstChild);
-									//print_r($nextelementItem->nodeValue.': '.$firstChildHref.'<br />');
-
-									// if ($firstChild) {
-									// 	echo 'hey';
 									$content .= '<br />'.$nextChild->nodeValue;
-									//$nextelementItem->parentNode->removeChild($nextelementItem);
-									// 	$footnoteObject->Content = $content;
-									// } else {
-									// 	echo 'no';
-									// }
-
 									$nextChild = $nextelement->item(1)->childNodes->item(0);
 									$nextelementItem->parentNode->removeChild($nextelementItem);
 
