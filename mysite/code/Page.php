@@ -63,16 +63,6 @@ class Page_Controller extends ContentController {
 	public function init() {
 		parent::init();
 
-		$array = array(
-			'100-1',
-			'101-6',
-			'102-4',
-			'101-1',
-			'100-2'
-		);
-
-		natsort($array);
-		print_r($array);
 
 	}
 	public function Breadcrumbs($maxDepth = 20, $unlinked = false, $stopAtPageType = false, $showHidden = false) {
