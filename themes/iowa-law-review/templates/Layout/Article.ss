@@ -77,15 +77,17 @@
 					$JointAuthorNotes
 				<% end_if %>
 				<% loop $Authors %>
-					$Asterisks $Name
-					<% if $BiographicalDetails %>
-						$BiographicalDetails
-					<% end_if %>
-					<% if $ArticleNote %>
-						$ArticleNote
-					<% end_if %>
-					<% if not $Last %>
-						<hr />
+						<% if $BiographicalDetails || $ArticleNote %>
+						$Asterisks
+						<% if $BiographicalDetails %>
+							$BiographicalDetails
+						<% end_if %>
+						<% if $ArticleNote %>
+							$ArticleNote
+						<% end_if %>
+						<% if not $Last %>
+							<hr />
+						<% end_if %>
 					<% end_if %>
 				<% end_loop %>
 			</div>
