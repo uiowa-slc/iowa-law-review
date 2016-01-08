@@ -7,13 +7,13 @@
 
 					<div class="latest-issue">
 			          <% with $LatestPrintIssue %>
-			            <h2 class="smallcaps subheader"><a href="$Link">From the Latest Print Edition:</a></h2>
+			            <h2 class="smallcaps subheader"><a href="$Link">Latest Print Edition:</a></h2>
 			            <div class="issue-header">
 			              <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
 			              <p class="smallcaps subheader">$Date</a></p>
 			            </div>
 			              <div class="article-card-container">
-			                <% loop $Children.Limit(1) %>
+			                <% loop $Children.Limit(2) %>
 			                  <% include ArticleCard %>
 			                  $Content.LimitWordCount(80)
 			                  <h2 class="smallcaps subheader"><a href="$Link">See full article</a></h2>
@@ -36,45 +36,34 @@
 					</div>-->
 
 						
-						<div class="volume-holder">
-								<li style="list-style: none;"><a data-toggle="collapse" href="#collapse4" style="color: black;" class="smallcaps">Volume #</a></li>
-									<div id="collapse4" class="panel-collapse collapse issue-holder">
-								    	
-								        <li class="list-group-item" style="list-style: none;" >
+					<div class="volume-holder">
+						<li style="list-style: none;"><a data-toggle="collapse" href="#collapse4" class="smallcaps">
+						<div class="volume-title">Volume #</div></a></li>
 
-								        <a style="color: black;" data-toggle="collapse" href="#collapse5" class="smallcaps">Issue #</a></li>
-										<div id="collapse5" class="panel-collapse collapse article-holder">
-											
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-											
-										</div>
-
-								       
-								        <li class="list-group-item" style="list-style: none;">
-								        <a style="color: black;" data-toggle="collapse" href="#collapse6" class="smallcaps">Issue #</a></li>
-										<div id="collapse6" class="panel-collapse collapse article-holder">
-											
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-											
-										</div>
-								     
-								        <li class="list-group-item" style="list-style: none;">
-								        <a style="color: black;" data-toggle="collapse" href="#collapse7" class="smallcaps">Issue #</a></li>
-										<div id="collapse7" class="panel-collapse collapse article-holder">
-											
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-												<li class="list-group-item" style="list-style: none;"><a href="#">Article #</a></li>
-											
-										</div>
-								        
-								    
+							<div id="collapse4" class="panel-collapse collapse issue-holder">
+							<li class="list-group-item" style="list-style: none;">
+								<a data-toggle="collapse" href="#collapse5" class="smallcaps">Issue # {Date}</a></li>
+								<div id="collapse5" class="panel-collapse collapse article-holder">
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article # {Author}</a></li>
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article # {Author}</a></li>
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article # {Author}</a></li>
 								</div>
-					  	</div>
+							<!--<li class="list-group-item" style="list-style: none; border: 2px solid black;">
+								<a data-toggle="collapse" href="#collapse6" class="smallcaps">Issue #</a></li>
+								<div id="collapse6" class="panel-collapse collapse article-holder">
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article #</a></li>
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article #</a></li>
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article #</a></li>
+								</div>
+							<li class="list-group-item" style="list-style: none;">
+								<a data-toggle="collapse" href="#collapse7" class="smallcaps">Issue #</a></li>
+								<div id="collapse7" class="panel-collapse collapse article-holder">
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article #</a></li>
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article #</a></li>
+									<li class="list-group-item" style="list-style: none;"><a href="#" class="smallcaps">Article #</a></li>
+								</div>-->
+							</div>
+					</div>
 					  	
 				$Form
 
