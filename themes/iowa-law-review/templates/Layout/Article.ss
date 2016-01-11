@@ -7,24 +7,24 @@
 		</div>
 
 	<% end_if %>
-<article>
+<article role="main">
 	<div class="container article-container">
 		<div class="row">
-			<div class="col-lg-7 col-lg-offset-3">
+			<div class="col-lg-7 col-lg-offset-2">
 			$Breadcrumbs
-
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-lg-1 col-lg-offset-2">
-					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
-			</div>
-			<div class="col-lg-7">
 				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
 					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>
 					<% include ArticleByline %>
 				</div>
+				
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-1 col-lg-offset-1">
+					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
+			</div>
+			<div class="col-lg-7">
 				
 					<!--Summary-->
 					<div class="bigtext">
@@ -76,7 +76,25 @@
 
 
 			</div>
-			<div class="col-lg-2"></div>
+			<div class="col-lg-2 col-lg-offset-1 author-notes">
+				<% if JointAuthorNotes %>
+					$JointAuthorNotes
+				<% end_if %>
+				<% loop $Authors %>
+						<% if $BiographicalDetails || $ArticleNote %>
+						$Asterisks
+						<% if $BiographicalDetails %>
+							$BiographicalDetails
+						<% end_if %>
+						<% if $ArticleNote %>
+							$ArticleNote
+						<% end_if %>
+						<% if not $Last %>
+							<hr />
+						<% end_if %>
+					<% end_if %>
+				<% end_loop %>
+			</div>
 		</div>
 	</div>
 

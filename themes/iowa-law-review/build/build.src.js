@@ -3048,7 +3048,7 @@ $( document ).ready(function() {
 
 	$('.article-social-container-main').affix({
 	  offset: { 
-      top: $('.article-container').offset().top,
+      top: $('.bigtext').offset().top + $('.navbar').outerHeight(true),
       bottom: ($('footer').outerHeight(true) + $('.article-nav-container').outerHeight(true))
      }
 	}).wrap(function() {

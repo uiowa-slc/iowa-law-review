@@ -55,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046"
+                "reference": "b1a938a75dbbd5bed80e62bb67c6f63969d67996"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/bd9b14f094c89c8b5804a4e41edeb7853bb85046",
-                "reference": "bd9b14f094c89c8b5804a4e41edeb7853bb85046",
+                "url": "https://api.github.com/repos/composer/installers/zipball/b1a938a75dbbd5bed80e62bb67c6f63969d67996",
+                "reference": "b1a938a75dbbd5bed80e62bb67c6f63969d67996",
                 "shasum": ""
             },
             "require": {
@@ -145,7 +145,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2015-10-29 23:28:48"
+            "time": "2016-01-07 09:11:10"
         },
         {
             "name": "jonom/focuspoint",
@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "d06762c9189767531bfce691746e48e3cd9cbea3"
+                "reference": "60c7e64b7a949d28eb053acade131b8a26710962"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/d06762c9189767531bfce691746e48e3cd9cbea3",
-                "reference": "d06762c9189767531bfce691746e48e3cd9cbea3",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/60c7e64b7a949d28eb053acade131b8a26710962",
+                "reference": "60c7e64b7a949d28eb053acade131b8a26710962",
                 "shasum": ""
             },
             "require": {
@@ -282,7 +282,7 @@
                 "php": ">=5.3.2",
                 "silverstripe-australia/gridfieldextensions": "*",
                 "silverstripe-themes/simple": "*",
-                "silverstripe/blog": "2.0.x",
+                "silverstripe/blog": "*",
                 "silverstripe/cms": "3.2.0",
                 "silverstripe/framework": "3.2.0",
                 "silverstripe/googlesitemaps": "*",
@@ -291,7 +291,7 @@
                 "silverstripe/recaptcha": "*",
                 "silverstripe/staticpublisher": "*",
                 "silverstripe/timepickerfield": "*",
-                "silverstripe/userforms": "2.0.x",
+                "silverstripe/userforms": "*",
                 "silverstripe/widgets": "*",
                 "simplepie/simplepie": "*",
                 "thisisbd/silverstripe-maintenance-mode": "*",
@@ -306,7 +306,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2016-01-02 22:22:38"
+            "time": "2016-01-07 20:30:20"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -475,12 +475,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-blog.git",
-                "reference": "3ef14a6e1a1f843ee994ac7e3678fb507bb29a37"
+                "reference": "9f864656acc5280d45041cf24ac235e3be9d2acf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/3ef14a6e1a1f843ee994ac7e3678fb507bb29a37",
-                "reference": "3ef14a6e1a1f843ee994ac7e3678fb507bb29a37",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-blog/zipball/9f864656acc5280d45041cf24ac235e3be9d2acf",
+                "reference": "9f864656acc5280d45041cf24ac235e3be9d2acf",
                 "shasum": ""
             },
             "require": {
@@ -501,7 +501,7 @@
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "2.2.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -520,7 +520,7 @@
                 "news",
                 "silverstripe"
             ],
-            "time": "2015-11-17 03:37:23"
+            "time": "2016-01-04 20:49:57"
         },
         {
             "name": "silverstripe/cms",
@@ -810,6 +810,45 @@
             "time": "2015-12-16 21:00:39"
         },
         {
+            "name": "silverstripe/segment-field",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/assertchris/silverstripe-segment-field.git",
+                "reference": "0b1445307bac488ddc35d624564f4300e8080029"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/assertchris/silverstripe-segment-field/zipball/0b1445307bac488ddc35d624564f4300e8080029",
+                "reference": "0b1445307bac488ddc35d624564f4300e8080029",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^3.1",
+                "silverstripe/framework": "^3.1"
+            },
+            "require-dev": {
+                "mockery/mockery": "^0.9",
+                "phpunit/phpunit": "^3.7"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "psr-4": {
+                    "SilverStripe\\Forms\\": "code"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A reusable approach to segment-generating fields",
+            "keywords": [
+                "segment",
+                "silverstripe"
+            ],
+            "time": "2015-08-18 04:44:43"
+        },
+        {
             "name": "silverstripe/siteconfig",
             "version": "3.x-dev",
             "source": {
@@ -1015,29 +1054,32 @@
         },
         {
             "name": "silverstripe/userforms",
-            "version": "2.0.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "4b6201da45a9016fe7e84070362adf47e0366daf"
+                "reference": "564755e4d30ac10ca983179797a45d562e330927"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/4b6201da45a9016fe7e84070362adf47e0366daf",
-                "reference": "4b6201da45a9016fe7e84070362adf47e0366daf",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/564755e4d30ac10ca983179797a45d562e330927",
+                "reference": "564755e4d30ac10ca983179797a45d562e330927",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/cms": ">=3.1.0",
-                "silverstripe/framework": ">=3.1.0"
+                "silverstripe-australia/gridfieldextensions": "~1.1",
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1",
+                "silverstripe/segment-field": "^1.0"
             },
             "suggest": {
-                "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions"
+                "colymba/gridfield-bulk-editing-tools": "Allows for bulk management of form submissions",
+                "silverstripe/secureassets": "Enables files uploaded via userforms to be secured from public access"
             },
             "type": "silverstripe-module",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0.x-dev"
+                    "dev-master": "3.1.x-dev"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1046,8 +1088,24 @@
             ],
             "authors": [
                 {
+                    "name": "David Craig",
+                    "email": "david@silverstripe.com"
+                },
+                {
+                    "name": "Damian Mooyman",
+                    "email": "damian@silverstripe.com"
+                },
+                {
                     "name": "Will Rossiter",
                     "email": "will@fullscreen.io"
+                },
+                {
+                    "name": "Christopher Pitt",
+                    "email": "chris@silverstripe.com"
+                },
+                {
+                    "name": "Scott Hutchinson",
+                    "email": "scott@silverstripe.com"
                 }
             ],
             "description": "UserForms enables CMS users to create dynamic forms via a drag and drop interface and without getting involved in any PHP code",
@@ -1055,7 +1113,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2015-07-20 14:56:48"
+            "time": "2016-01-04 20:49:52"
         },
         {
             "name": "silverstripe/widgets",

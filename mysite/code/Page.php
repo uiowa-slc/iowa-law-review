@@ -22,11 +22,15 @@ class Page extends SiteTree {
 
 	}
 
+	public function getSortedChildren(){
+		return $this->Children();
+	}
+
 	public function LatestPrintIssue() {
 		$printIssueHolder = IssueHolder::get()->filter(array('URLSegment' => 'print'))->First();
 
 		if ($printIssueHolder) {
-			$latestIssue = Issue::get()->filter(array('ParentID' => $printIssueHolder->ID))->sort('OriginalPublicationDate')->First();
+			$latestIssue = $printIssueHolder->sortedChildren()->First();
 			return $latestIssue;
 		}
 	}
@@ -62,6 +66,7 @@ class Page_Controller extends ContentController {
 
 	public function init() {
 		parent::init();
+
 
 	}
 	public function Breadcrumbs($maxDepth = 20, $unlinked = false, $stopAtPageType = false, $showHidden = false) {
