@@ -39,10 +39,8 @@
 		<div class="container">
 			<div class="large-12 columns" >
 	        	<hr class="bar">
-	        	<div class="rights">
 	        		<p><small>&copy; 2015 University of Iowa. All Rights Reserved.<br /> <a href="http://www.uiowa.edu/homepage/online-privacy-information">Privacy Policy</a></small></p>
 
-	        	</div>
     		</div>	
 		</div>
 	</div>
