@@ -21,8 +21,7 @@
 
 				</div>
 
-				<div class="social-icons">
-				        	<ul>
+				        	<ul class="social-icons">
 									<a href="https://www.facebook.com/IowaLawReview/" title="Facebook" target="_blank">
 										<img src="{$ThemeDir}/images/facebook_circle_gray-32.png" alt="Facebook">
 									</a>
@@ -32,7 +31,6 @@
 									</a>
 								
 							</ul>
-				</div>
 			</div>
 		</div><!-- end .container -->
 	<div class="footer-bottom">
