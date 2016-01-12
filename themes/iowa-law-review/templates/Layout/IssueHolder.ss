@@ -55,10 +55,34 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse14" style="color: #333;">Issue 2 - November 2014</a></li>
 								<div id="collapse14" class="panel-collapse collapse article-holder">
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
@@ -71,6 +95,18 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse16" style="color: #333;">Issue 4 - November 2014</a></li>
@@ -79,10 +115,34 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse17" style="color: #333;">Issue 5 - November 2014</a></li>
 								<div id="collapse17" class="panel-collapse collapse article-holder">
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
@@ -101,6 +161,18 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 								<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse18" style="color: #333;">Issue 2 - November 2013</a></li>
@@ -109,6 +181,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse19" style="color: #333;">Issue 3 - November 2013</a></li>
@@ -117,6 +202,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse20" style="color: #333;">Issue 4 - November 2013</a></li>
@@ -125,6 +223,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse21" style="color: #333;">Issue 5 - November 2013</a></li>
@@ -133,6 +244,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>		
 							</div>
 						<hr>
@@ -147,6 +271,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 								<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse35" style="color: #333;">Issue 2 - November 2012</a></li>
@@ -155,6 +292,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse22" style="color: #333;">Issue 3 - November 2012</a></li>
@@ -163,6 +313,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse23" style="color: #333;">Issue 4 - November 2012</a></li>
@@ -171,6 +334,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse24" style="color: #333;">Issue 5 - November 2012</a></li>
@@ -179,6 +355,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>		
 							</div>
 						<hr>
@@ -193,6 +382,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 								<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse25" style="color: #333;">Issue 2 - November 2011</a></li>
@@ -201,6 +403,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse26" style="color: #333;">Issue 3 - November 2011</a></li>
@@ -209,6 +424,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse27" style="color: #333;">Issue 4 - November 2011</a></li>
@@ -217,6 +445,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse28" style="color: #333;">Issue 5 - November 2011</a></li>
@@ -225,6 +466,19 @@
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Article#</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									<li class="issue-item"><a href="#">Article#</a></li>
+									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
+									
 								</div>		
 							</div>
 
