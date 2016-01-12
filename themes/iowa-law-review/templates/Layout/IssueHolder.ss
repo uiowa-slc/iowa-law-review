@@ -32,44 +32,23 @@
 										<% loop $SortedChildren %>
 											<li><a href="$Link">$Title</a><br />
 											<% loop $Authors %>
-												<a href="$Link" style="font-size: 15px;color: grey; padding-left: 20px;">$Name</a><% if not $Last %>, <% end_if %>
+												<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a><% if not $Last %>,<% end_if %>
 											<% end_loop %></li>
 										<% end_loop %>
 									</div>
 								
 						<% end_loop %>
 					</div>
-
-					<!--<p align="center">
-						<a href="#collapse4">Volume 1-1</a>
-						 | 
-						<a href="#collapse14">Volume 1-2</a>
-						 | 
-						<a href="#collapse15">Volume 1-3</a>
-						 | 
-						<a href="#collapse16">Volume 1-4</a>
-						 | 
-						<a href="#collapse17">Volume 1-5</a>
-						 |     
-						<a href="#collapse6">Volume 2-1</a>
-						 | 
-						<a href="#collapse8">Volume 3-1</a>
-						 | 
-						<a href="#collapse10">Volume 4-1</a>
-						 | 
-						<a href="#collapse12">Volume 5-1</a>
-						 | 
-					</p>-->
-				
-						<hr>
+	
 					<div class="vol-list">
-					
-						<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse4" style="color: #333;">Volume 1</a></h4></li>
+						<hr>
 
-							<div id="collapse4" class="panel-collapse collapse in issue-list">
+						<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse4" style="color: #333;">Volume 2</a></h4></li>
+
+							<div id="collapse4" class="panel-collapse collapse issue-list">
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse5" style="color: #333;">Issue 1 {Date}</a></li>
-								<div id="collapse5" class="panel-collapse collapse in article-holder">
+								<div id="collapse5" class="panel-collapse collapse article-holder">
 									<li class="issue-item"><a href="#">Article# {Author}</a></li>
 									<li class="issue-item"><a href="#">Article# {Author}</a></li>
 								</div>
@@ -98,9 +77,9 @@
 									<li class="issue-item"><a href="#">Article# {Author}</a></li>
 								</div>				
 							</div>
+						<hr>
 
-							<hr>
-							<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="two" href="#collapse6" style="color: #333;">Volume 2</a></h4></li>
+							<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="two" href="#collapse6" style="color: #333;">Volume 3</a></h4></li>
 
 							<div id="collapse6" class="panel-collapse collapse issue-list">
 							<li class="list-group-item" style="list-style: none;">
@@ -134,10 +113,9 @@
 									<li class="issue-item"><a href="#">Article# {Author}</a></li>
 								</div>		
 							</div>
-					<hr>
+						<hr>
 
-							
-							<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="three" href="#collapse8" style="color: #333;">Volume 3</a></h4></li>
+							<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="three" href="#collapse8" style="color: #333;">Volume 4</a></h4></li>
 
 							<div id="collapse8" class="panel-collapse collapse issue-list">
 							<li class="list-group-item" style="list-style: none;">
@@ -171,10 +149,9 @@
 									<li class="issue-item"><a href="#">Article# {Author}</a></li>
 								</div>		
 							</div>
-					<hr>
+						<hr>
 
-						
-						<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="four" href="#collapse10" style="color: #333;">Volume 4</a></h4></li>
+						<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="four" href="#collapse10" style="color: #333;">Volume 5</a></h4></li>
 
 							<div id="collapse10" class="panel-collapse collapse issue-list">
 							<li class="list-group-item" style="list-style: none;">
@@ -208,50 +185,13 @@
 									<li class="issue-item"><a href="#">Article# {Author}</a></li>
 								</div>		
 							</div>
-					<hr>
 
-						<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="five" href="#collapse12" style="color: #333;">Volume 5</a></h4></li>
-
-							<div id="collapse12" class="panel-collapse collapse issue-list">
-							<li class="list-group-item" style="list-style: none;">
-								<a data-toggle="collapse" href="#collapse13" style="color: #333;">Issue 1 {Date}</a></li>
-								<div id="collapse13" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-								</div>
-								<li class="list-group-item" style="list-style: none;">
-								<a data-toggle="collapse" href="#collapse29" style="color: #333;">Issue 2 {Date}</a></li>
-								<div id="collapse29" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-								</div>
-							<li class="list-group-item" style="list-style: none;">
-								<a data-toggle="collapse" href="#collapse30" style="color: #333;">Issue 3 {Date}</a></li>
-								<div id="collapse30" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-								</div>
-							<li class="list-group-item" style="list-style: none;">
-								<a data-toggle="collapse" href="#collapse31" style="color: #333;">Issue 4 {Date}</a></li>
-								<div id="collapse31" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-								</div>
-							<li class="list-group-item" style="list-style: none;">
-								<a data-toggle="collapse" href="#collapse32" style="color: #333;">Issue 5 {Date}</a></li>
-								<div id="collapse32" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-									<li class="issue-item"><a href="#">Article# {Author}</a></li>
-								</div>			
-							</div>
-
-						
 						</div>
 					</div>
 					
 				$Form
 			</div>
-			<!--After 5 volumes, list volumes and their issues and link to issue pages-->
+			<!--After 5 volumes, if there are more, list volumes and their issues and link to issue pages-->
 						<div class="volume-holder" style="text-align: center">
 							<hr>
 							<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
