@@ -44,10 +44,10 @@
 			
 			<div class="vol-list">
 			<hr>
-				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse44" style="color: #333;">Volume 1</a></h4></li>
+				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse44" style="color: #333;">Volume 25</a></h4></li>
 					<div id="collapse44" class="panel-collapse collapse in issue-list">
 					<li class="list-group-item" style="list-style: none;">
-						<a data-toggle="collapse" href="#collapse55" style="color: #333;">Issue 1 - November 2014</a></li>
+						<a data-toggle="collapse" href="#collapse55" style="color: #333;">Issue 1 - November 2015</a></li>
 						<div id="collapse55" class="panel-collapse collapse in article-holder">
 							<li class="issue-item"><a href="#">Law Article</a></li>
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
@@ -67,7 +67,7 @@
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 						</div>
 					<li class="list-group-item" style="list-style: none;">
-						<a data-toggle="collapse" href="#collapse56" style="color: #333;">Issue 2 - November 2014</a></li>
+						<a data-toggle="collapse" href="#collapse56" style="color: #333;">Issue 2 - November 2015</a></li>
 						<div id="collapse56" class="panel-collapse collapse article-holder">
 							<li class="issue-item"><a href="#">Law Article</a></li>
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
@@ -87,7 +87,7 @@
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 						</div>
 					<li class="list-group-item" style="list-style: none;">
-						<a data-toggle="collapse" href="#collapse57" style="color: #333;">Issue 3 - November 2014</a></li>
+						<a data-toggle="collapse" href="#collapse57" style="color: #333;">Issue 3 - November 2015</a></li>
 						<div id="collapse57" class="panel-collapse collapse article-holder">
 							<li class="issue-item"><a href="#">Law Article</a></li>
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
@@ -107,7 +107,7 @@
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 						</div>
 					<li class="list-group-item" style="list-style: none;">
-						<a data-toggle="collapse" href="#collapse58" style="color: #333;">Issue 4 - November 2014</a></li>
+						<a data-toggle="collapse" href="#collapse58" style="color: #333;">Issue 4 - November 2015</a></li>
 						<div id="collapse58" class="panel-collapse collapse article-holder">
 							<li class="issue-item"><a href="#">Law Article</a></li>
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
@@ -127,7 +127,7 @@
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 						</div>
 					<li class="list-group-item" style="list-style: none;">
-						<a data-toggle="collapse" href="#collapse59" style="color: #333;">Issue 5 - November 2014</a></li>
+						<a data-toggle="collapse" href="#collapse59" style="color: #333;">Issue 5 - November 2015</a></li>
 						<div id="collapse59" class="panel-collapse collapse article-holder">
 							<li class="issue-item"><a href="#">Law Article</a></li>
 								<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
@@ -149,7 +149,7 @@
 					</div>
 				<hr>
 
-				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse4" style="color: #333;">Volume 2</a></h4></li>
+				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse4" style="color: #333;">Volume 24</a></h4></li>
 					<div id="collapse4" class="panel-collapse collapse issue-list">
 					<li class="list-group-item" style="list-style: none;">
 						<a data-toggle="collapse" href="#collapse5" style="color: #333;">Issue 1 - November 2014</a></li>
@@ -254,7 +254,7 @@
 					</div>
 						<hr>
 
-				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="two" href="#collapse6" style="color: #333;">Volume 3</a></h4></li>
+				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="two" href="#collapse6" style="color: #333;">Volume 23</a></h4></li>
 					<div id="collapse6" class="panel-collapse collapse issue-list">
 					<li class="list-group-item" style="list-style: none;">
 						<a data-toggle="collapse" href="#collapse7" style="color: #333;">Issue 1 - November 2013</a></li>
@@ -359,7 +359,7 @@
 					</div>
 				<hr>
 
-				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="three" href="#collapse8" style="color: #333;">Volume 4</a></h4></li>
+				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="three" href="#collapse8" style="color: #333;">Volume 22</a></h4></li>
 					<div id="collapse8" class="panel-collapse collapse issue-list">
 					<li class="list-group-item" style="list-style: none;">
 						<a data-toggle="collapse" href="#collapse9" style="color: #333;">Issue 1 - November 2012</a></li>
@@ -464,7 +464,7 @@
 					</div>
 				<hr>
 
-				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="four" href="#collapse10" style="color: #333;">Volume 5</a></h4></li>
+				<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" id="four" href="#collapse10" style="color: #333;">Volume 21</a></h4></li>
 					<div id="collapse10" class="panel-collapse collapse issue-list">
 					<li class="list-group-item" style="list-style: none;">
 						<a data-toggle="collapse" href="#collapse11" style="color: #333;">Issue 1 - November 2011</a></li>
@@ -580,199 +580,200 @@
 			<div class="volume-holder" style="text-align: center;">
 				<hr>
 				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 6</li>			
+				<li style="list-style: none;" class="vol-item">Volume 20</li>			
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2015</a></li>
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2015</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2015</a></li>
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2015</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2015</a></li>
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2015</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2015</a></li>
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2015</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2015</a></li>		
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 7</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2014</a></li>				
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 8</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2013</a></li>
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 9</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2012</a></li>
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 10</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2011</a></li>
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 11</li>			
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2015</a></li>		
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 12</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2014</a></li>				
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 13</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2013</a></li>
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 14</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2012</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2012</a></li>
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 15</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2011</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2011</a></li>
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 16</li>			
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2015</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2015</a></li>		
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 17</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2014</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2014</a></li>				
-				</div>
-				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 18</li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2013</a></li>
-					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2013</a></li>
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2015</a></li>		
 				</div>
 				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 19</li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2012</a></li>
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2014</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2012</a></li>
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2014</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2012</a></li>
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2014</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2012</a></li>
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2014</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2012</a></li>
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2014</a></li>				
 				</div>
 				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
-				<li style="list-style: none;" class="vol-item">Volume 20</li>
+				<li style="list-style: none;" class="vol-item">Volume 18</li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 1 - Dec. 2011</a></li>
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2013</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 2 - Nov. 2011</a></li>
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2013</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 3 - Oct. 2011</a></li>
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2013</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 4 - Sept. 2011</a></li>
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2013</a></li>
 					<li class="list-item" style="list-style: none;">
-						<a href="#">Issue 5 - Aug. 2011</a></li>
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2013</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 17</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2012</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 16</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2011</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 15</li>			
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2015</a></li>		
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 14</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2014</a></li>				
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 13</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2013</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 12</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2012</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 11</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2011</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 10</li>			
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2015</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2015</a></li>		
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 9</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2014</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2014</a></li>				
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 8</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2013</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2013</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 7</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2012</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2012</a></li>
+				</div>
+				<div class="vol-one" style="float: left; width: 20%; padding-bottom: 10px;">
+				<li style="list-style: none;" class="vol-item">Volume 6</li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 2 - Nov. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 3 - Oct. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 4 - Sept. 2011</a></li>
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2011</a></li>
+				</div>
 				</div>
 			</div>
 					  	
