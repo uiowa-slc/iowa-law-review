@@ -22,7 +22,7 @@
 			        </div>
 			        <br />-->
 
-			        <!--<div class="volume-list">
+			        <div class="volume-list">
 						<% loop $SortedChildren.Limit(5) %>
 						<hr>
 								<h4><li style="list-style: none; class="vol-item""><a data-toggle="collapse" href="#collapse{$Pos}" style="color: #333;">Volume {$Volume}</a></li></h4>
@@ -40,17 +40,17 @@
 									</div>
 								
 						<% end_loop %>
-					</div>-->
+					</div>
 	
 					<div class="vol-list">
 						<hr>
 
 						<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse4" style="color: #333;">Volume 2</a></h4></li>
 
-							<div id="collapse4" class="panel-collapse collapse in issue-list">
+							<div id="collapse4" class="panel-collapse collapse issue-list">
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse5" style="color: #333;">Issue 1 - November 2014</a></li>
-								<div id="collapse5" class="panel-collapse collapse in article-holder">
+								<div id="collapse5" class="panel-collapse collapse article-holder">
 									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Law Article</a></li>
@@ -283,7 +283,7 @@
 								<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse35" style="color: #333;">Issue 2 - November 2012</a></li>
 								<div id="collapse35" class="panel-collapse collapse article-holder">
-<li class="issue-item"><a href="#">Law Article</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
@@ -472,9 +472,9 @@
 					</div>
 					
 				$Form
-				<!--<div class="col-lg-3 col-lg-offset-1">
+				<div class="col-lg-3 col-lg-offset-1">
 	          <% include SideNav %>
-			</div>-->
+			</div>
 
 			</div>
 			<!--After x volumes, if there are more, list volumes and their issues and link to issue pages {if SortedChildren > x-->
