@@ -486,6 +486,10 @@
 					</div>
 					
 				$Form
+				<!--<div class="col-lg-3 col-lg-offset-1">
+	          <% include SideNav %>
+			</div>-->
+
 			</div>
 			<!--After x volumes, if there are more, list volumes and their issues and link to issue pages {if SortedChildren > x-->
 						<div class="volume-holder" style="text-align: center">
