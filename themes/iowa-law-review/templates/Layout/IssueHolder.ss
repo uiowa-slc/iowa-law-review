@@ -22,7 +22,7 @@
 			        </div>
 			        <br />-->
 
-			        <div class="volume-list">
+			        <!--<div class="volume-list">
 						<% loop $SortedChildren.Limit(5) %>
 						<hr>
 								<h4><li style="list-style: none; class="vol-item""><a data-toggle="collapse" href="#collapse{$Pos}" style="color: #333;">Volume {$Volume}</a></li></h4>
@@ -40,112 +40,112 @@
 									</div>
 								
 						<% end_loop %>
-					</div>
+					</div>-->
 	
 					<div class="vol-list">
 						<hr>
 
 						<li style="list-style: none;" class="vol-item"><h4><a data-toggle="collapse" href="#collapse4" style="color: #333;">Volume 2</a></h4></li>
 
-							<div id="collapse4" class="panel-collapse collapse issue-list">
+							<div id="collapse4" class="panel-collapse collapse in issue-list">
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse5" style="color: #333;">Issue 1 - November 2014</a></li>
-								<div id="collapse5" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+								<div id="collapse5" class="panel-collapse collapse in article-holder">
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse14" style="color: #333;">Issue 2 - November 2014</a></li>
 								<div id="collapse14" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse15" style="color: #333;">Issue 3 - November 2014</a></li>
 								<div id="collapse15" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse16" style="color: #333;">Issue 4 - November 2014</a></li>
 								<div id="collapse16" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse17" style="color: #333;">Issue 5 - November 2014</a></li>
 								<div id="collapse17" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>				
 							</div>
@@ -157,106 +157,102 @@
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse7" style="color: #333;">Issue 1 - November 2013</a></li>
 								<div id="collapse7" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
 								</div>
 								<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse18" style="color: #333;">Issue 2 - November 2013</a></li>
 								<div id="collapse18" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse19" style="color: #333;">Issue 3 - November 2013</a></li>
 								<div id="collapse19" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse20" style="color: #333;">Issue 4 - November 2013</a></li>
 								<div id="collapse20" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse21" style="color: #333;">Issue 5 - November 2013</a></li>
 								<div id="collapse21" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>		
 							</div>
 						<hr>
@@ -267,107 +263,102 @@
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse9" style="color: #333;">Issue 1 - November 2012</a></li>
 								<div id="collapse9" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 								<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse35" style="color: #333;">Issue 2 - November 2012</a></li>
 								<div id="collapse35" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse22" style="color: #333;">Issue 3 - November 2012</a></li>
 								<div id="collapse22" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse23" style="color: #333;">Issue 4 - November 2012</a></li>
 								<div id="collapse23" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse24" style="color: #333;">Issue 5 - November 2012</a></li>
 								<div id="collapse24" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>		
 							</div>
 						<hr>
@@ -378,107 +369,102 @@
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse11" style="color: #333;">Issue 1 - November 2011</a></li>
 								<div id="collapse11" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 								<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse25" style="color: #333;">Issue 2 - November 2011</a></li>
 								<div id="collapse25" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse26" style="color: #333;">Issue 3 - November 2011</a></li>
 								<div id="collapse26" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse27" style="color: #333;">Issue 4 - November 2011</a></li>
 								<div id="collapse27" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>
 							<li class="list-group-item" style="list-style: none;">
 								<a data-toggle="collapse" href="#collapse28" style="color: #333;">Issue 5 - November 2011</a></li>
 								<div id="collapse28" class="panel-collapse collapse article-holder">
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									<li class="issue-item"><a href="#">Article#</a></li>
+									<li class="issue-item"><a href="#">Law Article</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">Author</a>
-									
 								</div>		
 							</div>
 
