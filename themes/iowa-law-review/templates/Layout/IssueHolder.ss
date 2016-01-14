@@ -579,7 +579,7 @@
 			<!--After x volumes, if there are more, list volumes and their issues and link to issue pages {if SortedChildren > x-->
 			<div class="volume-holder" style="text-align: center;">
 				<hr>
-				<div class="vol-one col-lg-2 col-lg-offset-1" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 20</li>			
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2015</a></li>
@@ -592,7 +592,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2015</a></li>		
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 19</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2014</a></li>
@@ -605,7 +605,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2014</a></li>				
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 18</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2013</a></li>
@@ -618,7 +618,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2013</a></li>
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 17</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2012</a></li>
@@ -631,7 +631,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2012</a></li>
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 16</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2011</a></li>
@@ -644,7 +644,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2011</a></li>
 				</div>
-				<div class="vol-one col-lg-2 col-lg-offset-1" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 15</li>			
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2015</a></li>
@@ -657,7 +657,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2015</a></li>		
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 14</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2014</a></li>
@@ -670,7 +670,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2014</a></li>				
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 13</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2013</a></li>
@@ -683,7 +683,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2013</a></li>
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 12</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2012</a></li>
@@ -696,7 +696,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2012</a></li>
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 11</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2011</a></li>
@@ -709,7 +709,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2011</a></li>
 				</div>
-				<div class="vol-one col-lg-2 col-lg-offset-1" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-1" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 10</li>			
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2015</a></li>
@@ -722,7 +722,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2015</a></li>		
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 9</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2014</a></li>
@@ -735,7 +735,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2014</a></li>				
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 8</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2013</a></li>
@@ -748,7 +748,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2013</a></li>
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 7</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2012</a></li>
@@ -761,7 +761,7 @@
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 5 - Aug. 2012</a></li>
 				</div>
-				<div class="vol-one col-lg-2" style="padding-bottom: 10px;">
+				<div class="vol-one col-md-2 col-lg-2" style="padding-bottom: 10px;">
 				<li style="list-style: none;" class="vol-item">Volume 6</li>
 					<li class="list-item" style="list-style: none;">
 						<a href="#" style="font-size: 15px;">Issue 1 - Dec. 2011</a></li>
