@@ -264,12 +264,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "e6e65f50c4a2456d2574a035c4cb0b98034d1d46"
+                "reference": "7bfddc61739aff578be1a9caaae401625b9d08e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/e6e65f50c4a2456d2574a035c4cb0b98034d1d46",
-                "reference": "e6e65f50c4a2456d2574a035c4cb0b98034d1d46",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/7bfddc61739aff578be1a9caaae401625b9d08e4",
+                "reference": "7bfddc61739aff578be1a9caaae401625b9d08e4",
                 "shasum": ""
             },
             "require": {
@@ -296,7 +296,6 @@
                 "simplepie/simplepie": "*",
                 "thisisbd/silverstripe-maintenance-mode": "*",
                 "unclecheese/betterbuttons": "*",
-                "unclecheese/bootstrap-forms": "*",
                 "unclecheese/eventcalendar": "1.0.x",
                 "undefinedoffset/sortablegridfield": "*"
             },
@@ -306,7 +305,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2016-01-22 15:24:10"
+            "time": "2016-01-22 15:38:21"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -1345,47 +1344,6 @@
                 "silverstripe"
             ],
             "time": "2016-01-18 20:58:30"
-        },
-        {
-            "name": "unclecheese/bootstrap-forms",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/unclecheese/silverstripe-bootstrap-forms.git",
-                "reference": "508f1ed430272bf5263f9eebd27db2cb4a6e2c27"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-bootstrap-forms/zipball/508f1ed430272bf5263f9eebd27db2cb4a6e2c27",
-                "reference": "508f1ed430272bf5263f9eebd27db2cb4a6e2c27",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "3.*",
-                "silverstripe/framework": "3.*"
-            },
-            "replace": {
-                "silverstripe/bootstrap-forms": "*"
-            },
-            "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com"
-                }
-            ],
-            "description": "Allows you to create forms in SilverStripe that are compatible with Twitter Bootstrap.",
-            "keywords": [
-                "Forms",
-                "bootstrap",
-                "silverstripe",
-                "twitter"
-            ],
-            "time": "2016-01-20 23:44:19"
         },
         {
             "name": "unclecheese/eventcalendar",
