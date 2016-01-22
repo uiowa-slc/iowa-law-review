@@ -5,37 +5,44 @@
 			<div class="col-lg-8">
 				<h1 class="col-lg-offset-2" style="padding-left: 10px;">$Title</h1>
 
-			        <!--<div class="volume-list col-lg-offset-2" style="padding-left: 16px;">
+		<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;"><hr>
+			<div class="panel panel-default">
 						<% loop $SortedChildren.Limit(5) %>
-						<hr>
-						<h4><li style="list-style: none; class="vol-item""><a data-toggle="collapse" href="#collapse{$Pos}" style="color: #333;">Volume {$Volume}</a></li></h4>
-
-						<div id="collapse{$Pos}" class="panel-collapse collapse  <% if $First %>in<% end_if %> issue-list">
-						<% if $Number %>
-							<h5>Issue {$Number} - $Date</h5>
-						<% end_if %>
-						<% loop $SortedChildren %>
-							<li><a href="$Link">$Title</a><br />
-								<% loop $Authors %>
-									<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a><% if not $Last %>,<% end_if %>
-								<% end_loop %></li>
-						<% end_loop %>
+						<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{$Pos}" style="color: #333;"><h4>Volume {$Volume}<i class="indicator glyphicon <% if $First %>glyphicon-chevron-up<% else %> glyphicon-chevron-down<% end_if %> pull-right"></i></h4></a></div>
+						<div id="collapse{$Pos}" class="panel-collapse collapse <% if $First %>in<% end_if %>">
+							<div class="panel-body">
+								<% if $Number %>
+									<li class="list-group-item" style="list-style: none;">
+									<a data-toggle="collapse" href="#collapse{Pos}" style="color: #333;">
+									<h5>Issue {$Number} - $Date</h5></a></li>
+								<% end_if %>
+								<% loop $SortedChildren %>
+								<div id="collapse{$Pos}" class="panel-collapse collapse in article-holder">
+									<li class="issue-item"><a href="$Link">$Title</a></li>
+										<% loop $Authors %>
+											<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a><% if not $Last %>,<% end_if %>
+										<% end_loop %></li>
+								</div>
+								<% end_loop %>
+							</div>
 						</div>
-								
+						<hr>	
 						<% end_loop %>
-					</div>-->
+					</div>
+				</div>
+			
 
 
 			
-		<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;"><hr>
+		<!--<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;">
 			<div class="panel panel-default">
 				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: #333;">
-				<h4 class="panel-title">Volume 25<i class="indicator glyphicon glyphicon-chevron-up pull-right"></i></h4></a></div>		
-					<div id="collapse1" class="panel-collapse collapse in">
+				<h4 class="panel-title">Volume 25<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>		
+					<div id="collapse1" class="panel-collapse collapse">
 						<div class="panel-body">
 						<li class="list-group-item" style="list-style: none;">
 							<a data-toggle="collapse" href="#collapse2" style="color: #333;">Issue 5 - December 2015</a></li>
-							<div id="collapse2" class="panel-collapse collapse in article-holder">
+							<div id="collapse2" class="panel-collapse collapse article-holder">
 								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
 									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
 								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
@@ -569,7 +576,7 @@
 					</div>
 				</div>
 				<hr>
-			</div>
+			</div>-->
 		</div>
 
 			$Form
