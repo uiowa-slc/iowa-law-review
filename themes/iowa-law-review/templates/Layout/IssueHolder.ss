@@ -29,8 +29,8 @@
 			
 		<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;"><hr>
 			<div class="panel panel-default">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: #333;"><div class="panel-heading">
-				<h4 class="panel-title">Volume 25<i class="indicator glyphicon glyphicon-chevron-up pull-right"></i></h4></div></a>		
+				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse1" style="color: #333;">
+				<h4 class="panel-title">Volume 25<i class="indicator glyphicon glyphicon-chevron-up pull-right"></i></h4></a></div>		
 					<div id="collapse1" class="panel-collapse collapse in">
 						<div class="panel-body">
 						<li class="list-group-item" style="list-style: none;">
@@ -138,7 +138,7 @@
 				</div>
 				<hr>
 				<div class="panel panel-default">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="color: #333;"><div class="panel-heading"><h4 class="panel-title">Volume 24<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></div></a>	
+				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="color: #333;"><h4 class="panel-title">Volume 24<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>	
 					<div id="collapse7" class="panel-collapse collapse">
 						<div class="panel-body">
 						<li class="list-group-item" style="list-style: none;">
@@ -246,7 +246,7 @@
 				</div>
 				<hr>
 				<div class="panel panel-default">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse13" style="color: #333;"><div class="panel-heading"><h4 class="panel-title">Volume 23<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></div></a>
+				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse13" style="color: #333;"><h4 class="panel-title">Volume 23<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>
 					<div id="collapse13" class="panel-collapse collapse">
 						<div class="panel-body">
 						<li class="list-group-item" style="list-style: none;">
@@ -354,7 +354,7 @@
 				</div>
 				<hr>
 				<div class="panel panel-default">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse19" style="color: #333;"><div class="panel-heading"><h4 class="panel-title">Volume 22<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></div></a>
+				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse19" style="color: #333;"><h4 class="panel-title">Volume 22<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>
 					<div id="collapse19" class="panel-collapse collapse">
 						<div class="panel-body">
 						<li class="list-group-item" style="list-style: none;">
@@ -462,7 +462,7 @@
 				</div>
 				<hr>
 				<div class="panel panel-default">
-				<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse25" style="color: #333;"><div class="panel-heading"><h4 class="panel-title">Volume 21<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></div></a>
+				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse25" style="color: #333;"><h4 class="panel-title">Volume 21<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>
 					<div id="collapse25" class="panel-collapse collapse">
 						<div class="panel-body">
 						<li class="list-group-item" style="list-style: none;">
