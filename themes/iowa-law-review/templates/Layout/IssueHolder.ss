@@ -12,16 +12,14 @@
 						<div id="collapse{$Pos}" class="panel-collapse collapse <% if $First %>in<% end_if %>">
 							<div class="panel-body">
 								<% if $Number %>
-									<li class="list-group-item" style="list-style: none;">
-									<a data-toggle="collapse" href="#collapse{Pos}" style="color: #333;">
-									<h5>Issue {$Number} - $Date</h5></a></li>
+									<h5>Issue {$Number} - $Date</h5>
 								<% end_if %>
 								<% loop $SortedChildren %>
 								<div id="collapse{$Pos}" class="panel-collapse collapse in article-holder">
 									<li class="issue-item"><a href="$Link">$Title</a></li>
 										<% loop $Authors %>
 											<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a><% if not $Last %>,<% end_if %>
-										<% end_loop %></li>
+										<% end_loop %>
 								</div>
 								<% end_loop %>
 							</div>
