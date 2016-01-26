@@ -7,17 +7,17 @@
 
 		<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;"><hr>
 			<div class="panel panel-default">
-						<% loop $SortedChildren.Limit(5) %>
+						<% loop $SortedChildren %>
 						<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{$Pos}" style="color: #333;"><h4>Volume {$Volume}<i class="indicator glyphicon <% if $First %>glyphicon-chevron-up<% else %> glyphicon-chevron-down<% end_if %> pull-right"></i></h4></a></div>
 						<div id="collapse{$Pos}" class="panel-collapse collapse <% if $First %>in<% end_if %>">
 							<div class="panel-body">
 								<% if $Number %>
 									<li class="list-group-item" style="list-style: none;">
-									<a data-toggle="collapse" href="#collapse{Pos}" style="color: #333;">
+									<a data-toggle="collapse" href="#collapsed{Pos}" style="color: #333;">
 									<h5>Issue {$Number} - $Date</h5></a></li>
 								<% end_if %>
 								<% loop $SortedChildren %>
-								<div id="collapse{$Pos}" class="panel-collapse collapse in article-holder">
+								<div id="collapsed{$Pos}" class="panel-collapse collapse in article-holder">
 									<li class="issue-item"><a href="$Link">$Title</a></li>
 										<% loop $Authors %>
 											<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a><% if not $Last %>,<% end_if %>
@@ -31,6 +31,12 @@
 					</div>
 				</div>
 			
+			<% loop $getVolumes.Limit(5) %>
+			<h2>Title: $Title</h2>
+			<% end_loop %>
+
+
+
 
 
 			
