@@ -31,8 +31,19 @@
 					</div>
 				</div>
 			
-			<% loop $getVolumes.Limit(5) %>
-			<h2>Title: $Title</h2>
+			<% loop $SortedChildren.Limit(5) %>
+				<% loop $getVolumes %>
+				<h3>Volume {$Volume}</h3>
+					<% if $Number %>
+						<h5>Issue {$Number} - $Date</h5></li>
+							<% loop $SortedChildren %>
+							<li>$Title</li>
+								<% loop $Authors %>
+								<li>$Name</li>
+								<% end_loop %>
+							<% end_loop %>
+					<% end_if %>
+				<% end_loop %>
 			<% end_loop %>
 
 
