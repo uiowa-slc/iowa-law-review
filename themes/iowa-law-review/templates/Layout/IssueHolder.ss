@@ -30,25 +30,11 @@
 						<% end_loop %>
 					</div>
 				</div>
-			
-			<% loop $SortedChildren.Limit(5) %>
+
 				<% loop $getVolumes %>
-				<h3>Volume {$Volume}</h3>
-					<% if $Number %>
-						<h5>Issue {$Number} - $Date</h5></li>
-							<% loop $SortedChildren %>
-							<li>$Title</li>
-								<% loop $Authors %>
-								<li>$Name</li>
-								<% end_loop %>
-							<% end_loop %>
-					<% end_if %>
+				<h4>test</h4>
 				<% end_loop %>
-			<% end_loop %>
-
-
-
-
+			
 
 			
 		<!--<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;">
