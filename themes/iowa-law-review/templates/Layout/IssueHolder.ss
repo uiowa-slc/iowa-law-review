@@ -14,8 +14,8 @@
 								<% loop $getIssues %>
 									<div class="panel-body">
 									<li class="list-group-item" style="list-style: none;">
-										<a data-toggle="collapse" href="#collapsed{$Pos}" style="color: #333;">Issue {$Number}</a></li>
-										<div id="collapsed{$Pos}" class="panel-collapse collapse article-holder">
+										<a data-toggle="collapse" href="#{$Up.Number}collapsed{$Pos}" style="color: #333;">Issue {$Number}</a></li>
+										<div id="{$Up.Number}collapsed{$Pos}" class="panel-collapse collapse article-holder">
 											<% loop $SortedChildren %>
 											<li class="issue-item"><a href="$Link">$Title</a></li>
 												<% loop $Authors %>
@@ -154,11 +154,22 @@
 
 			$Form
 			
+			<div class="volume-holder" style="padding-left: 35px;"><hr>
+			<% loop $getVolumes %>
+				<div class="vol-one col-lg-2 <% if $First %>col-lg-offset-1<% end_if %>" style="padding-bottom: 20px; padding-right:20px;">
+				<li style="list-style: none; padding-left: 15px;" class="vol-item">Volume {$Number}</li>
+					<% loop $getIssues %>			
+					<li class="list-item" style="list-style: none;">
+						<a href="#" style="font-size: 15px;">{$Number} - $Date</a></li>
+					<% end_loop %>		
+				</div>
+			<% end_loop %>
+			</div>
 
 		
 
 			<!--After x volumes, if there are more, list volumes and their issues and link to issue pages {if SortedChildren > x-->
-			<div class="volume-holder" style="padding-left: 35px;">
+			<!--<div class="volume-holder" style="padding-left: 35px;">
 				<hr>
 				<div class="vol-one col-lg-2 col-lg-offset-1" style="padding-bottom: 20px; padding-right:20px;">
 				<li style="list-style: none; padding-left: 15px;" class="vol-item">Volume 20</li>			
@@ -291,7 +302,7 @@
 						<a href="#" style="font-size: 15px;">1 - August 2001</a></li>	
 				</div>
 				</div>
-			</div>
+			</div>-->
 					  	
 		</div>
 
