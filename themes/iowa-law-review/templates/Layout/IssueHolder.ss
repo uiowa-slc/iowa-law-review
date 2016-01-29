@@ -5,36 +5,32 @@
 			<div class="col-lg-8">
 				<h1 class="col-lg-offset-2" style="padding-left: 10px;">$Title</h1>
 
-		<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;"><hr>
-			<div class="panel panel-default">
-						<% loop $SortedChildren %>
-						<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{$Pos}" style="color: #333;"><h4>Volume {$Volume}<i class="indicator glyphicon <% if $First %>glyphicon-chevron-up<% else %> glyphicon-chevron-down<% end_if %> pull-right"></i></h4></a></div>
-						<div id="collapse{$Pos}" class="panel-collapse collapse <% if $First %>in<% end_if %>">
-							<div class="panel-body">
-								<% if $Number %>
+					<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;">
+						<div class="panel panel-default">
+						<% loop $getVolumes %>
+							<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{$Pos}" style="color: #333;">
+							<h4 class="panel-title">Volume {$Number}<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>		
+								<div id="collapse{$Pos}" class="panel-collapse collapse">
+								<% loop $getIssues %>
+									<div class="panel-body">
 									<li class="list-group-item" style="list-style: none;">
-									<a data-toggle="collapse" href="#collapsed{Pos}" style="color: #333;">
-									<h5>Issue {$Number} - $Date</h5></a></li>
-								<% end_if %>
-								<% loop $SortedChildren %>
-								<div id="collapsed{$Pos}" class="panel-collapse collapse in article-holder">
-									<li class="issue-item"><a href="$Link">$Title</a></li>
-										<% loop $Authors %>
-											<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a><% if not $Last %>,<% end_if %>
-										<% end_loop %>
-								</div>
+										<a data-toggle="collapse" href="#collapsed{$Pos}" style="color: #333;">Issue {$Number}</a></li>
+										<div id="collapsed{$Pos}" class="panel-collapse collapse article-holder">
+											<% loop $SortedChildren %>
+											<li class="issue-item"><a href="$Link">$Title</a></li>
+												<% loop $Authors %>
+												<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a>
+												<% end_loop %>
+											<% end_loop %>
+										</div>
+									</div>
 								<% end_loop %>
-							</div>
-						</div>
-						<hr>	
+								</div>
+								<hr>
 						<% end_loop %>
+						</div>
 					</div>
-				</div>
 
-				<% loop $getVolumes %>
-				<h4>test</h4>
-				<% end_loop %>
-			
 
 			
 		<!--<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;">
@@ -146,448 +142,21 @@
 						</div>
 					</div>
 				</div>
-				<hr>
-				<div class="panel panel-default">
-				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse7" style="color: #333;"><h4 class="panel-title">Volume 24<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>	
-					<div id="collapse7" class="panel-collapse collapse">
-						<div class="panel-body">
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse8" style="color: #333;">Issue 5 - December 2014</a></li>
-							<div id="collapse8" class="panel-collapse collapse in article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse9" style="color: #333;">Issue 4 - November 2014</a></li>
-							<div id="collapse9" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse10" style="color: #333;">Issue 3 - October 2014</a></li>
-							<div id="collapse10" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse11" style="color: #333;">Issue 2 - September 2014</a></li>
-							<div id="collapse11" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse12" style="color: #333;">Issue 1 - August 2014</a></li>
-							<div id="collapse12" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>				
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="panel panel-default">
-				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse13" style="color: #333;"><h4 class="panel-title">Volume 23<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>
-					<div id="collapse13" class="panel-collapse collapse">
-						<div class="panel-body">
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse14" style="color: #333;">Issue 5 - December 2013</a></li>
-							<div id="collapse14" class="panel-collapse collapse in article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse15" style="color: #333;">Issue 4 - November 2013</a></li>
-							<div id="collapse15" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse16" style="color: #333;">Issue 3 - October 2013</a></li>
-							<div id="collapse16" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse17" style="color: #333;">Issue 2 - September 2013</a></li>
-							<div id="collapse17" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse18" style="color: #333;">Issue 1 - August 2013</a></li>
-							<div id="collapse18" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>				
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="panel panel-default">
-				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse19" style="color: #333;"><h4 class="panel-title">Volume 22<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>
-					<div id="collapse19" class="panel-collapse collapse">
-						<div class="panel-body">
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse20" style="color: #333;">Issue 5 - December 2012</a></li>
-							<div id="collapse20" class="panel-collapse collapse in article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse21" style="color: #333;">Issue 4 - November 2012</a></li>
-							<div id="collapse21" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse22" style="color: #333;">Issue 3 - October 2012</a></li>
-							<div id="collapse22" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse23" style="color: #333;">Issue 2 - September 2012</a></li>
-							<div id="collapse23" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse24" style="color: #333;">Issue 1 - August 2012</a></li>
-							<div id="collapse24" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>				
-						</div>
-					</div>
-				</div>
-				<hr>
-				<div class="panel panel-default">
-				<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse25" style="color: #333;"><h4 class="panel-title">Volume 21<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>
-					<div id="collapse25" class="panel-collapse collapse">
-						<div class="panel-body">
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse26" style="color: #333;">Issue 5 - December 2011</a></li>
-							<div id="collapse26" class="panel-collapse collapse in article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse27" style="color: #333;">Issue 4 - November 2011</a></li>
-							<div id="collapse27" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse28" style="color: #333;">Issue 3 - October 2011</a></li>
-							<div id="collapse28" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse29" style="color: #333;">Issue 2 - September 2011</a></li>
-							<div id="collapse29" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>
-						<li class="list-group-item" style="list-style: none;">
-							<a data-toggle="collapse" href="#collapse30" style="color: #333;">Issue 1 - August 2011</a></li>
-							<div id="collapse30" class="panel-collapse collapse article-holder">
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important Will Probably Take Two Lines</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Shorter Title</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe</a>
-								<li class="issue-item"><a href="#">Law Article: Long Title About Something Important</a></li>
-									<a href="#" style="font-size: 15px;color: grey; padding-left: 15px;">John Doe, Jane Doe</a>
-							</div>				
-						</div>
-					</div>
-				</div>
+				
 				<hr>
 			</div>-->
+				
+			</div>
+			<div class="col-lg-3 col-lg-offset-1">
+		        <% include SideNav %>
+			</div>
 		</div>
 
 			$Form
-			<div class="col-lg-3 col-lg-offset-1">
-	          <% include SideNav %>
-			</div>
+			
 
-			</div>
+		
+
 			<!--After x volumes, if there are more, list volumes and their issues and link to issue pages {if SortedChildren > x-->
 			<div class="volume-holder" style="padding-left: 35px;">
 				<hr>
