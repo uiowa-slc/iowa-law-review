@@ -7,7 +7,7 @@
 
 					<div class="panel-group col-lg-offset-2" id="accordion" style="padding-left: 10px;">
 						<div class="panel panel-default">
-						<% loop $getVolumes %>
+						<% loop $getVolumes.Limit(5) %>
 							<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{$Pos}" style="color: #333;">
 							<h4 class="panel-title">Volume {$Number}<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>		
 								<div id="collapse{$Pos}" class="panel-collapse collapse">
