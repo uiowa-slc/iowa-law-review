@@ -10,11 +10,11 @@
 						<% loop $getVolumes.Limit(5) %>
 							<div class="panel-heading"><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse{$Pos}" style="color: #333;">
 							<h4 class="panel-title">Volume {$Number}<i class="indicator glyphicon glyphicon-chevron-down pull-right"></i></h4></a></div>		
-								<div id="collapse{$Pos}" class="panel-collapse collapse">
+								<div id="collapse{$Pos}" class="panel-collapse <% if $First %> in <% end_if %> collapse">
 								<% loop $getIssues %>
 									<div class="panel-body">
 									<li class="list-group-item" style="list-style: none;">
-										<a data-toggle="collapse" href="#{$Up.Number}collapsed{$Pos}" style="color: #333;">Issue {$Number} - {$Date}</a></li>
+										<a data-toggle="collapse" href="#{$Up.Number}collapsed{$Pos}" style="color: #333;">Issue<% if $Number %> {$Number}<% end_if %><% if $Date %> - {$Date}<% end_if %></a></li>
 										<div id="{$Up.Number}collapsed{$Pos}" class="panel-collapse collapse article-holder">
 											<% loop $SortedChildren %>
 											<li class="issue-item"><a href="$Link">$Title</a></li>
@@ -156,11 +156,11 @@
 			
 			<div class="volume-holder" style="padding-left: 35px;"><hr>
 			<% loop $getVolumes %>
-				<div class="vol-one col-lg-2 <% if $First %>col-lg-offset-1<% end_if %>" style="padding-bottom: 20px; padding-right:20px;">
+				<div class="vol-one col-lg-2 <% if $First || MultipleOf(5) %> col-lg-offset-1<% end_if %>" style="padding-bottom: 20px; padding-right:20px;">
 				<li style="list-style: none; padding-left: 15px;" class="vol-item">Volume {$Number}</li>
 					<% loop $getIssues %>			
 					<li class="list-item" style="list-style: none;">
-						<a href="$Link" style="font-size: 15px;">{$Number} - $Date</a></li>
+						<a href="$Link" style="font-size: 15px;"><% if $Number && $Date %>{$Number} - $Date <% else %> 1 - n.d <% end_if %></a></li>
 					<% end_loop %>		
 				</div>
 			<% end_loop %>
