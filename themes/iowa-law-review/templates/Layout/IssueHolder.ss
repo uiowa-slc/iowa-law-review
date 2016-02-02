@@ -160,7 +160,7 @@
 				<li style="list-style: none; padding-left: 15px;" class="vol-item">Volume {$Number}</li>
 					<% loop $getIssues %>			
 					<li class="list-item" style="list-style: none;">
-						<a href="#" style="font-size: 15px;">{$Number} - $Date</a></li>
+						<a href="$Link" style="font-size: 15px;">{$Number} - $Date</a></li>
 					<% end_loop %>		
 				</div>
 			<% end_loop %>
