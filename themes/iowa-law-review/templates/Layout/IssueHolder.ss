@@ -14,12 +14,12 @@
 								<% loop $getIssues %>
 									<div class="panel-body">
 									<li class="list-group-item" style="list-style: none;">
-										<a data-toggle="collapse" href="#{$Up.Number}collapsed{$Pos}" style="color: #333;">Issue {$Number}</a></li>
+										<a data-toggle="collapse" href="#{$Up.Number}collapsed{$Pos}" style="color: #333;">Issue {$Number} - {$Date}</a></li>
 										<div id="{$Up.Number}collapsed{$Pos}" class="panel-collapse collapse article-holder">
 											<% loop $SortedChildren %>
 											<li class="issue-item"><a href="$Link">$Title</a></li>
 												<% loop $Authors %>
-												<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name</a>
+												<a href="$Link" style="font-size: 15px;color: grey; padding-left: 15px;">$Name<% if not $Last %>, <% end_if %></a>
 												<% end_loop %>
 											<% end_loop %>
 										</div>
