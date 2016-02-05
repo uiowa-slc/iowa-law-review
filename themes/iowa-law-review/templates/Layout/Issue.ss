@@ -47,13 +47,3 @@
 		</div>
 	</div>
 </div>
-<div class="container">
-  <div class="col-lg-12">
-    <h1 class="text-center">Masthead</h1>
-       <% if $MastheadImage %>
-        <div class="masthead-image-container">
-          <img class="img-responsive" src="$MastheadImage.URL" />
-        </div>
-      <% end_if %>
-  </div>
-</div>
