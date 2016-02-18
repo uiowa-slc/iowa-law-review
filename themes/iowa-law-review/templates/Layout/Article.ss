@@ -61,7 +61,7 @@
 					<ol>
 						<% loop $Footnotes %>
 				    	<li class="footnote" id="fn:$Number">
-				        	<p>$Content<p>
+				        	$Content
 				    	</li>
 				    	<% end_loop %>
 					</ol>

@@ -1,7 +1,7 @@
 <?php
 class ArticleWordExtension extends DataExtension {
 
-	protected function parseManualSuperscripts($dom) {
+	protected function parseManualSuperscripts($dom, $dryrun = false) {
 		foreach ($dom->getElementsByTagName('sup') as $node) {
 
 			if ($node->hasChildNodes()) {
@@ -24,7 +24,9 @@ class ArticleWordExtension extends DataExtension {
 						$footnoteObject->ArticleID = $this->owner->ID;
 						$footnoteObject->Number    = $nodeInitValue;
 						$footnoteObject->Content   = '['.$nodeInitValue.'].';
-						$footnoteObject->write();
+						if(!$dryrun){
+							$footnoteObject->write();
+						}
 					}
 					$dom->saveXML($node);
 				}
@@ -32,8 +34,15 @@ class ArticleWordExtension extends DataExtension {
 		}
 		return $dom->saveXML();
 	}
-
-	protected function parseWordSuperscriptsFootnotes($content) {
+	private function innerXML($node) { 
+		$doc = $node->ownerDocument; 
+		$frag = $doc->createDocumentFragment(); 
+		foreach ($node->childNodes as $child) { 
+			$frag->appendChild($child->cloneNode(TRUE)); 
+		}
+		return $doc->saveXML($frag); 
+	}
+	protected function parseWordSuperscriptsFootnotes($content, $dryrun = false) {
 		$dom              = new DOMDocument;
 		$contentConverted = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
 		@$dom->loadHTML($contentConverted);
@@ -80,58 +89,81 @@ class ArticleWordExtension extends DataExtension {
 				// if there are any footnotes, proceed:
 				if ($footnoteItem) {
 
-					//footnoteParent probably p tag
+					//footnoteParent probably <p class="FootNote"
 					$footnoteParent = $footnoteItem->parentNode;
+				//remove extra superscripts from footnote.
+					$supTags = $footnoteParent->getElementsByTagName ( 'sup' );
+					foreach ($supTags as $supTag)
+						{
+						    $supTag->parentNode->removeChild($supTag);
+						}
 
-					$footnoteValue = $footnoteParent->nodeValue;
+					//remove footnote anchor:
+					$footnoteItem->parentNode->removeChild($footnoteItem);
+
+					//my attempts to get innerHTML of footnoteparent
+					//$footnoteValue = $footnoteParent->nodeValue;
+					//$footnoteValue = $footnoteParent->c14n();
+
+
+
+					$footnoteValue = $footnoteParent->ownerDocument->saveXML( $footnoteParent );
 					$formattedfnValEncoded = htmlentities($footnoteValue, null, 'utf-8');
 					$formattedfnValEncoded = str_replace('&nbsp;', '', $formattedfnValEncoded);
+
+					$formattedfnValFiltered = html_entity_decode($formattedfnValEncoded);
+
+					
 
 					$footnoteTest = Footnote::get()->filter(array('Number' => $wordSuperFormattedVal, 'ArticleID' => $this->owner->ID))->First();
 
 					if (!isset($footnoteTest)) {
-						$footnoteObject            = new Footnote();
-						$footnoteObject->ArticleID = $this->owner->ID;
-						$footnoteObject->Number    = $anchorNodeFormattedVal;
-						$footnoteObject->Content   = $formattedfnValEncoded;
-
-
-						//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element and remove it
-						$nextelement = $xpath->query('following-sibling::*', $footnoteParent);
-						if ($nextelement->item(0)) {
-							//loop through each sibling element
-							foreach ($nextelement as $nextelementItem) {
-								$nextClass = $nextelementItem->getAttribute('class');
-								$nextHref  = $nextelementItem->getAttribute('href');
-								$nextChild = $nextelementItem->childNodes->item(0);
-								if ($nextChild->nodeType == 1) {
-									break;
-								}
-
-								$content = $footnoteObject->Content;
-								//does the sibling have the following class:
-
-								if (($nextClass == '1StQuoteFN') && ($nextChild->nodeType == 1)) {
-									$content .= '<br />'.$nextelementItem->nodeValue;
-									$nextelementItem->parentNode->removeChild($nextelementItem);
-								}
-
-								if ($nextChild->nodeType == 3) {
-									$content .= '<br />'.$nextChild->nodeValue;
-									$nextChild = $nextelement->item(1)->childNodes->item(0);
-									$nextelementItem->parentNode->removeChild($nextelementItem);
-
-								} else {
-
-								}
-								$footnoteObject->Content = $content;
-							}
-						}
-
-						//then write:
-						$footnoteObject->write();
+						$footnoteObject = new Footnote();
+					}else{
+						$footnoteObject = $footnoteTest;
 					}
 
+					$footnoteObject->ArticleID = $this->owner->ID;
+					$footnoteObject->Number    = $anchorNodeFormattedVal;
+					$footnoteObject->Content   = $formattedfnValFiltered;
+
+
+					//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element and remove it
+					$nextelement = $xpath->query('following-sibling::*', $footnoteParent);
+					if ($nextelement->item(0)) {
+						//loop through each sibling element
+						foreach ($nextelement as $nextelementItem) {
+							$nextClass = $nextelementItem->getAttribute('class');
+							$nextHref  = $nextelementItem->getAttribute('href');
+							$nextChild = $nextelementItem->childNodes->item(0);
+							if ($nextChild->nodeType == 1) {
+								break;
+							}
+
+							$content = $footnoteObject->Content;
+							//does the sibling have the following class:
+
+							if (($nextClass == '1StQuoteFN') && ($nextChild->nodeType == 1)) {
+								$content .= '<br />'.$nextelementItem->nodeValue;
+								$nextelementItem->parentNode->removeChild($nextelementItem);
+							}
+
+							if ($nextChild->nodeType == 3) {
+								$content .= '<br />'.$nextChild->nodeValue;
+								$nextChild = $nextelement->item(1)->childNodes->item(0);
+								$nextelementItem->parentNode->removeChild($nextelementItem);
+
+							} else {
+
+							}
+							$footnoteObject->Content = $content;
+						}
+					}
+
+						//then write:
+					if(!$dryrun){
+						$footnoteObject->write();
+					}
 					$footnoteParent->parentNode->removeChild($footnoteParent);
 				}
 			}
@@ -142,6 +174,11 @@ class ArticleWordExtension extends DataExtension {
 		$dom = $this->parseManualSuperscripts($dom);
 
 		return $dom;
+	}
+
+	public function dryRun(){
+		//return "hello";
+		$this->parseWordSuperscriptsFootnotes($this->owner->Content, true);
 	}
 
 	protected function parseTables($content) {
@@ -171,13 +208,13 @@ class ArticleWordExtension extends DataExtension {
 	}
 
 	public function onBeforeWrite() {
-		$owner   = $this->owner;
-		$summary = $owner->Content;
+		 $owner   = $this->owner;
+		 $summary = $owner->Content;
 
-		$summary = $this->parseWordSuperscriptsFootnotes($summary);
-		$summary = $this->parseTables($summary);
+		 $summary = $this->parseWordSuperscriptsFootnotes($summary);
+		 $summary = $this->parseTables($summary);
 
-		$owner->Content = $summary;
+		 $owner->Content = $summary;
 
 		parent::onBeforeWrite();
 
