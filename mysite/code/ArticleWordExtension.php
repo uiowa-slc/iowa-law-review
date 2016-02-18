@@ -49,8 +49,9 @@ class ArticleWordExtension extends DataExtension {
 
 		$xpath = new DOMXPath($dom);
 
-		//Parse the superscripts
+		//Find all superscripts in the pasted Word document
 		$wordSuperscripts = $xpath->query('//a[contains(@href,"#_ftn") and not (contains(@href,"ref"))]/@href');
+		
 		//print_r($wordSuperscripts);
 
 		foreach ($wordSuperscripts as $wordSuperscript) {
@@ -82,7 +83,7 @@ class ArticleWordExtension extends DataExtension {
 				$anchorNode->setAttribute('rel', 'footnote');
 				$anchorNode->nodeValue = $anchorNodeFormattedVal;
 
-				//We need to minimize number of xpath queries by maybe caching these and not doing it nested in the wordsuperscripts foreach loop
+				//get all anchors considered to be footnotes
 				$footnotes = $xpath->query('//a[contains(@href,"#_ftnref'.$wordSuperFormattedVal.'")]');
 
 				$footnoteItem = $footnotes->item(0);
@@ -101,20 +102,16 @@ class ArticleWordExtension extends DataExtension {
 					//remove footnote anchor:
 					$footnoteItem->parentNode->removeChild($footnoteItem);
 
-					//my attempts to get innerHTML of footnoteparent
-					//$footnoteValue = $footnoteParent->nodeValue;
-					//$footnoteValue = $footnoteParent->c14n();
-
-
-
+					//get the footnote value, encode it to html characters in utf8 to remove some 
+					//Word weirdness, then decode to get proper html elements.
+					
 					$footnoteValue = $footnoteParent->ownerDocument->saveXML( $footnoteParent );
 					$formattedfnValEncoded = htmlentities($footnoteValue, null, 'utf-8');
 					$formattedfnValEncoded = str_replace('&nbsp;', '', $formattedfnValEncoded);
-
 					$formattedfnValFiltered = html_entity_decode($formattedfnValEncoded);
 
-					
-
+					// check to see if a footnote with this number exists in the db, if so, overwrite it.
+					// otherwise, make a new footnote.
 					$footnoteTest = Footnote::get()->filter(array('Number' => $wordSuperFormattedVal, 'ArticleID' => $this->owner->ID))->First();
 
 					if (!isset($footnoteTest)) {
@@ -123,12 +120,16 @@ class ArticleWordExtension extends DataExtension {
 						$footnoteObject = $footnoteTest;
 					}
 
+					//set the footnotes properties.
+
 					$footnoteObject->ArticleID = $this->owner->ID;
 					$footnoteObject->Number    = $anchorNodeFormattedVal;
 					$footnoteObject->Content   = $formattedfnValFiltered;
 
 
-					//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element and remove it
+					//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element to the footnote c ontent and remove it. 
+					//1StQuoteFN is sort of a separator if there's a quote or something in the footnote.
+					//Therefore, what comes afterwards is still part of the same footnote.
 					$nextelement = $xpath->query('following-sibling::*', $footnoteParent);
 					if ($nextelement->item(0)) {
 						//loop through each sibling element
@@ -148,7 +149,7 @@ class ArticleWordExtension extends DataExtension {
 								$nextelementItem->parentNode->removeChild($nextelementItem);
 							}
 
-							if ($nextChild->nodeType == 3) {
+							if (($nextChild->nodeType == 3) && $nextelement->item(1)) {
 								$content .= '<br />'.$nextChild->nodeValue;
 								$nextChild = $nextelement->item(1)->childNodes->item(0);
 								$nextelementItem->parentNode->removeChild($nextelementItem);
@@ -160,7 +161,7 @@ class ArticleWordExtension extends DataExtension {
 						}
 					}
 
-						//then write:
+					//then finally write:
 					if(!$dryrun){
 						$footnoteObject->write();
 					}
@@ -177,7 +178,6 @@ class ArticleWordExtension extends DataExtension {
 	}
 
 	public function dryRun(){
-		//return "hello";
 		$this->parseWordSuperscriptsFootnotes($this->owner->Content, true);
 	}
 
