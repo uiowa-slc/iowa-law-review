@@ -1,3 +1,13 @@
+          <h2 class="smallcaps subheader">From our print edition:</h2>
+            <div class="article-card-container">
+              <% with $LatestPrintIssue %>
+                <% loop $Children.Limit(2) %>
+                  <% include ArticleCard %>
+                <% end_loop %>
+              <% end_with %>
+              <p><a href="$LatestPrintIssue.Link" class="smallcaps btn btn-default btn-sm">Read issue &rarr;</a></p>
+            </div>
+
           <h2 class="smallcaps subheader">From our online edition:</h2>
             <div class="article-card-container">
               <% with $LatestOnlineIssue %>
