@@ -2,21 +2,18 @@
 	background-color: #232323;
 	color: #b6b6b6;
 	margin-top: 60px;
+	font-family: $font-family-sans-serif;
 }
 
 .footer a {
 	color: #d7d7d7;
-	font-variant: small-caps;
 }
 
 .footer h3 a {
 	color: #fff;
 }
 
-.footer-top-text {
-	float: left;
-	width: 50%;
-}
+.footer-top-text {}
 
 .footer-top {
 	padding-top: 15px;
@@ -26,19 +23,14 @@
 .iowa-law-review {
 	font-family: IowaLawReview, Georgia, 'Times New Roman', serif;
 	font-variant: small-caps;
-	padding-right: 0px;
-	padding-left: 0px;
 }
 
 .social-icons {
-	float: right;
 	padding-top: 25px;
 	margin-left: 0;
 }
 
 .footer-links {
-	float: left;
-	width: 35%;
 	padding: 1em 1em 1em;
 }
 
@@ -56,9 +48,4 @@
 	background-color: #232323;
 	padding-bottom: 15px;
 	padding-top: 0px;
-}
-
-.rights {
-	float: left;
-	width: 33%;
 }

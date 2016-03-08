@@ -7,7 +7,7 @@
         <% end_loop %>
       </ol>
       <div class="carousel-inner" role="listbox">
-      	<% loop $Children %>
+      	<% loop $Children.Limit(4) %>
 
         <div class="item <% if $First %>active<% end_if %> <% if $Image %>has-image<% end_if %>" style="<% if $Image %>background-image: url('$Image.URL');<% end_if %>">
           <a href="$Link">
@@ -15,7 +15,7 @@
             <div class="carousel-caption">
               <p class="smallcaps">In this issue:</p>
               <h1>$Title</h1>
-              <p><em>Herbert Hovenkamp</em></p>
+              <p><em><% include AuthorList %></em></p>
             </div>
           </article>
           </a>

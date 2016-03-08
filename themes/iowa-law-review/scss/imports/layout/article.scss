@@ -74,7 +74,12 @@
 	}
 
 	.article-header {
+		@media (min-width: $screen-lg-min) {
+			padding: 40px 0;
+		}
+
 		h1 {
+			margin-top: 0;
 			margin-bottom: 0;
 		}
 
@@ -184,7 +189,9 @@
 
 .article-card-container {
 	article {
-		.article-header {}
+		.article-header {
+			padding: 0;
+		}
 
 		h1 {
 			font-size: 28px;
@@ -209,7 +216,7 @@
 	font-family: $font-family-sans-serif;
 	text-align: center;
 	padding: 10px;
-	border: 1px solid #ddd;
+	border: 1px solid #7c7c7c;
 	margin: 10px 0;
 	font-size: 12px;
 }

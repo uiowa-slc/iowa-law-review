@@ -1,24 +1,39 @@
+
 <header>
-	<div class="container">
-		<div class="row">
-			<div class="col-md-2">
+	<% if UseLargeHeader %>
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-2">
+				</div>
+				<div class="col-md-8">
+					<h1 class="text-center"><a href="$BaseUrl">Iowa Law Review</a></h1>
+				</div>
+				<div class="col-md-2"></div>
 			</div>
-			<div class="col-md-8">
-				<h1 class="text-center"><a href="$BaseUrl">Iowa Law Review</a></h1>
-			</div>
-			<div class="col-md-2"></div>
+			<% if $LatestPrintIssue %>
+				<% with $LatestPrintIssue %>
+				<div class="header-subnav-container text-center">
+					<p>Latest Print Edition: <a href="$Link">$Date</a></p>
+				</div>
+				<% end_with %>
+			<% end_if %>
 		</div>
-		<% if $LatestPrintIssue %>
-			<% with $LatestPrintIssue %>
-			<div class="header-subnav-container text-center">
-				<p>Latest Print Edition: <a href="$Link">$Date</a></p>
+		<div class="border-container hidden-print">
+			<div class="navbar-container">
+				<% include Nav %>
 			</div>
-			<% end_with %>
-		<% end_if %>
-	</div>
-	<div class="border-container hidden-print">
-		<div class="navbar-container">
-			<% include Nav %>
 		</div>
-	</div>
+
+	<% else %>
+
+		<div class="border-container hidden-print">
+			<div class="navbar-container">
+				<% include SmallNav %>
+			</div>
+		</div>
+
+
+	<% end_if %>
+
 </header>

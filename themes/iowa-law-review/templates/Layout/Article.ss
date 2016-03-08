@@ -7,11 +7,10 @@
 		</div>
 
 	<% end_if %>
-<article role="main">
+<article role="main" class="main-content">
 	<div class="container article-container">
 		<div class="row">
-			<div class="col-lg-7 col-lg-offset-2">
-			$Breadcrumbs
+			<div class="col-lg-10 col-lg-offset-1">
 				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
 					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>

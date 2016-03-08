@@ -1,6 +1,12 @@
 #article-carousel {
+	.carousel-indicators {
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+
 	.item {
 		background-image: url("../images/slider-example-1.jpg");
+		background-size: cover;
 
 		a {
 			color: white;
@@ -16,7 +22,7 @@
 			min-height: 350px;
 
 			@media (min-width: $screen-lg-min) {
-				min-height: 500px;
+				min-height: 400px;
 			}
 		}
 
