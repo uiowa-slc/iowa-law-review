@@ -30,7 +30,7 @@ class Page extends SiteTree {
 		$printIssueHolder = IssueHolder::get()->filter(array('URLSegment' => 'print'))->First();
 
 		if ($printIssueHolder) {
-			$latestIssue = $printIssueHolder->sortedChildren()->First();
+			$latestIssue = Issue::get()->filter(array('ParentID' => $printIssueHolder->ID))->sort('OriginalPublicationDate')->First();
 			return $latestIssue;
 		}
 	}
