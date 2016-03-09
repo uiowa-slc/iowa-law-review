@@ -1,5 +1,4 @@
 <% include Header %>
-
 	<% if $Image %>
 		<div class="cover" style="background-image: url('$Image.URL');">
 
