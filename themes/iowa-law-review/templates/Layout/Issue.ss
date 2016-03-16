@@ -35,8 +35,8 @@
 	<div class="row">
 		<div class="col-lg-7 col-lg-offset-3" >
        <div class="issue-header">
-        <h1><a href="$Link">$Date</a></h1>
-        <h2 class="smallcaps subheader">Volume {$Volume}, Issue {$Number}</h2>
+        <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
+        <h2 class="smallcaps subheader">$Date</h2>
       </div>
       <div class="article-card-container">
   			<% loop $Children %>

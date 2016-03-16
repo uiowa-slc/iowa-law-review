@@ -15,6 +15,10 @@ html,body { //overflow-x:hidden;
 	top: 15px;
 }
 
+.padding{
+  padding-top: 40px;
+}
+
 button, .button, .btn {
 	font-family: $font-family-sans-serif;
 }
@@ -23,11 +27,22 @@ button, .button, .btn {
 	font-variant: small-caps;
 }
 
-h2.subheader {
+h2.subheader, p.subheader {
+  margin: 5px 0;
 	font-size: 18px;
 	color: #7f7f7f;
   font-family: $font-family-sans-serif;
   text-transform: uppercase;
+}
+
+.sidenav{
+  p.subheader{
+
+    font-size: 14px;
+  }
+  hr{
+    border-top: 1px solid white;
+  }
 }
 
 a.tag {
