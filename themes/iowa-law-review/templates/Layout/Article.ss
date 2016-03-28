@@ -7,7 +7,7 @@
 
 	<% end_if %>
 <article role="main" class="main-content">
-	<div class="container article-container">
+	<div class="container article-container padding">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1">
 				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">

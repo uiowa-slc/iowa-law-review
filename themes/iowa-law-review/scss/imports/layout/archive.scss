@@ -1,0 +1,25 @@
+.IssueHolder {
+	.volume-holder {
+		ul {
+			list-style-type: none;
+
+			.volume {
+				width: 20%;
+				float: left;
+				padding-left: 10px;
+				list-style-type: none;
+				margin: 0;
+				padding-bottom: 20px;
+
+				ul {
+					margin: 0;
+					padding: 0;
+				}
+
+				&:nth-of-type(5n+6) {
+					clear: left;
+				}
+			}
+		}
+	}
+}

@@ -1,13 +1,15 @@
 <aside class="sidenav">
-  <p class="subheader"><a href="$LatestPrintIssue.Link">From our print edition &rarr;</a></p>
-  <div class="article-card-container">
-    <% with $LatestPrintIssue %>
-      <% loop $Children.Limit(2) %>
-        <% include ArticleCard %>
-      <% end_loop %>
-    <% end_with %>
-    <p><a href="$LatestPrintIssue.Link">Read issue &rarr;</a></p>
-  </div>
+  <% if $ClassName != "HomePage" %>
+    <p class="subheader"><a href="$LatestPrintIssue.Link">From our print edition &rarr;</a></p>
+    <div class="article-card-container">
+      <% with $LatestPrintIssue %>
+        <% loop $Children.Limit(2) %>
+          <% include ArticleCard %>
+        <% end_loop %>
+      <% end_with %>
+     
+    </div>
+  <% end_if %>
   <p class="subheader padding"><a href="$LatestOnlineIssue.Link"> From our online edition &rarr;</a></p>
   <div class="article-card-container">
     <% with $LatestOnlineIssue %>
@@ -16,6 +18,6 @@
       <% end_loop %>
     <% end_with %>
   </div>
-  <h2 class="smallcaps subheader padding">Iowa Law Review on Twitter:</h2>
+  <p class="subheader padding"><a href="https://twitter.com/IowaLawReview">Iowa Law Review on Twitter &rarr;</a></p>
   <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
 </aside>

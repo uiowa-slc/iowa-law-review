@@ -2,7 +2,7 @@
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-      	<% loop $Children %>
+      	<% loop $Children.Limit(4) %>
         	<li data-target="#article-carousel" data-slide-to="{$Pos}" class="<% if $First %>active<% end_if %>"></li>
         <% end_loop %>
       </ol>
@@ -13,7 +13,7 @@
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
-              <p class="smallcaps">In this issue:</p>
+              <p class="smallcaps">Volume {$Top.Volume}, Issue {$Top.Number}</p>
               <h1>$Title</h1>
               <p><em><% include AuthorList %></em></p>
             </div>
@@ -31,9 +31,9 @@
         <span class="sr-only">Next</span>
       </a>
 </div>
-<div class="container">
+<div class="container padding">
 	<div class="row">
-		<div class="col-lg-7 col-lg-offset-3" >
+		<div class="col-lg-6 col-lg-offset-3" >
        <div class="issue-header">
         <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
         <h2 class="smallcaps subheader">$Date</h2>
