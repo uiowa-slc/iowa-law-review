@@ -11,10 +11,10 @@
 				</div>
 				<div class="col-md-2"></div>
 			</div>
-			<% if $LatestPrintIssue %>
-				<% with $LatestPrintIssue %>
+			<% if $LatestIssue %>
+				<% with $LatestIssue %>
 				<div class="header-subnav-container text-center">
-					<p>Latest Print Edition: <a href="$Link">$Date</a></p>
+					<p>Latest Issue: <a href="$Link">$Date</a></p>
 				</div>
 				<% end_with %>
 			<% end_if %>

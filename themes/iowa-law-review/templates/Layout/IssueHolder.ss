@@ -2,7 +2,7 @@
 <article role="main" class="main-content">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-7 col-lg-offset-2">
+			<div class="col-lg-7 col-lg-offset-3">
 				<h1>$Title</h1>
 
 				<% with $LatestIssue %>
@@ -15,6 +15,27 @@
 				        	<% include ArticleCard %>
 				  		<% end_loop %>
 				    </div>
+			<div class="article-nav-container container">
+					<div class="row article-card-container article-nav">
+						<div class="col-md-3 text-left">
+							<% if $PreviousPage %>
+								<h2><a href="$PreviousPage.Link">Previous:</a></h2>
+								<% with $PreviousPage %>
+									<% include ArticleCard %>
+								<% end_with %>							
+							<% end_if %>
+						</div>			
+						<div class="col-md-3 col-md-offset-6 text-right">
+							<% if $NextPage %>
+								<h2><a href="$Next.Link">Next:</a></h2>
+								<% with $NextPage %>
+									<% include ArticleCard %>
+								<% end_with %>
+							<% end_if %>
+						</div>
+					</div>
+		
+		</div>
 			   	<% end_with %>
 
 
@@ -49,6 +70,7 @@
 	          <% include SideNav %> 
 			</div>--%>
 	</div>
+
 	<div class="row">
 		<div class="col-lg-12">
 			<div class="volume-holder"><hr>
@@ -58,7 +80,7 @@
 						<ul>
 							<% loop $getIssues %>			
 							<li>
-								<a href="$Link"><% if $Number %> No. {$Number} <% end_if %></a>
+								<a href="$Link"><% if $Number %> No. {$Number}<% end_if %></a>
 							</li>
 							<% end_loop %>
 						</ul>
@@ -68,4 +90,5 @@
 			</div>
 		</div>
 	</div>
+
 </article>
