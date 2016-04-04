@@ -76,7 +76,8 @@
 				<% end_if %>
 				<% loop $Authors %>
 						<% if $BiographicalDetails || $ArticleNote %>
-						$Asterisks
+						<span class="asterisks">$Asterisks</span>
+						<span class="details">
 						<% if $BiographicalDetails %>
 							$BiographicalDetails
 						<% end_if %>
@@ -86,6 +87,7 @@
 						<% if not $Last %>
 							<hr />
 						<% end_if %>
+						</span>
 					<% end_if %>
 				<% end_loop %>
 			</div>

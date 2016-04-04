@@ -35,7 +35,7 @@
 				</div>			
 			</div>
 			<div class="col-lg-2">
-				<a href="http://gpsg.uiowa.edu" target="_blank"><img src="{$ThemeDir}/images/gpsg-logo.png" /></a>
+				<a href="http://gpsg.uiowa.edu" target="_blank" class="gpsg-logo"><img src="{$ThemeDir}/images/gpsg-logo.png" /></a>
 			</div>
 		</div>
 		<div class="row">

@@ -155,8 +155,16 @@ class ArticleWordExtension extends DataExtension {
 								$nextelementItem->parentNode->removeChild($nextelementItem);
 
 							} else {
+								if ($nextChild->nodeType == 1) {
+
+									if (($nextClass == 'FootNote') && !($nextChild->hasAttribute('href'))) {
+										$content .= '<br />' . $dom->saveXML($nextelementItem);
+										$nextelementItem->parentNode->removeChild($nextelementItem);
+									}
+								}
 
 							}
+
 							$footnoteObject->Content = $content;
 						}
 					}

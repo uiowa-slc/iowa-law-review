@@ -22,6 +22,10 @@
 
 	.author-notes {
 		font-size: 13px;
+
+		.details > p:first-of-type {
+			display: inline;
+		}
 	}
 
 	.main-content {
@@ -45,6 +49,16 @@
 
 	div.bigtext {
 		overflow-y: hidden;
+		line-height: 1.8;
+
+		> p:first-of-type:first-letter {
+			color: #333;
+			font-size: 62px;
+			line-height: 65px;
+			margin-right: 10px;
+			float: left;
+			width: 40px;
+		}
 
 		&.expanded {
 			overflow-y: visible;
