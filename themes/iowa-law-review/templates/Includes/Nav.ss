@@ -38,9 +38,10 @@
         <% end_loop %>
 
       </ul>
-      <form class="navbar-form navbar-right search" role="search">
+
+      <form class="navbar-form navbar-right search" role="search" action="home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
         <div class="form-group">
-          <input type="search" class="form-control" placeholder="Enter a search term">
+          <input type="search"  name="Search" class="form-control" placeholder="Enter a search term">
         </div>
         <button type="submit" class="btn btn-default">Search</button>
       </form>

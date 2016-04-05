@@ -43,6 +43,29 @@ class Page extends SiteTree {
 		}
 	}
 
+	public function UseLargeHeader(){
+		$class = $this->ClassName;
+
+		$smallHeaderClasses = array('Article', 'Issue');
+
+
+		if(array_search($class, $smallHeaderClasses) !== false){
+			return false;
+
+		}else{
+			return true;
+		}
+
+
+	}
+	public function NavBreadcrumbs($maxDepth = 2, $unlinked = false, $stopAtPageType = false, $showHidden = false) {
+		$pages = $this->getBreadcrumbItems($maxDepth, $stopAtPageType, $showHidden);
+         $template = new SSViewer('NavBreadcrumbsTemplate');
+         return $template->process($this->customise(new ArrayData(array(
+             "Pages" => $pages,
+              "Unlinked" => $unlinked
+         ))));
+     }
 }
 class Page_Controller extends ContentController {
 

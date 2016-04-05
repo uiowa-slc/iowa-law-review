@@ -1,11 +1,23 @@
-          <h2 class="smallcaps subheader">From our online edition:</h2>
-            <div class="article-card-container">
-              <% with $LatestOnlineIssue %>
-                <% loop $Children.Limit(2) %>
-                  <% include ArticleCard %>
-                <% end_loop %>
-              <% end_with %>
-              <p><a href="$LatestOnlineIssue.Link" class="smallcaps btn btn-default btn-sm">Read issue &rarr;</a></p>
-            </div>
-          <h2 class="smallcaps subheader">Iowa Law Review on Twitter:</h2>
-          <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
+<aside class="sidenav">
+  <% if $ClassName != "HomePage" %>
+    <p class="subheader"><a href="$LatestPrintIssue.Link">From our print edition &rarr;</a></p>
+    <div class="article-card-container">
+      <% with $LatestPrintIssue %>
+        <% loop $Children.Limit(2) %>
+          <% include ArticleCard %>
+        <% end_loop %>
+      <% end_with %>
+     
+    </div>
+  <% end_if %>
+  <p class="subheader padding"><a href="$LatestOnlineIssue.Link"> From our online edition &rarr;</a></p>
+  <div class="article-card-container">
+    <% with $LatestOnlineIssue %>
+      <% loop $Children.Limit(2) %>
+        <% include ArticleCard %>
+      <% end_loop %>
+    <% end_with %>
+  </div>
+  <p class="subheader padding"><a href="https://twitter.com/IowaLawReview">Iowa Law Review on Twitter &rarr;</a></p>
+  <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
+</aside>

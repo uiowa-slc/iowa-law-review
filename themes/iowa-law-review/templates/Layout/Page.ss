@@ -1,5 +1,5 @@
 <% include Header %>
-<article>
+<article role="main" class="main-content">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-7 col-lg-offset-1">

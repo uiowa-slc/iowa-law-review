@@ -95,7 +95,7 @@
         <span class="sr-only">Next</span>
       </a>
 </div>
-    <div class="container">
+    <div class="container padding">
       <div class="row">
         <div class="col-lg-7 col-lg-offset-1">
 

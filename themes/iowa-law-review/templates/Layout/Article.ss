@@ -1,5 +1,4 @@
 <% include Header %>
-
 	<% if $Image %>
 		<div class="cover" style="background-image: url('$Image.URL');">
 
@@ -7,11 +6,10 @@
 		</div>
 
 	<% end_if %>
-<article role="main">
-	<div class="container article-container">
+<article role="main" class="main-content">
+	<div class="container article-container padding">
 		<div class="row">
-			<div class="col-lg-7 col-lg-offset-2">
-			$Breadcrumbs
+			<div class="col-lg-10 col-lg-offset-1">
 				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
 					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>
@@ -61,7 +59,7 @@
 					<ol>
 						<% loop $Footnotes %>
 				    	<li class="footnote" id="fn:$Number">
-				        	<p>$Content<p>
+				        	$Content
 				    	</li>
 				    	<% end_loop %>
 					</ol>
@@ -78,7 +76,8 @@
 				<% end_if %>
 				<% loop $Authors %>
 						<% if $BiographicalDetails || $ArticleNote %>
-						$Asterisks
+						<span class="asterisks">$Asterisks</span>
+						<span class="details">
 						<% if $BiographicalDetails %>
 							$BiographicalDetails
 						<% end_if %>
@@ -88,6 +87,7 @@
 						<% if not $Last %>
 							<hr />
 						<% end_if %>
+						</span>
 					<% end_if %>
 				<% end_loop %>
 			</div>

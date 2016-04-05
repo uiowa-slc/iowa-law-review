@@ -15,17 +15,34 @@ html,body { //overflow-x:hidden;
 	top: 15px;
 }
 
+.padding{
+  padding-top: 40px;
+}
+
 button, .button, .btn {
-	font-variant: small-caps;
+	font-family: $font-family-sans-serif;
 }
 
 .smallcaps {
 	font-variant: small-caps;
 }
 
-h2.subheader {
+h2.subheader, p.subheader {
+  margin: 5px 0;
 	font-size: 18px;
 	color: #7f7f7f;
+  font-family: $font-family-sans-serif;
+  text-transform: uppercase;
+}
+
+.sidenav{
+  p.subheader{
+
+    font-size: 14px;
+  }
+  hr{
+    border-top: 1px solid white;
+  }
 }
 
 a.tag {
@@ -36,6 +53,11 @@ a.tag {
 	display: inline-block;
 	text-transform: uppercase;
 	color: #888;
+}
+.main-content{
+  @media (min-width: $screen-md-min) {
+    padding-top: 30px;
+  }
 }
 
   /**
