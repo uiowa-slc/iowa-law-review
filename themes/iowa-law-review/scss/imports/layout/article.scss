@@ -51,14 +51,14 @@
 		overflow-y: hidden;
 		line-height: 1.8;
 
-		> p:first-of-type:first-letter {
-			color: #333;
-			font-size: 62px;
-			line-height: 65px;
-			margin-right: 10px;
-			float: left;
-			width: 40px;
-		}
+		// > p:first-of-type:first-letter {
+		// 	color: #333;
+		// 	font-size: 62px;
+		// 	line-height: 65px;
+		// 	margin-right: 10px;
+		// 	float: left;
+		// 	width: 40px;
+		// }
 
 		&.expanded {
 			overflow-y: visible;
