@@ -1,3 +1,4 @@
+
 <% include Header %>
 	<% if $Image %>
 		<div class="cover" style="background-image: url('$Image.URL');">
@@ -6,6 +7,7 @@
 		</div>
 
 	<% end_if %>
+	$dryRun
 <article role="main" class="main-content">
 	<div class="container article-container padding">
 		<div class="row">

@@ -108,7 +108,9 @@ class ArticleWordExtension extends DataExtension {
 					$formattedfnValEncoded = htmlentities($footnoteValue, null, 'utf-8');
 					$formattedfnValEncoded = str_replace('&nbsp;', '', $formattedfnValEncoded);
 					$formattedfnValFiltered = html_entity_decode($formattedfnValEncoded);
-					$formattedfnValFiltered = utf8_encode($formattedfnValFiltered);
+
+					//$formattedfnValFiltered = htmlentities($formattedfnValFiltered);
+					//print_r($formattedfnValFiltered);
 					//print_r('<li>' . utf8_encode($formattedfnValFiltered) . '</li>');
 					//Debug::show($formattedfnValFiltered);
 					// check to see if a footnote with this number exists in the db, if so, overwrite it.
@@ -127,7 +129,7 @@ class ArticleWordExtension extends DataExtension {
 					$footnoteObject->Number = $anchorNodeFormattedVal;
 					$footnoteObject->Content = $formattedfnValFiltered;
 
-					//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element to the footnote c ontent and remove it.
+					//check if the sibling element next to footnoteParent is 1StQuoteFN, if so, append that element to the footnote content and remove it.
 					//1StQuoteFN is sort of a separator if there's a quote or something in the footnote.
 					//Therefore, what comes afterwards is still part of the same footnote.
 					$nextelement = $xpath->query('following-sibling::*', $footnoteParent);
