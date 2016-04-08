@@ -7,7 +7,6 @@
 		</div>
 
 	<% end_if %>
-	$dryRun
 <article role="main" class="main-content">
 	<div class="container article-container padding">
 		<div class="row">
