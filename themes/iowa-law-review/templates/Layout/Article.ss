@@ -107,7 +107,7 @@
 						</div>			
 						<div class="col-md-3 col-md-offset-6 text-right">
 							<% if $NextPage %>
-								<h2><a href="$Next.Link">Next:</a></h2>
+								<h2><a href="$NextPage.Link">Next:</a></h2>
 								<% with $NextPage %>
 									<% include ArticleCard %>
 								<% end_with %>

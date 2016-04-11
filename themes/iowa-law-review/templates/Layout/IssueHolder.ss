@@ -1,9 +1,31 @@
 <% include Header %>
 <article role="main" class="main-content">
+
+	<div class="container-fluid">
+
+		<div class="row article-card-container article-nav">
+			<div class="col-md-3 text-left">
+				<article>
+					<div class="article-header ">
+						<h1><a href="/iowa-law-review/print/volume-98-issue-4/exclusivity-without-patents-the-new-frontier-of-fda-regulation-for-genetic-materials/">&larr; Volume 100, Issue 4</a></h1>
+					</div>
+				</article>
+			</div>
+			<div class="col-md-3 col-md-offset-6 text-right">
+					<article>
+						<div class="article-header ">
+							<h1><a href="/iowa-law-review/print/volume-98-issue-4/exclusivity-without-patents-the-new-frontier-of-fda-regulation-for-genetic-materials/">Volume 100, Issue 6&rarr;</a></h1>
+						</div>
+					</article>
+			</div>
+		</div>
+
+	</div>
 	<div class="container">
+
 		<div class="row">
-			<div class="col-lg-7 col-lg-offset-3">
-				<h1>$Title</h1>
+			<div class="col-lg-7 col-lg-offset-1">
+				<h1>{$Title}: Latest Issue</h1>
 
 				<% with $LatestIssue %>
 				    <div class="issue-header">
@@ -15,27 +37,6 @@
 				        	<% include ArticleCard %>
 				  		<% end_loop %>
 				    </div>
-			<div class="article-nav-container container">
-					<div class="row article-card-container article-nav">
-						<div class="col-md-3 text-left">
-							<% if $PreviousPage %>
-								<h2><a href="$PreviousPage.Link">Previous:</a></h2>
-								<% with $PreviousPage %>
-									<% include ArticleCard %>
-								<% end_with %>							
-							<% end_if %>
-						</div>			
-						<div class="col-md-3 col-md-offset-6 text-right">
-							<% if $NextPage %>
-								<h2><a href="$Next.Link">Next:</a></h2>
-								<% with $NextPage %>
-									<% include ArticleCard %>
-								<% end_with %>
-							<% end_if %>
-						</div>
-					</div>
-		
-		</div>
 			   	<% end_with %>
 
 
@@ -66,28 +67,28 @@
 					</div> --%>
 
 			</div>
-			 <%--<div class="col-lg-3 col-lg-offset-1">
-	          <% include SideNav %> 
-			</div>--%>
+			<div class="col-lg-3 col-lg-offset-1">
+				<div class="volume-holder">
+					<h2>Archive</h2>
+					<% loop $getVolumes %>
+						<div class="volume">Volume {$Number}
+							<ul>
+								<% loop $getIssues %>			
+								<li>
+									<a href="$Link"><% if $Number %> No. {$Number} - {$Date}<% end_if %></a>
+								</li>
+								<% end_loop %>
+							</ul>
+						</div>
+					<% end_loop %>
+			
+			</div>          
+			</div>
 	</div>
 
 	<div class="row">
 		<div class="col-lg-12">
-			<div class="volume-holder"><hr>
-				<ul>
-				<% loop $getVolumes %>
-					<li class="volume">Volume {$Number}
-						<ul>
-							<% loop $getIssues %>			
-							<li>
-								<a href="$Link"><% if $Number %> No. {$Number}<% end_if %></a>
-							</li>
-							<% end_loop %>
-						</ul>
-					</li>
-				<% end_loop %>
-				</ul>
-			</div>
+
 		</div>
 	</div>
 

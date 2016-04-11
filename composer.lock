@@ -266,12 +266,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "d2f78b41b94e3c5d121fb967ed86b3c5b060b7dc"
+                "reference": "dae34de6d743fa71553dd6d857dc2052e29e9ee4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/d2f78b41b94e3c5d121fb967ed86b3c5b060b7dc",
-                "reference": "d2f78b41b94e3c5d121fb967ed86b3c5b060b7dc",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/dae34de6d743fa71553dd6d857dc2052e29e9ee4",
+                "reference": "dae34de6d743fa71553dd6d857dc2052e29e9ee4",
                 "shasum": ""
             },
             "require": {
@@ -307,7 +307,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2016-03-29 18:11:59"
+            "time": "2016-04-11 14:25:41"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -391,7 +391,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/84cf6125822c327f19eb87897ace0719fcbed53a",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/3f2579a4f1277ddcac9b1330148a6c0b96adf5a1",
                 "reference": "84cf6125822c327f19eb87897ace0719fcbed53a",
                 "shasum": ""
             },
@@ -1176,7 +1176,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/4f4ee821095be81407e41ebe50d4b0fbdfe2d150",
+                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/20484cbfdc1d93318717a951413a30a27ab02164",
                 "reference": "4f4ee821095be81407e41ebe50d4b0fbdfe2d150",
                 "shasum": ""
             },
