@@ -107,7 +107,7 @@ class ArticleWordExtension extends DataExtension {
 					$footnoteValue = $footnoteParent->ownerDocument->saveXML($footnoteParent);
 					$formattedfnValEncoded = htmlentities($footnoteValue, null, 'utf-8');
 					$formattedfnValEncoded = str_replace('&nbsp;', '', $formattedfnValEncoded);
-					$formattedfnValFiltered = html_entity_decode($formattedfnValEncoded);
+					$formattedfnValFiltered = html_entity_decode($formattedfnValEncoded, null, 'utf-8');
 
 					//$formattedfnValFiltered = htmlentities($formattedfnValFiltered);
 					//print_r($formattedfnValFiltered);
