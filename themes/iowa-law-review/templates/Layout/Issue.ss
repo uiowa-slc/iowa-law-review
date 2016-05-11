@@ -1,3 +1,6 @@
+Previous issue: $PreviousIssue.ID - $PreviousIssue.Title
+<br />
+Next Issue: $NextIssue.ID - $NextIssue.Title 
 <% include Header %>
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->

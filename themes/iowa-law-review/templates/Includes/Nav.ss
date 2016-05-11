@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default expanded-navbar">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -14,7 +14,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav primary-nav">
         <% loop Menu(1) %>
           <% if $URLSegment != "home" %>
           <li class="<% if $LinkOrSection == "section" %>active<% end_if %>
@@ -29,6 +29,9 @@
                 <% loop $SortedChildren.Limit(5) %>
                   <li><a href="$Link">$Title</a></li>
                 <% end_loop %>
+                  <% if $ClassName == "IssueHolder" %>
+                    <li><a href="$Link">More Issues...</a></li>
+                  <% end_if %>
                 <li role="separator" class="divider"></li>
                 <li><a href="$Link">$Title</a></li>
               </ul>

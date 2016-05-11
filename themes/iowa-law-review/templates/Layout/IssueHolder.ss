@@ -1,35 +1,18 @@
 <% include Header %>
 <article role="main" class="main-content">
 
-	<div class="container-fluid">
-
-		<div class="row article-card-container article-nav">
-			<div class="col-md-3 text-left">
-				<article>
-					<div class="article-header ">
-						<h1><a href="/iowa-law-review/print/volume-98-issue-4/exclusivity-without-patents-the-new-frontier-of-fda-regulation-for-genetic-materials/">&larr; Volume 100, Issue 4</a></h1>
-					</div>
-				</article>
-			</div>
-			<div class="col-md-3 col-md-offset-6 text-right">
-					<article>
-						<div class="article-header ">
-							<h1><a href="/iowa-law-review/print/volume-98-issue-4/exclusivity-without-patents-the-new-frontier-of-fda-regulation-for-genetic-materials/">Volume 100, Issue 6&rarr;</a></h1>
-						</div>
-					</article>
-			</div>
-		</div>
+	<div class="container">
 
 	</div>
 	<div class="container">
 
 		<div class="row">
 			<div class="col-lg-7 col-lg-offset-1">
-				<h1>{$Title}: Latest Issue</h1>
+				<h1>$Title</h1>
 
 				<% with $LatestIssue %>
 				    <div class="issue-header">
-				    	<h2><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h2>
+				    	<h2>Latest Issue: <a href="$Link">Volume {$Volume}, Issue {$Number}</a></h2>
 				       	<h3 class="smallcaps subheader">$Date</h3>
 				    </div>
 				    <div class="article-card-container">
@@ -69,7 +52,7 @@
 			</div>
 			<div class="col-lg-3 col-lg-offset-1">
 				<div class="volume-holder">
-					<h2>Archive</h2>
+					<h2>$Title</h2>
 					<% loop $getVolumes %>
 						<div class="volume">Volume {$Number}
 							<ul>
@@ -86,10 +69,33 @@
 			</div>
 	</div>
 
-	<div class="row">
-		<div class="col-lg-12">
+		<% with $LatestIssue %>
+ 		<div class="row article-card-container article-nav">
+ 			
+			<div class="col-md-4 text-left">
+				<% if $PreviousIssue %>
+					<% with $PreviousIssue %>
+						<article>
+							<div class="article-header ">
+								<h1><a href="$Link">&larr;&nbsp;$Title</a></h1>
+							</div>
+						</article>
+					<% end_with %>
+				<% end_if %>
+			</div>
 
-		</div>
-	</div>
+			<div class="col-md-4 col-md-offset-4 text-right">
+				<% if $NextIssue %>
+					<% with $NextIssue %>
+						<article>
+							<div class="article-header ">
+								<h1><a href="$Link">$Title&nbsp;&rarr;</a></h1>
+							</div>
+						</article>
+					<% end_with %>
+				<% end_if %>
+			</div>
+		</div> 
+		<% end_with %>
 
 </article>

@@ -15,12 +15,18 @@
 					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>
 					<% include ArticleByline %>
+
+					<div class="joint-author-notes">
+						<% if JointAuthorNotes %>
+							$JointAuthorNotes
+						<% end_if %>
+					</div>
 				</div>
 				
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-1 col-lg-offset-1">
+			<div class="col-lg-1 col-lg-offset-1 article-share-container">
 					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
 			</div>
 			<div class="col-lg-7">
@@ -72,9 +78,7 @@
 
 			</div>
 			<div class="col-lg-2 col-lg-offset-1 author-notes">
-				<% if JointAuthorNotes %>
-					$JointAuthorNotes
-				<% end_if %>
+
 				<% loop $Authors %>
 						<% if $BiographicalDetails || $ArticleNote %>
 						<span class="asterisks">$Asterisks</span>

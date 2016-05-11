@@ -34,7 +34,7 @@
 
 	.table-responsive {
 		@media (min-width: $screen-lg-min) {
-			margin-left: -50%;
+			margin-left: -30%;
 			max-width: 150%;
 		}
 
@@ -51,6 +51,11 @@
 		overflow-y: hidden;
 		line-height: 1.8;
 
+		.bigfoot-footnote__container {
+			visibility: hidden;
+			transition: visibility linear 1s;
+		}
+
 		// > p:first-of-type:first-letter {
 		// 	color: #333;
 		// 	font-size: 62px;
@@ -63,6 +68,10 @@
 		&.expanded {
 			overflow-y: visible;
 			height: auto;
+
+			.bigfoot-footnote__container {
+				visibility: visible;
+			}
 		}
 
 			/*	overflow-y: hidden;
@@ -104,6 +113,20 @@
 
 		.byline {
 			margin-top: 0;
+		}
+	}
+
+	.joint-author-notes {
+		font-size: 14px;
+	}
+
+	.article-share-container {
+		padding-top: 20px;
+		padding-bottom: 20px;
+
+		@media (min-width: $screen-lg-min) {
+			padding-top: 0;
+			padding-bottom: 0;
 		}
 	}
 
