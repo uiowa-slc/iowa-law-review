@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c33ace41deee47cb624400e808ef9ae6",
-    "content-hash": "2f5932579fa488873fdeab9d716435e1",
+    "hash": "c08030a9087cf4ceb93653c1557a72f6",
+    "content-hash": "ce9dcddfbf7c338ede8b6467b368e243",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -17,7 +17,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/29482dbd17e42c3de364aa3d46d20ba65175c9d3",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/8c0598a9bab411c9c9a95ca89ae3cd4e7779f887",
                 "reference": "825b989ad60cd8e16cc6fd7363409cc475492760",
                 "shasum": ""
             },
@@ -59,7 +59,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
+                "url": "https://api.github.com/repos/composer/installers/zipball/21a8c06dd5fe0a22b776797cc552e51d17d7e7dd",
                 "reference": "1cf7cc4b89d5e8549bbb7d6ab1de75da13d27988",
                 "shasum": ""
             },
@@ -270,7 +270,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/e54052b0272b96a714b67da1f46c719d9f3beba0",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/743f738a1aa4f638e1cb311020a8c3c2589176b5",
                 "reference": "e54052b0272b96a714b67da1f46c719d9f3beba0",
                 "shasum": ""
             },
@@ -391,7 +391,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/3f2579a4f1277ddcac9b1330148a6c0b96adf5a1",
+                "url": "https://api.github.com/repos/silverstripe-australia/silverstripe-gridfieldextensions/zipball/03d3bfb2c01ca0fa8e9d1ce6f5a326595992cbac",
                 "reference": "84cf6125822c327f19eb87897ace0719fcbed53a",
                 "shasum": ""
             },
@@ -859,7 +859,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/14518c52e93d0a0cc130b6f6fad80e36fccb617b",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-siteconfig/zipball/ed0ccd3d69688d5f2339801f6c934f1dde14a3df",
                 "reference": "14518c52e93d0a0cc130b6f6fad80e36fccb617b",
                 "shasum": ""
             },
@@ -1068,7 +1068,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/4e8e919c4260690dc9c779e03a6f9b913ac78b7d",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/f9e6491072c5153c3e290a2b556be5eb10bed63d",
                 "reference": "4e8e919c4260690dc9c779e03a6f9b913ac78b7d",
                 "shasum": ""
             },
@@ -1176,7 +1176,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/20484cbfdc1d93318717a951413a30a27ab02164",
+                "url": "https://api.github.com/repos/simplepie/simplepie/zipball/76fe7bb32214526f7e5cff08a22aba21d45ca4d1",
                 "reference": "4f4ee821095be81407e41ebe50d4b0fbdfe2d150",
                 "shasum": ""
             },
@@ -1326,7 +1326,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/33ea89fc0c2d6f4be343ddc71a9cefe8dec99dae",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/245caaff2abc95e7037d6160b79eae9f4e2926e5",
                 "reference": "33ea89fc0c2d6f4be343ddc71a9cefe8dec99dae",
                 "shasum": ""
             },
@@ -1405,7 +1405,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/fc2e8e5538198ce94fff0efd1a5564d0ce726dd3",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/0270e32c835769e986402251f0f7de5d571ce735",
                 "reference": "fc2e8e5538198ce94fff0efd1a5564d0ce726dd3",
                 "shasum": ""
             },
@@ -1434,6 +1434,53 @@
                 "silverstripe"
             ],
             "time": "2016-04-04 15:32:51"
+        },
+        {
+            "name": "willmorgan/silverstripe-cropperfield",
+            "version": "0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/willmorgan/silverstripe-cropperfield.git",
+                "reference": "8d1b03e54ee6cee2851827c848b602bd504cf73e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/willmorgan/silverstripe-cropperfield/zipball/8d1b03e54ee6cee2851827c848b602bd504cf73e",
+                "reference": "8d1b03e54ee6cee2851827c848b602bd504cf73e",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.3"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "cropperfield"
+            },
+            "autoload": {
+                "psr-4": {
+                    "CropperTest\\": "tests/",
+                    "CropperField\\": "code/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Will Morgan",
+                    "homepage": "http://willmorgan.co.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Provides an interface for you to generate thumbnails of things in the CMS. Adapters can be used to extend the functionality to thumbnail videos, PDF documents, etc.",
+            "keywords": [
+                "crop",
+                "silverstripe",
+                "thumbnail"
+            ],
+            "time": "2014-12-17 11:44:26"
         }
     ],
     "packages-dev": [],
