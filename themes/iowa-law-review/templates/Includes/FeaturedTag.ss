@@ -1,1 +1,1 @@
-<% if $FeaturedTag %><a href="$FeaturedTag.Link" class="tag featured-tag">$FeaturedTag.Title</a><% end_if %>
+<% if $Category %><a href="$Category.Link" class="tag featured-tag">$Category.Title</a><% end_if %>

@@ -1,6 +1,3 @@
-Previous issue: $PreviousIssue.ID - $PreviousIssue.Title
-<br />
-Next Issue: $NextIssue.ID - $NextIssue.Title 
 <% include Header %>
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
@@ -18,7 +15,7 @@ Next Issue: $NextIssue.ID - $NextIssue.Title
             <div class="carousel-caption">
               <p class="smallcaps">Volume {$Top.Volume}, Issue {$Top.Number}</p>
               <h1>$Title</h1>
-              <p><em><% include AuthorList %></em></p>
+              <p><em><% include AuthorListNoAsterisks %></em></p>
             </div>
           </article>
           </a>
@@ -50,3 +47,28 @@ Next Issue: $NextIssue.ID - $NextIssue.Title
 		</div>
 	</div>
 </div>
+  <div class="article-nav-container container">
+    <hr />
+      <div class="row article-card-container article-nav">
+  
+        <div class="col-md-4 text-left">
+          <% if $PreviousIssue %>
+            <h2><a href="$PreviousIssue.Link">Previous Issue:</a></h2>
+            <% with $PreviousIssue %>
+              <% include IssueCard %>
+            <% end_with %>
+          <% end_if %>
+        </div>
+
+        <div class="col-md-4 col-md-offset-4 text-right">
+          <% if $NextIssue %>
+            <h2><a href="$NextIssue.Link">Next Issue:</a></h2>
+            <% with $NextIssue %>
+              <% include IssueCard %>
+            <% end_with %>
+          <% end_if %>
+        </div>
+      </div>
+
+</div>
+   

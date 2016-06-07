@@ -621,16 +621,16 @@ $button-transition-properties: background-color !default;
   -ms-word-break: break-all;
 
   /* This is the dangerous one in WebKit, as it breaks things wherever */
-  word-break: break-all;
+  //word-break: break-all;
 
   /* Instead use this non-standard one: */
-  word-break: break-word;
+  //word-break: break-word;
 
   /* Adds a hyphen where the word breaks, if supported (No Blink) */
-  -ms-hyphens: auto;
-  -moz-hyphens: auto;
-  -webkit-hyphens: auto;
-  hyphens: auto;
+  // -ms-hyphens: auto;
+  // -moz-hyphens: auto;
+  // -webkit-hyphens: auto;
+  // hyphens: auto;
 
   // POSITIONING
   position: relative;
@@ -639,7 +639,7 @@ $button-transition-properties: background-color !default;
   // Below fading bars
 
   // DISPLAY AND SIZING
-  display: inline-block;
+  //display: inline-block;
   max-height: $popover-max-height;
   padding: $popover-padding-content-top $popover-padding-content-horizontal $popover-padding-content-bottom;
   box-sizing: inherit;

@@ -16,11 +16,7 @@
 					<h1>$ArticleTitle</h1>
 					<% include ArticleByline %>
 
-					<div class="joint-author-notes">
-						<% if JointAuthorNotes %>
-							$JointAuthorNotes
-						<% end_if %>
-					</div>
+
 				</div>
 				
 			</div>
@@ -87,6 +83,8 @@
 							$BiographicalDetails
 						<% end_if %>
 						<% if $ArticleNote %>
+							<br />
+							<br />
 							$ArticleNote
 						<% end_if %>
 						<% if not $Last %>
@@ -95,6 +93,12 @@
 						</span>
 					<% end_if %>
 				<% end_loop %>
+				<% if JointAuthorNotes %>
+					<hr />
+					<div class="joint-author-notes">
+						$JointAuthorNotes
+					</div>
+				<% end_if %>
 			</div>
 		</div>
 	</div>

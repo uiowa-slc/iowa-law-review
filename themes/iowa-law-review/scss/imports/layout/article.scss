@@ -7,17 +7,21 @@
 .article-header .featured-tag {
 	text-transform: uppercase;
 	font-family: $font-family-sans-serif;
-	font-size: 11px;
+	font-size: 13px;
 	color: #888;
 	margin: 0;
 	margin-bottom: 10px;
 }
 
 .article-nav-container {
-	//max-width: 1440px;
+	padding-top: 20px;
 }
 
 .Article, .ArticleFromWord {
+	.article-header .featured-tag {
+		font-size: 16px;
+	}
+
 	.bigtext-wrapper {}
 
 	.author-notes {
