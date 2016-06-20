@@ -14,7 +14,7 @@
 			<% if $LatestIssue %>
 				<% with $LatestIssue %>
 				<div class="header-subnav-container text-center">
-					<p>Latest Issue: <a href="$Link">$Date</a></p>
+					<p>Latest Issue: <a href="$Link"><% if $Date %>$Date<% else %>Volume $Volume - No. $Number<% end_if %></a></p>
 				</div>
 				<% end_with %>
 			<% end_if %>
