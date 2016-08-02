@@ -20,35 +20,25 @@
     <hr />
     <p>Showing Results {$Results.FirstItem} - {$Results.LastItem}.</p>
     <% if $Results.MoreThanOnePage %>
+		<nav role="navigation">
+			<ul class="cd-pagination">
+				<% if $Results.NotFirstPage %>
+				<li class="button"><a class="disabled" href="$Results.PrevLink" aria-label="Previous">Prev</a></li>
+				<% end_if %>
+				<% loop $Results.Pages %>
+		    		<% if $CurrentBool %>
+						<li><a class="current" href="$Link">$PageNum <span class="sr-only">(current)</span></a></li>
 
-		<nav>
-		  <ul class="pagination">
-		  	<% if $Results.NotFirstPage %>
-		    <li>
-			  <a href="$Results.PrevLink" aria-label="Previous">
-			    <span aria-hidden="true">&laquo;</span>
-			  </a>
-		    </li>
-		    <% end_if %>
-		    <% loop $Results.Pages %>
-		    	<% if $CurrentBool %>
-		    		<li class="active"><a href="$Link">$PageNum <span class="sr-only">(current)</span></a></li>
-		    	<% else %>
-		    		<li><a href="$Link">$PageNum</a></li>
-		    	<% end_if %>
-
-		    <% end_loop %>
-
-		    <% if $Results.NotLastPage %>
-		    <li>
-		      <a href="$Results.NextLink" aria-label="Next">
-		        <span aria-hidden="true">&raquo;</span>
-		      </a>
-		    </li>
-		    <% end_if %>
-		  </ul>
-		</nav>
-
+					<% else %>
+						<li><a href="$Link">$Pagenum</a></li>
+					<% end_if %>
+				<% end_loop %>
+				<%-- <li><span>...</span></li> --%>
+				<% if $Results.NotLastPage %>
+				<li class="button"><a href="$Results.NextLink">Next</a></li>
+				<% end_if %>
+			</ul>
+		</nav> <!-- cd-pagination-wrapper -->
     <% end_if %>
 			</div>
 			<div class="col-lg-3 col-lg-offset-1">

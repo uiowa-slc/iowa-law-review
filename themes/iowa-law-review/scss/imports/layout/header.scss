@@ -1,3 +1,11 @@
+.division-topbar {
+	background: #fff;
+
+	.division-search-input, input.division-search-input[type="search"] {
+		border-color: #ddd;
+	}
+}
+
 header {
 	h1 {
 		a {
@@ -29,24 +37,39 @@ header {
 		@media (min-width: $screen-md-min) {
 			font-size: 19px;
 		}
+
+		p {
+			@media (min-width: $screen-lg-min) {
+				margin: 0;
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.wordmark-container {
+		@media (min-width: $screen-md-min) {
+			margin-top: -35px;
+		}
 	}
 }
 
 .border-container {
 	padding: 2px 0;
-	border-top: 2px solid #111;
-	border-bottom: 2px solid #111;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
 }
 
 .navbar-container {
-	border-top: 2px solid #111;
-	border-bottom: 2px solid #111;
+	border-top: 1px solid #111;
+	border-bottom: 1px solid #111;
 
 	&.affix {
 		top: 0;
 		z-index: 99;
 		position: static;
-		box-shadow: 0 3px 10px rgba(51, 51, 51, 0.15);
+		-webkit-box-shadow: 0px 10px 50px 8px rgba(#ddd, 0.1);
+		-moz-box-shadow: 0px 10px 50px 8px rgba(#ddd, 0.1);
+		box-shadow: 0px 10px 50px 8px rgba(#ddd, 0.1);
 
 		@media (min-width: $screen-lg-min) {
 			position: fixed;
@@ -67,6 +90,10 @@ header {
 	font-variant: small-caps;
 	font-size: 18px;
 
+	.navbar-nav {
+		text-align: center;
+	}
+
 	.navbar-nav.primary-nav li a {
 		line-height: 1.5;
 	}
@@ -82,6 +109,11 @@ header {
 	}
 
 	@media (min-width: $screen-md-min) {
+		.navbar-nav.navbar-social > li > a {
+			padding-top: 18px;
+			padding-bottom: 0px;
+		}
+
 		.navbar-nav > li > a {
 			padding-bottom: 13px;
 		}
@@ -95,6 +127,7 @@ header {
 		button {
 			border: none;
 			font-variant: small-caps;
+			border-radius: 20px;
 		}
 	}
 
@@ -128,14 +161,16 @@ header {
 	}
 
 	.navbar-form .form-control {
-		width: 150px;
+		font-family: $font-family-sans-serif;
+		font-variant: normal;
+		width: 100%;
 
 		@media (min-width: $screen-md-min) {
 			width: 175px;
 		}
 
 		@media (min-width: $screen-lg-min) {
-			width: auto;
+			width: 300px;
 		}
 	}
 
@@ -148,7 +183,8 @@ header {
 	}
 
 	button.btn.btn-default {
-		background: none;
+		//background: none;
+
 	}
 
 	input::-webkit-input-placeholder {

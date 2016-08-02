@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <% base_tag %>
     <title>$Title.NoHTML - {$SiteConfig.Title} - The University of Iowa College of Law</title>
+<style><% include CriticalCss %></style>
     <script src="https://use.typekit.net/qsy8ktc.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <!-- Bootstrap -->
@@ -19,7 +20,10 @@
     <![endif]-->
   </head>
   <body class="{$ClassName}">
-  <% include UiowaBarBootstrap %>
+  <% include UiowaBarBootstrapLight %>
+
+    <a href="#main-content" class="skip-link">Skip to the main content</a>
+    <a href="#primary-nav" class="skip-link">Skip to the main navigation</a>
     $Layout
     
 

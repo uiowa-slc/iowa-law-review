@@ -7,6 +7,48 @@ html,body { //overflow-x:hidden;
 	}
 }
 
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media print {
+  a[href]:after {
+    content: none;
+  }
+}
+// skip module data map
+$skip: (
+  padding: 1em 1.5em,
+  background: #fff,
+  color: white
+);
+
+
+// basic functionalty for the skip link
+.skip-link {
+  position: absolute;
+  display: inline-block;
+  top: -1000px;
+  left: -1000px;
+
+  &:active,
+  &:focus,
+  &:hover {
+    top: 0;
+    left: 0;
+    z-index: 200;
+  }
+}
+// theming for the skip link
+.skip-link {
+  padding: map-get($skip, padding);
+  background: map-get($skip, background);
+  color: map-get($skip, color);
+}
+.padding{
+  padding-top: 40px;
+}
 .sticky {
 	position: -webkit-sticky;
 	position: -moz-sticky;

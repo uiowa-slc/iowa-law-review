@@ -1,5 +1,5 @@
-
-<nav class="navbar navbar-default condensed-navbar">
+<h2 id="primary-nav" class="sr-only">Main Navigation</h2>
+<nav class="navbar navbar-default condensed-navbar" role="navigation" aria-label="Main menu">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -24,7 +24,7 @@
           </li>
           $NavBreadcrumbs
       </ul>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right navbar-social">
            <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><span class="social-icon icon-facebook"></span></a></li>
           <li><a href="https://twitter.com/IowaLawReview" target="_blank"><span class="social-icon icon-twitter"></span></a></li>
       </ul>

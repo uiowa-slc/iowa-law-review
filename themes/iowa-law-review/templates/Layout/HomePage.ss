@@ -95,7 +95,7 @@
         <span class="sr-only">Next</span>
       </a>
 </div>
-    <div class="container padding">
+    <div class="container padding main-content" role="main">
       <div class="row">
         <div class="col-lg-7 col-lg-offset-1">
 
@@ -113,8 +113,10 @@
           <% end_with %>
         </div>
 
-       <div class="col-lg-3 col-lg-offset-1">
-          <% include SideNav %>
+        <div class="sidenav-container">
+          <div class="col-lg-3 col-lg-offset-1">
+            <% include SideNav %>
+          </div>
         </div>
 
       </div>

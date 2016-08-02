@@ -1,5 +1,5 @@
-
-<nav class="navbar navbar-default expanded-navbar">
+<h2 id="primary-nav" class="sr-only">Main Navigation</h2>
+<nav class="navbar navbar-default expanded-navbar" role="navigation" aria-label="Main menu">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -14,6 +14,12 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <form class="navbar-form navbar-right search" role="search" action="home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+        <div class="form-group">
+          <input type="search"  name="Search" class="form-control" placeholder="Enter a search term">
+        </div>
+        <button type="submit" class="btn btn-round btn-default btn-primary">Search</button>
+      </form>
       <ul class="nav navbar-nav primary-nav">
         <% loop Menu(1) %>
           <% if $URLSegment != "home" %>
@@ -42,13 +48,8 @@
 
       </ul>
 
-      <form class="navbar-form navbar-right search" role="search" action="home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
-        <div class="form-group">
-          <input type="search"  name="Search" class="form-control" placeholder="Enter a search term">
-        </div>
-        <button type="submit" class="btn btn-default">Search</button>
-      </form>
-    <ul class="nav navbar-nav navbar-right">
+
+    <ul class="nav navbar-nav navbar-right navbar-social">
            <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><span class="social-icon icon-facebook"></span></a></li>
           <li><a href="https://twitter.com/IowaLawReview" target="_blank"><span class="social-icon icon-twitter"></span></a></li>
       </ul>

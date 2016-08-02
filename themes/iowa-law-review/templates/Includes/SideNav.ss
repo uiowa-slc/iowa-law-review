@@ -10,7 +10,9 @@
      
     </div>
   <% end_if %>
+
   <p class="subheader padding"><a href="$LatestOnlineIssue.Link"> From our online edition &rarr;</a></p>
+
   <div class="article-card-container">
     <% with $LatestOnlineIssue %>
       <% loop $Children.Limit(2) %>
@@ -18,6 +20,8 @@
       <% end_loop %>
     <% end_with %>
   </div>
-  <p class="subheader padding"><a href="https://twitter.com/IowaLawReview">Iowa Law Review on Twitter &rarr;</a></p>
-  <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
+  <div class="sticky">
+    <p class="subheader padding"><a href="https://twitter.com/IowaLawReview">Iowa Law Review on Twitter &rarr;</a></p>
+    <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
+  </div>
 </aside>
