@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         },                  // Target
         options: {              // Target options
           outputStyle: 'compressed',
-          includePaths: ['<%=globalConfig.themeDir %>/bower_components/bootstrap-sass/assets/stylesheets/', 'division-bar/scss', '<%=globalConfig.themeDir %>/bower_components/bourbon/app/assets/stylesheets']
+          includePaths: ['<%=globalConfig.themeDir %>/bower_components/bootstrap/scss/', 'division-bar/scss', '<%=globalConfig.themeDir %>/bower_components/bourbon/app/assets/stylesheets']
         }
       }
     },
