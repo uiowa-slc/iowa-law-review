@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <% base_tag %>
-    <title>$Title.NoHTML - {$SiteConfig.Title} - The University of Iowa College of Law</title>
+    <title><% if $URLSegment != "home" %>$Title.NoHTML - <% end_if %>{$SiteConfig.Title} - The University of Iowa College of Law</title>
 <style><% include CriticalCss %></style>
     <script src="https://use.typekit.net/qsy8ktc.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
