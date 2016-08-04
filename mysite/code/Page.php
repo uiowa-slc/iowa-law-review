@@ -58,7 +58,7 @@ class Page extends SiteTree {
 
 
 	}
-	public function NavBreadcrumbs($maxDepth = 2, $unlinked = false, $stopAtPageType = false, $showHidden = false) {
+	public function NavBreadcrumbs($maxDepth = 3, $unlinked = false, $stopAtPageType = false, $showHidden = false) {
 		$pages = $this->getBreadcrumbItems($maxDepth, $stopAtPageType, $showHidden);
          $template = new SSViewer('NavBreadcrumbsTemplate');
          return $template->process($this->customise(new ArrayData(array(

@@ -644,7 +644,8 @@ $button-transition-properties: background-color !default;
   padding: $popover-padding-content-top $popover-padding-content-horizontal $popover-padding-content-bottom;
   box-sizing: inherit;
   overflow: auto;
-  -webkit-overflow-scrolling: touch;
+
+  //-webkit-overflow-scrolling: touch;
 
   // BACKDROP
   background: $popover-content-color-background;

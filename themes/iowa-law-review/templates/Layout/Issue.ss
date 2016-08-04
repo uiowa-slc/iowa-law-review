@@ -13,7 +13,7 @@
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
-              <p class="smallcaps">Volume {$Top.Volume}, Issue {$Top.Number}</p>
+              <p class="smallcaps">Volume {$Top.Volume}<% if $Top.Number %>, Issue {$Top.Number}<% end_if %></p>
               <h1>$Title</h1>
               <p><em><% include AuthorListNoAsterisks %></em></p>
             </div>
@@ -35,7 +35,7 @@
 	<div class="row">
 		<div class="col-lg-6 col-lg-offset-3" >
        <div class="issue-header">
-        <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
+        <h1><a href="$Link">Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %></a></h1>
         <h2 class="smallcaps subheader">$Date</h2>
       </div>
       <div class="article-card-container">

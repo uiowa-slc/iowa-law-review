@@ -11,6 +11,7 @@
 	color: #888;
 	margin: 0;
 	margin-bottom: 10px;
+	background: none;
 }
 
 .article-nav-container {
@@ -18,14 +19,18 @@
 }
 
 .Article, .ArticleFromWord {
-	.article-header .featured-tag {
-		font-size: 16px;
+	.article-header.primary-article-header {
+		text-align: center;
 	}
 
 	.bigtext-wrapper {}
 
 	.author-notes {
 		font-size: 13px;
+
+		@media (min-width: $screen-lg-min) {
+			padding-top: 25px;
+		}
 
 		.details > p:first-of-type {
 			display: inline;
@@ -136,7 +141,7 @@
 	}
 
 	//Sidebar social icons
-	.article-social-container-main {
+	.article-social-container-main, .article-social-bottom {
 		margin: 25px 0;
 
 		&.affix-bottom {

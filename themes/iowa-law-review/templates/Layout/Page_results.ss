@@ -30,7 +30,12 @@
 						<li><a class="current" href="$Link">$PageNum <span class="sr-only">(current)</span></a></li>
 
 					<% else %>
-						<li><a href="$Link">$PageNum</a></li>
+						<% if $Link %>
+							<li><a href="$Link">$PageNum</a></li>
+						<% else %>
+							<li><span>...</span></li>
+						<% end_if %>
+						
 					<% end_if %>
 				<% end_loop %>
 				<%-- <li><span>...</span></li> --%>

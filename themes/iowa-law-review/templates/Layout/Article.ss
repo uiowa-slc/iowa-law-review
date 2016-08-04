@@ -10,8 +10,8 @@
 <article role="main" class="main-content">
 	<div class="container article-container padding">
 		<div class="row">
-			<div class="col-lg-10 col-lg-offset-1">
-				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
+			<div class="col-lg-12">
+				<div class="article-header primary-article-header<% if $FeaturedTag %>has-featured-tag<% end_if %>">
 					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>
 					<% include ArticleByline %>
@@ -22,10 +22,10 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-1 col-lg-offset-1 article-share-container">
+			<div class="col-lg-1 article-share-container">
 					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
 			</div>
-			<div class="col-lg-7">
+			<div class="col-lg-7 col-lg-offset-1">
 				
 					<!--Summary-->
 				

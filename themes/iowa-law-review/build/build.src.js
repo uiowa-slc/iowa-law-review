@@ -3410,6 +3410,16 @@ if (typeof jQuery === 'undefined') {
 			    });
 
 			});
+			$('.article-social-container-main').affix({
+			  offset: { 
+		      top: $('.bigtext').offset().top + $('.navbar').outerHeight(true),
+		      bottom: ($('footer').outerHeight(true) + $('.article-nav-container').outerHeight(true))
+		     }
+			}).wrap(function() {
+			  return $('<div></div>', {
+			    height: $(this).outerHeight()
+			  });
+			});​
 			function toggleChevron(e) {
 			    $(e.target)
 			        .prev('.panel-heading')
