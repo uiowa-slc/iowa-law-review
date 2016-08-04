@@ -10,7 +10,7 @@
 <article role="main" class="main-content">
 	<div class="container article-container padding">
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-lg-7 col-lg-offset-2">
 				<div class="article-header primary-article-header<% if $FeaturedTag %>has-featured-tag<% end_if %>">
 					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>
