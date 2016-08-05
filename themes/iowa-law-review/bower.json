@@ -20,6 +20,7 @@
     "bigfoot": "~2.1.3",
     "bootstrap-sass": "~3.3.6",
     "jquery-sticky": "^1.0.3",
-    "bourbon": "^4.2.7"
+    "bourbon": "^4.2.7",
+    "bootstrap-block-grid": "^1.1.7"
   }
 }

@@ -9,7 +9,7 @@
     <% end_if %>
 
     <% if $Results %>
-    <div class="article-card-container">
+    <div class="article-card-container full-width">
         <% loop $Results %>
         	<% include ArticleCard %>
         <% end_loop %>

@@ -20,7 +20,9 @@
     <![endif]-->
   </head>
   <body class="{$ClassName}">
+  <% if UseLargeHeader %>
   <% include UiowaBarBootstrapLight %>
+  <% end_if %>
 
     <a href="#main-content" class="skip-link">Skip to the main content</a>
     <a href="#primary-nav" class="skip-link">Skip to the main navigation</a>

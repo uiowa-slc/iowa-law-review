@@ -15,7 +15,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>Menu <span class="caret"></span></a>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-th" aria-hidden="true"></span>Sections <span class="caret"></span></a>
             <ul class="dropdown-menu">
                 <% loop $Menu(1) %>
                   <li><a href="$Link">$MenuTitle</a></li>
@@ -24,6 +24,12 @@
           </li>
           $NavBreadcrumbs
       </ul>
+            <form class="navbar-form navbar-right search" role="search" action="home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+        <div class="form-group">
+          <input type="search"  name="Search" class="form-control" placeholder="Enter a search term">
+        </div>
+        <button type="submit" class="btn btn-round btn-default btn-primary sr-only">Search</button>
+      </form>
     <ul class="nav navbar-nav navbar-right navbar-social">
            <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><span class="social-icon icon-facebook"></span></a></li>
           <li><a href="https://twitter.com/IowaLawReview" target="_blank"><span class="social-icon icon-twitter"></span></a></li>

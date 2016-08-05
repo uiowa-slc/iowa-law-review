@@ -97,7 +97,7 @@
 </div>
     <div class="container padding main-content" role="main">
       <div class="row">
-        <div class="col-lg-7 col-lg-offset-1">
+        <div class="col-lg-8">
 
           <% with $LatestPrintIssue %>
             <h2 class="smallcaps subheader"><a href="$Link">From the Latest Print Edition:</a></h2>
@@ -105,10 +105,15 @@
               <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
               <p class="smallcaps subheader">$Date</a></p>
             </div>
-              <div class="article-card-container">
-                <% loop $Children %>
-                  <% include ArticleCard %>
-                <% end_loop %>
+              <div class="article-card-container row full-width">
+
+                <div class="block-grid-xs-1 block-grid-md-2">
+                  <% loop $Children %>
+                    <div>
+                    <% include ArticleCard %>
+                    </div>
+                  <% end_loop %>
+                </div>
               </div>
           <% end_with %>
         </div>

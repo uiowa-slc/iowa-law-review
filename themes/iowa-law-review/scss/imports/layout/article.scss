@@ -10,7 +10,6 @@
 	font-size: 13px;
 	color: #888;
 	margin: 0;
-	margin-bottom: 10px;
 	background: none;
 }
 
@@ -60,6 +59,7 @@
 		overflow-y: hidden;
 		line-height: 1.8;
 		font-size: 22px;
+		text-align: justify;
 
 		.bigfoot-footnote__container {
 			visibility: hidden;
@@ -266,6 +266,13 @@
 
 	.byline {
 		margin: 0;
+	}
+
+	&.full-width {
+		article {
+			padding-top: 40px;
+			padding-bottom: 40px;
+		}
 	}
 }
 

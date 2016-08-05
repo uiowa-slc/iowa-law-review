@@ -33,15 +33,19 @@
 </div>
 <div class="container padding">
 	<div class="row">
-		<div class="col-lg-6 col-lg-offset-3" >
+		<div class="col-lg-12" >
        <div class="issue-header">
         <h1><a href="$Link">Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %></a></h1>
         <h2 class="smallcaps subheader">$Date</h2>
       </div>
-      <div class="article-card-container">
+      <div class="article-card-container full-width row">
+        <div class="block-grid-xs-1 block-grid-md-2 block-grid-lg-3">
   			<% loop $Children %>
+          <div>
           <% include ArticleCard %>
+          </div>
   			<% end_loop %>
+        </div>
       </div>
 
 		</div>

@@ -15,6 +15,3 @@
 			<% end_if %>
 	</div>
 </article>
-<% if not $Last %>
-<hr />
-<% end_if %>

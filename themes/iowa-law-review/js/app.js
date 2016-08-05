@@ -48,6 +48,12 @@
 
 		};
 
+		$( ".condensed-navbar input.form-control" ).focusin(function() {
+		  $( ".navbar" ).addClass("search-expanded");
+		});
+		$( ".condensed-navbar input.form-control" ).focusout(function() {
+		  $( ".navbar" ).removeClass("search-expanded");
+		});
 		 $(".sticky").sticky({
             topSpacing:0,
             bottomSpacing: $(".footer").height() + 100

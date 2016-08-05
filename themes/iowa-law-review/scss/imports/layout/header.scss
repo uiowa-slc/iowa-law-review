@@ -82,6 +82,30 @@ header {
 	color: #6d6d6d;
 }
 
+.navbar.condensed-navbar {
+	.navbar-form .form-control {
+		width: 100px;
+	}
+
+	.dropdown-menu {
+		text-align: center;
+	}
+
+	&.search-expanded {
+		@media (min-width: $screen-md-min) {
+			.navbar-social {
+				display: none;
+			}
+		}
+
+		.navbar-form .form-control {
+			&:focus {
+				width: 100%;
+			}
+		}
+	}
+}
+
 .navbar {
 	-webkit-backdrop-filter: blur(10px);
 	border: 0;
@@ -122,6 +146,9 @@ header {
 	form.search {
 		input {
 			border-radius: 20px;
+
+			//transition: linear 0.1s;
+	
 		}
 
 		button {
@@ -151,6 +178,14 @@ header {
 			content: "\25B8";
 			display: inline-block;
 			padding: 0 6px 0 10px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			display: none;
+		}
+
+		@media (min-width: $screen-lg-min) {
+			display: block;
 		}
 	}
 
