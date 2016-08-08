@@ -38,11 +38,8 @@ header {
 			font-size: 19px;
 		}
 
-		p {
-			@media (min-width: $screen-lg-min) {
-				margin: 0;
-				padding-bottom: 30px;
-			}
+		p.disappear {
+			display: none;
 		}
 
 		p.media-header {
