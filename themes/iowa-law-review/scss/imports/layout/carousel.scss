@@ -47,19 +47,22 @@
 				position: absolute;
 			}
 
+			p {
+				padding-top: 20px;
+			}
+
 			h1 {
-				font-size: 36px;
+				font-size: 34px;
 				line-height: 1.2;
 
 				@media (min-width: $screen-md-min) {
 					font-size: 42px;
 					line-height: 1.2;
-					padding-bottom: 30px;
+					padding-bottom: 50px;
 				}
 
 				@media (min-width: $screen-lg-min) {
 					font-size: 49px;
-					padding-bottom: 0px;
 				}
 			}
 		}
