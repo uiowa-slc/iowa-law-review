@@ -59,7 +59,10 @@
 		overflow-y: hidden;
 		line-height: 1.8;
 		font-size: 22px;
-		text-align: justify;
+
+		@media (min-width: $screen-md-min) {
+			text-align: justify;
+		}
 
 		.bigfoot-footnote__container {
 			visibility: hidden;

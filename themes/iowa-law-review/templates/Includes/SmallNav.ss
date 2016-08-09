@@ -24,12 +24,15 @@
           </li>
           $NavBreadcrumbs
       </ul>
-            <form class="navbar-form navbar-right search" role="search" action="home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
-        <div class="form-group">
-          <input type="search"  name="Search" class="form-control" placeholder="Enter a search term">
-        </div>
-        <button type="submit" class="btn btn-round btn-default btn-primary sr-only">Search</button>
-      </form>
+        <form class="navbar-form navbar-right search" role="search" action="home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+            <label class="sr-only" for="search-query">Search query</label>
+            <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+              <span class="search-icon js-search-action">
+                <button type="submit" class="glyphicon glyphicon-search" tabindex="-1">
+                  <span class="sr-only">Search Iowa Law Review</span>
+                </button>
+              </span>
+        </form>
     <ul class="nav navbar-nav navbar-right navbar-social">
            <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><span class="social-icon icon-facebook"></span></a></li>
           <li><a href="https://twitter.com/IowaLawReview" target="_blank"><span class="social-icon icon-twitter"></span></a></li>
