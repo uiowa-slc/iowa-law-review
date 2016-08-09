@@ -38,13 +38,20 @@ header {
 			font-size: 19px;
 		}
 
-		p.disappear {
-			display: none;
+		p {
+			@media (min-width: $screen-lg-min) {
+				margin: 0;
+				padding-bottom: 30px;
+			}
 		}
+	}
 
-		p.media-header {
-			padding-top: 20px;
-		}
+	.visible-sm {
+		padding-top: 20px;
+	}
+
+	.visible-xs {
+		padding-top: 20px;
 	}
 
 	.wordmark-container {
