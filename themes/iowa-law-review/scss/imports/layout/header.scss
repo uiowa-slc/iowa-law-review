@@ -82,9 +82,18 @@ header {
 	color: #6d6d6d;
 }
 
+//Small nav:
 .navbar.condensed-navbar {
 	.navbar-form .form-control {
-		width: 100px;
+		width: 100%;
+
+		@media (min-width: $screen-md-min) {
+			width: 100px;
+		}
+	}
+
+	.dropdown-toggle {
+		font-weight: bold;
 	}
 
 	.dropdown-menu {
@@ -96,11 +105,11 @@ header {
 			.navbar-social {
 				display: none;
 			}
-		}
 
-		.navbar-form .form-control {
-			&:focus {
-				width: 100%;
+			.navbar-form .form-control {
+				&:focus {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -144,11 +153,27 @@ header {
 	}
 
 	form.search {
+		position: relative;
+
 		input {
 			border-radius: 20px;
 
 			//transition: linear 0.1s;
 	
+		}
+
+		.search-icon {
+			position: absolute;
+			top: 17px;
+			right: 10px;
+
+			@media (min-width: $screen-md-min) {
+				top: 7px;
+			}
+
+			button {
+				background: none;
+			}
 		}
 
 		button {
