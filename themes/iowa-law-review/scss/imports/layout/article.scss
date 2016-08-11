@@ -147,20 +147,22 @@
 	.article-social-container-main, .article-social-bottom {
 		margin: 25px 0;
 
-		&.affix-bottom {
-			position: absolute;
-		}
+		// &.affix-bottom {
+		// 	//position: absolute;
 
-		&.affix {
-			position: static;
-		}
+		// }
 
-		@media (min-width: $screen-lg-min) {
-			&.affix {
-				position: fixed;
-				top: 35px;
-			}
-		}
+		// &.affix {
+		// 	//position: static;
+
+		// }
+
+		// @media (min-width: $screen-lg-min) {
+		// 	// &.affix {
+		// 	// 	position: fixed;
+		// 	// 	top: 35px;
+		// 	// }
+		// }
 
 		.article-social {
 			@media (min-width: $screen-lg-min) {

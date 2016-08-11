@@ -22,9 +22,11 @@
 			</div>
 		</div>
 		<div class="row">
+		<div class="sticky">
 			<div class="col-lg-1 article-share-container">
 					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
 			</div>
+		</div>
 			<div class="col-lg-7 col-lg-offset-1">
 				
 					<!--Summary-->

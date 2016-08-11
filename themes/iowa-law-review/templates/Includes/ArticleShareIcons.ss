@@ -1,3 +1,4 @@
+
 <ul class="article-social">
 	<% if $PrintableArticle %>
 		<li><a class="smallcaps" href="$PrintableArticle.URL" target="_blank"><img src="$PrintableArticle.Icon" /> Download</a></li>
