@@ -3330,8 +3330,8 @@ if (typeof jQuery === 'undefined') {
 		});
 		 $(".sticky").sticky({
             topSpacing:0,
-            bottomSpacing: 900
-            // $(".footer").height() + 100
+            bottomSpacing: $(".footer").height() + 100,
+
           });
 
 
