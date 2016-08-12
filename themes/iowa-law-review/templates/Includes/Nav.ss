@@ -23,16 +23,7 @@
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-        <form class="navbar-form navbar-right search" role="search" action="home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
-            <label class="sr-only" for="search-query">Search query</label>
-            <input type="text" class="form-control" placeholder="Search" name="Search" id="srch-term">
-              <span class="search-icon js-search-action">
-                <button type="submit" class="glyphicon glyphicon-search" tabindex="-1">
-                  <span class="sr-only">Search Iowa Law Review</span>
-                </button>
-              </span>
-        </form>
+    <% include NavSearchForm %>
       <ul class="nav navbar-nav primary-nav">
         <% loop Menu(1) %>
           <% if $URLSegment != "home" %>

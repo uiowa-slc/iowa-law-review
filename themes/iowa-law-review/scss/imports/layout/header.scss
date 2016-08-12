@@ -91,6 +91,10 @@ header {
 	.navbar-form .form-control {
 		width: 100%;
 
+		&:hover {
+			cursor: pointer;
+		}
+
 		@media (min-width: $screen-md-min) {
 			width: 100px;
 		}
@@ -111,6 +115,10 @@ header {
 			}
 
 			.navbar-form .form-control {
+				&:hover {
+					cursor: auto;
+				}
+
 				&:focus {
 					width: 100%;
 				}
@@ -156,11 +164,13 @@ header {
 		}
 	}
 
+	//global search styles:
 	form.search {
 		position: relative;
 
 		input {
 			border-radius: 20px;
+			background: #f5f5f5;
 
 			//transition: linear 0.1s;
 	
@@ -240,6 +250,7 @@ header {
 
 	.dropdown-menu {
 		padding: 0;
+		text-align: center;
 	}
 
 	.dropdown-menu .divider {
