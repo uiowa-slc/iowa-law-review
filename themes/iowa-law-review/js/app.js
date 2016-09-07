@@ -86,12 +86,13 @@
     'Article': {
       	init: function() {
 		    $.bigfoot({
-				appendPopoversTo: "body"
+				appendPopoversTo: "body",
+				maxWidthRelativeTo: ".article-container"
 			}
 			);
 			if ($('.bigtext p').length > 5){
 			 
-			  var $blockquote = $('.bigtext');
+			  var $blockquote = $('.bigtext-container');
 			  var height = $blockquote.height();
 			  var mini = $('.bigtext p').eq(0).height() + $('.bigtext p').eq(1).height() + $('.bigtext p').eq(2).height() + $('.bigtext p').eq(2).height();
 			 
@@ -101,7 +102,7 @@
 
 			  $('.expand').on('click', function(e){
 			  	//alert('hey');
-			    $text = $(this).prev();
+			    $text = $('.bigtext-container');
 			 
 			    $text.css({
 			      //'height': $text.attr('data-fullheight')

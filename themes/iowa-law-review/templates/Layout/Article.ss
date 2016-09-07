@@ -10,7 +10,7 @@
 <article role="main" class="main-content">
 	<div class="container article-container padding">
 		<div class="row">
-			<div class="col-lg-7 col-lg-offset-2">
+			<div class="col-lg-12">
 				<div class="article-header primary-article-header<% if $FeaturedTag %>has-featured-tag<% end_if %>">
 					<% include FeaturedTag %>
 					<h1>$ArticleTitle</h1>
@@ -22,16 +22,17 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-1 article-share-container">
+<%-- 			<div class="col-lg-1 article-share-container">
 					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
-			</div>
-			<div class="col-lg-7 col-lg-offset-1">
+			</div> --%>
+			<div class="col-lg-12">
 				
-					<!--Summary-->
-				
-					<div class="bigtext">
-						$Content
-					</div>
+						<!--Summary-->
+						<div class="bigtext-container">
+							<div class="bigtext text-wrap">
+								$Content
+							</div>
+						</div>
 			
 						<div class="expand-header expand">
 							<span style="display:inline-block;">Show more +</span>
@@ -39,6 +40,8 @@
 						<div class="expand-header contract hide">
 							<span style="display:inline-block;">Show less -</span>
 						</div>
+
+						<% include ArticleAuthorNotes %>
 				<% if $Tags %>
 					<p>
 						<% loop $Tags %>
@@ -73,33 +76,7 @@
 
 
 			</div>
-			<div class="col-lg-2 col-lg-offset-1 author-notes">
 
-				<% loop $Authors %>
-						<% if $BiographicalDetails || $ArticleNote %>
-						<span class="asterisks">$Asterisks</span>
-						<span class="details">
-						<% if $BiographicalDetails %>
-							$BiographicalDetails
-						<% end_if %>
-						<% if $ArticleNote %>
-							<br />
-							<br />
-							$ArticleNote
-						<% end_if %>
-						<% if not $Last %>
-							<hr />
-						<% end_if %>
-						</span>
-					<% end_if %>
-				<% end_loop %>
-				<% if JointAuthorNotes %>
-					<hr />
-					<div class="joint-author-notes">
-						$JointAuthorNotes
-					</div>
-				<% end_if %>
-			</div>
 		</div>
 	</div>
 

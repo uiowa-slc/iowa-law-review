@@ -55,8 +55,26 @@
 		}
 	}
 
-	div.bigtext {
+	.bigtext-container {
 		overflow-y: hidden;
+
+		&.expanded {
+			//overflow-y: visible;
+			height: auto;
+
+			.bigfoot-footnote__container {
+				visibility: visible;
+			}
+		}
+	}
+
+	.text-wrap {
+		margin: auto;
+		max-width: 677px;
+	}
+
+	div.bigtext {
+		//overflow-y: hidden;
 		line-height: 1.8;
 		font-size: 22px;
 
@@ -65,7 +83,7 @@
 		}
 
 		.bigfoot-footnote__container {
-			visibility: hidden;
+			//visibility: hidden;
 			transition: visibility linear 1s;
 		}
 
@@ -79,7 +97,7 @@
 		// }
 
 		&.expanded {
-			overflow-y: visible;
+			//overflow-y: visible;
 			height: auto;
 
 			.bigfoot-footnote__container {
