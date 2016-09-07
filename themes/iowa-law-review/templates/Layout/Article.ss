@@ -22,11 +22,14 @@
 			</div>
 		</div>
 		<div class="row">
-<%-- 			<div class="col-lg-1 article-share-container">
-					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
-			</div> --%>
-			<div class="col-lg-12">
-				
+
+			<div class="col-lg-11">
+				<div class="row">
+
+					<div class="col-lg-1 article-share-container">
+						<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
+					</div>
+					<div class="col-lg-11">
 						<!--Summary-->
 						<div class="bigtext-container">
 							<div class="bigtext text-wrap">
@@ -42,38 +45,38 @@
 						</div>
 
 						<% include ArticleAuthorNotes %>
-				<% if $Tags %>
-					<p>
-						<% loop $Tags %>
-							<a class="tag" href="$Link">$Title</a>
-						<% end_loop %>
-					</p>
-				<% end_if %>
-				$Form
+						<% if $Tags %>
+							<p>
+								<% loop $Tags %>
+									<a class="tag" href="$Link">$Title</a>
+								<% end_loop %>
+							</p>
+						<% end_if %>
+						$Form
 
-				<% if $Responses %>
-					<h3>Responses to this article:</h3>
-					<div class="article-card-container">
-						<% loop $Responses %>
-							<% include ArticleCard %>
-						<% end_loop %>
-					</div>
-				<% end_if %>
+						<% if $Responses %>
+							<h3>Responses to this article:</h3>
+							<div class="article-card-container">
+								<% loop $Responses %>
+									<% include ArticleCard %>
+								<% end_loop %>
+							</div>
+						<% end_if %>
 
 				
-				<div class="footnotes">
-					<ol>
-						<% loop $Footnotes %>
-				    	<li class="footnote" id="fn:$Number">
-				        	$Content
-				    	</li>
-				    	<% end_loop %>
-					</ol>
+						<div class="footnotes">
+							<ol>
+								<% loop $Footnotes %>
+						    	<li class="footnote" id="fn:$Number">
+						        	$Content
+						    	</li>
+						    	<% end_loop %>
+							</ol>
+						</div>
+						<%-- <div class="article-social-bottom hidden-lg"><% include ArticleShareIcons %></div> --%>
+						<hr />
+
 				</div>
-				<div class="article-social-bottom hidden-lg"><% include ArticleShareIcons %></div>
-				<hr />
-
-
 
 			</div>
 

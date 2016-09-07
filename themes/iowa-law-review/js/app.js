@@ -54,10 +54,10 @@
 		$( ".condensed-navbar input.form-control" ).focusout(function() {
 		  $( ".navbar" ).removeClass("search-expanded");
 		});
-		 $(".sticky").sticky({
-            topSpacing:0,
-            bottomSpacing: $(".footer").height() + 100
-          });
+		 // $(".sticky").sticky({
+   //          topSpacing:0,
+   //          bottomSpacing: $(".footer").height() + 100
+   //        });
 
 
 		skipLink('.skip-link');
