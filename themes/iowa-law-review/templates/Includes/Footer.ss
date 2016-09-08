@@ -1,7 +1,7 @@
 <footer class="footer" role="contentinfo">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-4">
+			<div class="col-sm-4">
 				<div class="footer-top-text">
 					<div class="iowa-law-review"><h3><a href="$AbsoluteBaseURL">$SiteConfig.Title</a></a></h3></div>
 					<p>Iowa Law Review <br />190 Boyd Law Building<br />Iowa City, IA 52242-1113</p>
@@ -15,7 +15,7 @@
 					</div>	
 				</div>
 			</div>
-			<div class="col-lg-3">
+			<div class="col-sm-3">
 				<div class="clearfix footer-links">
 					<ul>
 						<% loop Menu(1) %>
@@ -25,7 +25,7 @@
 
 				</div>			
 			</div>
-			<div class="col-lg-3">
+			<div class="col-sm-3">
 				<div class="clearfix footer-links">
 					<ul>
 						<li><a href="about/symposia/">Symposia</a></li>
@@ -34,7 +34,8 @@
 
 				</div>			
 			</div>
-			<div class="col-lg-2">
+			<div class="col-sm-2">
+				<p class="text-center">Sponsored by:</p>
 				<a href="http://gpsg.uiowa.edu" target="_blank" class="gpsg-logo"><img src="{$ThemeDir}/images/gpsg-logo.png" /></a>
 			</div>
 		</div>
