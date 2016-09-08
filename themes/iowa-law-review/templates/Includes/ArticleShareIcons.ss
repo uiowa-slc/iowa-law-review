@@ -1,6 +1,6 @@
-<ul class="article-social sticky">
+
 	<% if $PrintableArticle %>
-		<li><a class="smallcaps" href="$PrintableArticle.URL" target="_blank"><img src="$PrintableArticle.Icon" /> Download</a></li>
+		<li><a class="smallcaps" href="$PrintableArticle.URL" target="_blank">Download PDF</a></li>
 	<% end_if %>
 	<li class="smallcaps text-center"><span class="social-label">Share:</span></li>
 	<li>
@@ -11,4 +11,3 @@
 		<a href="https://twitter.com/intent/tweet?text={$AbsoluteLink}" title="Share on Twitter" target="_blank">
 		<span class="social-icon icon-twitter"></span> Twitter</a>
 	</li>
-</ul>

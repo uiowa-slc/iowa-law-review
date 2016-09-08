@@ -34,7 +34,7 @@
 
 				</div>			
 			</div>
-			<div class="col-sm-2">
+			<div class="col-sm-2 footer-right-content">
 				<p class="text-center">Sponsored by:</p>
 				<a href="http://gpsg.uiowa.edu" target="_blank" class="gpsg-logo"><img src="{$ThemeDir}/images/gpsg-logo.png" /></a>
 			</div>

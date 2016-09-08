@@ -3,6 +3,11 @@
 	color: #b6b6b6;
 	margin-top: 60px;
 	font-family: $font-family-sans-serif;
+	text-align: center;
+
+	@media (min-width: $screen-sm-min) {
+		text-align: left;
+	}
 
 	@media (min-width: $screen-lg-min) {
 		padding: 30px 0;
@@ -13,10 +18,11 @@
 		display: block;
 		padding: 20px 0;
 		max-width: 130px;
+		margin: auto;
+	}
 
-		@media (min-width: $screen-lg-min) {
-			margin: auto;
-		}
+	.footer-right-content {
+		padding-top: 10px;
 	}
 
 	a {
@@ -56,10 +62,13 @@
 }
 
 .footer-links ul {
-	border-left: 1px solid #494949;
+	@media (min-width: $screen-sm-min) {
+		border-left: 1px solid #494949;
+		padding-left: 10px;
+	}
+
 	list-style: none;
 	padding: 0;
-	padding-left: 10px;
 }
 
 .bar {

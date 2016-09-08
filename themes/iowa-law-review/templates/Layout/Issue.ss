@@ -35,7 +35,8 @@
 	<div class="row">
 		<div class="col-lg-12" >
        <div class="issue-header">
-        <h1><a href="$Link">Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %> - {$Parent.Title}</a></h1>
+        <a href="$Parent.Link" class="featured-tag">$Parent.MenuTitle</a>
+        <h1><a href="$Link">Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %></a></h1>
         <h2 class="smallcaps subheader">$Date</h2>
       </div>
       <div class="article-card-container full-width row">

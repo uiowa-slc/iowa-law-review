@@ -2,6 +2,10 @@
 	.carousel-indicators {
 		margin-top: 3px;
 		margin-bottom: 3px;
+
+		li {
+			margin: 1.5px;
+		}
 	}
 
 	.item {
@@ -20,10 +24,14 @@
 		}
 
 		.container {
-			min-height: 350px;
+			min-height: 400px;
 
 			@media (min-width: $screen-lg-min) {
 				min-height: 500px;
+			}
+
+			@media (min-width: $screen-md-min) {
+				min-height: 450px;
 			}
 		}
 
@@ -43,14 +51,18 @@
 				position: absolute;
 			}
 
+			p {
+				padding-top: 20px;
+			}
+
 			h1 {
-				font-size: 36px;
+				font-size: 34px;
 				line-height: 1.2;
 
 				@media (min-width: $screen-md-min) {
 					font-size: 42px;
 					line-height: 1.2;
-					padding-bottom: 50px;
+					padding-bottom: 30px;
 				}
 
 				@media (min-width: $screen-lg-min) {
