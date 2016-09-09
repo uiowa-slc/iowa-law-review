@@ -37,12 +37,7 @@
 						$Content
 					</div>
 			
-						<div class="expand-header expand">
-							<span style="display:inline-block;">Show more +</span>
-						</div>
-						<div class="expand-header contract hide">
-							<span style="display:inline-block;">Show less -</span>
-						</div>
+	
 				<% if $Tags %>
 					<p>
 						<% loop $Tags %>
