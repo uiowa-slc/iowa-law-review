@@ -7,13 +7,13 @@
         <% end_loop %>
       </ol>
       <div class="carousel-inner" role="listbox">
-      	<% loop $Children.Limit(4) %>
+      	<% loop $Children.Limit(4).Sort("RAND()") %>
 
         <div class="item <% if $First %>active<% end_if %> <% if $Image %>has-image<% end_if %>" style="<% if $Image %>background-image: url('$Image.URL');<% end_if %>">
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
-              <p class="smallcaps">Volume {$Top.Volume}<% if $Top.Number %>, Issue {$Top.Number}<% end_if %></p>
+              <%-- <p class="smallcaps"><% if $Category %><span href="$Category.Link" class="tag featured-tag">$Category.Title</span><% end_if %></p> --%>
               <h1>$Title</h1>
               <p><em><% include AuthorListNoAsterisks %></em></p>
             </div>
