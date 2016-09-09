@@ -39,7 +39,7 @@
         <h2 class="smallcaps subheader">$Date</h2>
       </div>
       <div class="article-card-container full-width row">
-        <div class="block-grid-xs-1 block-grid-md-2 block-grid-lg-3">
+        <div class="block-grid-xs-1 block-grid-md-1 block-grid-lg-1">
   			<% loop $Children %>
           <div>
           <% include ArticleCard %>

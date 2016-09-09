@@ -107,7 +107,7 @@
             </div>
               <div class="article-card-container row full-width">
 
-                <div class="block-grid-xs-1 block-grid-md-2">
+                <div class="block-grid-xs-1 block-grid-md-1">
                   <% loop $Children %>
                     <div>
                     <% include ArticleCard %>
