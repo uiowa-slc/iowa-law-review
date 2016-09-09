@@ -64,11 +64,6 @@
 			text-align: justify;
 		}
 
-		.bigfoot-footnote__container {
-			visibility: hidden;
-			transition: visibility linear 1s;
-		}
-
 		// > p:first-of-type:first-letter {
 		// 	color: #333;
 		// 	font-size: 62px;
@@ -78,26 +73,6 @@
 		// 	width: 40px;
 		// }
 
-		&.expanded {
-			overflow-y: visible;
-			height: auto;
-
-			.bigfoot-footnote__container {
-				visibility: visible;
-			}
-		}
-
-			/*	overflow-y: hidden;
-				overflow-x: auto;
-				position: relative;
-		
-		
-				overflow-wrap: break-word;
-				word-wrap: break-word;
-				-ms-word-break: break-all;
-		
-			
-				word-break: break-word;*/
 	}
 
 	.cover {

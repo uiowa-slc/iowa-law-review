@@ -71,8 +71,6 @@
 						<% include ArticleShareIcons %>
 					</ul>
 				</div>
-				<hr />
-
 
 
 			</div>
