@@ -39,9 +39,6 @@
                 <% loop $SortedChildren.Limit(5) %>
                   <li><a href="$Link">$Title</a></li>
                 <% end_loop %>
-                  <% if $ClassName == "IssueHolder" %>
-                    <li><a href="$Link">More Issues...</a></li>
-                  <% end_if %>
                 <li role="separator" class="divider"></li>
                 <li><a href="$Link">$Title</a></li>
               </ul>

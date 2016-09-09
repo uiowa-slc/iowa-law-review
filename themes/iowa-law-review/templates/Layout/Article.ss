@@ -23,7 +23,11 @@
 		</div>
 		<div class="row">
 			<div class="col-lg-1 article-share-container">
-					<div class="article-social-container-main hidden-print"><% include ArticleShareIcons %></div>
+					<div class="article-social-container-main hidden-print">
+						<ul class="article-social responsive">
+						<% include ArticleShareIcons %>
+						</ul>
+					</div>
 			</div>
 			<div class="col-lg-7 col-lg-offset-1">
 				
@@ -67,7 +71,11 @@
 				    	<% end_loop %>
 					</ol>
 				</div>
-				<div class="article-social-bottom hidden-lg"><% include ArticleShareIcons %></div>
+				<div class="article-social-bottom">
+					<ul class="article-social">
+						<% include ArticleShareIcons %>
+					</ul>
+				</div>
 				<hr />
 
 

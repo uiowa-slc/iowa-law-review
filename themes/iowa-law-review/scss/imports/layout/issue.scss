@@ -1,6 +1,7 @@
 .issue-header {
 	padding: 15px 0;
 	margin-top: 20px;
+	text-align: center;
 
 	h1 {
 		margin-bottom: 0;
@@ -13,18 +14,26 @@
 	}
 
 	h1, h2 {
-		font-family: $font-family-sans-serif;
+		//font-family: $font-family-sans-serif;
+
 	}
 
 	h2 {
 		margin-top: 0;
 	}
+
+	.featured-tag {
+		text-transform: uppercase;
+		font-family: $font-family-sans-serif;
+		font-size: 13px;
+		color: #888;
+		margin: 0;
+		background: none;
+	}
 }
 
 .Issue {
-	.issue-header {
-		text-align: center;
-	}
+	.issue-header {}
 }
 
 .masthead-image-container {

@@ -20,8 +20,10 @@
       <% end_loop %>
     <% end_with %>
   </div>
-  <div class="sticky">
-    <p class="subheader padding"><a href="https://twitter.com/IowaLawReview">Iowa Law Review on Twitter &rarr;</a></p>
-    <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
-  </div>
+  <% if $URLSegment == "home" %>
+    <div class="sticky">
+      <p class="subheader padding"><a href="https://twitter.com/IowaLawReview">Iowa Law Review on Twitter &rarr;</a></p>
+      <a class="twitter-timeline" href="https://twitter.com/IowaLawReview" data-widget-id="664852907020300288">Tweets by @IowaLawReview</a>
+    </div>
+  <% end_if %>
 </aside>

@@ -5,7 +5,7 @@
 			<div class="col-lg-7 col-lg-offset-1">
 				<% if $URLSegment != "about" %><h1>$Title</h1><% end_if %>
 <% if $Query %>
-        <p class="searchQuery"><em>Showing search results for: &quot;{$Query}&quot;</em></p>
+        <p class="searchQuery"><em>Showing search results for: &quot;{$Query}&quot;</em>:</p>
     <% end_if %>
 
     <% if $Results %>

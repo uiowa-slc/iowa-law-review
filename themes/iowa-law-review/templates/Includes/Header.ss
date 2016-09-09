@@ -11,12 +11,15 @@
 				</div>
 				<div class="col-md-2"></div>
 			</div>
-			<% if $LatestIssue %>
-				<% with $LatestIssue %>
-				<div class="header-subnav-container text-center visible-md visible-lg">
-					<p>Latest Issue: <a href="$Link"><% if $Date %>$Date<% else %>Volume $Volume - No. $Number<% end_if %></a></p>
-				</div>
-				<% end_with %>
+
+			<% if $URLSegment != "home" %>
+				<% if $LatestIssue %>
+					<% with $LatestIssue %>
+					<div class="header-subnav-container text-center visible-md visible-lg">
+						<p>Latest Issue: <a href="$Link"><% if $Date %>$Date<% else %>Volume $Volume - No. $Number<% end_if %></a></p>
+					</div>
+					<% end_with %>
+				<% end_if %>
 			<% end_if %>
 		</div>
 		<div class="border-container hidden-print">

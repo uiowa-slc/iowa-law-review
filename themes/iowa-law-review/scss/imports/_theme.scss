@@ -85,6 +85,15 @@ h2.subheader, p.subheader {
   hr{
     border-top: 1px solid white;
   }
+
+
+}
+
+.sticky-wrapper{
+  display: none;
+  @media (min-width: $screen-lg-min) {
+    display: block;
+  }
 }
 
 a.tag {

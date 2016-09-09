@@ -43,7 +43,7 @@
 	.table-responsive {
 		@media (min-width: $screen-lg-min) {
 			margin-left: -30%;
-			max-width: 150%;
+			width: 150%;
 		}
 
 		z-index: 99;
@@ -167,7 +167,30 @@
 			}
 		}
 
+		//Default horizontal social icons
 		.article-social {
+			font-family: $font-family-sans-serif;
+			list-style: none;
+			margin: 0;
+			font-size: 13px;
+			padding: 0;
+
+			& li {
+				display: inline-block;
+				margin-right: 1em;
+			}
+
+			& a {
+				color: #444;
+				display: block;
+
+				&.download {
+					color: $brand-primary;
+				}
+			}
+		}
+
+		.article-social.responsive {
 			@media (min-width: $screen-lg-min) {
 				float: right;
 
@@ -197,29 +220,6 @@
 				span.social-label {
 					display: block;
 				}
-			}
-		}
-	}
-
-	//Default horizontal social icons
-	.article-social {
-		font-family: $font-family-sans-serif;
-		list-style: none;
-		margin: 0;
-		font-size: 13px;
-		padding: 0;
-
-		& li {
-			display: inline-block;
-			margin-right: 1em;
-		}
-
-		& a {
-			color: #444;
-			display: block;
-
-			&.download {
-				color: $brand-primary;
 			}
 		}
 	}
@@ -253,6 +253,11 @@
 		padding: 20px;
 		border-radius: 2px;
 	}
+
+	article {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 .article-card-container {
@@ -277,7 +282,11 @@
 	}
 
 	&.full-width {
+		max-width: 677px;
+		margin: auto;
+
 		article {
+			text-align: center;
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
