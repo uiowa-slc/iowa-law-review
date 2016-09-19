@@ -17,7 +17,7 @@
 	padding-top: 20px;
 }
 
-.Article, .ArticleFromWord {
+.Article, .AboutPage {
 	.article-header.primary-article-header {
 		text-align: center;
 	}
@@ -99,9 +99,10 @@
 			margin-bottom: 0;
 		}
 
-		.byline {
-			margin-top: 0;
-		}
+		// .byline {
+		// 	margin-top: 0;
+		// }
+
 	}
 
 	blockquote {
