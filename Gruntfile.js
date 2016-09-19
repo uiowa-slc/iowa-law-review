@@ -34,6 +34,7 @@ module.exports = function(grunt) {
           '<%=globalConfig.themeDir %>/bower_components/bootstrap-sass/assets/javascripts/bootstrap.js',
           '<%=globalConfig.themeDir %>/bower_components/bigfoot/dist/bigfoot.js',
           '<%=globalConfig.themeDir %>/bower_components/jquery-sticky/jquery.sticky.js',
+          '<%=globalConfig.themeDir %>/bower_components/magnific-popup/dist/jquery.magnific-popup.js',
           '<%=globalConfig.themeDir %>/js/app.js'
 
         ],

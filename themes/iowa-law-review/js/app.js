@@ -67,6 +67,25 @@
 		  $( "table" ).addClass('table')
 
 
+		  var base =$('base').attr('href');
+
+		  $('a[href$=".pdf"]').each(function( index ) {
+		  	var pdfLinkHref = $( this ).attr('href');
+			$( this ).attr('href', 'https://docs.google.com/viewer?url='+ base + pdfLinkHref + '&embedded=true') ;
+			$(this).addClass('mfp-iframe');
+			});
+
+
+
+		  $('a[href^="https://docs.google.com/viewer"],a[href$=".jpg"]').magnificPopup({
+		  	type:'image',
+		  	  gallery:{
+				    enabled:true
+				  }
+		  	}
+		  );
+
+
 
       },
       finalize: function() {
@@ -82,6 +101,18 @@
         // JavaScript to be fired on the home page, after the init JS
       }
     },
+    // AboutPage
+    'AboutPage': {
+      init: function() {
+        // JavaScript to be fired on the home page
+      },
+      finalize: function() {
+
+  			
+
+      }
+    },
+
     // About us page, note the change from about-us to about_us.
     'Article': {
       	init: function() {
