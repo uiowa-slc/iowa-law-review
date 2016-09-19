@@ -21,6 +21,7 @@
     "bootstrap-sass": "~3.3.6",
     "jquery-sticky": "^1.0.3",
     "bourbon": "^4.2.7",
-    "bootstrap-block-grid": "^1.1.7"
+    "bootstrap-block-grid": "^1.1.7",
+    "magnific-popup": "^1.1.0"
   }
 }
