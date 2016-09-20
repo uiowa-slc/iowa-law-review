@@ -99,8 +99,8 @@ nav[role="navigation"] {
 
 	.current {
 		/* selected number */
-		background-color: #2cadb9;
-		border-color: #2cadb9;
+		background-color: $link-hover-color;
+		border-color: $link-hover-color;
 		color: $color-3;
 		pointer-events: none;
 	}
