@@ -45,6 +45,7 @@ nav[role="navigation"] {
 
 	li {
 		/* hide numbers on small devices */
+		font-family: "franklin-gothic-urw",Helvetica,Arial,sans-serif;
 		display: none;
 		margin: 0 .2em;
 
@@ -98,8 +99,8 @@ nav[role="navigation"] {
 
 	.current {
 		/* selected number */
-		background-color: $color-2;
-		border-color: $color-2;
+		background-color: #2cadb9;
+		border-color: #2cadb9;
 		color: $color-3;
 		pointer-events: none;
 	}
