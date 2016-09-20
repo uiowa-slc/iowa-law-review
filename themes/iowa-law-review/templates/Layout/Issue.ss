@@ -7,13 +7,13 @@
         <% end_loop %>
       </ol>
       <div class="carousel-inner" role="listbox">
-      	<% loop $Children.Limit(4) %>
+      	<% loop $Children.Limit(4).Sort("RAND()") %>
 
         <div class="item <% if $First %>active<% end_if %> <% if $Image %>has-image<% end_if %>" style="<% if $Image %>background-image: url('$Image.URL');<% end_if %>">
           <a href="$Link">
           <article class="container">
             <div class="carousel-caption">
-              <p class="smallcaps">Volume {$Top.Volume}<% if $Top.Number %>, Issue {$Top.Number}<% end_if %></p>
+              <%-- <p class="smallcaps"><% if $Category %><span href="$Category.Link" class="tag featured-tag">$Category.Title</span><% end_if %></p> --%>
               <h1>$Title</h1>
               <p><em><% include AuthorListNoAsterisks %></em></p>
             </div>
@@ -35,17 +35,18 @@
 	<div class="row">
 		<div class="col-lg-12" >
        <div class="issue-header">
+        <a href="$Parent.Link" class="featured-tag">$Parent.MenuTitle</a>
         <h1><a href="$Link">Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %></a></h1>
         <h2 class="smallcaps subheader">$Date</h2>
       </div>
       <div class="article-card-container full-width row">
-        <div class="block-grid-xs-1 block-grid-md-1 block-grid-lg-1">
+
   			<% loop $Children %>
           <div>
           <% include ArticleCard %>
           </div>
   			<% end_loop %>
-        </div>
+
       </div>
 
 		</div>

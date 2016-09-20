@@ -100,8 +100,9 @@
         <div class="col-lg-8">
 
           <% with $LatestPrintIssue %>
-            <h2 class="smallcaps subheader"><a href="$Link">From the Latest Print Edition:</a></h2>
+            
             <div class="issue-header">
+              <p class="smallcaps subheader"><a href="$Link">From the Latest Print Edition:</a></p>
               <h1><a href="$Link">Volume {$Volume}, Issue {$Number}</a></h1>
               <p class="smallcaps subheader">$Date</a></p>
             </div>

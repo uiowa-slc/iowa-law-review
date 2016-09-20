@@ -17,7 +17,7 @@
 	padding-top: 20px;
 }
 
-.Article, .ArticleFromWord {
+.Article, .AboutPage {
 	.article-header.primary-article-header {
 		text-align: center;
 	}
@@ -43,7 +43,7 @@
 	.table-responsive {
 		@media (min-width: $screen-lg-min) {
 			margin-left: -30%;
-			max-width: 150%;
+			width: 150%;
 		}
 
 		z-index: 99;
@@ -56,17 +56,12 @@
 	}
 
 	div.bigtext {
-		overflow-y: hidden;
+		//overflow-y: hidden;
 		line-height: 1.8;
 		font-size: 22px;
 
 		@media (min-width: $screen-md-min) {
 			text-align: justify;
-		}
-
-		.bigfoot-footnote__container {
-			visibility: hidden;
-			transition: visibility linear 1s;
 		}
 
 		// > p:first-of-type:first-letter {
@@ -78,26 +73,6 @@
 		// 	width: 40px;
 		// }
 
-		&.expanded {
-			overflow-y: visible;
-			height: auto;
-
-			.bigfoot-footnote__container {
-				visibility: visible;
-			}
-		}
-
-			/*	overflow-y: hidden;
-				overflow-x: auto;
-				position: relative;
-		
-		
-				overflow-wrap: break-word;
-				word-wrap: break-word;
-				-ms-word-break: break-all;
-		
-			
-				word-break: break-word;*/
 	}
 
 	.cover {
@@ -124,9 +99,10 @@
 			margin-bottom: 0;
 		}
 
-		.byline {
-			margin-top: 0;
-		}
+		// .byline {
+		// 	margin-top: 0;
+		// }
+
 	}
 
 	blockquote {
@@ -167,7 +143,30 @@
 			}
 		}
 
+		//Default horizontal social icons
 		.article-social {
+			font-family: $font-family-sans-serif;
+			list-style: none;
+			margin: 0;
+			font-size: 13px;
+			padding: 0;
+
+			& li {
+				display: inline-block;
+				margin-right: 1em;
+			}
+
+			& a {
+				color: #444;
+				display: block;
+
+				&.download {
+					color: $brand-primary;
+				}
+			}
+		}
+
+		.article-social.responsive {
 			@media (min-width: $screen-lg-min) {
 				float: right;
 
@@ -197,29 +196,6 @@
 				span.social-label {
 					display: block;
 				}
-			}
-		}
-	}
-
-	//Default horizontal social icons
-	.article-social {
-		font-family: $font-family-sans-serif;
-		list-style: none;
-		margin: 0;
-		font-size: 13px;
-		padding: 0;
-
-		& li {
-			display: inline-block;
-			margin-right: 1em;
-		}
-
-		& a {
-			color: #444;
-			display: block;
-
-			&.download {
-				color: $brand-primary;
 			}
 		}
 	}
@@ -253,6 +229,11 @@
 		padding: 20px;
 		border-radius: 2px;
 	}
+
+	article {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 .article-card-container {
@@ -277,7 +258,11 @@
 	}
 
 	&.full-width {
+		max-width: 677px;
+		margin: auto;
+
 		article {
+			text-align: center;
 			padding-top: 20px;
 			padding-bottom: 20px;
 		}
