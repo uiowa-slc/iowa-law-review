@@ -25,7 +25,7 @@
 				<% if $Results.NotFirstPage %>
 				<li class="button"><a href="$Results.PrevLink" aria-label="Previous">Prev</a></li>
 				<% end_if %>
-				<% loop $Results.PaginationSummary %>
+				<% loop $Results.PaginationSummary(3) %>
 		    		<% if $CurrentBool %>
 						<li><a class="current" href="$Link">$PageNum <span class="sr-only">(current)</span></a></li>
 
