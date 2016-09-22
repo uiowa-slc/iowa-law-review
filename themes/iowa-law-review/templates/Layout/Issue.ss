@@ -1,4 +1,5 @@
 <% include Header %>
+<% if $Children %>
 <div id="article-carousel" class="carousel slide" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -31,12 +32,13 @@
         <span class="sr-only">Next</span>
       </a>
 </div>
+<% end_if %>
 <div class="container padding">
 	<div class="row">
 		<div class="col-lg-12" >
        <div class="issue-header">
         <a href="$Parent.Link" class="featured-tag">$Parent.MenuTitle</a>
-        <h1><a href="$Link">Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %></a></h1>
+        <h1>Volume {$Volume}<% if $Number %>, Issue {$Number}<% end_if %></h1>
         <h2 class="smallcaps subheader">$Date</h2>
       </div>
       <div class="article-card-container full-width row">

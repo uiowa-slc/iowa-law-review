@@ -9,10 +9,15 @@
     <% end_if %>
 
     <% if $Results %>
-    <div class="article-card-container full-width">
-        <% loop $Results %>
-        	<% include ArticleCard %>
-        <% end_loop %>
+
+	<div class="article-card-container article-cards-left row full-width">
+        <div class="block-grid-xs-1 block-grid-md-2">
+          <% loop $Results %>
+            <div>
+            <% include ArticleCard %>
+            </div>
+          <% end_loop %>
+        </div>
     </div>
     <% else %>
     <p>Sorry, your search query did not return any results.</p>

@@ -220,12 +220,14 @@ header {
 			padding: 0 6px 0 10px;
 		}
 
-		@media (min-width: $screen-md-min) {
-			display: none;
-		}
+		&.article-title {
+			@media (min-width: $screen-md-min) {
+				display: none;
+			}
 
-		@media (min-width: $screen-lg-min) {
-			display: block;
+			@media (min-width: $screen-lg-min) {
+				display: block;
+			}
 		}
 	}
 
