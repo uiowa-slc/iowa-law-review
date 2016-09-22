@@ -45,8 +45,9 @@ nav[role="navigation"] {
 
 	li {
 		/* hide numbers on small devices */
+		font-family: "franklin-gothic-urw",Helvetica,Arial,sans-serif;
 		display: none;
-		margin: 0 .2em;
+		margin: 0 .3em;
 
 		&.button {
 			/* make sure prev next buttons are visible */
@@ -98,8 +99,8 @@ nav[role="navigation"] {
 
 	.current {
 		/* selected number */
-		background-color: $color-2;
-		border-color: $color-2;
+		background-color: $link-hover-color;
+		border-color: $link-hover-color;
 		color: $color-3;
 		pointer-events: none;
 	}
@@ -208,7 +209,7 @@ custom icons - customize the small arrow inside the next and prev buttons
 	}
 
 	.button:last-of-type a {
-		padding-right: 2.4em;
+		padding-right: 2.0em;
 	}
 
 	.button:first-of-type a::before,
