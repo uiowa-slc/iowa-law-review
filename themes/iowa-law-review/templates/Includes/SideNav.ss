@@ -3,7 +3,7 @@
     <p class="subheader"><a href="$LatestPrintIssue.Link">From our print edition &rarr;</a></p>
     <div class="article-card-container">
       <% with $LatestPrintIssue %>
-        <% loop $Children.Limit(2) %>
+        <% loop $RandomArticles.Limit(2) %>
           <% include ArticleCard %>
         <% end_loop %>
       <% end_with %>
@@ -15,7 +15,7 @@
 
   <div class="article-card-container">
     <% with $LatestOnlineIssue %>
-      <% loop $Children.Limit(2) %>
+      <% loop $RandomArticles.Limit(2) %>
         <% include ArticleCard %>
       <% end_loop %>
     <% end_with %>
