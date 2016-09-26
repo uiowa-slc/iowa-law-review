@@ -36,6 +36,13 @@
 					<div class="bigtext">
 						$Content
 					</div>
+
+					<% if $IsExcerpt && $PrintableArticle %>
+					<hr />
+					<div class="download-link text-center">
+						<a href="$PrintableArticle.URL" class="btn btn-primary btn-large">Download PDF</a>
+					</div>
+					<% end_if %>
 			
 	
 				<% if $Tags %>
@@ -66,18 +73,20 @@
 				    	<% end_loop %>
 					</ol>
 				</div>
+				<% if not $IsExcerpt %>
 				<div class="article-social-bottom">
 					<ul class="article-social">
 						<% include ArticleShareIcons %>
 					</ul>
 				</div>
+				<% end_if %>
 
 
 			</div>
 			<div class="col-lg-2 col-lg-offset-1 author-notes">
 
 				<% loop $Authors %>
-						<% if $BiographicalDetails || $ArticleNote %>
+						<% if $BiographicalDetails || ArticleNote %>
 						<span class="asterisks">$Asterisks</span>
 						<span class="details">
 						<% if $BiographicalDetails %>

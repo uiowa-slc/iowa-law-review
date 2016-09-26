@@ -1,6 +1,6 @@
 
 	<% if $PrintableArticle %>
-		<li><a class="smallcaps" href="$PrintableArticle.URL" target="_blank">Download PDF</a></li>
+		<li><a class="smallcaps download-link" href="$PrintableArticle.URL" target="_blank">Download PDF</a></li>
 	<% end_if %>
 	<li class="smallcaps text-center"><span class="social-label">Share:</span></li>
 	<li>

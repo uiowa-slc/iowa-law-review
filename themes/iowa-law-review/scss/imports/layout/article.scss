@@ -166,8 +166,8 @@
 				color: #444;
 				display: block;
 
-				&.download {
-					color: $brand-primary;
+				&.download-link {
+					font-weight: bold;
 				}
 			}
 		}
