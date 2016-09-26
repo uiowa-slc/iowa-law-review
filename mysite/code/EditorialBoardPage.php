@@ -6,7 +6,8 @@ class EditorialBoardPage extends Page {
 	);
 
 	private static $has_one = array(
-		'MastheadImage' => 'Image'
+		'MastheadImage' => 'Image',
+		'MastheadPDF' => 'File'
 	);
 
 
@@ -15,6 +16,7 @@ class EditorialBoardPage extends Page {
 		$f = parent::getCMSFields();
 
 		$f->addFieldToTab('Root.Main', new UploadField('MastheadImage', 'Masthead Image'), 'Content');
+		$f->addFieldToTab('Root.Main', new UploadField('MastheadPDF', 'Masthead PDF'), 'MastheadImage');
 
 		return $f;
 	}

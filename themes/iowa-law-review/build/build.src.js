@@ -5201,9 +5201,12 @@ $.magnificPopup.registerModule(RETINA_NS, {
 		  $( "table" ).addClass('table')
 
 
-		  var base =$('base').attr('href');
+      if (!location.origin)
+        location.origin = location.protocol + "//" + location.host;
 
-		  $('a[href$=".pdf"]').each(function( index ) {
+		  var base = location.origin;
+
+		  $('.pdf-viewable a[href$=".pdf"]').each(function( index ) {
 		  	var pdfLinkHref = $( this ).attr('href');
 			$( this ).attr('href', 'https://docs.google.com/viewer?url='+ base + pdfLinkHref + '&embedded=true') ;
 			$(this).addClass('mfp-iframe');
