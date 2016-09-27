@@ -25,6 +25,12 @@
 
 		.container {
 			min-height: 400px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			/* for single line flex container */
+			align-content: center;
 
 			@media (min-width: $screen-lg-min) {
 				min-height: 500px;
@@ -48,7 +54,7 @@
 			position: static;
 
 			@media (min-width: $screen-phone) {
-				position: absolute;
+				//position: absolute;
 			}
 
 			p {
