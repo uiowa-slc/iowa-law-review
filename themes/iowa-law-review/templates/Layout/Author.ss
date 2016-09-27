@@ -7,7 +7,7 @@
 				<% if $Author.BiographicalDetails %>
 				<div>$Author.BiographicalDetails</div>
 				<% end_if %>
-				<div class="article-card-container article-cards-left row full-width">
+				<div class="article-card-container article-cards-left row">
 			        <div class="block-grid-xs-1 block-grid-md-2">
 			          <% loop $Articles.Limit(4) %>
 			            <div>
