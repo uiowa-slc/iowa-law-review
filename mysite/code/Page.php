@@ -60,33 +60,6 @@ class Page_Controller extends ContentController {
 		return parent::Breadcrumbs(20, false, false, true);
 	}
 
-	public function results($data, $form, $request) {
-		$keyword = DBField::create_field('Text', $form->getSearchQuery());
 
-		$contributors = new ArrayList();
-		$contributors = $this->contributorSearch($keyword->getValue());
-
-		$data = array(
-			'Contributors' => $contributors,
-			'Results' => $form->getResults(),
-			'Query' => DBField::create_field('Text', $form->getSearchQuery()),
-			'Title' => _t('SearchForm.SearchResults', 'Search Results'),
-		);
-
-		// Debug::show($data);
-		return $this->customise($data)->renderWith(array('Page_results', 'Page'));
-	}
-
-	public function contributorSearch($keyword) {
-
-		$contributors = Contributor::get()->filterAny(array(
-			'Name:PartialMatch' => $keyword,
-		));
-
-		//Debug::show($contributors);
-
-		return $contributors;
-
-	}
 
 }
