@@ -52,14 +52,12 @@
 
 		.carousel-caption {
 			position: static;
+			padding-top: 0;
+			padding-bottom: 0;
 
-			@media (min-width: $screen-phone) {
-				//position: absolute;
-			}
+			@media (min-width: $screen-phone) {}
 
-			p {
-				padding-top: 20px;
-			}
+			p {}
 
 			h1 {
 				font-size: 34px;
