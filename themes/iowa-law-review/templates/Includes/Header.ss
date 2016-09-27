@@ -1,7 +1,7 @@
 
 <header>
 	<% if UseLargeHeader %>
-		<div class="container">
+		<div class="container visible-lg-block">
 
 			<div class="row">
 				<div class="col-md-2">

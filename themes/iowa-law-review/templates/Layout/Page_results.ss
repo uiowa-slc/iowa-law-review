@@ -4,10 +4,42 @@
 		<div class="row">
 			<div class="col-lg-7 col-lg-offset-1">
 				<% if $URLSegment != "about" %><h1>$Title</h1><% end_if %>
-<% if $Query %>
-        <p class="searchQuery"><em>Showing search results for: &quot;{$Query}&quot;</em>:</p>
-    <% end_if %>
 
+
+
+    <% if $Contributors %>
+
+    <% if  $Results.CurrentPage == 1 %>
+
+        <p class="searchQuery"><em>Author results for: &quot;{$Query}&quot;</em>:</p>
+
+    	<% loop $Contributors %>
+			<article>
+				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
+					<a href="$Link" class="tag featured-tag">Author</a>
+					<h1><a href="$Link">$Name</a></h1>
+				</div>
+				<% if $BiographicalDetails %>
+				<div>$BiographicalDetails</div><hr />
+				<% end_if %>
+				<div class="article-card-container article-cards-left row full-width">
+			        <div class="block-grid-xs-1 block-grid-md-2">
+			          <% loop $Articles.Limit(4) %>
+			            <div>
+			            <% include ArticleCard %>
+			            </div>
+			          <% end_loop %>
+			        </div>
+			    </div>
+			</article>
+			<p><a href="$Link">See all works by $Name &rarr;</a></p>
+			<hr />
+    	<% end_loop %>
+    <% end_if %>
+    <% end_if %>
+	<% if $Query %>
+        <p class="searchQuery"><em>All search results for: &quot;{$Query}&quot;</em>:</p>
+    <% end_if %>
     <% if $Results %>
 
 	<div class="article-card-container article-cards-left row full-width">
@@ -23,7 +55,7 @@
     <p>Sorry, your search query did not return any results.</p>
     <% end_if %>
     <hr />
-    <p>Showing Results {$Results.FirstItem} - {$Results.LastItem}.</p>
+    <p>Showing Results {$Results.FirstItem} - {$Results.LastItem} of {$Results.TotalItems}.</p>
     <% if $Results.MoreThanOnePage %>
 		<nav role="navigation">
 			<ul class="cd-pagination">

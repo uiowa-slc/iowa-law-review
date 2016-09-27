@@ -1,5 +1,5 @@
 <article>
-	<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
+	<div class="article-header <% if $Category %>has-featured-tag<% end_if %>">
 		<% include FeaturedTag %>
 			<h1><% if $ArticleTitle %><a href="$Link">$ArticleTitle</a><% else %><a href="$Link">$Title</a><% end_if %></h1>
 			<% if $Authors %>
