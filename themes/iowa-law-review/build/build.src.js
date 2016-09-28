@@ -5212,7 +5212,7 @@ $.magnificPopup.registerModule(RETINA_NS, {
       if (!location.origin)
         location.origin = location.protocol + "//" + location.host;
 
-		  var base = location.origin;
+		  var base = location.origin + '/';
 
 		  $('.pdf-viewable a[href$=".pdf"]').each(function( index ) {
 		  	var pdfLinkHref = $( this ).attr('href');
