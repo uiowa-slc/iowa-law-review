@@ -12,7 +12,7 @@
 
 					 	<img class="editorial-board" src="$MastheadImage.SetWidth(1140).URL">
 				 		<% if MastheadPDF %>
-						<a href="$MastheadPDF.Link" >Download PDF</a>
+						<a href="$MastheadPDF.Link" download="$MastheadPDF.URL">Download PDF</a>
 						<% end_if %>				
 					
 				
