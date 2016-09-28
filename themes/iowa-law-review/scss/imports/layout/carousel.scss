@@ -2,6 +2,11 @@
 	.carousel-indicators {
 		margin-top: 3px;
 		margin-bottom: 3px;
+		display: none;
+
+		@media (min-width: $screen-md-min) {
+			display: block;
+		}
 
 		li {
 			margin: 1.5px;
