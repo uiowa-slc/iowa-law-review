@@ -23,7 +23,7 @@
 				<% if $BiographicalDetails %>
 				<div>$BiographicalDetails</div>
 				<% end_if %>
-				<div class="article-card-container article-cards-left row">
+				<div class="article-card-container article-cards-left container-fluid">
 			        <div class="block-grid-xs-1 block-grid-md-2">
 			          <% loop $Articles.Limit(4) %>
 			            <div>
@@ -44,7 +44,7 @@
     <% end_if %>
     <% if $Results %>
 
-	<div class="article-card-container article-cards-left row">
+	<div class="article-card-container article-cards-left container-fluid">
         <div class="block-grid-xs-1 block-grid-md-2">
           <% loop $Results %>
             <div>
