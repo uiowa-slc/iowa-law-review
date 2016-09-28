@@ -7,15 +7,14 @@
 	<div class="container article-container padding">
 		<div class="row">
 
-			<div class="col-lg-8 col-lg-offset-2">
+			<div class="col-lg-12">
 
 
-					<div class="bigtext">
-					 	$MastheadImage
+					 	<img class="editorial-board" src="$MastheadImage.SetWidth(1140).URL">
 				 		<% if MastheadPDF %>
-						<a href="$MastheadPDF.Link" download>Download PDF</a>
+						<a href="$MastheadPDF.Link" >Download PDF</a>
 						<% end_if %>				
-					</div>
+					
 				
 					<div class="bigtext">
 						$Content
