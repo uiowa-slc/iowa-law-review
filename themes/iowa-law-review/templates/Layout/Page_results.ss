@@ -14,6 +14,7 @@
         <p class="searchQuery"><em>Author results for: &quot;{$Query}&quot;</em>:</p>
 
     	<% loop $Contributors %>
+    	<% if $Articles %>
     	<div class="author-card">
 			<article>
 				<div class="article-header <% if $FeaturedTag %>has-featured-tag<% end_if %>">
@@ -36,6 +37,7 @@
 			<p><a href="$Link">See all works by $Name &rarr;</a></p>
 		</div>
 			<hr />
+		<% end_if %>
     	<% end_loop %>
     <% end_if %>
     <% end_if %>

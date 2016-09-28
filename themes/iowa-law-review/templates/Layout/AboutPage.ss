@@ -16,18 +16,6 @@
 					</div>
 			
 	
-
-
-				
-				<div class="footnotes">
-					<ol>
-						<% loop $Footnotes %>
-				    	<li class="footnote" id="fn:$Number">
-				        	$Content
-				    	</li>
-				    	<% end_loop %>
-					</ol>
-				</div>
 				<div class="article-social-bottom">
 					<ul class="article-social">
 						<% include ArticleShareIcons %>
