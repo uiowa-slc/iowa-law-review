@@ -15,8 +15,8 @@
 						$Content
 					</div>
 			
-	
-				<div class="article-social-bottom">
+				<hr />
+				<div class="article-social-bottom text-center">
 					<ul class="article-social">
 						<% include ArticleShareIcons %>
 					</ul>
