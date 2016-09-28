@@ -245,6 +245,7 @@ header {
 		font-family: $font-family-sans-serif;
 		font-variant: normal;
 		width: 100%;
+		padding-right: 40px;
 
 		@media (min-width: $screen-md-min) {
 			width: 175px;
