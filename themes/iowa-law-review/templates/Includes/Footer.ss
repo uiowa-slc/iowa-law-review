@@ -4,7 +4,8 @@
 			<div class="col-sm-4">
 				<div class="footer-top-text">
 					<div class="iowa-law-review"><h3><a href="$AbsoluteBaseURL">$SiteConfig.Title</a></a></h3></div>
-					<p>Iowa Law Review <br />190 Boyd Law Building<br />Iowa City, IA 52242-1113</p>
+					<p>190 Boyd Law Building<br />Iowa City, IA 52242-1113</p>
+					<p><a href="mailto:ilr@uiowa.edu">ilr@uiowa.edu</a><br />319-335-9054</p>
 					<div class="social-icons">
 						<a href="https://www.facebook.com/IowaLawReview/" title="Facebook" target="_blank">
 							<img src="{$ThemeDir}/images/facebook_circle_gray-32.png" alt="Facebook">
@@ -28,7 +29,9 @@
 			<div class="col-sm-3">
 				<div class="clearfix footer-links">
 					<ul>
-						<li><a href="about/submissions/">Submissions</a></li>
+						<% loop ChildrenOf("about") %>
+							<li><a href="$Link">$MenuTitle</a></li>
+						<% end_loop %>
 					</ul>
 
 				</div>			
@@ -42,7 +45,7 @@
 			<div class="col-lg-12">
 					<hr class="bar">
 		        	<div class="rights">
-		        		<p><small>&copy; {$Now.Year} University of Iowa. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information">Privacy Information</a></small></p>
+		        		<p><small>&copy; Iowa Law Review. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information">Privacy Information</a></small></p>
 
 		        	</div>
 
