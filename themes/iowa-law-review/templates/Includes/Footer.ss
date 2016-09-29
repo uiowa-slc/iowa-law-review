@@ -28,7 +28,6 @@
 			<div class="col-sm-3">
 				<div class="clearfix footer-links">
 					<ul>
-						<li><a href="about/symposia/">Symposia</a></li>
 						<li><a href="about/submissions/">Submissions</a></li>
 					</ul>
 
