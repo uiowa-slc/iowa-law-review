@@ -1,6 +1,6 @@
 <% include Header %>
 <% if $Children %>
-<div id="article-carousel" class="carousel slide" data-ride="carousel">
+<div id="article-carousel" class="carousel slide">
       <!-- Indicators -->
       <ol class="carousel-indicators">
       	<% loop $RandomArticles.Limit(4) %>

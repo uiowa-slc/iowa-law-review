@@ -1,7 +1,7 @@
 
 <% include Header %>
 
-<div id="article-carousel" class="carousel slide" data-ride="carousel">
+<div id="article-carousel" class="carousel slide">
       <!-- Indicators -->
       <ol class="carousel-indicators">
 
