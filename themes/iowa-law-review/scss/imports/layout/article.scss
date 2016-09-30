@@ -26,6 +26,14 @@
 .Article, .AboutPage, .EditorialBoardPage {
 	.article-header.primary-article-header {
 		text-align: center;
+
+		h1 {
+			font-size: 36px;
+
+			@media (min-width: $screen-md-min) {
+				font-size: 49px;
+			}
+		}
 	}
 
 	.bigtext-wrapper {}
