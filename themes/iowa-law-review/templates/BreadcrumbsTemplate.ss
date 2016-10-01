@@ -3,9 +3,9 @@
 		<li><a href="$Baseref">Home</a></li>
 		<% loop Pages %>
 			<% if Last %>
-				<li class="active">$MenuTitle.LimitCharacters(25)</li>
+				<li class="active">$MenuTitle.LimitCharacters(20)</li>
 			<% else %>
-				<li><a href="$Link">$MenuTitle.LimitCharacters(25)</a></li>
+				<li><a href="$Link">$MenuTitle.LimitCharacters(20)</a></li>
 			<% end_if %>
 		<% end_loop %>
 	</ul>
