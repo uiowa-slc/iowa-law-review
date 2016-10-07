@@ -36,7 +36,6 @@
 			</article>
 			<p><a href="$Link">See all works by $Name &rarr;</a></p>
 		</div>
-			<hr />
 		<% end_if %>
     	<% end_loop %>
     <% end_if %>
