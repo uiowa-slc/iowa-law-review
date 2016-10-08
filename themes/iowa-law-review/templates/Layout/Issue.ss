@@ -55,7 +55,6 @@
 	</div>
 </div>
   <div class="article-nav-container container">
-    <hr />
       <div class="row article-card-container article-nav">
   
         <div class="col-md-4 text-left">

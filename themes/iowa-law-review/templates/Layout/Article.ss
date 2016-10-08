@@ -100,9 +100,9 @@
 			</div>
 			<div class="col-lg-12">
 
-								<% if not $IsExcerpt %>
+				<% if not $IsExcerpt %>
 				<div class="article-social-bottom text-center">
-					<hr />
+
 					<ul class="article-social">
 						<% include ArticleShareIcons %>
 					</ul>
