@@ -23,7 +23,7 @@
   <body class="{$ClassName}">
   <% include GoogleAnalytics %>
   <% if UseLargeHeader %>
-  <% include UiowaBarBootstrapLight %>
+    <% include UiowaBarBootstrapLight %>
   <% end_if %>
 
     <a href="#main-content" class="skip-link">Skip to the main content</a>
