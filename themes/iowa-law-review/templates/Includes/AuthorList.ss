@@ -1,12 +1,3 @@
-<%-- if $ClassName == "Article" %>
-
-	<% loop $Authors %>
-		<a href="#author-{$ID]-note">$Name</a>
-		<div class="hidden">$Note</
-<% else %>
-
-<% end_if --%>
-
 <% if $Authors %>
 	<em>
 		<% if $Authors.Count == 2 %>
