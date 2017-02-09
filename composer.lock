@@ -315,12 +315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "7c70ca26379b2fd7d768c2fb871cc58d59826317"
+                "reference": "b03fb1ce70ba9e5363d742a3f90129df9007ff78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/7c70ca26379b2fd7d768c2fb871cc58d59826317",
-                "reference": "7c70ca26379b2fd7d768c2fb871cc58d59826317",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/b03fb1ce70ba9e5363d742a3f90129df9007ff78",
+                "reference": "b03fb1ce70ba9e5363d742a3f90129df9007ff78",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +356,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2017-01-17 17:40:06"
+            "time": "2017-02-09 18:27:51"
         },
         {
             "name": "md/silverstripe-flickr",
@@ -879,12 +879,12 @@
             "version": "1.0.3",
             "source": {
                 "type": "git",
-                "url": "https://github.com/assertchris/silverstripe-segment-field.git",
+                "url": "https://github.com/silverstripe/silverstripe-segment-field.git",
                 "reference": "0b1445307bac488ddc35d624564f4300e8080029"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/assertchris/silverstripe-segment-field/zipball/0b1445307bac488ddc35d624564f4300e8080029",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-segment-field/zipball/0b1445307bac488ddc35d624564f4300e8080029",
                 "reference": "0b1445307bac488ddc35d624564f4300e8080029",
                 "shasum": ""
             },
