@@ -20,12 +20,12 @@
             <div class="carousel-caption">
               <p class="smallcaps">From our latest issue</p>
               <h1>$Title</h1>
-              <% if $Authors %>
+              <% if $SortedAuthors %>
                 <em>
-                  <% if $Authors.Count == 2 %>
-                    <a href="$Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$Authors.Last.Name}</a>
+                  <% if $SortedAuthors.Count == 2 %>
+                    <a href="$Link">{$SortedAuthors.First.Name}<% if $SortedAuthors.First.ArticleNote %>*<% end_if %></a> and <a href="$Link">{$SortedAuthors.Last.Name}</a>
                   <% else %>
-                    <% loop $Authors %>
+                    <% loop $SortedAuthors %>
                       <a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
                     <% end_loop %>      
                   <% end_if %>

@@ -1,6 +1,6 @@
 <h2 id="primary-nav" class="sr-only">Main Navigation</h2>
 <nav class="navbar navbar-default expanded-navbar" role="navigation" aria-label="Main menu">
-  <div class="container">
+  <div class="container container--large">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{$BaseUrl}"><span class="hidden-lg">Iowa Law Review</span> <span class="visible-lg-inline">ILR</span></a>
+      <a class="navbar-brand" href="{$BaseUrl}"><span class="hidden-md hidden-lg">Iowa Law Review</span> <span class="visible-md-inline visible-lg-inline">ILR</span></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

@@ -19,13 +19,9 @@
     // All pages
     'common': {
       init: function() {
-		$('.navbar-container').affix({
-		  offset: { top: $('.navbar').offset().top }
-		}).wrap(function() {
-		  return $('<div></div>', {
-		    height: $(this).outerHeight()
-		  });
-		});​
+    		$('.navbar-container').affix({
+    		  offset: { top: 136 }
+    		});
 		function skipLink(el) {
 			// bind a click event to the 'skip' link
 			$(el).click(function(event){

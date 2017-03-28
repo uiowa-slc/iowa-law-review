@@ -13,8 +13,10 @@
 			</div>
 		</div>
 		<div class="border-container hidden-print">
-			<div class="navbar-container">
-				<% include Nav %>
+			<div style="height: 59px;">
+				<div class="navbar-container">
+					<% include Nav %>
+				</div>
 			</div>
 		</div>
 

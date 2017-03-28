@@ -24,6 +24,10 @@ $skip: (
   color: white
 );
 
+.container--large{
+  width: 100%;
+  max-width: 1280px;
+}
 
 // basic functionalty for the skip link
 .skip-link {

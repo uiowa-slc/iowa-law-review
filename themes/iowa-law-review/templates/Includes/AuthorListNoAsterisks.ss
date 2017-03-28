@@ -1,9 +1,9 @@
-<% if $Authors %>
+<% if $SortedAuthors %>
 	<em>
-		<% if $Authors.Count == 2 %>
-			<a href="$Authors.First.Link">{$Authors.First.Name}<% if $Authors.First.ArticleNote %><% end_if %></a>&amp; <a href="$Authors.Last.Link">{$Authors.Last.Name}<% if $Authors.Last.ArticleNote %><% end_if %></a>
+		<% if $SortedAuthors.Count == 2 %>
+			<a href="$SortedAuthors.First.Link">{$SortedAuthors.First.Name}<% if $SortedAuthors.First.ArticleNote %><% end_if %></a>&amp; <a href="$SortedAuthors.Last.Link">{$SortedAuthors.Last.Name}<% if $SortedAuthors.Last.ArticleNote %><% end_if %></a>
 		<% else %>
-			<% loop $Authors %>
+			<% loop $SortedAuthors %>
 				<a href="$Link">$Name</a><% if not $Last %>, <% end_if %>
 			<% end_loop %>			
 		<% end_if %>

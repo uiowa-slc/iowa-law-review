@@ -3,8 +3,8 @@
 <meta property="og:title" content="<% if $ArticleTitle %>$ArticleTitle.ATT<% else_if $URLSegment == "home" %>$SiteConfig.Title.ATT<% else %>$Title<% end_if %>" />
 <% if $URLSegment == "home" %>
 <meta property="og:description" content="<% with Page("about") %>$Content.Summary.XML<% end_with %>" />
-<% else_if $Authors %>
-<meta property="og:description" content="By <% loop $Authors %>$Name.ATT<% if not $Last %>, <% end_if %><% end_loop %>" />
+<% else_if $SortedAuthors %>
+<meta property="og:description" content="By <% loop $SortedAuthors %>$Name.ATT<% if not $Last %>, <% end_if %><% end_loop %>" />
 <% else %>
 <meta property="og:description" content="$Content.Summary.XML" />
 <% end_if %>

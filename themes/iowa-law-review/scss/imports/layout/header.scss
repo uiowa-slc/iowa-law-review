@@ -152,10 +152,15 @@ header {
 
 	&.expanded-navbar {
 		.navbar-nav.primary-nav li a {
-			padding: 15px 25px;
+			padding: 15px 20px;
+
+			@media (min-width: $screen-md-min) {
+
+				padding: 15px 18px;
+			}
 
 			@media (min-width: $screen-lg-min) {
-				padding: 15px 30px;
+				padding: 15px 23px;
 			}
 		}
 	}
@@ -254,7 +259,7 @@ header {
 		}
 
 		@media (min-width: $screen-lg-min) {
-			width: 300px;
+			width: 200px;
 		}
 	}
 

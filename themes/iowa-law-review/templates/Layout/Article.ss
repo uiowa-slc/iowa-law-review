@@ -72,7 +72,7 @@
 			</div>
 			<div class="col-lg-2 col-lg-offset-1 author-notes">
 				<% if not $IsExcerpt %>
-					<% loop $Authors %>
+					<% loop $SortedAuthors %>
 							<% if $BiographicalDetails || ArticleNote %>
 							<span class="asterisks">$Asterisks</span>
 							<span class="details">
