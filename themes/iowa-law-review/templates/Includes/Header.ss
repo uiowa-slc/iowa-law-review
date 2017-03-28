@@ -22,9 +22,11 @@
 
 	<% else %>
 
-		<div class="border-container hidden-print">
-			<div class="navbar-container">
-				<% include SmallNav %>
+		<div class="hidden-print">
+			<div style="height: 56px;">
+				<div class="navbar-container-small">
+					<% include SmallNav %>
+				</div>
 			</div>
 		</div>
 
