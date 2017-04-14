@@ -115,6 +115,27 @@ a.tag {
   }
 }
 
+
+//Search form in body of page (rare, only when you don't specify a search term after searching in menu):
+.main-content {
+  #SearchForm_SearchForm_Search{
+      border-radius: 20px;
+      border: 1px solid #eee;
+      background: #f5f5f5;
+      padding: 10px;
+      float: left;
+  }
+
+  #SearchForm_SearchForm_action_results{
+    background: #efefef;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding: 10px;
+    float: left;
+  }
+}
+
   /**
      * 1 Position the wrapper relative to the parent element 
      * 2 Make the wrapper fit the content height 
