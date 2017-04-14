@@ -81,7 +81,7 @@
 				    <% else %>
 				    	<h1>No search term specified</h1>
 				    	<p>Please enter a search term in the search field below:</p>
-							<form id="SearchForm_SearchForm" type="search" action="/iowa-law-review/home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
+							<form id="SearchForm_SearchForm" type="search" action="{$BaseURL}home/SearchForm" method="get" enctype="application/x-www-form-urlencoded">
 								<p id="SearchForm_SearchForm_error" class="message " style="display: none"></p>
 								<fieldset>
 									<div id="SearchForm_SearchForm_Search_Holder" class="field text nolabel">
