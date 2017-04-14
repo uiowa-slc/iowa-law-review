@@ -22,7 +22,7 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-lg-1 article-share-container">
+			<div class="col-lg-1 article-share-container ilr-sticky">
 					<div class="article-social-container-main hidden-print">
 						<ul class="article-social responsive text-center">
 						<% include ArticleShareIcons %>
