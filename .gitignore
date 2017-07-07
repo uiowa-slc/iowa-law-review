@@ -45,3 +45,6 @@ publication-project/
 siteconfig/
 .phpintel/
 bootstrap-forms/
+activedirectory/
+multivaluefield/
+queuedjobs/
