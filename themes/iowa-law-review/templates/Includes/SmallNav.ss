@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{$BaseUrl}">Iowa Law Review</a>
+      <a class="navbar-brand" href="{$absoluteBaseURL}">Iowa Law Review</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
