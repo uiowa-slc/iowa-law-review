@@ -16,13 +16,16 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project"
-      
         },
-         {
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"       
+        },
+        {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr"
         },
-       {
+        {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
         },     
@@ -53,5 +56,3 @@
     ]
 
 }
-
-

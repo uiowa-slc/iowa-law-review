@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    $MetaTags(false)
     <% include OpenGraph %>
     <% base_tag %>
     <title><% if $URLSegment != "home" %><% if $Title %>$Title.NoHTML - <% else_if $Author %>$Author.Name - <% end_if %><% end_if %>{$SiteConfig.Title} - The University of Iowa College of Law</title>
@@ -21,7 +22,7 @@
     <![endif]-->
   </head>
   <body class="{$ClassName}">
-  <% include GoogleAnalytics %>
+
   <% if UseLargeHeader %>
     <% include UiowaBarBootstrapLight %>
   <% end_if %>
@@ -33,7 +34,7 @@
 
     $BetterNavigator
     <% include Footer %>
-    
+      $Analytics
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="{$ThemeDir}/build/build.js"></script>
      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
