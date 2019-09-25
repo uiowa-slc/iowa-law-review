@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "702f89b2b12e1791581f5314a513fe1c",
+    "content-hash": "a6bd2b3d95b2e07bd0b6f462c4facbb0",
     "packages": [
         {
             "name": "bramus/ansi-php",
@@ -1269,12 +1269,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "695ee6d8478a8a49c71cb064d56942190ddbb805"
+                "reference": "da7033fa630c868f626be7111504b5f3090780e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/695ee6d8478a8a49c71cb064d56942190ddbb805",
-                "reference": "695ee6d8478a8a49c71cb064d56942190ddbb805",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/da7033fa630c868f626be7111504b5f3090780e1",
+                "reference": "da7033fa630c868f626be7111504b5f3090780e1",
                 "shasum": ""
             },
             "require": {
@@ -1323,7 +1323,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/ss4.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2019-09-18T16:34:10+00:00"
+            "time": "2019-09-25T14:32:43+00:00"
         },
         {
             "name": "md/saml",
@@ -3303,12 +3303,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/vendor-plugin.git",
-                "reference": "cf664296938d74ffdcfc8980d65e775447acbf7d"
+                "reference": "fbe71db33c5e9bc1727edd4be452049f3a71a256"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/vendor-plugin/zipball/cf664296938d74ffdcfc8980d65e775447acbf7d",
-                "reference": "cf664296938d74ffdcfc8980d65e775447acbf7d",
+                "url": "https://api.github.com/repos/silverstripe/vendor-plugin/zipball/fbe71db33c5e9bc1727edd4be452049f3a71a256",
+                "reference": "fbe71db33c5e9bc1727edd4be452049f3a71a256",
                 "shasum": ""
             },
             "require": {
@@ -3343,7 +3343,7 @@
                 }
             ],
             "description": "Allows vendor modules to expose directories to the webroot",
-            "time": "2019-01-25T01:02:45+00:00"
+            "time": "2019-09-23T22:55:23+00:00"
         },
         {
             "name": "silverstripe/versioned",
@@ -3758,12 +3758,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
-                "reference": "24a60c0d7ad98a0fa5d1f892e9286095a389404f"
+                "reference": "717ad66b5257e9752ae3c5722b5810bb4c40b236"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/config/zipball/24a60c0d7ad98a0fa5d1f892e9286095a389404f",
-                "reference": "24a60c0d7ad98a0fa5d1f892e9286095a389404f",
+                "url": "https://api.github.com/repos/symfony/config/zipball/717ad66b5257e9752ae3c5722b5810bb4c40b236",
+                "reference": "717ad66b5257e9752ae3c5722b5810bb4c40b236",
                 "shasum": ""
             },
             "require": {
@@ -3814,7 +3814,7 @@
             ],
             "description": "Symfony Config Component",
             "homepage": "https://symfony.com",
-            "time": "2019-08-26T07:52:57+00:00"
+            "time": "2019-09-19T15:32:51+00:00"
         },
         {
             "name": "symfony/filesystem",
@@ -4546,24 +4546,24 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-session.git",
-                "reference": "2df7875d4075bf6e1ccb8718e84a8637ffec11a9"
+                "reference": "e08f54f06166bccb41ab3ec6c06ea64ad9d78901"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/2df7875d4075bf6e1ccb8718e84a8637ffec11a9",
-                "reference": "2df7875d4075bf6e1ccb8718e84a8637ffec11a9",
+                "url": "https://api.github.com/repos/zendframework/zend-session/zipball/e08f54f06166bccb41ab3ec6c06ea64ad9d78901",
+                "reference": "e08f54f06166bccb41ab3ec6c06ea64ad9d78901",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
                 "zendframework/zend-eventmanager": "^2.6.2 || ^3.0",
-                "zendframework/zend-stdlib": "^2.7 || ^3.0"
+                "zendframework/zend-stdlib": "^3.2.1"
             },
             "require-dev": {
                 "container-interop/container-interop": "^1.1",
                 "mongodb/mongodb": "^1.0.1",
                 "php-mock/php-mock-phpunit": "^1.1.2 || ^2.0",
-                "phpunit/phpunit": "^5.7.5 || >=6.0.13 <6.5.0",
+                "phpunit/phpunit": "^5.7.27 || ^6.5.14 || ^7.5.16",
                 "zendframework/zend-cache": "^2.6.1",
                 "zendframework/zend-coding-standard": "~1.0.0",
                 "zendframework/zend-db": "^2.7",
@@ -4582,8 +4582,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev",
-                    "dev-develop": "2.9.x-dev"
+                    "dev-master": "2.9.x-dev",
+                    "dev-develop": "2.10.x-dev"
                 },
                 "zf": {
                     "component": "Zend\\Session",
@@ -4599,13 +4599,13 @@
             "license": [
                 "BSD-3-Clause"
             ],
-            "description": "manage and preserve session data, a logical complement of cookie data, across multiple page requests by the same client",
+            "description": "Object-oriented interface to PHP sessions and storage",
             "keywords": [
                 "ZendFramework",
                 "session",
                 "zf"
             ],
-            "time": "2019-08-11T19:34:46+00:00"
+            "time": "2019-09-20T12:55:49+00:00"
         },
         {
             "name": "zendframework/zend-stdlib",
