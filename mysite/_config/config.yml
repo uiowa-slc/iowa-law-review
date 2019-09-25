@@ -1,13 +1,12 @@
 ---
-Name: mysite
-After:
-  - 'framework/*'
-  - 'cms/*'
+Name: myproject
 ---
+SilverStripe\Core\Manifest\ModuleManifest:
+  project: mysite
 Page:
   extensions:
     - PublicationPage
-Page_Controller:
+PageController:
   extensions:
     - PublicationPage_Controller
 Article:
@@ -18,3 +17,9 @@ VersionTruncator:
   draft_limit: 1
   delete_old_page_types: false
   vacuum_tables: false
+SilverStripe\View\SSViewer:
+  themes:
+    - '$public'
+    - 'iowa-law-review'
+    - 'md/publication-project'
+    - '$default'

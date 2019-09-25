@@ -1,4 +1,10 @@
 <?php
+
+use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
+use Symbiote\GridFieldExtensions\GridFieldAddNewMultiClass;
+use SilverStripe\Forms\GridField\GridFieldAddNewButton;
+use SilverStripe\Forms\GridField\GridField;
+
 class HomePage extends Page {
 
 	private static $db = array(
@@ -25,47 +31,18 @@ class HomePage extends Page {
 		$homePageAnnouncementGridFieldConfig->addComponent(new GridFieldSortableRows('SortOrder'));
 
 		$homePageAnnouncementGridFieldConfig->addComponent(new GridFieldAddNewMultiClass());
-		$homePageAnnouncementGridFieldConfig->removeComponentsByType('GridFieldAddNewButton');
+		$homePageAnnouncementGridFieldConfig->removeComponentsByType(GridFieldAddNewButton::class);
 
 		$homePageAnnouncementGridField = new GridField("HomePageAnnouncement", "Announcements that come before the latest articles", HomePageAnnouncement::get(), $gridFieldConfig);
 		$f->addFieldToTab("Root.Main", $homePageAnnouncementGridField);
 
 		return $f;
 	}
-
-	
-}
-class HomePage_Controller extends Page_Controller {
-
-	/**
-	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
-	 * permissions or conditions required to allow the user to access it.
-	 *
-	 * <code>
-	 * array (
-	 *     'action', // anyone can access this action
-	 *     'action' => true, // same as above
-	 *     'action' => 'ADMIN', // you must have ADMIN permissions to access this action
-	 *     'action' => '->checkAction' // you can only access this action if $this->checkAction() returns true
-	 * );
-	 * </code>
-	 *
-	 * @var array
-	 */
-	private static $allowed_actions = array(
-	);
-
-	public function init() {
-		parent::init();
-
-	}
-
-
 	public function HomePageAnnouncements() {
 		$features = HomePageAnnouncement::get();
 
 		return $features;
 
 	}
-
+	
 }

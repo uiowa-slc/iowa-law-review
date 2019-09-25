@@ -1,17 +1,15 @@
 {
-	"name": "silverstripe/installer",
-	"description": "The SilverStripe Framework Installer",
-	"require": {
-		"php": ">=5.3.2",
-		"md/publication-project": "dev-master",
-        "sunra/php-simple-html-dom-parser": "v1.5.0",
-        "silverstripe/activedirectory" : "3.*"
-	},
-	"config": {
-		"process-timeout": 600	
-	},
-	"minimum-stability": "dev",
-	
+    "name": "silverstripe/installer",
+    "description": "The SilverStripe Framework Installer",
+    "require": {
+        "php": ">=5.3.2",
+        "md/publication-project": "dev-ss4.x",
+        "sunra/php-simple-html-dom-parser": "v1.5.0"
+    },
+    "config": {
+        "process-timeout": 600
+    },
+    "minimum-stability": "dev",
     "repositories": [
         {
             "type": "vcs",
@@ -19,7 +17,23 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"       
+            "url": "https://github.com/StudentLifeMarketingAndDesign/division-analytics"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-maintenance-mode"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-staticpublishqueue"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/uiowa-bar"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events"
         },
         {
             "type": "vcs",
@@ -27,32 +41,32 @@
         },
         {
             "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar"
-        },     
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/ac-json-events"
-
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display"
-
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/jonom/silverstripe-version-truncator"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-activedirectory"
-
-        },
-        {
-             "type": "vcs",
-             "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-betternavigator"
+            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-saml"
         }
-        
-    ]
+    ],
+    "extra": {
+        "resources-dir": "_resources",
+        "expose": [
+            "themes/iowa-law-review/build",
+            "themes/iowa-law-review/css",
+            "themes/iowa-law-review/fonts",
+            "themes/iowa-law-review/images",
+            "themes/iowa-law-review/js"
+        ],
+        "project-files-installed": [
+            "app/.htaccess",
+            "app/_config.php",
+            "app/_config/mysite.yml",
+            "app/src/Page.php",
+            "app/src/PageController.php"
+        ],
+        "public-files-installed": [
+            ".htaccess",
+            "index.php",
+            "install-frameworkmissing.html",
+            "install.php",
+            "web.config"
+        ]
+    }
 
 }

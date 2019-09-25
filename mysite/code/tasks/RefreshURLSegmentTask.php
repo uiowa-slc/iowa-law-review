@@ -1,5 +1,7 @@
 <?php
 
+use SilverStripe\Dev\BuildTask;
+
 class RefreshURLSegmentTask extends BuildTask {
 
 	protected $title       = 'Refresh contributor URL segments';

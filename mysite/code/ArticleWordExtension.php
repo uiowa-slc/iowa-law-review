@@ -1,4 +1,6 @@
 <?php
+
+use SilverStripe\ORM\DataExtension;
 class ArticleWordExtension extends DataExtension {
 
 	protected function parseManualSuperscripts($dom, $dryrun = false) {

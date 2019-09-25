@@ -1,29 +1,20 @@
 <?php
 
-global $project;
-$project = 'mysite';
-
-global $database;
-//!!! YOU HAVE TO DEFINE YOUR DATABASE FIRST, MAN. !!!
-$database = 'iowalawreview';
-
-// Use _ss_environment.php file for configuration
-require_once ("conf/ConfigureFromEnv.php");
+use SilverStripe\i18n\i18n;
+use SilverStripe\ORM\Search\FulltextSearchable;
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\View\Requirements;
+use SilverStripe\Security\MemberAuthenticator\MemberAuthenticator;
+use SilverStripe\Security\Authenticator;
+use SilverStripe\Control\Director;
+use SilverStripe\ActiveDirectory\Authenticators\SAMLAuthenticator;
+use SilverStripe\Forms\HTMLEditor\HtmlEditorConfig;
+use SilverStripe\Forms\HTMLEditor\TinyMCEConfig;
 
 // Set the site locale
 i18n::set_locale('en_US');
-FulltextSearchable::enable();
-// Enable nested URLs for this site (e.g. page/sub-page/)
-if (class_exists('SiteTree')) {SiteTree::enable_nested_urls();
-}
+// FulltextSearchable::enable();
 
-Requirements::set_force_js_to_bottom(true);
 
-GD::set_default_quality(80);
 HtmlEditorConfig::get('cms')->addButtonsToLine(2, 'sup', 'separator');
 HtmlEditorConfig::get('cms')->removeButtons('pasteword');
-Authenticator::unregister('MemberAuthenticator');
-Authenticator::set_default_authenticator('SAMLAuthenticator');
-if(Director::isLive()) {
-	Director::forceSSL();
-}

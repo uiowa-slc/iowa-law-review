@@ -1,5 +1,10 @@
 <?php
 
+use SilverStripe\View\SSViewer;
+use SilverStripe\View\ArrayData;
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\CMS\Controllers\ContentController;
+
 class Page extends SiteTree {
 
 	private static $db = array(
@@ -49,17 +54,4 @@ class Page extends SiteTree {
 			"Unlinked" => $unlinked,
 		))));
 	}
-}
-class Page_Controller extends ContentController {
-
-	public function init() {
-		parent::init();
-
-	}
-	public function Breadcrumbs($maxDepth = 20, $unlinked = false, $stopAtPageType = false, $showHidden = false) {
-		return parent::Breadcrumbs(20, false, false, true);
-	}
-
-
-
 }
