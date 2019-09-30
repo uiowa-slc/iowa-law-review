@@ -17,3 +17,17 @@ smtp.yml
 /cache
 .phpintel/
 public/_resources/
+
+# Don't track final build artifacts, but do keep track of the dir structure
+/themes/iowa-law-review/dist/*
+!/themes/iowa-law-review/dist/.gitkeep
+/themes/iowa-law-review/dist/favicons/*
+!/themes/iowa-law-review/dist/favicons/.gitkeep
+/themes/iowa-law-review/dist/fonts/*
+!/themes/iowa-law-review/dist/fonts/.gitkeep
+/themes/iowa-law-review/dist/images/*
+!/themes/iowa-law-review/dist/images/.gitkeep
+/themes/iowa-law-review/dist/scripts/*
+!/themes/iowa-law-review/dist/scripts/.gitkeep
+/themes/iowa-law-review/dist/styles/*
+!/themes/iowa-law-review/dist/styles/.gitkeep
