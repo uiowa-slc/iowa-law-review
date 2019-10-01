@@ -17,10 +17,9 @@ const $ = gulpLoadPlugins();
 const reload = browserSync.reload;
 
 
-
 // Lint JavaScript
 function lint(){
-  return gulp.src('./themes/engage/scripts/**/*.js')
+  return gulp.src('./themes/iowa-law-review/scripts/**/*.js')
     .pipe($.eslint())
     .pipe($.eslint.format())
     .pipe($.if(!browserSync.active, $.eslint.failOnError()));
@@ -29,13 +28,13 @@ function lint(){
 
 // Optimize images
 function images(){
-  return gulp.src('./themes/engage/src/images/**/*')
+  return gulp.src('./themes/iowa-law-review/src/images/**/*')
     .pipe($.imagemin({
       progressive: true,
       interlaced: true
     }))
-    .pipe(gulp.dest('./themes/engage/dist/images'))
-    .pipe($.size({title: './themes/engage/dist/images'}));
+    .pipe(gulp.dest('./themes/iowa-law-review/dist/images'))
+    .pipe($.size({title: './themes/iowa-law-review/dist/images'}));
 }
 
 
@@ -43,15 +42,15 @@ function images(){
 function copy(){
 
   return gulp.src([
-       './themes/engage/src/*',
-       './themes/engage/src/**/*',
-       '!./themes/engage/src/styles/**/*',
-       '!./themes/engage/src/scripts/**/*',
-       '!./themes/engage/src/templates',
-       '!./themes/engage/src/templates/**/*',
-       '!./themes/engage/*.html',
+       './themes/iowa-law-review/src/*',
+       './themes/iowa-law-review/src/**/*',
+       '!./themes/iowa-law-review/src/styles/**/*',
+       '!./themes/iowa-law-review/src/scripts/**/*',
+       '!./themes/iowa-law-review/templates',
+       '!./themes/iowa-law-review/templates/**/*',
+       '!./themes/iowa-law-review/*.html',
      ],{dot: true})
-    .pipe(gulp.dest('./themes/engage/dist/'))
+    .pipe(gulp.dest('./themes/iowa-law-review/dist/'))
     .pipe($.size({title: 'copy'}));
 }
 
@@ -80,14 +79,14 @@ function styles(){
 
   // For best performance, don't add Sass partials to `gulp.src`
   return gulp.src([
-    './themes/engage/src/styles/main.scss',
+    './themes/iowa-law-review/src/styles/main.scss',
   ])
     .pipe($.newer('.tmp/styles'))
     .pipe($.sourcemaps.init())
     .pipe($.sass({
       precision: 10,
       includePaths: [
-        './themes/engage/src/bower_components/foundation/scss/',
+        './themes/iowa-law-review/src/bower_components/foundation/scss/',
         './vendor/md/uiowa-bar/scss',
         './node_modules/'
 
@@ -98,7 +97,7 @@ function styles(){
     .pipe($.if('*.css', $.postcss(plugins)))
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('./themes/engage/dist/styles'));
+    .pipe(gulp.dest('./themes/iowa-law-review/dist/styles'));
 };
 
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
@@ -117,7 +116,7 @@ function scripts(){
       './node_modules/lazysizes/lazysizes.js',
       './node_modules/flickity/dist/flickity.pkgd.js',
       './node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-      './themes/engage/src/scripts/app.js',
+      './themes/iowa-law-review/src/scripts/app.js',
 
     ])
       .pipe($.newer('.tmp/scripts'))
@@ -130,12 +129,12 @@ function scripts(){
       // Output files
       .pipe($.size({title: 'scripts'}))
       .pipe($.sourcemaps.write('.'))
-      .pipe(gulp.dest('./themes/engage/dist/scripts'));
+      .pipe(gulp.dest('./themes/iowa-law-review/dist/scripts'));
 };
 
 //Scan your HTML for assets & optimize them
 function html(){
-  return gulp.src('./themes/engage/src/templates/**/*.ss')
+  return gulp.src('./themes/iowa-law-review/templates/**/*.ss')
     .pipe($.useref({
       searchPath: '{.tmp,app}',
       noAssets: true
@@ -155,21 +154,21 @@ function html(){
     })))
     // Output files
     .pipe($.if('*.ss', $.size({title: 'ss', showFiles: true})))
-    .pipe(gulp.dest('./themes/engage/templates/'));
+    .pipe(gulp.dest('./themes/iowa-law-review/templates/'));
 }
 
 
 // Clean output directory
 function clean(){
-  return del(['.tmp', './themes/engage/dist/*', '!dist/.git'], {dot: true})
+  return del(['.tmp', './themes/iowa-law-review/dist/*', '!dist/.git'], {dot: true})
 }
 
 function watch(){
-  // gulp.watch(['./themes/engage/**/*.html'], reload);
-  // gulp.watch(['./themes/engage/src/templates/**/*.ss'], gulp.series(html));
-  gulp.watch(['./themes/engage/src/styles/**/*.{scss,css}'], gulp.series(styles));
-  gulp.watch(['./themes/engage/src/scripts/**/*.js'], gulp.series(lint, scripts));
-  gulp.watch(['./themes/engage/src/images/**/*'], gulp.series(images));
+  // gulp.watch(['./themes/iowa-law-review/**/*.html'], reload);
+  // gulp.watch(['./themes/iowa-law-review/src/templates/**/*.ss'], gulp.series(html));
+  gulp.watch(['./themes/iowa-law-review/src/styles/**/*.{scss,css}'], gulp.series(styles));
+  gulp.watch(['./themes/iowa-law-review/src/scripts/**/*.js'], gulp.series(lint, scripts));
+  gulp.watch(['./themes/iowa-law-review/src/images/**/*'], gulp.series(images));
 }
 
 // });
