@@ -67,9 +67,9 @@
 
 @import "lib/bootstrap-block-grid/src/bootstrap3-block-grid.scss";
 @import "lib/pagination/scss/style";
-@import "../src/magnific-popup/src/css/main.scss";
+@import "../libs/magnific-popup/src/css/main.scss";
 
-@import "uiowa-bar-bootstrap";
+@import "../../../../vendor/md/uiowa-bar/scss/uiowa-bar.scss";
 
 @import "imports/theme";
 @import "imports/layout/blog";

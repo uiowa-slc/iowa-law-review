@@ -1,4 +1,4 @@
-@import "bourbon";
+@import "../../../../libs/bourbon/app/assets/stylesheets/_bourbon";
 
 // http://bourbon.io/
 @import "../partials/variables";
@@ -27,7 +27,7 @@ section {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 Basic style
 
@@ -117,7 +117,7 @@ nav[role="navigation"] {
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 No space - remove distance between list items
 
@@ -159,7 +159,7 @@ No space - remove distance between list items
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
 move buttons - move prev and next buttons to the sides
 
@@ -193,9 +193,9 @@ move buttons - move prev and next buttons to the sides
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-custom icons - customize the small arrow inside the next and prev buttons 
+custom icons - customize the small arrow inside the next and prev buttons
 
 -------------------------------- */
 
@@ -239,9 +239,9 @@ custom icons - customize the small arrow inside the next and prev buttons
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-custom buttons - replace prev and next buttons text with a custom icon 
+custom buttons - replace prev and next buttons text with a custom icon
 
 -------------------------------- */
 
@@ -279,9 +279,9 @@ custom buttons - replace prev and next buttons text with a custom icon
 	}
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-animated buttons - animate the text inside prev and next buttons 
+animated buttons - animate the text inside prev and next buttons
 
 -------------------------------- */
 
