@@ -10,6 +10,6 @@
 <% end_if %>
 
 <meta property="og:url" content="$AbsoluteLink.ATT" />
-<meta property="og:image" content="{$BaseHref}{$ThemeDir}/images/og-image2.png" />
+<meta property="og:image" content="{$BaseHref}{$ThemeDir}/dist/images/og-image2.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />

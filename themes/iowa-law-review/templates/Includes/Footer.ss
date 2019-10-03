@@ -8,12 +8,12 @@
 					<p><a href="mailto:ilr@uiowa.edu">ilr@uiowa.edu</a><br />319-335-9054</p>
 					<div class="social-icons">
 						<a href="https://www.facebook.com/IowaLawReview/" title="Facebook" target="_blank">
-							<img src="{$ThemeDir}/images/facebook_circle_gray-32.png" alt="Facebook">
+							<img src="{$ThemeDir}/dist/images/facebook_circle_gray-32.png" alt="Facebook">
 						</a>
 						<a href="https://twitter.com/IowaLawReview" title="Twitter" target="_blank">
-							<img src="{$ThemeDir}/images/twitter_circle_gray-32.png" alt="Twitter">
+							<img src="{$ThemeDir}/dist/images/twitter_circle_gray-32.png" alt="Twitter">
 						</a>
-					</div>	
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-3">
@@ -24,7 +24,7 @@
 						<% end_loop %>
 					</ul>
 
-				</div>			
+				</div>
 			</div>
 			<div class="col-sm-3">
 				<div class="clearfix footer-links">
@@ -34,11 +34,11 @@
 						<% end_loop %>
 					</ul>
 
-				</div>			
+				</div>
 			</div>
 			<div class="col-sm-2 footer-right-content">
 				<p class="text-center">Sponsored by:</p>
-				<a href="http://gpsg.uiowa.edu" target="_blank" class="gpsg-logo"><img src="{$ThemeDir}/images/gpsg-logo.png" /></a>
+				<a href="http://gpsg.uiowa.edu" target="_blank" class="gpsg-logo"><img src="{$ThemeDir}/dist/images/gpsg-logo.png" /></a>
 			</div>
 		</div>
 		<div class="row">
