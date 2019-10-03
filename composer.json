@@ -47,11 +47,11 @@
     "extra": {
         "resources-dir": "_resources",
         "expose": [
-            "themes/iowa-law-review/build",
-            "themes/iowa-law-review/css",
-            "themes/iowa-law-review/fonts",
-            "themes/iowa-law-review/images",
-            "themes/iowa-law-review/js"
+            "themes/iowa-law-review/dist/favicons",
+            "themes/iowa-law-review/dist/fonts",
+            "themes/iowa-law-review/dist/images",
+            "themes/iowa-law-review/dist/scripts",
+            "themes/iowa-law-review/dist/styles"
         ],
         "project-files-installed": [
             "app/.htaccess",
