@@ -17,3 +17,5 @@ smtp.yml
 /cache
 .phpintel/
 public/_resources/
+# Ignore gulp temp dir
+.tmp/*
