@@ -3,19 +3,22 @@
 import path from 'path';
 import gulp from 'gulp';
 import del from 'del';
-import browserSync from 'browser-sync';
 // import swPrecache from 'sw-precache';
 import autoprefixer from 'autoprefixer';
 import cssnano from 'cssnano';
 import gulpLoadPlugins from 'gulp-load-plugins';
 
+import { create as bsCreate } from 'browser-sync';
+const browserSync = bsCreate();
+
+browserSync.init({
+    proxy: "http://localhost:8888/iowa-law-review",
+});
 
 // import {output as pagespeed} from 'psi';
 import pkg from './package.json';
 
 const $ = gulpLoadPlugins();
-const reload = browserSync.reload;
-
 
 // Lint JavaScript
 function lint(){
@@ -34,7 +37,8 @@ function images(){
       interlaced: true
     }))
     .pipe(gulp.dest('./themes/iowa-law-review/dist/images'))
-    .pipe($.size({title: './themes/iowa-law-review/dist/images'}));
+    .pipe($.size({title: './themes/iowa-law-review/dist/images'}))
+    .pipe(browserSync.stream());
 }
 
 
@@ -105,7 +109,8 @@ function styles(){
     .pipe($.if('*.css', $.postcss(plugins)))
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
-    .pipe(gulp.dest('./themes/iowa-law-review/dist/styles'));
+    .pipe(gulp.dest('./themes/iowa-law-review/dist/styles'))
+    .pipe(browserSync.stream());
 };
 
 // Concatenate and minify JavaScript. Optionally transpiles ES2015 code to ES5.
@@ -116,15 +121,6 @@ function scripts(){
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      //'./node_modules/jquery/dist/jquery.js',
-      //'./node_modules/popper.js/dist/umd/popper.min.js',
-      //'./node_modules/tether/dist/js/tether.min.js',
-      //'./node_modules/bootstrap/dist/js/bootstrap.min.js',
-      //'./node_modules/@fortawesome/fontawesome-free/js/regular.js',
-      //'./node_modules/lazysizes/lazysizes.js',
-      //'./node_modules/flickity/dist/flickity.pkgd.js',
-      //'./node_modules/magnific-popup/dist/jquery.magnific-popup.js',
-      //'./themes/iowa-law-review/src/scripts/app.js',
       './themes/iowa-law-review/src/libs/jquery/dist/jquery.js',
       './themes/iowa-law-review/src/libs/bootstrap-sass/assets/javascripts/bootstrap.js',
       './themes/iowa-law-review/src/libs/bigfoot/dist/bigfoot.js',
@@ -142,12 +138,13 @@ function scripts(){
       // Output files
       .pipe($.size({title: 'scripts'}))
       .pipe($.sourcemaps.write('.'))
-      .pipe(gulp.dest('./themes/iowa-law-review/dist/scripts'));
+      .pipe(gulp.dest('./themes/iowa-law-review/dist/scripts'))
+      .pipe(browserSync.stream());
 };
 
 //Scan your HTML for assets & optimize them
 // No longer used as of 2019.10.01
-function html(){
+function html() {
   return gulp.src('./themes/iowa-law-review/templates/**/*.ss')
     .pipe($.useref({
       searchPath: '{.tmp,app}',
@@ -168,7 +165,8 @@ function html(){
     })))
     // Output files
     .pipe($.if('*.ss', $.size({title: 'ss', showFiles: true})))
-    .pipe(gulp.dest('./themes/iowa-law-review/templates/'));
+    .pipe(gulp.dest('./themes/iowa-law-review/templates/'))
+    .pipe(browserSync.stream());
 }
 
 
@@ -185,8 +183,17 @@ function watch(){
   gulp.watch(['./themes/iowa-law-review/src/images/**/*'], gulp.series(images));
 }
 
-// });
-
 // Build production files, the default task
-gulp.task('default', gulp.series(clean, copy, gulp.parallel(styles,
-    lint, scripts, images,), watch));
+gulp.task('default',
+    gulp.series(
+        clean,
+        copy,
+        gulp.parallel(
+            styles,
+            lint,
+            scripts,
+            images
+        ),
+        watch
+    ),
+);
