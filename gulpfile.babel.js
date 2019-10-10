@@ -48,6 +48,8 @@ function copy(){
   return gulp.src([
        './themes/iowa-law-review/src/*',
        './themes/iowa-law-review/src/**/*',
+       '!./themes/iowa-law-review/src/libs',
+       '!./themes/iowa-law-review/src/libs/**/*',
        '!./themes/iowa-law-review/src/styles/**/*',
        '!./themes/iowa-law-review/src/scripts/**/*',
        '!./themes/iowa-law-review/templates',
