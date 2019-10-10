@@ -130,7 +130,12 @@ function scripts(){
       './themes/iowa-law-review/src/libs/magnific-popup/dist/jquery.magnific-popup.js',
       './themes/iowa-law-review/src/scripts/app.js'
     ])
-      .pipe($.newer('.tmp/scripts'))
+      // Enabling $.newer() only pipes through the script that changed, instead of the
+      // whole chain. The $.newer() in the scss task works b/c sass has its own import
+      // step running after the newer() function call, which adds back in all the things that
+      // didn't change. Our javascripts don't import each other, so all need to be
+      // piped through on every rebuild.
+      //.pipe($.newer('.tmp/scripts'))
       .pipe($.sourcemaps.init())
       .pipe($.babel())
       .pipe($.sourcemaps.write())
