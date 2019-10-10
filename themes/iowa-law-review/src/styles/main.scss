@@ -8,65 +8,68 @@
 @import "imports/variables";
 @import "imports/fonts";
 @import "imports/icons";
+// There is a newer version in ../libs/bigfoot/bigfoot-default.scss
+// but switching would probably break things. So continue with the
+// old version in the ./imports/bigfoot.scss until the next theme update.
 @import "imports/bigfoot";
 
 // @import "imports/bigfoot-default";
-@import "bootstrap/mixins";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/mixins";
 
 // Reset and dependencies
-@import "bootstrap/normalize";
-@import "bootstrap/print";
-@import "bootstrap/glyphicons";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/normalize";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/print";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/glyphicons";
 
 // Core CSS
-@import "bootstrap/scaffolding";
-@import "bootstrap/type";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
-@import "bootstrap/buttons";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/code";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/grid";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/tables";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
 // Components
-@import "bootstrap/component-animations";
-@import "bootstrap/dropdowns";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/dropdowns";
 
-//@import "bootstrap/button-groups";
-@import "bootstrap/input-groups";
-@import "bootstrap/navs";
-@import "bootstrap/navbar";
-@import "bootstrap/breadcrumbs";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/button-groups";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/input-groups";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/navs";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/navbar";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/breadcrumbs";
 
-// @import "bootstrap/pagination";
-// @import "bootstrap/pager";
-// @import "bootstrap/labels";
-// @import "bootstrap/badges";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/pagination";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/pager";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/labels";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/badges";
 
-//@import "bootstrap/jumbotron";
-//@import "bootstrap/thumbnails";
-//@import "bootstrap/alerts";
-//@import "bootstrap/progress-bars";
-@import "bootstrap/media";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/media";
 
-//@import "bootstrap/list-group";
-//@import "bootstrap/panels";
-@import "bootstrap/responsive-embed";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/panels";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-embed";
 
-//@import "bootstrap/wells";
-@import "bootstrap/close";
+//@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/wells";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/close";
 
 // Components w/ JavaScript
-// @import "bootstrap/modals";
-// @import "bootstrap/tooltip";
-// @import "bootstrap/popovers";
-@import "bootstrap/carousel";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/modals";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/tooltip";
+// @import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/popovers";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../libs/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
 
-@import "lib/bootstrap-block-grid/src/bootstrap3-block-grid.scss";
-@import "lib/pagination/scss/style";
+@import "../libs/bootstrap-block-grid/src/bootstrap3-block-grid.scss";
+@import "../libs/pagination/scss/style";
 @import "../libs/magnific-popup/src/css/main.scss";
 
 @import "../../../../vendor/md/uiowa-bar/scss/uiowa-bar.scss";
