@@ -37,15 +37,15 @@
 				</div>
 			</div>
 			<div class="col-sm-2 footer-right-content">
-				<p class="text-center">Sponsored by:</p>
-				<a href="http://gpsg.uiowa.edu" target="_blank" class="gpsg-logo"><img src="{$ThemeDir}/dist/images/gpsg-logo.png" /></a>
+				<p class="text-center">Sponsored by: <a href="https://gpsg.uiowa.edu" target="_blank" style="font-weight: bold; text-decoration: underline;">Graduate &amp; Professional Student Government</a></p>
+				
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-12">
 					<hr class="bar">
 		        	<div class="rights">
-		        		<p><small>&copy; Iowa Law Review. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information">Privacy Information</a></small></p>
+		        		<p><small>&copy; Iowa Law Review. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" style="text-decoration: underline;">Privacy Information</a></small></p>
 
 		        	</div>
 

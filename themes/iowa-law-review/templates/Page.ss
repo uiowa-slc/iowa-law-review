@@ -8,8 +8,6 @@
     <% include OpenGraph %>
     <% base_tag %>
     <title><% if $URLSegment != "home" %><% if $Title %>$Title.NoHTML - <% else_if $Author %>$Author.Name - <% end_if %><% end_if %>{$SiteConfig.Title} - The University of Iowa College of Law</title>
-<!-- Removed pending re-working the build process -->
-<!-- <style><% include CriticalCss %></style> -->
     <script src="https://use.typekit.net/qsy8ktc.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
     <!-- Bootstrap -->
