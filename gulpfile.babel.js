@@ -123,7 +123,7 @@ function scripts(){
       // Note: Since we are not using useref in the scripts build pipeline,
       //       you need to explicitly list your scripts here in the right order
       //       to be correctly concatenated
-      './themes/iowa-law-review/src/libs/jquery/dist/jquery.js',
+      // './themes/iowa-law-review/src/libs/jquery/dist/jquery.js',
       './themes/iowa-law-review/src/libs/bootstrap-sass/assets/javascripts/bootstrap.js',
       './themes/iowa-law-review/src/libs/bigfoot/dist/bigfoot.js',
       './themes/iowa-law-review/src/libs/jquery-sticky/jquery.sticky.js',

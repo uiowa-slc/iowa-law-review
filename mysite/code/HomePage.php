@@ -4,7 +4,7 @@ use SilverStripe\Forms\GridField\GridFieldConfig_RecordEditor;
 use Symbiote\GridFieldExtensions\GridFieldAddNewMultiClass;
 use SilverStripe\Forms\GridField\GridFieldAddNewButton;
 use SilverStripe\Forms\GridField\GridField;
-
+use UndefinedOffset\SortableGridField\Forms\GridFieldSortableRows;
 class HomePage extends Page {
 
 	private static $db = array(
