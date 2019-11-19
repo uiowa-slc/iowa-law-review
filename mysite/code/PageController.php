@@ -33,6 +33,20 @@ namespace {
             return parent::Breadcrumbs(20, false, false, true);
         }
 
+        public function LatestPrintIssue() {
+            $latestIssue = Issue::get()->filter(array('ParentID' => 7))->sort(
+                array('Volume' => 'DESC', 'Number' => 'DESC')
+            )->First();
+            return $latestIssue;
+        }
+        public function LatestOnlineIssue() {
+            $printIssueHolder = IssueHolder::get()->filter(array('URLSegment' => 'online'))->First();
+
+            if ($printIssueHolder) {
+                $latestIssue = Issue::get()->filter(array('ParentID' => $printIssueHolder->ID))->sort('OriginalPublicationDate')->First();
+                return $latestIssue;
+            }
+        }
 
     }
 }
