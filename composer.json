@@ -49,7 +49,8 @@
             "themes/iowa-law-review/dist/fonts",
             "themes/iowa-law-review/dist/images",
             "themes/iowa-law-review/dist/scripts",
-            "themes/iowa-law-review/dist/styles"
+            "themes/iowa-law-review/dist/styles",
+            "themes/iowa-law-review/css"
         ],
         "project-files-installed": [
             "app/.htaccess",
