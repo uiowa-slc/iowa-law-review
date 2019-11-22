@@ -5,7 +5,8 @@
         "php": ">=5.3.2",
         "md/publication-project": "dev-ss4.x",
         "sunra/php-simple-html-dom-parser": "v1.5.0",
-        "axllent/silverstripe-version-truncator": "dev-master"
+        "axllent/silverstripe-version-truncator": "dev-master",
+        "md/deploy-helper": "*"
     },
     "config": {
         "process-timeout": 600

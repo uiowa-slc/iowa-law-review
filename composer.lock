@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "38b56fc22e12b597f337fe6eae2b1a4f",
+    "content-hash": "347a439aad1ff30938f3ece74db8a9cb",
     "packages": [
         {
             "name": "axllent/silverstripe-version-truncator",

@@ -18,20 +18,6 @@ class Page extends SiteTree {
 		return $this->Children();
 	}
 
-	public function LatestPrintIssue() {
-		$latestIssue = Issue::get()->filter(array('ParentID' => 7))->sort(
-			array('Volume' => 'DESC', 'Number' => 'DESC')
-		)->First();
-		return $latestIssue;
-	}
-	public function LatestOnlineIssue() {
-		$printIssueHolder = IssueHolder::get()->filter(array('URLSegment' => 'online'))->First();
-
-		if ($printIssueHolder) {
-			$latestIssue = Issue::get()->filter(array('ParentID' => $printIssueHolder->ID))->sort('OriginalPublicationDate')->First();
-			return $latestIssue;
-		}
-	}
 
 	public function UseLargeHeader() {
 		$class = $this->ClassName;
