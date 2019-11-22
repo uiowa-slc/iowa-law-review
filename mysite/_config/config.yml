@@ -23,3 +23,8 @@ SilverStripe\View\SSViewer:
     - 'iowa-law-review'
     - 'md/publication-project'
     - '$default'
+SilverStripe\Assets\Flysystem\AssetAdapter:
+  file_permissions:
+    'file':
+      'public': '0644'
+      'private': '0600'
