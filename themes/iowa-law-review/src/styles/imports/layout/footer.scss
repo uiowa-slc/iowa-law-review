@@ -5,6 +5,10 @@
     font-family: $font-family-sans-serif;
     text-align: center;
 
+    .rights a {
+        text-decoration: underline;
+    }
+
     &__bar-link {
 
         &:after {
