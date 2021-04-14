@@ -71,21 +71,21 @@
 
 		  var base = location.origin + '/';
 
-		  $('.pdf-viewable a[href$=".pdf"]').each(function( index ) {
-		  	var pdfLinkHref = $( this ).attr('href');
-			$( this ).attr('href', 'https://docs.google.com/viewer?url='+ base + pdfLinkHref + '&embedded=true') ;
-			$(this).addClass('mfp-iframe');
-			});
+		 //  $('.pdf-viewable a[href$=".pdf"]').each(function( index ) {
+		 //  	var pdfLinkHref = $( this ).attr('href');
+			// $( this ).attr('href', 'https://docs.google.com/viewer?url='+ base + pdfLinkHref + '&embedded=true') ;
+			// $(this).addClass('mfp-iframe');
+			// });
 
 
 
-		  $('a[href^="https://docs.google.com/viewer"],a[href$=".jpg"]').magnificPopup({
-		  	type:'image',
-		  	  gallery:{
-				    enabled:true
-				  }
-		  	}
-		  );
+		 //  $('a[href^="https://docs.google.com/viewer"],a[href$=".jpg"]').magnificPopup({
+		 //  	type:'image',
+		 //  	  gallery:{
+			// 	    enabled:true
+			// 	  }
+		 //  	}
+		 //  );
 
 
 

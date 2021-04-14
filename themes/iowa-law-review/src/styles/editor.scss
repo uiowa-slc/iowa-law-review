@@ -1,5 +1,5 @@
 /*-------------------------------------------
-   	Fonts
+    Fonts
 -------------------------------------------*/
 
 /*!
@@ -9,33 +9,54 @@
  */
 
 /*-----------------------------------------------------
-   	Using SilverStripe .typography class for CMS editor
+    Using SilverStripe .typography class for CMS editor
 ------------------------------------------------------*/
+@import "imports/variables";
 
 .typography {
-	// Core variables and mixins
-	@import "imports/variables";
+    // Core variables and mixins
+    font-family: $font-family-base;
+    font-size: $font-size-base;
 
-	.smallcaps {
-		font-variant: small-caps;
-	}
 
-	font-family: $font-family-base;
-	font-size: $font-size-base;
+
 }
+
+
+
+.smallcaps {
+    font-variant: small-caps;
+}
+
+
+
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+
 
 body.mceContentBody a.ss-broken {
-	background: none;
-	border: none;
-	color: #2cadb9;
-	padding: 0;
-	text-decoration: none;
+    background: none;
+    border: none;
+    color: #2cadb9;
+    padding: 0;
+    text-decoration: none;
 }
 
-body.mce-content-body a.ss-broken{
-	background: none;
-	border: none;
-	color: #000;
-	padding: 0;
-	text-decoration: none;
+body.mce-content-body a.ss-broken {
+    background: none;
+    border: none;
+    color: #000;
+    padding: 0;
+    text-decoration: none;
 }

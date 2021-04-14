@@ -20,18 +20,20 @@
           <% if $URLSegment != "home" %>
           <li class="<% if $LinkOrSection == "section" %>active<% end_if %>
           <% if $Children %> dropdown<% end_if %>">
-            <a href="$Link" class="<% if $Children %>dropdown-toggle<% end_if %>"
-            <% if $Children %>data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"<% end_if %>>
-              $MenuTitle <% if $Children %><span class="caret"></span><% end_if %>
+            <a href="$Link" class="<% if $Children && not $HideDropdownMenu %>dropdown-toggle<% end_if %>"
+            <% if $Children && not $HideDropdownMenu %>data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"<% end_if %>>
+              $MenuTitle <% if $Children && not $HideDropdownMenu %><span class="caret"></span><% end_if %>
               <% if $LinkOrCurrent == "current" %><span class="sr-only">(current)</span><% end_if %>
             </a>
-            <% if $SortedChildren %>
+            <% if $SortedChildren && not $HideDropdownMenu %>
               <ul class="dropdown-menu">
                 <% loop $SortedChildren.Limit(5) %>
                   <li><a href="$Link">$Title</a></li>
                 <% end_loop %>
                 <li role="separator" class="divider"></li>
+                <% if not HideTopMenuRepeat %>
                 <li><a href="$Link">$Title</a></li>
+                <% end_if %>
               </ul>
             <% end_if %>
           </li>
