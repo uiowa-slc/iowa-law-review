@@ -5,6 +5,11 @@
     font-family: $font-family-sans-serif;
     text-align: center;
 
+    .nav>li>a:focus,
+    .nav>li>a:hover {
+        background: #333;
+    }
+
     .rights a {
         text-decoration: underline;
     }
