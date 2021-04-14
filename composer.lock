@@ -1466,12 +1466,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/publication-project.git",
-                "reference": "851becec134b59708b2fd6bb4c2928a1095a3174"
+                "reference": "1e80e41f5bc8c3e14d8dd102150d51c232dde601"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/851becec134b59708b2fd6bb4c2928a1095a3174",
-                "reference": "851becec134b59708b2fd6bb4c2928a1095a3174",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/publication-project/zipball/1e80e41f5bc8c3e14d8dd102150d51c232dde601",
+                "reference": "1e80e41f5bc8c3e14d8dd102150d51c232dde601",
                 "shasum": ""
             },
             "require": {
@@ -1515,7 +1515,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/publication-project/tree/ss4.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/publication-project/issues"
             },
-            "time": "2021-03-25T19:20:50+00:00"
+            "time": "2021-04-14T18:25:33+00:00"
         },
         {
             "name": "md/saml",
