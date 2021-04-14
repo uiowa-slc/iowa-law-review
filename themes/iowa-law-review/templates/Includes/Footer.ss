@@ -6,14 +6,11 @@
 					<div class="iowa-law-review"><h3><a href="$AbsoluteBaseURL">$SiteConfig.Title</a></a></h3></div>
 					<p>190 Boyd Law Building<br />Iowa City, IA 52242-1113</p>
 					<p><a href="mailto:ilr@uiowa.edu">ilr@uiowa.edu</a><br />319-335-9054</p>
-					<div class="social-icons">
-						<a href="https://www.facebook.com/IowaLawReview/" title="Facebook" target="_blank">
-							<img src="{$ThemeDir}/dist/images/facebook_circle_gray-32.png" alt="Facebook">
-						</a>
-						<a href="https://twitter.com/IowaLawReview" title="Twitter" target="_blank">
-							<img src="{$ThemeDir}/dist/images/twitter_circle_gray-32.png" alt="Twitter">
-						</a>
-					</div>
+    <ul class="nav navbar-nav navbar-social">
+           <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/IowaLawReview" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/iowa-law-review" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+      </ul>
 				</div>
 			</div>
 			<div class="col-sm-3">

@@ -26,8 +26,9 @@
       </ul>
       <% include NavSearchForm %>
     <ul class="nav navbar-nav navbar-right navbar-social">
-           <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><span class="social-icon icon-facebook"></span></a></li>
-          <li><a href="https://twitter.com/IowaLawReview" target="_blank"><span class="social-icon icon-twitter"></span></a></li>
+                  <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/IowaLawReview" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/iowa-law-review" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

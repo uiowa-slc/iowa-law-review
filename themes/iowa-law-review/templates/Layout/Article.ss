@@ -18,26 +18,26 @@
 
 
 				</div>
-				
+
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-lg-1 article-share-container ilr-sticky">
 					<div class="article-social-container-main hidden-print">
-						<ul class="article-social responsive text-center">
+						<ul class="article-social responsive">
 						<% include ArticleShareIcons %>
 						</ul>
 					</div>
 			</div>
 			<div class="col-lg-7 col-lg-offset-1">
-				
+
 					<!--Summary-->
-				
+
 					<div class="bigtext">
 						$Content
 					</div>
-			
-	
+
+
 				<% if $Tags %>
 					<p>
 						<% loop $Tags %>
@@ -56,7 +56,7 @@
 					</div>
 				<% end_if %>
 
-				
+
 				<div class="footnotes">
 					<ol>
 						<% loop $Footnotes %>
@@ -119,9 +119,9 @@
 								<h2><a href="$PreviousPage.Link">Previous:</a></h2>
 								<% with $PreviousPage %>
 									<% include ArticleCard %>
-								<% end_with %>							
+								<% end_with %>
 							<% end_if %>
-						</div>			
+						</div>
 						<div class="col-md-3 col-md-offset-6 text-right">
 							<% if $NextPage %>
 								<h2><a href="$NextPage.Link">Next:</a></h2>
@@ -131,6 +131,6 @@
 							<% end_if %>
 						</div>
 					</div>
-		
+
 		</div>
 </article>

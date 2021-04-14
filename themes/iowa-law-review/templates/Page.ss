@@ -11,6 +11,8 @@
     <title><% if $URLSegment != "home" %><% if $Title %>$Title.RAW - <% else_if $Author %>$Author.Name - <% end_if %><% end_if %>{$SiteConfig.Title} - The University of Iowa College of Law</title>
     <script src="https://use.typekit.net/qsy8ktc.js"></script>
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <script src="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/js/fontawesome.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="{$ThemeDir}/dist/styles/main.css" rel="stylesheet">
 

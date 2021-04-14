@@ -20,7 +20,7 @@
           <% if $URLSegment != "home" %>
           <li class="<% if $LinkOrSection == "section" %>active<% end_if %>
           <% if $Children %> dropdown<% end_if %>">
-            <a href="$Link" class="<% if $Children %>dropdown-toggle<% end_if %>" 
+            <a href="$Link" class="<% if $Children %>dropdown-toggle<% end_if %>"
             <% if $Children %>data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"<% end_if %>>
               $MenuTitle <% if $Children %><span class="caret"></span><% end_if %>
               <% if $LinkOrCurrent == "current" %><span class="sr-only">(current)</span><% end_if %>
@@ -42,8 +42,9 @@
 
 
     <ul class="nav navbar-nav navbar-right navbar-social">
-           <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><span class="social-icon icon-facebook"></span></a></li>
-          <li><a href="https://twitter.com/IowaLawReview" target="_blank"><span class="social-icon icon-twitter"></span></a></li>
+           <li><a href="https://www.facebook.com/IowaLawReview/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="https://twitter.com/IowaLawReview" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/iowa-law-review" target="_blank"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
