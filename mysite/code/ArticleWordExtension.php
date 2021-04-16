@@ -1,6 +1,7 @@
 <?php
 
 use SilverStripe\ORM\DataExtension;
+
 class ArticleWordExtension extends DataExtension {
 
 	protected function parseManualSuperscripts($dom, $dryrun = false) {
@@ -47,7 +48,7 @@ class ArticleWordExtension extends DataExtension {
 	protected function parseWordSuperscriptsFootnotes($content, $dryrun = false) {
 		$dom = new DOMDocument;
 		$contentConverted = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
-		@$dom->loadHTML($contentConverted);
+		@$dom->loadHTML($contentConverted, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
 
 		$xpath = new DOMXPath($dom);
 
@@ -186,10 +187,35 @@ class ArticleWordExtension extends DataExtension {
 
 	}
 
+	protected function cleanupMarkup($content) {
+
+		$dom = new DOMDocument;
+		$contentConverted = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
+		@$dom->loadHTML($contentConverted, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
+
+		$xpath = new DOMXPath($dom);
+		//<a name="_Toc32406164">
+		////a[contains(@href,"#_ftnref' . $wordSuperFormattedVal . '")]
+		//$orphanedTocAnchors = $xpath->query('//a[contains(@name,"_Toc")');
+
+		$orphanedTocAnchors = $xpath->query('//a[contains(@name,"_Toc")]');
+		foreach ($orphanedTocAnchors as $orphanedTocAnchor) {
+			$orphanedTocAnchor->parentNode->removeChild($orphanedTocAnchor);
+		}
+
+		foreach ($dom->childNodes as $xx) {
+			if ($xx instanceof \DOMProcessingInstruction) {
+				$xx->parentNode->removeChild($xx);
+			}
+		}
+
+		return $dom->saveXML();
+	}
+
 	protected function parseTables($content) {
 		$dom = new DOMDocument;
 		$contentConverted = mb_convert_encoding($content, 'HTML-ENTITIES', 'UTF-8');
-		@$dom->loadHTML($contentConverted);
+		@$dom->loadHTML($contentConverted, LIBXML_HTML_NOIMPLIED | LIBXML_HTML_NODEFDTD);
 
 		$xpath = new DOMXPath($dom);
 
@@ -212,12 +238,27 @@ class ArticleWordExtension extends DataExtension {
 		return $dom->saveXML();
 	}
 
+	protected function removeExtraBlankSpaces($content) {
+
+	}
+
 	public function onBeforeWrite() {
 		$owner = $this->owner;
 		$summary = $owner->Content;
 
 		$summary = $this->parseWordSuperscriptsFootnotes($summary);
 		$summary = $this->parseTables($summary);
+		$summary = $this->cleanupMarkup($summary);
+
+		//$summary = $this->removeExtraBlankSpaces($summary);
+		/*$summary = preg_replace('/<\?xml[^>]+\/>/im', '', $summary);*/
+
+		//<!--?xml version="1.0"???-->
+		//<!--?xml version="1.0" standalone="yes"?-->
+		//<!--?xml version="1.0" standalone="yes"???-->
+		$summary = str_replace("<?xml version=\"1.0\" standalone=\"yes\"???>\n", '', $summary);
+		$summary = str_replace("<?xml version=\"1.0\" standalone=\"yes\"?>\n", '', $summary);
+		$summary = str_replace("<?xml version=\"1.0\"???>\n", '', $summary);
 
 		$owner->Content = $summary;
 
