@@ -1,189 +1,207 @@
 body {}
-html,body { //overflow-x:hidden;
- }
+
+html,
+body {
+    //overflow-x:hidden;
+}
+
 @media print {
-	a[href]:after {
-		content: none;
-	}
+    a[href]:after {
+        content: none;
+    }
 }
 
 html * {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @media print {
-  a[href]:after {
-    content: none;
-  }
+    a[href]:after {
+        content: none;
+    }
 }
-// skip module data map
-$skip: (
-  padding: 1em 1.5em,
-  background: #fff,
-  color: white
-);
 
-.container--flexible{
-  width: 100%;
-  max-width: 1160px;
+// skip module data map
+$skip: (padding: 1em 1.5em,
+background: #fff,
+color: white);
+
+.center-block {
+    float: none !important
+}
+
+.container--flexible {
+    width: 100%;
+    max-width: 1160px;
 }
 
 // basic functionalty for the skip link
 .skip-link {
-  position: absolute;
-  display: inline-block;
-  top: -1000px;
-  left: -1000px;
+    position: absolute;
+    display: inline-block;
+    top: -1000px;
+    left: -1000px;
 
-  &:active,
-  &:focus,
-  &:hover {
-    top: 0;
-    left: 0;
-    z-index: 200;
-  }
+    &:active,
+    &:focus,
+    &:hover {
+        top: 0;
+        left: 0;
+        z-index: 200;
+    }
 }
+
 // theming for the skip link
 .skip-link {
-  padding: map-get($skip, padding);
-  background: map-get($skip, background);
-  color: map-get($skip, color);
+    padding: map-get($skip, padding);
+    background: map-get($skip, background);
+    color: map-get($skip, color);
 }
-.padding{
-  padding-top: 40px;
+
+.padding {
+    padding-top: 40px;
 }
+
 // .sticky {
-// 	position: -webkit-sticky;
-// 	position: -moz-sticky;
-// 	position: -ms-sticky;
-// 	position: -o-sticky;
-// 	top: 15px;
+//  position: -webkit-sticky;
+//  position: -moz-sticky;
+//  position: -ms-sticky;
+//  position: -o-sticky;
+//  top: 15px;
 // }
 
-.padding{
-  padding-top: 40px;
+.padding {
+    padding-top: 40px;
 }
 
-button, .button, .btn {
-	font-family: $font-family-sans-serif;
+button,
+.button,
+.btn {
+    font-family: $font-family-sans-serif;
 }
 
 .smallcaps {
-	font-variant: small-caps;
+    font-variant: small-caps;
 }
 
-h2.subheader, p.subheader {
-  margin: 5px 0;
-	font-size: 18px;
-	color: #7f7f7f;
-  font-family: $font-family-sans-serif;
-  text-transform: uppercase;
+h2.subheader,
+p.subheader {
+    margin: 5px 0;
+    font-size: 18px;
+    color: #7f7f7f;
+    font-family: $font-family-sans-serif;
+    text-transform: uppercase;
 }
 
-.sidenav{
-  p.subheader{
+.sidenav {
+    p.subheader {
 
-    font-size: 14px;
-  }
-  hr{
-    border-top: 1px solid white;
-  }
+        font-size: 14px;
+    }
+
+    hr {
+        border-top: 1px solid white;
+    }
 
 
 }
 
-.sticky-wrapper{
-  display: none;
-  @media (min-width: $screen-lg-min) {
-    display: block;
-  }
+.sticky-wrapper {
+    display: none;
+
+    @media (min-width: $screen-lg-min) {
+        display: block;
+    }
 }
 
-.ilr-sticky{
-  @media (min-width: $screen-lg-min) {
-    position: sticky;
-    position: -webkit-sticky;
-    top: 20px;
-  }
+.ilr-sticky {
+    @media (min-width: $screen-lg-min) {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 20px;
+    }
 }
+
 a.tag {
-	font-family: $font-family-sans-serif;
-	font-size: 12px;
-	background: #f6f6f6;
-	padding: 5px 0;
-	display: inline-block;
-	text-transform: uppercase;
-	color: #888;
+    font-family: $font-family-sans-serif;
+    font-size: 12px;
+    background: #f6f6f6;
+    padding: 5px 0;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #888;
 }
-.main-content{
-  @media (min-width: $screen-md-min) {
-    padding-top: 30px;
-  }
+
+.main-content {
+    @media (min-width: $screen-md-min) {
+        padding-top: 30px;
+    }
 }
 
 
 //Search form in body of page (rare, only when you don't specify a search term after searching in menu):
 .main-content {
-  #SearchForm_SearchForm_Search{
-      border-radius: 20px;
-      border: 1px solid #eee;
-      background: #f5f5f5;
-      padding: 10px;
-      float: left;
-  }
+    #SearchForm_SearchForm_Search {
+        border-radius: 20px;
+        border: 1px solid #eee;
+        background: #f5f5f5;
+        padding: 10px;
+        float: left;
+    }
 
-  #SearchForm_SearchForm_action_results{
-    background: #efefef;
-    border: none;
-    border-radius: 5px;
-    margin-left: 5px;
-    padding: 10px;
-    float: left;
-  }
+    #SearchForm_SearchForm_action_results {
+        background: #efefef;
+        border: none;
+        border-radius: 5px;
+        margin-left: 5px;
+        padding: 10px;
+        float: left;
+    }
 }
 
-  /**
-     * 1 Position the wrapper relative to the parent element 
-     * 2 Make the wrapper fit the content height 
-     * 3 Set the width to match the width of the viewport (100vm) 
+/**
+     * 1 Position the wrapper relative to the parent element
+     * 2 Make the wrapper fit the content height
+     * 3 Set the width to match the width of the viewport (100vm)
      * 4 Push the wapper to the center of the parent element
-     * 
-     * Note! Remember to add html,body { overflow-x:hidden; } to 
-     *       prevent horizontal scrolling 
+     *
+     * Note! Remember to add html,body { overflow-x:hidden; } to
+     *       prevent horizontal scrolling
      *
      * Note! If the left and right padding of your wrapper are
      *       not the same – adjust the .breakout margin-left
      * breakout-margin-left: (wrapper-padding-right - wrapper-padding-left)/2
-     */ 
-    .breakout {
-      position:relative;
-      display:table;
-      width:100vw; 
-      left:50%;
-    }
-        /**
-     * Generic content style 
-     * 1 Position the content relative to the wrapper 
-     * 2 Center the content  
-     * 3 Pull the content -50% to the left and hereby 
-     *   back to the center of the page 
-     */ 
-    .breakout > * {
-      position:relative;
-      margin-left:auto; 
-      margin-right:auto; 
-      left:-50%;
-    }
-    
-      
-    /**
-     * Custom content style
-     * Note! min-width will cause cropping 
      */
-    .breakout > img {
-      display:block;
-      width:100%;
-      max-width:960px;
-      min-width:320px;
-    }  
+.breakout {
+    position: relative;
+    display: table;
+    width: 100vw;
+    left: 50%;
+}
+
+/**
+     * Generic content style
+     * 1 Position the content relative to the wrapper
+     * 2 Center the content
+     * 3 Pull the content -50% to the left and hereby
+     *   back to the center of the page
+     */
+.breakout>* {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: -50%;
+}
+
+
+/**
+     * Custom content style
+     * Note! min-width will cause cropping
+     */
+.breakout>img {
+    display: block;
+    width: 100%;
+    max-width: 960px;
+    min-width: 320px;
+}
