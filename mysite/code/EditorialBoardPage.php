@@ -1,8 +1,8 @@
 <?php
 
-use SilverStripe\Assets\Image;
-use SilverStripe\Assets\File;
 use SilverStripe\AssetAdmin\Forms\UploadField;
+use SilverStripe\Assets\File;
+use SilverStripe\Assets\Image;
 
 class EditorialBoardPage extends Page {
 
@@ -12,10 +12,13 @@ class EditorialBoardPage extends Page {
 
 	private static $has_one = array(
 		'MastheadImage' => Image::class,
-		'MastheadPDF' => File::class
+		'MastheadPDF' => File::class,
 	);
 
-
+	private static $owns = array(
+		'MastheadImage',
+		'MastheadPDF',
+	);
 
 	public function getCMSFields() {
 		$f = parent::getCMSFields();
@@ -26,5 +29,4 @@ class EditorialBoardPage extends Page {
 		return $f;
 	}
 
-	
 }

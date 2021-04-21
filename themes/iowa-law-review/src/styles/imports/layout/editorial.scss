@@ -1,6 +1,10 @@
 .editorial-board {
-	width: 100%;
-	box-shadow: 0 3px 13px #afafaf;
-	display: block;
-	margin-bottom: 20px;
+    width: 100%;
+    box-shadow: 0 3px 13px #afafaf;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.EditorialBoardPage .article-container img {
+    max-width: 100% !important;
 }
