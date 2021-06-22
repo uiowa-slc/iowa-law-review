@@ -35,7 +35,10 @@ color: white);
     width: 100%;
     max-width: 1160px;
 }
-
+.heading-space{
+    display: inline-block;
+    margin-left: 1.3em;
+}
 // basic functionalty for the skip link
 .skip-link {
     position: absolute;
