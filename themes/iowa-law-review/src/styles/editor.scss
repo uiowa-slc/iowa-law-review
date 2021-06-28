@@ -19,7 +19,55 @@
     font-size: $font-size-base;
 
 
+    h2,h3,h4,h5{
+        text-align: center;
+        font-size: 22px;
+        font-weight: 400;
+    }
 
+    h2 {
+        counter-increment: h2;
+        counter-reset: h3;
+
+    }
+
+    h3{
+        counter-increment:h3;
+        counter-reset: h4;
+        font-style: italic;
+    }
+
+    h4{
+        counter-increment:h4;
+        counter-reset: h5;
+    }
+    h5{
+        counter-increment:h5;
+        font-style: italic;
+    }
+
+    h2:before {
+
+      content: counter(h2, upper-roman) ".";
+      margin-right: 1.3em;
+
+    }
+    h3:before {
+
+      content: counter(h3, upper-latin) ".";
+      margin-right: 1.3em;
+    }
+    h4:before {
+
+      content: counter(h4, decimal) ". ";
+      // margin-right: 1.3em;
+    }
+    h5:before {
+
+      content: counter(h5, lower-roman) ". ";
+
+      // margin-right: 1.3em;
+    }
 }
 
 
