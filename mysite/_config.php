@@ -18,3 +18,7 @@ i18n::set_locale('en_US');
 
 HtmlEditorConfig::get('cms')->addButtonsToLine(2, 'sup', 'separator');
 HtmlEditorConfig::get('cms')->removeButtons('pasteword');
+HtmlEditorConfig::get('cms')
+    ->setOptions([
+        'block_formats' => 'Paragraph=p;Div=div;I. Heading 2=h2;A. Heading 3=h3;1. Heading 4=h4;i. Heading 5=h5;Heading 6=h6;Preformatted=pre'
+    ]);
