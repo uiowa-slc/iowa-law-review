@@ -28,3 +28,6 @@ SilverStripe\Assets\Flysystem\AssetAdapter:
     'file':
       'public': '0644'
       'private': '0600'
+SilverStripe\Admin\LeftAndMain:
+  extra_requirements_javascript:
+    - mysite/client/js/editorHeadings.js
