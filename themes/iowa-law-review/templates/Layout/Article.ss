@@ -33,7 +33,7 @@
 
 					<!--Summary-->
 
-					<div class="bigtext">
+					<div class="bigtext bigtext--headercounter">
 						$Content
 					</div>
 
