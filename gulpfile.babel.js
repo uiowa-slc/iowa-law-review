@@ -112,6 +112,7 @@ function styles(){
     .pipe($.size({title: 'styles'}))
     .pipe($.sourcemaps.write('./'))
     .pipe(gulp.dest('./themes/iowa-law-review/dist/styles'))
+    .pipe(gulp.dest('./themes/iowa-law-review/css'))
     .pipe(browserSync.stream());
 };
 
