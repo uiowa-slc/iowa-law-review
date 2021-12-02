@@ -41,6 +41,9 @@
         counter-increment:h3;
         counter-reset: h4;
         font-style: italic;
+        em,i{
+            font-style: normal;
+        }
     }
 
     h4{
@@ -50,6 +53,9 @@
     h5{
         counter-increment:h5;
         font-style: italic;
+        em,i{
+            font-style: normal;
+        }
     }
 
     h2:before {
@@ -66,13 +72,12 @@
     h4:before {
 
       content: counter(h4, decimal) ". ";
-      // margin-right: 1.3em;
+
     }
     h5:before {
 
       content: counter(h5, lower-roman) ". ";
 
-      // margin-right: 1.3em;
     }
 }
 
@@ -126,22 +131,13 @@
 	}
 
 	div.bigtext {
-		//overflow-y: hidden;
+
 		line-height: 1.6;
 		font-size: 22px;
 
 		@media (min-width: $screen-md-min) {
 			text-align: justify;
 		}
-
-		// > p:first-of-type:first-letter {
-		// 	color: #333;
-		// 	font-size: 62px;
-		// 	line-height: 65px;
-		// 	margin-right: 10px;
-		// 	float: left;
-		// 	width: 40px;
-		// }
 
 	}
 
