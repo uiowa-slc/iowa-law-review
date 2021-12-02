@@ -35,6 +35,9 @@
         counter-increment:h3;
         counter-reset: h4;
         font-style: italic;
+        em,i{
+            font-style: normal;
+        }
     }
 
     h4{
@@ -44,6 +47,9 @@
     h5{
         counter-increment:h5;
         font-style: italic;
+        em,i{
+            font-style: normal;
+        }
     }
 
     h2:before {
