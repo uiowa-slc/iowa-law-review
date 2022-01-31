@@ -102,7 +102,14 @@
     text-align: center;
 }
 
+.center{
+    text-align: center !important;
+}
 
+img.center{
+    display: block;
+    margin: auto !important;
+}
 
 body.mceContentBody a.ss-broken {
     background: none;
