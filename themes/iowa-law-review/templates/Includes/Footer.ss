@@ -42,7 +42,7 @@
 			<div class="col-lg-12">
 					<hr class="bar">
 		        	<div class="rights">
-		        		<p><small>&copy; Iowa Law Review. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" class="footer__bar-link" target="_blank" rel="noopener">Privacy Information</a> <a href="https://opsmanual.uiowa.edu/community-policies/nondiscrimination-statement" class="footer__bar-link" target="_blank" rel="noopener">Nondiscrimination Statement</a> <a href="https://uiowa.edu/accessibility" target="_blank">Accessibility</a></small></p>
+		        		<p><small>&copy; Iowa Law Review. All Rights Reserved. <a href="http://www.uiowa.edu/homepage/online-privacy-information" class="footer__bar-link" target="_blank" rel="noopener">Privacy Information</a> <a href="https://opsmanual.uiowa.edu/community-policies/nondiscrimination-statement" class="footer__bar-link" target="_blank" rel="noopener">Nondiscrimination Statement</a> <a class="footer__bar-link" href="https://uiowa.edu/accessibility" target="_blank">Accessibility</a> <a href="https://nativeamericancouncil.org.uiowa.edu/"  target="_blank" rel="noopener">UI Indigenous Land Acknowledgement</a></small></p>
 
 		        	</div>
 
